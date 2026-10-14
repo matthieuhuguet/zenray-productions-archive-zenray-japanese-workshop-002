@@ -1,0 +1,606 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "14 October 2026",
+  "records": [
+    [
+      "copula-plain",
+      "N5",
+      "だ",
+      "だ : terminer une phrase nominale neutre",
+      "Dans une phrase nominale affirmative neutre, だ peut suivre le nom ou la base d'un adjectif en な. La forme polie correspondante est notamment です. Le registre neutre ne dispense pas d'adapter le ton à son interlocuteur.",
+      "Ne pas ajouter だ à un adjectif en い : 高い suffit comme prédicat neutre affirmatif.",
+      [
+        [
+          "今日は休みだ。",
+          "きょうはやすみだ。",
+          "Aujourd'hui, c'est un jour de repos."
+        ],
+        [
+          "この町は静かだ。",
+          "このまちはしずかだ。",
+          "Cette ville est calme."
+        ]
+      ]
+    ],
+    [
+      "addition-mo",
+      "N5",
+      "も",
+      "も : ajouter un élément comparable",
+      "も indique qu'un élément appartient lui aussi à une situation déjà évoquée. Dans les exemples nominaux simples, il remplace la particule は ou が ; avec une autre particule, la combinaison doit être étudiée séparément.",
+      "Le contexte doit fournir un élément comparable, même s'il n'est pas exprimé dans la phrase.",
+      [
+        [
+          "私も学生です。",
+          "わたしもがくせいです。",
+          "Moi aussi, je suis étudiant."
+        ],
+        [
+          "京都も好きです。",
+          "きょうともすきです。",
+          "J'aime aussi Kyoto."
+        ]
+      ]
+    ],
+    [
+      "ichidan-negative",
+      "N5",
+      "るverb-ない",
+      "ない : nier un verbe ichidan",
+      "Pour un verbe ichidan, retirer le る final de la forme du dictionnaire puis ajouter ない : 食べる→食べない, 見る→見ない. ない forme ici une négation neutre ; ません est la négation polie correspondante.",
+      "Tous les verbes finissant par る ne sont pas ichidan : 帰る appartient au groupe godan.",
+      [
+        [
+          "今日は肉を食べない。",
+          "きょうはにくをたべない。",
+          "Aujourd'hui, je ne mange pas de viande."
+        ],
+        [
+          "その番組は見ない。",
+          "そのばんぐみはみない。",
+          "Je ne regarde pas cette émission."
+        ]
+      ]
+    ],
+    [
+      "godan-negative",
+      "N5",
+      "うverb--ない",
+      "ない : nier un verbe godan",
+      "Pour un verbe godan, la syllabe finale passe à la série en あ avant ない : 書く→書かない, 読む→読まない. La finale う devient わ : 買う→買わない. ある a pour négation usuelle ない ; les verbes する et 来る ont leur propre conjugaison.",
+      "買う donne 買わない, pas 買あない ; apprendre le groupe réel du verbe avant de transformer une finale る.",
+      [
+        [
+          "今日は車を買わない。",
+          "きょうはくるまをかわない。",
+          "Aujourd'hui, je n'achète pas de voiture."
+        ],
+        [
+          "この店では働かない。",
+          "このみせでははたらかない。",
+          "Je ne travaille pas dans cette boutique."
+        ]
+      ]
+    ],
+    [
+      "irregular-suru",
+      "N5",
+      "する",
+      "する : les formes principales d'un verbe irrégulier",
+      "する se conjugue notamment します, しない, した et して. De nombreux noms d'activité forment un verbe en se combinant avec する, comme 勉強する ; cela ne signifie pas que tous les noms acceptent librement cette combinaison.",
+      "Ne pas fabriquer すります ou すない sur le modèle d'un verbe régulier.",
+      [
+        [
+          "毎朝、運動します。",
+          "まいあさ、うんどうします。",
+          "Je fais de l'exercice chaque matin."
+        ],
+        [
+          "今日は掃除しない。",
+          "きょうはそうじしない。",
+          "Aujourd'hui, je ne fais pas le ménage."
+        ]
+      ]
+    ],
+    [
+      "irregular-kuru",
+      "N5",
+      "くる",
+      "来る : les lectures changent avec la forme",
+      "来る se lit くる ; 来ます et 来た se lisent きます et きた ; 来ない se lit こない ; 来て se lit きて. Le verbe décrit un déplacement vers le point de référence du locuteur ou un point adopté dans le contexte.",
+      "Le même kanji 来 ne garde pas une lecture unique dans toute la conjugaison.",
+      [
+        [
+          "友達が明日来ます。",
+          "ともだちがあしたきます。",
+          "Mon ami vient demain."
+        ],
+        [
+          "今日は先生が来ない。",
+          "きょうはせんせいがこない。",
+          "Aujourd'hui, le professeur ne vient pas."
+        ]
+      ]
+    ],
+    [
+      "plain-negative-past",
+      "N5",
+      "る-verb-neg-past",
+      "なかった : nier une action passée au registre neutre",
+      "La négation verbale en ない forme son passé en remplaçant ない par なかった : 食べない→食べなかった. Cette terminaison exprime une négation passée neutre ; la phrase peut adopter un autre niveau de politesse dans une construction plus longue.",
+      "Le passé se forme sur la négation déjà correcte du verbe, pas directement sur la finale du dictionnaire.",
+      [
+        [
+          "昨日は映画を見なかった。",
+          "きのうはえいがをみなかった。",
+          "Hier, je n'ai pas regardé de film."
+        ],
+        [
+          "昨日は外に出なかった。",
+          "きのうはそとにでなかった。",
+          "Hier, je ne suis pas sorti."
+        ]
+      ]
+    ],
+    [
+      "accompaniment-to",
+      "N5",
+      "と-with",
+      "人と : faire avec quelqu'un",
+      "人と indique un accompagnement ou un partenaire dans l'action. Pour préciser ensemble, 一緒に peut s'ajouter. Il faut distinguer cet emploi du と qui énumère des noms ou introduit une citation.",
+      "友達と行きます signifie que l'ami accompagne le déplacement, pas que le locuteur va chez cet ami.",
+      [
+        [
+          "友達と京都に行きます。",
+          "ともだちときょうとにいきます。",
+          "Je vais à Kyoto avec un ami."
+        ],
+        [
+          "妹と一緒に料理します。",
+          "いもうとといっしょにりょうりします。",
+          "Je cuisine avec ma petite sœur."
+        ]
+      ]
+    ],
+    [
+      "instrument-de",
+      "N5",
+      "で-by",
+      "で : utiliser un moyen ou un instrument",
+      "で peut marquer un moyen de transport, un instrument ou une langue utilisée pour effectuer une action. Le verbe et le contexte déterminent cet emploi, qui se distingue du lieu d'activité marqué lui aussi par で.",
+      "に ne remplace pas librement で pour l'instrument : バスで行きます décrit le moyen de transport.",
+      [
+        [
+          "電車で学校に行きます。",
+          "でんしゃでがっこうにいきます。",
+          "Je vais à l'école en train."
+        ],
+        [
+          "日本語で手紙を書きます。",
+          "にほんごでてがみをかきます。",
+          "J'écris une lettre en japonais."
+        ]
+      ]
+    ],
+    [
+      "starting-kara",
+      "N5",
+      "から",
+      "から : indiquer un point de départ",
+      "から peut suivre un lieu, une heure ou un autre repère pour indiquer le point de départ. Il se distingue du から qui relie une raison à une conséquence.",
+      "Le mot placé avant から est ici le départ, pas une explication causale.",
+      [
+        [
+          "九時から働きます。",
+          "くじからはたらきます。",
+          "Je travaille à partir de neuf heures."
+        ],
+        [
+          "大阪から来ました。",
+          "おおさかからきました。",
+          "Je viens d'Osaka."
+        ]
+      ]
+    ],
+    [
+      "endpoint-made",
+      "N5",
+      "noun-まで",
+      "まで : indiquer une borne finale",
+      "Nまで indique jusqu'où ou jusqu'à quand une action ou une situation s'étend. までに, qui fixe une échéance avant laquelle terminer, possède un autre fonctionnement.",
+      "五時まで décrit une activité qui se prolonge jusqu'à cinq heures ; ce n'est pas automatiquement une échéance pour la terminer.",
+      [
+        [
+          "五時まで働きます。",
+          "ごじまではたらきます。",
+          "Je travaille jusqu'à cinq heures."
+        ],
+        [
+          "駅まで歩きます。",
+          "えきまであるきます。",
+          "Je marche jusqu'à la gare."
+        ]
+      ]
+    ],
+    [
+      "before-mae-ni",
+      "N5",
+      "まえに",
+      "前に : situer avant une action",
+      "Le verbe en forme du dictionnaire suivi de 前に situe une action avant une autre. Un nom peut se construire avec の前に. La forme du dictionnaire reste requise dans cette construction même si le récit global est passé.",
+      "昨日、寝る前に se construit avec 寝る, pas automatiquement 寝た, même dans un récit passé.",
+      [
+        [
+          "寝る前に、本を読みます。",
+          "ねるまえに、ほんをよみます。",
+          "Je lis avant de dormir."
+        ],
+        [
+          "食事の前に、手を洗います。",
+          "しょくじのまえに、てをあらいます。",
+          "Je me lave les mains avant le repas."
+        ]
+      ]
+    ],
+    [
+      "after-te-kara",
+      "N5",
+      "てから",
+      "てから : faire une action puis une autre",
+      "Vてから situe la seconde action après l'accomplissement de la première. La phrase met ainsi en avant un ordre entre les actions ; le temps du récit se marque sur le prédicat final.",
+      "La forme て doit être correcte avant l'ajout de から ; ce から n'exprime pas ici une cause.",
+      [
+        [
+          "宿題をしてから、散歩します。",
+          "しゅくだいをしてから、さんぽします。",
+          "Je fais une promenade après avoir fait mes devoirs."
+        ],
+        [
+          "手を洗ってから、ご飯を食べました。",
+          "てをあらってから、ごはんをたべました。",
+          "J'ai mangé après m'être lavé les mains."
+        ]
+      ]
+    ],
+    [
+      "purpose-ni-iku",
+      "N5",
+      "verb-にいく",
+      "Vに行く : se déplacer pour faire une action",
+      "La base de ます suivie de に et d'un verbe de déplacement permet d'exprimer le but de ce déplacement : 食べに行く. Un nom d'activité peut aussi se combiner dans certains emplois, comme 買い物に行く.",
+      "Ne pas ajouter に directement à une forme verbale conjuguée en ます.",
+      [
+        [
+          "友達に会いに行きます。",
+          "ともだちにあいにいきます。",
+          "Je vais voir un ami."
+        ],
+        [
+          "昼ご飯を食べに行きませんか。",
+          "ひるごはんをたべにいきませんか。",
+          "Voulez-vous aller déjeuner ?"
+        ]
+      ]
+    ],
+    [
+      "already-mou",
+      "N5",
+      "もう",
+      "もう : une réalisation déjà atteinte",
+      "Dans une phrase affirmative passée, もう peut exprimer qu'une action est déjà accomplie. Le mot possède d'autres emplois, comme encore une fois ou plus avec une négation ; cette fiche travaille seulement déjà accompli.",
+      "Le sens de もう dépend du prédicat ; ne pas traduire tous ses emplois par déjà.",
+      [
+        [
+          "もう切符を買いました。",
+          "もうきっぷをかいました。",
+          "J'ai déjà acheté le billet."
+        ],
+        [
+          "もう昼ご飯を食べました。",
+          "もうひるごはんをたべました。",
+          "J'ai déjà déjeuné."
+        ]
+      ]
+    ],
+    [
+      "still-mada",
+      "N5",
+      "まだ",
+      "まだ : un état qui se prolonge",
+      "Avec un prédicat affirmatif approprié, まだ indique qu'un état ou une situation continue. Avec une négation, il peut exprimer pas encore ; cette seconde construction doit tenir compte de l'aspect du verbe.",
+      "Encore en français peut signifier une répétition ; まだ exprime ici la continuité, pas forcément une répétition.",
+      [
+        [
+          "まだ雨が降っています。",
+          "まだあめがふっています。",
+          "Il pleut encore."
+        ],
+        [
+          "店はまだ開いています。",
+          "みせはまだあいています。",
+          "La boutique est encore ouverte."
+        ]
+      ]
+    ],
+    [
+      "not-yet-teinai",
+      "N5",
+      "まだ-ていません",
+      "まだていない : une action pas encore accomplie",
+      "まだ avec Vていない ou Vていません peut présenter une action attendue comme pas encore accomplie. Le contexte et le sens du verbe déterminent l'interprétation aspectuelle.",
+      "Pas encore terminé se distingue de ne pas faire comme habitude ; employer la construction adaptée à la réalisation attendue.",
+      [
+        [
+          "まだ宿題をしていません。",
+          "まだしゅくだいをしていません。",
+          "Je n'ai pas encore fait mes devoirs."
+        ],
+        [
+          "まだその映画を見ていません。",
+          "まだそのえいがをみていません。",
+          "Je n'ai pas encore regardé ce film."
+        ]
+      ]
+    ],
+    [
+      "too-sugiru",
+      "N5",
+      "すぎる",
+      "すぎる : dépasser le degré souhaitable",
+      "La base de ます suivie de すぎる exprime un excès dans une action. Pour un adjectif en い, retirer le い final ; pour un adjectif en な, utiliser sa base. いい donne よすぎる.",
+      "高すぎる exprime trop cher ou trop haut selon le sens de 高い ; le jugement d'excès dépend de la situation.",
+      [
+        [
+          "昨日は食べすぎました。",
+          "きのうはたべすぎました。",
+          "Hier, j'ai trop mangé."
+        ],
+        [
+          "この靴は高すぎます。",
+          "このくつはたかすぎます。",
+          "Ces chaussures sont trop chères."
+        ]
+      ]
+    ],
+    [
+      "change-naru",
+      "N5",
+      "になる-くなる",
+      "になる・くなる : devenir ou changer d'état",
+      "Un nom ou un adjectif en な se construit avec に＋なる ; un adjectif en い remplace son い final par く avant なる. いい emploie la base よ et donne よくなる.",
+      "暖かいになる ne construit pas le changement étudié ; employer 暖かくなる.",
+      [
+        [
+          "春になりました。",
+          "はるになりました。",
+          "Le printemps est arrivé."
+        ],
+        [
+          "部屋が暖かくなりました。",
+          "へやがあたたかくなりました。",
+          "La pièce est devenue plus chaude."
+        ]
+      ]
+    ],
+    [
+      "choice-ni-suru",
+      "N5",
+      "にする",
+      "にする : arrêter un choix",
+      "Dans une situation de choix, Nにする exprime que l'on retient l'option N. Ce fonctionnement se distingue de la décision sur une action en Vことにする et des autres emplois de する.",
+      "Ne pas employer にする comme traduction universelle du verbe faire.",
+      [
+        [
+          "飲み物はお茶にします。",
+          "のみものはおちゃにします。",
+          "Pour la boisson, je choisis du thé."
+        ],
+        [
+          "昼ご飯はそばにします。",
+          "ひるごはんはそばにします。",
+          "Pour le déjeuner, je choisis des soba."
+        ]
+      ]
+    ],
+    [
+      "comparison-yori",
+      "N5",
+      "より-のほうが",
+      "より・ほうが : comparer une propriété",
+      "Dans AよりBのほうがX, A est le repère et B est présenté comme davantage X. X peut exprimer une préférence, une taille ou une autre propriété ; le contexte fixe la dimension.",
+      "L'ordre français peut être différent : le terme devant より est celui par rapport auquel on compare.",
+      [
+        [
+          "バスより電車のほうが速いです。",
+          "ばすよりでんしゃのほうがはやいです。",
+          "Le train est plus rapide que le bus."
+        ],
+        [
+          "夏より春のほうが好きです。",
+          "なつよりはるのほうがすきです。",
+          "Je préfère le printemps à l'été."
+        ]
+      ]
+    ],
+    [
+      "superlative-ichiban",
+      "N5",
+      "のなかで-がいちばん",
+      "一番 : classer une propriété dans un ensemble",
+      "Dans un ensemble indiqué par Nの中で, 一番 met au premier rang l'élément pour une propriété donnée. L'ensemble et la propriété doivent être clairs, faute de quoi la comparaison reste incomplète.",
+      "Le classement est relatif à l'ensemble envisagé ; il ne signifie pas le meilleur dans tous les contextes.",
+      [
+        [
+          "この三つの中で、どれが一番安いですか。",
+          "このみっつのなかで、どれがいちばんやすいですか。",
+          "Parmi ces trois choses, laquelle est la moins chère ?"
+        ],
+        [
+          "季節の中で、春が一番好きです。",
+          "きせつのなかで、はるがいちばんすきです。",
+          "Parmi les saisons, je préfère le printemps."
+        ]
+      ]
+    ],
+    [
+      "something-nanika",
+      "N5",
+      "なにか-なにも",
+      "何か・何も : quelque chose ou rien",
+      "何か renvoie à quelque chose de non précisé. Dans les exemples de cette fiche, 何も avec une négation exprime rien. L'accord entre le mot interrogatif, la particule et la négation est essentiel.",
+      "何も n'est pas une négation à lui seul dans toutes les constructions ; ici, le prédicat est négatif.",
+      [
+        [
+          "何か食べませんか。",
+          "なにかたべませんか。",
+          "Voulez-vous manger quelque chose ?"
+        ],
+        [
+          "今日は何も買いません。",
+          "きょうはなにもかいません。",
+          "Aujourd'hui, je n'achète rien."
+        ]
+      ]
+    ],
+    [
+      "someone-dareka",
+      "N5",
+      "誰か-どこか-誰も-どこも",
+      "誰か・誰も : quelqu'un ou personne",
+      "誰か désigne une personne non précisée. Dans une phrase négative, 誰も peut exprimer que personne n'effectue ou ne présente l'état indiqué. Ces emplois ne signifient pas que 誰も est toujours négatif.",
+      "La négation du prédicat reste nécessaire pour le personne de cette fiche.",
+      [
+        [
+          "玄関に誰かいます。",
+          "げんかんにだれかいます。",
+          "Il y a quelqu'un à l'entrée."
+        ],
+        [
+          "部屋には誰もいません。",
+          "へやにはだれもいません。",
+          "Il n'y a personne dans la pièce."
+        ]
+      ]
+    ],
+    [
+      "offer-mashouka",
+      "N5",
+      "ましょうか",
+      "ましょうか : proposer son aide",
+      "Vましょうか peut proposer une action du locuteur pour aider l'interlocuteur, ou proposer une action commune selon le contexte. Cette fiche travaille une offre d'aide.",
+      "La phrase n'est pas seulement une question sur un futur certain ; elle soumet une proposition à l'autre.",
+      [
+        [
+          "荷物を持ちましょうか。",
+          "にもつをもちましょうか。",
+          "Voulez-vous que je porte vos bagages ?"
+        ],
+        [
+          "窓を閉めましょうか。",
+          "まどをしめましょうか。",
+          "Voulez-vous que je ferme la fenêtre ?"
+        ]
+      ]
+    ],
+    [
+      "skill-jouzu",
+      "N5",
+      "のがじょうず",
+      "のが上手 : être habile dans une action",
+      "Un verbe en forme du dictionnaire suivi de のが上手 décrit une habileté dans l'activité. 上手 est un adjectif en な ; la forme polie affirmative se termine par です.",
+      "Se qualifier soi-même de 上手 peut paraître se vanter ; la construction grammaticale reste distincte du choix social de l'énoncé.",
+      [
+        [
+          "姉は絵を描くのが上手です。",
+          "あねはえをかくのがじょうずです。",
+          "Ma grande sœur dessine bien."
+        ],
+        [
+          "友達は料理するのが上手です。",
+          "ともだちはりょうりするのがじょうずです。",
+          "Mon ami cuisine bien."
+        ]
+      ]
+    ],
+    [
+      "skill-heta",
+      "N5",
+      "のがへた",
+      "のが下手 : manquer d'habileté dans une action",
+      "Un verbe en forme du dictionnaire suivi de のが下手 décrit un manque d'habileté dans l'activité. 下手 se lit へた dans cet emploi et se construit comme un adjectif en な.",
+      "Dire directement à quelqu'un qu'il est 下手 peut être blessant ; apprendre la forme ne signifie pas l'employer dans toute relation.",
+      [
+        [
+          "私は歌うのが下手です。",
+          "わたしはうたうのがへたです。",
+          "Je chante mal."
+        ],
+        [
+          "私は道を覚えるのが下手です。",
+          "わたしはみちをおぼえるのがへたです。",
+          "J'ai du mal à retenir les itinéraires."
+        ]
+      ]
+    ],
+    [
+      "obligation-contraction",
+      "N5",
+      "なくちゃ-なきゃ",
+      "なきゃ・なくちゃ : obligation dans la conversation",
+      "なきゃ est une contraction de なければ, et なくちゃ de なくては. Dans une conversation qui fournit le contexte d'obligation, la suite ならない ou いけない peut être omise. Ces finales abrégées n'ont pas le même registre qu'une phrase formelle complète.",
+      "La contraction ne transforme pas toutes les négations en obligations ; c'est l'ensemble de la construction et le contexte qui donnent le sens.",
+      [
+        [
+          "もう帰らなきゃ。",
+          "もうかえらなきゃ。",
+          "Il faut que je rentre maintenant."
+        ],
+        [
+          "週末は庭を掃除しなくちゃ。",
+          "しゅうまつはにわをそうじしなくちゃ。",
+          "Il faut que je nettoie le jardin ce week-end."
+        ]
+      ]
+    ],
+    [
+      "or-ka",
+      "N5",
+      "か-or",
+      "か : proposer deux options",
+      "か peut relier des options nominales, souvent avec か après chaque option. Le choix est alors ouvert entre les éléments nommés, au lieu d'affirmer une liste réunissant les deux.",
+      "Ce か entre les options ne se confond pas avec le か qui termine une question polie.",
+      [
+        [
+          "お茶かコーヒーをください。",
+          "おちゃかこーひーをください。",
+          "Du thé ou du café, s'il vous plaît."
+        ],
+        [
+          "土曜日か日曜日に行きます。",
+          "どようびかにちようびにいきます。",
+          "J'y vais samedi ou dimanche."
+        ]
+      ]
+    ],
+    [
+      "why-doushite",
+      "N5",
+      "どうして",
+      "どうして : demander une raison",
+      "どうして permet de demander la raison d'une situation ou d'une action. Le mot peut également signifier de quelle manière dans certains contextes ; cette fiche travaille les questions de raison.",
+      "Une question sur la raison peut sembler demander une justification ; adapter le ton à la relation.",
+      [
+        [
+          "どうして日本語を勉強していますか。",
+          "どうしてにほんごをべんきょうしていますか。",
+          "Pourquoi étudiez-vous le japonais ?"
+        ],
+        [
+          "どうして今日は休みですか。",
+          "どうしてきょうはやすみですか。",
+          "Pourquoi est-ce un jour de repos aujourd'hui ?"
+        ]
+      ]
+    ]
+  ]
+}

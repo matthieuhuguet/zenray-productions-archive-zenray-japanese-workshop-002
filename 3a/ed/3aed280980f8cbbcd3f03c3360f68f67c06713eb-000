@@ -1,0 +1,546 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "14 October 2026",
+  "records": [
+    [
+      "negative-addition-mo",
+      "N5",
+      "も",
+      "も avec une négation : non plus",
+      "Après un nom, も peut ajouter un élément à une situation négative déjà évoquée : 私も行かない signifie moi non plus, je n'y vais pas. Le sens additif reste le même que dans une phrase affirmative ; c'est le prédicat négatif qui produit non plus. Dans ces phrases simples, も peut remplacer は ou が ; ses combinaisons avec une particule de cas ont leurs règles propres.",
+      "Ne pas traduire automatiquement も par aussi sans tenir compte de la négation et de la situation comparable déjà connue.",
+      [
+        [
+          "姉は肉を食べません。私も食べません。",
+          "あねはにくをたべません。わたしもたべません。",
+          "Ma grande sœur ne mange pas de viande. Moi non plus."
+        ],
+        [
+          "父は今日出かけません。母も出かけません。",
+          "ちちはきょうでかけません。ははもでかけません。",
+          "Mon père ne sort pas aujourd'hui. Ma mère non plus."
+        ]
+      ]
+    ],
+    [
+      "discourse-sore",
+      "N5",
+      "それ",
+      "それ : reprendre ce dont on vient de parler",
+      "それ peut désigner une chose près de l'interlocuteur, mais aussi reprendre une chose ou une information déjà mentionnée par l'un ou l'autre locuteur. Le référent vient alors du discours, pas nécessairement d'un objet visible. それ fonctionne comme un groupe nominal et peut recevoir は, が, を ou une autre particule selon son rôle.",
+      "Un それ dans une conversation n'indique pas toujours un objet physiquement posé près de l'autre personne ; identifier l'information à laquelle il renvoie.",
+      [
+        [
+          "新しい本を買いました。それは料理の本です。",
+          "あたらしいほんをかいました。それはりょうりのほんです。",
+          "J'ai acheté un nouveau livre. C'est un livre de cuisine."
+        ],
+        [
+          "姉が新しい店を開きました。それを昨日聞きました。",
+          "あねがあたらしいみせをひらきました。それをきのうききました。",
+          "Ma grande sœur a ouvert une nouvelle boutique. Je l'ai appris hier."
+        ]
+      ]
+    ],
+    [
+      "discourse-soko",
+      "N5",
+      "そこ",
+      "そこ : reprendre un lieu déjà mentionné",
+      "そこ peut désigner un lieu près de l'interlocuteur ou reprendre un lieu évoqué dans la conversation. La particule qui le suit reste celle qu'exige la phrase : そこに pour une présence ou une destination, そこで pour le lieu d'une action. そっち met plutôt en avant un côté ou une direction et ne se substitue pas mécaniquement à そこ.",
+      "そこ ne signifie pas toujours près de toi : le lieu peut être rappelé sans être visible.",
+      [
+        [
+          "妹は京都に住んでいます。私もそこに住んでいます。",
+          "いもうとはきょうとにすんでいます。わたしもそこにすんでいます。",
+          "Ma petite sœur habite à Kyoto. Moi aussi, j'y habite."
+        ],
+        [
+          "昨日、美術館に行きました。そこには大きい庭がありました。",
+          "きのう、びじゅつかんにいきました。そこにはおおきいにわがありました。",
+          "Hier, je suis allé au musée. Il y avait un grand jardin là-bas."
+        ]
+      ]
+    ],
+    [
+      "discourse-asoko",
+      "N5",
+      "あそこ",
+      "あそこ : rappeler un lieu connu des deux personnes",
+      "あそこ désigne normalement un lieu éloigné du locuteur et de l'interlocuteur. Dans le discours, il peut aussi rappeler un lieu dont les deux personnes ont une connaissance partagée, par exemple un endroit qu'elles ont fréquenté ensemble. Il se distingue de そこ, qui peut reprendre un lieu simplement mentionné ; あっち met davantage l'accent sur une direction.",
+      "Pour rappeler un lieu, ne pas utiliser automatiquement あそこ si l'interlocuteur ne sait pas de quel endroit il s'agit.",
+      [
+        [
+          "昨日、一緒に行った店は静かでしたね。あそこでまた食べたいです。",
+          "きのう、いっしょにいったみせはしずかでしたね。あそこでまたたべたいです。",
+          "La boutique où nous sommes allés ensemble hier était calme, n'est-ce pas ? Je voudrais y manger à nouveau."
+        ],
+        [
+          "二人で行った公園を覚えていますか。あそこには池がありましたね。",
+          "ふたりでいったこうえんをおぼえていますか。あそこにはいけがありましたね。",
+          "Vous vous souvenez du parc où nous sommes allés tous les deux ? Il y avait un étang là-bas, n'est-ce pas ?"
+        ]
+      ]
+    ],
+    [
+      "plain-question-ka",
+      "N5",
+      "か",
+      "か : question familière et information encore inconnue",
+      "Dans une question polie, か suit notamment です ou ます. Après une forme neutre, un か montant peut sembler direct ou brusque ; une question familière peut aussi se former sans か, par l'intonation. Un か descendant peut exprimer la prise en compte d'une information nouvelle. か peut également terminer une proposition interrogative intégrée, comme 誰が来るか知りません : ce qui est inconnu devient l'objet de savoir ou de penser, sans constituer une question adressée directement à l'autre.",
+      "Ne pas appliquer la rudesse éventuelle d'une question neutre en か à toute proposition interrogative intégrée : les fonctions et le contexte sont différents.",
+      [
+        [
+          "昨日はどこに行ったか？",
+          "きのうはどこにいったか？",
+          "Question très directe : où es-tu allé hier ?"
+        ],
+        [
+          "誰が明日来るか知りません。",
+          "だれがあしたくるかしりません。",
+          "Je ne sais pas qui vient demain."
+        ]
+      ]
+    ],
+    [
+      "new-subject-ga",
+      "N5",
+      "が",
+      "が : présenter un sujet nouvellement observé",
+      "が marque le sujet d'un prédicat. Il est notamment naturel pour présenter une personne ou un événement que l'on vient de remarquer, plutôt que poser d'abord un thème déjà partagé. Il peut aussi identifier précisément celui qui répond à une question en qui. Le choix avec は dépend de l'information partagée et du contraste voulu ; ce n'est pas une opposition mécanique entre présent et passé.",
+      "私が peut être correct pour identifier qui fait l'action ; ne pas interdire が avec la première personne. 私は sert souvent à parler de soi comme thème.",
+      [
+        [
+          "あ、庭に猫がいます。",
+          "あ、にわにねこがいます。",
+          "Ah, il y a un chat dans le jardin."
+        ],
+        [
+          "誰が窓を開けましたか。私が開けました。",
+          "だれがまどをあけましたか。わたしがあけました。",
+          "Qui a ouvert la fenêtre ? C'est moi qui l'ai ouverte."
+        ]
+      ]
+    ],
+    [
+      "final-yo-construction",
+      "N5",
+      "よ",
+      "よ : apporter une information à l'interlocuteur",
+      "よ s'ajoute à la fin d'une phrase pour informer l'interlocuteur ou renforcer ce que l'on lui dit. Un verbe ou un adjectif en い garde sa forme devant よ : 行くよ, 寒いよ. Un nom ou un adjectif en な affirmatif neutre non passé garde だ : 休みだよ, 静かだよ. On utilise aussi les terminaisons polies ですよ et ますよ. よね associe l'information apportée à une recherche de compréhension ou d'accord partagé.",
+      "よ ne garantit ni douceur ni politesse : le contexte et le ton peuvent donner une impression de conseil, d'insistance ou de contradiction.",
+      [
+        [
+          "この店は日曜日も開いていますよ。",
+          "このみせはにちようびもあいていますよ。",
+          "Cette boutique est ouverte le dimanche aussi, vous savez."
+        ],
+        [
+          "この道は危ないよ。",
+          "このみちはあぶないよ。",
+          "Attention, cette route est dangereuse."
+        ]
+      ]
+    ],
+    [
+      "traversed-place-o",
+      "N5",
+      "を",
+      "Lieuを : parcourir un trajet",
+      "Avec un verbe de déplacement approprié, を peut marquer un espace parcouru ou traversé : 道を歩く, 橋を渡る. Il ne désigne alors pas un objet que l'on manipule. で peut situer l'activité dans un lieu, tandis que に ou へ peuvent en indiquer la destination ; le choix dépend du rôle que l'on donne au lieu et du verbe.",
+      "橋を渡る décrit le pont traversé, pas une destination marquée comme 駅に行く. Ne pas remplacer tous les を de trajet par で.",
+      [
+        [
+          "毎朝、この橋を渡ります。",
+          "まいあさ、このはしをわたります。",
+          "Je traverse ce pont chaque matin."
+        ],
+        [
+          "昨日は川のそばの道を歩きました。",
+          "きのうはかわのそばのみちをあるきました。",
+          "Hier, j'ai marché sur le chemin au bord de la rivière."
+        ]
+      ]
+    ],
+    [
+      "predicate-alternatives-ka",
+      "N5",
+      "か-or",
+      "か : proposer des alternatives verbales ou adjectivales",
+      "か peut relier des alternatives nominales, verbales ou adjectivales : 行くか帰るか, 高いか安いか. Dans une proposition intégrée, utiliser les prédicats neutres ; un nom ou une base adjectivale en な affirmatif non passé ne prend pas un だ supplémentaire avant ce か : 安全か危険か. La phrase intégrée peut ensuite dépendre de 考える ou 決める. Une succession en ますか ou ですか peut en revanche poser des questions polies autonomes, sans jouer exactement le même rôle de liste intégrée.",
+      "行きますか、帰りますか peut adresser deux questions ; ne pas le traiter comme la même structure intégrée que 行くか帰るか考える.",
+      [
+        [
+          "今日は歩くか走るか考えています。",
+          "きょうはあるくかはしるかかんがえています。",
+          "Je réfléchis à marcher ou à courir aujourd'hui."
+        ],
+        [
+          "この部屋が安全か危険か調べます。",
+          "このへやがあんぜんかきけんかしらべます。",
+          "Je vérifie si cette chambre est sûre ou dangereuse."
+        ]
+      ]
+    ],
+    [
+      "interaction-to-ni",
+      "N5",
+      "と-with",
+      "と et に : partenaire de l'échange ou destinataire",
+      "Avec une action qui peut être réciproque, と présente l'autre personne comme partenaire : 友達と話す met en avant une conversation avec l'ami. に présente plutôt la personne comme destinataire ou cible de ce que l'on fait : 友達に話す met en avant ce qu'on lui dit. Le contraste dépend du verbe et du contexte ; il ne prouve pas à lui seul que la personne marquée par に ne répond jamais.",
+      "La particule と d'accompagnement peut aussi réunir des personnes qui poursuivent le même but. Ne pas réduire toute phrase en と à une action dirigée l'un contre l'autre.",
+      [
+        [
+          "昼休みに友達と話しました。",
+          "ひるやすみにともだちとはなしました。",
+          "J'ai discuté avec un ami pendant la pause de midi."
+        ],
+        [
+          "先生に昨日の出来事を話しました。",
+          "せんせいにきのうのできごとをはなしました。",
+          "J'ai raconté au professeur ce qui s'est passé hier."
+        ]
+      ]
+    ],
+    [
+      "deshou-attachment",
+      "N5",
+      "でしょう",
+      "でしょう et でしょ : raccorder une supposition",
+      "でしょう suit normalement une forme neutre verbale ou un adjectif en い. Après un nom ou un adjectif en な affirmatif non passé, il suit la base sans だ : 雨でしょう, 静かでしょう. Il exprime une supposition ou cherche l'accord de l'interlocuteur selon le ton et le contexte. La forme raccourcie でしょ est plus familière. On évite normalement de raccorder directement ます à でしょう dans l'usage courant, même si cela existe dans certains registres très formels ou anciens.",
+      "Une supposition en でしょう n'est pas une certitude ; ne pas produire 雨だでしょう dans ce raccord nominal.",
+      [
+        [
+          "夕方は涼しくなるでしょう。",
+          "ゆうがたはすずしくなるでしょう。",
+          "Il fera probablement plus frais en fin d'après-midi."
+        ],
+        [
+          "日曜日の朝は静かでしょう。",
+          "にちようびのあさはしずかでしょう。",
+          "Dimanche matin sera probablement calme."
+        ]
+      ]
+    ],
+    [
+      "existence-neutral-negative",
+      "N5",
+      "がある",
+      "ある et ない : existence neutre et négative",
+      "Nがある présente l'existence d'une chose, tandis que Nがあります est sa forme polie. La négation neutre irrégulière est ない, et non あらない ; la négation polie est ありません, formée à partir de la base あり. Pour une personne ou un animal considéré comme animé, utiliser normalement いる. À l'oral familier, le が de Nがある peut être omis lorsque le sens est clair. 有る est une écriture possible de ある, sans constituer une nouvelle conjugaison.",
+      "ない exprime ici l'absence d'une chose ; ne pas fabriquer あらない sur le modèle d'un godan régulier.",
+      [
+        [
+          "この部屋には机がある。",
+          "このへやにはつくえがある。",
+          "Il y a un bureau dans cette chambre."
+        ],
+        [
+          "今日は時間がありません。",
+          "きょうはじかんがありません。",
+          "Aujourd'hui, je n'ai pas le temps."
+        ]
+      ]
+    ],
+    [
+      "explanatory-statement-noda",
+      "N5",
+      "-んです-のです",
+      "のだ et んです : présenter une explication",
+      "Dans une assertion explicative, une forme neutre verbale ou un adjectif en い reçoit のだ, んだ, のです ou んです : 行くんです, 寒いんだ. Un nom ou une base adjectivale en な affirmatif non passé utilise な devant の ou ん : 休みなのです, 静かなんです. ん est très courant à l'oral, tandis que la forme non contractée の peut sembler plus soutenue. La construction relie ce que l'on affirme au contexte, souvent pour expliquer une situation, plutôt que simplement augmenter sa certitude.",
+      "Une question polie explicative se termine par のですか ou んですか ; ne pas ajouter か directement à のだ ou んだ pour cette question.",
+      [
+        [
+          "明日は休みなんです。",
+          "あしたはやすみなんです。",
+          "C'est que je suis en repos demain."
+        ],
+        [
+          "今日は少し寒いんです。",
+          "きょうはすこしさむいんです。",
+          "C'est qu'il fait un peu froid aujourd'hui."
+        ]
+      ]
+    ],
+    [
+      "verb-nominalization-no",
+      "N5",
+      "のは",
+      "Vの : traiter une proposition comme un groupe nominal",
+      "Une proposition verbale neutre suivie de の peut fonctionner comme un groupe nominal : 本を読むの. Le groupe reçoit ensuite は, が, を ou une autre particule selon sa fonction. Le verbe peut être au passé ou au négatif selon le sens, mais on ne raccorde pas directement une terminaison polie ます ou ません à ce の nominalisant. Dans les expressions fixées de capacité Vことができる et d'expérience Vたことがある, ne pas remplacer librement こと par の. Vのです ou Vんです relève normalement de la construction explicative, à distinguer de la nominalisation suivie d'une particule.",
+      "Ne pas transformer automatiquement toute proposition nominalisée en une expérience ou une capacité : les constructions fixées choisissent leur propre nom grammatical.",
+      [
+        [
+          "日本語を読むのは楽しいです。",
+          "にほんごをよむのはたのしいです。",
+          "Lire du japonais est agréable."
+        ],
+        [
+          "料理するのが好きです。",
+          "りょうりするのがすきです。",
+          "J'aime cuisiner."
+        ]
+      ]
+    ],
+    [
+      "na-no-noun-attribution",
+      "N5",
+      "な-adjective-noun",
+      "な et の devant un nom : qualité ou rapport nominal",
+      "Une base adjectivale en な utilise な pour qualifier un nom : 健康な生活. Certains mots ont aussi un emploi nominal et peuvent alors se relier par の, qui indique un rapport à cette notion, par exemple 健康の話. Selon les mots, ce rapport peut relever d'un type, d'un domaine ou d'un usage plutôt que d'une qualité. Il faut apprendre les emplois attestés ; ce n'est pas une autorisation de remplacer な par の après tout adjectif en な.",
+      "健康な生活 décrit un mode de vie sain ; 健康の話 désigne une conversation sur la santé. Le choix dépend du sens et du statut lexical du mot.",
+      [
+        [
+          "健康な生活を送りたいです。",
+          "けんこうなせいかつをおくりたいです。",
+          "Je voudrais mener une vie saine."
+        ],
+        [
+          "父と健康の話をしました。",
+          "ちちとけんこうのはなしをしました。",
+          "J'ai parlé de santé avec mon père."
+        ]
+      ]
+    ],
+    [
+      "noun-object-suru",
+      "N5",
+      "する",
+      "Nをする : faire une activité",
+      "Un nom d'activité peut former un groupe objet suivi de をする : 掃除をする, 料理をする. Certains noms forment aussi un verbe composé avec する sans を, comme 勉強する. する garde ses formes irrégulières, notamment します, しない, した et して. Tous les noms ne désignent pas une activité susceptible de recevoir librement をする ou de former un composé en する.",
+      "家をする ne signifie pas automatiquement faire le ménage dans la maison ; choisir le nom d'activité et préciser le lieu avec la construction appropriée.",
+      [
+        [
+          "土曜日に庭の掃除をします。",
+          "どようびににわのそうじをします。",
+          "Samedi, je fais le ménage dans le jardin."
+        ],
+        [
+          "昨日は家で料理をしました。",
+          "きのうはいえでりょうりをしました。",
+          "Hier, j'ai cuisiné à la maison."
+        ]
+      ]
+    ],
+    [
+      "come-reference-result",
+      "N5",
+      "くる",
+      "来る : destination et présence après l'arrivée",
+      "Un lieu suivi de に ou de へ peut indiquer où quelqu'un vient : 学校に来る, 学校へ来る. Le point de référence est celui du locuteur ou un lieu adopté dans le contexte. 来る se lit くる ; 来ます et 来て se lisent きます et きて ; 来ない se lit こない. 来ている peut présenter une personne arrivée et encore sur place, notamment en visite, plutôt qu'un déplacement actuellement en cours. Le contexte permet de choisir la lecture ; on ne remplace pas automatiquement la description d'une présence ordinaire au domicile par 来ている.",
+      "友達が来ています peut signifier qu'un ami est venu et se trouve maintenant sur place ; ne pas toujours traduire par est en train de venir.",
+      [
+        [
+          "友達が今、家に来ています。",
+          "ともだちがいま、いえにきています。",
+          "Un ami est venu chez moi et il y est en ce moment."
+        ],
+        [
+          "明日、妹がこの店に来ます。",
+          "あした、いもうとがこのみせにきます。",
+          "Demain, ma petite sœur vient dans cette boutique."
+        ]
+      ]
+    ],
+    [
+      "like-na-attribution",
+      "N5",
+      "すき",
+      "好き et 好きなN : exprimer et attribuer un goût",
+      "好き est un adjectif en な : Nが好きだ ou Nが好きです exprime un goût, tandis que 好きなN rattache ce goût au nom, comme 好きな本. Les formes passées du prédicat sont 好きだった et 好きでした. Lorsqu'on dit directement à une personne qu'on l'aime avec 好き, le contexte peut donner une interprétation amoureuse ; ce sens n'est pas obligatoire dans toute phrase qui parle d'une personne.",
+      "好きな本 désigne un livre que l'on aime, pas nécessairement le livre le plus aimé. 好き se comporte comme un adjectif en な, même si le français le traduit souvent par un verbe.",
+      [
+        [
+          "好きな本を友達に貸しました。",
+          "すきなほんをともだちにかしました。",
+          "J'ai prêté à un ami un livre que j'aime."
+        ],
+        [
+          "去年はこの歌が好きでした。",
+          "きょねんはこのうたがすきでした。",
+          "L'an dernier, j'aimais cette chanson."
+        ]
+      ]
+    ],
+    [
+      "dislike-kirai-attribution",
+      "N5",
+      "きらい",
+      "嫌い : un adjectif en な malgré sa finale い",
+      "嫌い（きらい） est un adjectif en な. Construire Nが嫌いだ ou Nが嫌いです pour dire qu'on n'aime pas N ; devant un nom, utiliser 嫌いなN. Au passé, employer 嫌いだった ou 嫌いでした. 大嫌い renforce l'aversion. Dire directement 嫌い à propos d'une personne ou de ce qu'elle propose peut être très fort ; adapter l'expression à la situation.",
+      "Ne pas fabriquer 嫌くない sur le modèle d'un adjectif en い : la négation du prédicat utilise notamment 嫌いではない.",
+      [
+        [
+          "私は大きい音が嫌いです。",
+          "わたしはおおきいおとがきらいです。",
+          "Je n'aime pas les bruits forts."
+        ],
+        [
+          "嫌いな食べ物はありますか。",
+          "きらいなたべものはありますか。",
+          "Y a-t-il des aliments que vous n'aimez pas ?"
+        ]
+      ]
+    ],
+    [
+      "activity-liking-tense",
+      "N5",
+      "のがすき",
+      "Vのが好き : garder l'activité au dictionnaire",
+      "Pour exprimer un goût pour une activité, utiliser la forme du dictionnaire du verbe suivie de のが好きだ ou のが好きです : 歩くのが好きです. Le verbe de l'activité garde cette forme pour parler d'un goût passé ; le passé porte sur 好き : 歩くのが好きだった ou 好きでした. Ajouter か à la forme polie permet de poser une question sur les goûts de l'interlocuteur.",
+      "J'aimais courir se construit ici avec 走るのが好きでした, sans mettre automatiquement l'activité au passé en 走ったの.",
+      [
+        [
+          "夜に本を読むのが好きです。",
+          "よるにほんをよむのがすきです。",
+          "J'aime lire le soir."
+        ],
+        [
+          "前は朝に散歩するのが好きでした。",
+          "まえはあさにさんぽするのがすきでした。",
+          "Avant, j'aimais me promener le matin."
+        ]
+      ]
+    ],
+    [
+      "attributive-existence-gaaru",
+      "N5",
+      "がある-noun",
+      "NがあるN : décrire ce qui possède quelque chose",
+      "Une proposition Nがある placée directement devant un nom peut le décrire : 庭がある家 signifie une maison avec un jardin. Dans cette modification nominale, le sujet interne peut aussi recevoir の : 庭のある家. Ne pas remplacer simplement ce が interne par un は de thème ; le groupe entier sert ensuite dans la phrase avec sa propre particule. Le verbe attributif reste en forme neutre, sans あります devant le nom.",
+      "Une relative japonaise se place avant le nom sans ajouter un qui ou un dont traduit mot à mot depuis le français.",
+      [
+        [
+          "庭がある家に住みたいです。",
+          "にわがあるいえにすみたいです。",
+          "Je voudrais habiter une maison avec un jardin."
+        ],
+        [
+          "大きい窓のある部屋を選びました。",
+          "おおきいまどのあるへやをえらびました。",
+          "J'ai choisi une chambre avec une grande fenêtre."
+        ]
+      ]
+    ],
+    [
+      "group-participants-de",
+      "N5",
+      "で-by",
+      "人数で : préciser le groupe qui fait l'action",
+      "Un nombre de personnes ou un nom de groupe suivi de で précise le groupe qui participe à une activité : 二人で, 家族で, 全員で. 一人で signifie seul. Ce で peut mettre en avant un effort commun ou l'ensemble des participants ; 人と présente plutôt une autre personne comme accompagnateur ou partenaire. Les deux constructions peuvent être possibles selon le point de vue : と n'interdit pas que les personnes poursuivent un même objectif.",
+      "二人で compte les deux participants ensemble ; 友達と indique avec qui l'on agit sans donner automatiquement le nombre total.",
+      [
+        [
+          "日曜日は二人で庭を掃除します。",
+          "にちようびはふたりでにわをそうじします。",
+          "Dimanche, nous nettoyons le jardin à deux."
+        ],
+        [
+          "今日は一人で図書館に行きます。",
+          "きょうはひとりでとしょかんにいきます。",
+          "Aujourd'hui, je vais seul à la bibliothèque."
+        ]
+      ]
+    ],
+    [
+      "dake-attachment",
+      "N5",
+      "だけ",
+      "だけ : limiter une chose, une action ou une qualité",
+      "だけ indique que la portée se limite à ce qui précède. Il suit un nom, un verbe neutre ou un adjectif en い : 水だけ, 読むだけ, 高いだけ. Avec un adjectif en な employé comme qualité, utiliser なだけ : 静かなだけ. Une base qui a réellement un emploi nominal peut recevoir だけ dans cet emploi : 幸せだけ désigne seulement le bonheur, tandis que 幸せなだけ décrit le fait d'être simplement heureux. Ce contraste dépend du mot et ne permet pas de retirer な partout.",
+      "Identifier ce que だけ limite : 本だけを読む limite les livres choisis, tandis que 本を読むだけ limite l'action effectuée.",
+      [
+        [
+          "今日はこの本だけを読みます。",
+          "きょうはこのほんだけをよみます。",
+          "Aujourd'hui, je lis seulement ce livre."
+        ],
+        [
+          "この部屋は静かなだけです。",
+          "このへやはしずかなだけです。",
+          "Cette chambre est seulement calme, c'est tout."
+        ]
+      ]
+    ],
+    [
+      "choice-dore-binary",
+      "N5",
+      "どれ",
+      "どれ et どちら : demander lequel",
+      "どれ remplace un nom pour demander lequel dans un ensemble identifiable, souvent présenté comme trois options ou davantage dans les cours débutants. Il peut être sujet avec が, objet avec を, ou prédicat dans Nはどれですか. Pour un choix clairement binaire, on emploie habituellement どちら ou le familier どっち ; cette préférence de présentation n'est pas une permission de déduire que toute autre formulation est impossible. どの se construit au contraire devant un nom exprimé.",
+      "Ne pas dire どれ本 : demander どの本 ou utiliser どれ pour remplacer le nom.",
+      [
+        [
+          "あなたのかばんはどれですか。",
+          "あなたのかばんはどれですか。",
+          "Lequel est votre sac ?"
+        ],
+        [
+          "赤と青では、どちらが好きですか。",
+          "あかとあおでは、どちらがすきですか。",
+          "Entre le rouge et le bleu, lequel préférez-vous ?"
+        ]
+      ]
+    ],
+    [
+      "choice-dono-freechoice",
+      "N5",
+      "どの",
+      "どのN : préciser le nom et laisser le choix ouvert",
+      "どの doit précéder un nom : どの本. Il permet de demander quelle option est choisie dans un ensemble ; pour deux options clairement opposées, on emploie habituellement どちらのN ou どっちのN. Avec une construction comme どのNでもいい, le choix peut rester indifférent : n'importe quel N convient. どのNも présente au contraire tous les N du domaine envisagé ; ce n'est pas toujours la même portée que n'importe lequel.",
+      "Ne pas isoler どの comme si c'était どれ : どの conserve un nom après lui.",
+      [
+        [
+          "どの電車に乗りますか。",
+          "どのでんしゃにのりますか。",
+          "Quel train prenez-vous ?"
+        ],
+        [
+          "どの部屋でもいいです。",
+          "どのへやでもいいです。",
+          "N'importe quelle chambre me convient."
+        ]
+      ]
+    ],
+    [
+      "tai-object-and-scope",
+      "N5",
+      "たい",
+      "たい : objet du désir et personne concernée",
+      "Ajouter たい à la base de ます pour exprimer le désir de faire : 食べたい. Avec un verbe transitif, l'objet peut être marqué par を ou が selon le contexte et la mise en relief. たい suit ensuite les transformations d'un adjectif en い : たくない, たかった, たくなかった, et leurs variantes polies en です ou ありません. Une assertion directe exprime normalement le désir du locuteur ; on peut demander son désir à l'interlocuteur ou rapporter des propos d'autrui. Pour souhaiter qu'une autre personne fasse l'action, utiliser notamment Vてほしい ; pour inviter ensemble, ませんか est souvent plus approprié.",
+      "先生に話したい exprime que je veux parler au professeur ; souhaiter que le professeur parle exige une autre construction et un autre rôle de sujet.",
+      [
+        [
+          "今日は温かいスープが飲みたいです。",
+          "きょうはあたたかいすーぷがのみたいです。",
+          "Aujourd'hui, je voudrais boire une soupe chaude."
+        ],
+        [
+          "昨日は外に出たくありませんでした。",
+          "きのうはそとにでたくありませんでした。",
+          "Hier, je ne voulais pas sortir."
+        ]
+      ]
+    ],
+    [
+      "good-ii-yoi",
+      "N5",
+      "いい",
+      "いい, よい et よく : qualité et emploi adverbial",
+      "いい signifie bon ou bien dans un prédicat adjectival courant. よい a le même sens de base et peut paraître plus soutenu ; 良い se lit notamment よい ou いい selon l'usage. Les transformations utilisent la base よ : よくない, よかった, よくなかった, puis éventuellement です pour la politesse. Devant un verbe, よく peut décrire une action bien effectuée ou sa fréquence : le contexte distingue bien et souvent. Une fréquence élevée ne signifie pas automatiquement que l'action est bonne.",
+      "Comparer よい本, un bon livre, et よく読む, lire souvent ou lire attentivement/bien selon le contexte ; ne pas déduire le sens de よく uniquement de l'adjectif いい.",
+      [
+        [
+          "これはよい本です。",
+          "これはよいほんです。",
+          "C'est un bon livre."
+        ],
+        [
+          "私はこの図書館によく来ます。",
+          "わたしはこのとしょかんによくきます。",
+          "Je viens souvent dans cette bibliothèque."
+        ]
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "port": 3132,
+  "corpusSettings": "../settings.json",
+  "stateDatabase": "../data/local-app/progress.sqlite",
+  "resources": "../research/OfficialLearningResources.json",
+  "preferences": {"theme": "light", "scale": 17, "lessonBatch": 5, "reviewBatch": 10, "level": "N4"},
+  "srs": {"redRetrySeconds": 900, "orangeDays": 2, "greenDays": 5, "greenSuccesses": 2, "fluentSeconds": 5},
+  "search": {"pageSize": 40, "maxQueryLength": 120},
+  "reviewSessionSeconds": 1800
+}

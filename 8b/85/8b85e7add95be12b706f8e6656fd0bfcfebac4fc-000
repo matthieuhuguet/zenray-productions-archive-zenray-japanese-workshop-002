@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "date": "14 October 2026",
+  "policy": "Review exact complete record fields, original Japanese, kana, French translation, source alignment and learner exercise suitability. HTTP availability is not approval.",
+  "records": [
+    {
+      "record": {
+        "id": "expand-adjective-nominalization-no",
+        "title": "Adjectif + の : désigner celui qui a cette qualité",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "Adjectif + の",
+          "adjective-nominalization-no"
+        ],
+        "explanationFr": "Pour désigner un objet identifiable par une qualité sans répéter son nom, un adjectif en い reçoit の : 赤いの. Un adjectif en な utilise な devant の : 静かなの. Le groupe peut être suivi de は, が ou も selon son rôle, et d'une particule de cas dans une autre fonction, comme 赤いのを買う. Le contexte doit rendre l'objet sous-entendu clair.",
+        "frenchLearnerTrap": "Ne pas ajouter だ devant ce の : 静かなの désigne celui qui est calme. Il faut distinguer cette construction d'une question explicative terminée par なの？.",
+        "examples": [
+          {
+            "ja": "かばんは小さいのが好きです。",
+            "reading": "かばんはちいさいのがすきです。",
+            "fr": "Pour les sacs, je préfère les petits.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "赤い花を買いました。白いのもきれいでした。",
+            "reading": "あかいはなをかいました。しろいのもきれいでした。",
+            "fr": "J'ai acheté des fleurs rouges. Les blanches étaient belles aussi.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-i-adjective-noun",
+          "expand-na-adjective-noun",
+          "expand-topic-wa-construction",
+          "expand-copula-plain-past",
+          "expand-masu-stem-godan",
+          "expand-likes-noun",
+          "expand-addition-mo"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/adjective-%E3%81%AE-%E3%81%AF",
+            "title": "Bunpro grammar: adjective-の-は",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Pour les sacs, je préfère les petits.",
+          "J'ai acheté des fleurs rouges. Les blanches étaient belles aussi."
+        ]
+      },
+      "recordSha256": "d8d8871e3ef6eb3dc6e19f529deecb89050129f171eea16df0061297e7ec8807"
+    },
+    {
+      "record": {
+        "id": "expand-quantity-takusan",
+        "title": "たくさん : une grande quantité",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "たくさん",
+          "quantity-takusan"
+        ],
+        "explanationFr": "たくさん peut modifier un prédicat pour indiquer beaucoup : 本をたくさん読む. たくさんの suivi d'un nom met en avant une grande quantité de ce nom : たくさんの本. Certains emplois omettent の devant le nom ; cette position peut alors se comprendre comme une quantité portant sur l'ensemble de l'action ou de la situation, plutôt que comme un simple qualificatif du nom.",
+        "frenchLearnerTrap": "Ne pas confondre quantité et degré d'une qualité : たくさんの人 décrit beaucoup de personnes, tandis que とても寒い exprime un froid intense.",
+        "examples": [
+          {
+            "ja": "週末に写真をたくさん撮りました。",
+            "reading": "しゅうまつにしゃしんをたくさんとりました。",
+            "fr": "J'ai pris beaucoup de photos pendant le week-end.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "公園にはたくさんの花があります。",
+            "reading": "こうえんにはたくさんのはながあります。",
+            "fr": "Il y a beaucoup de fleurs dans le parc.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-masu-stem-godan",
+          "grammar-existence",
+          "expand-location-existence",
+          "expand-time-ni"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%8F%E3%81%95%E3%82%93",
+            "title": "Bunpro grammar: たくさん",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "J'ai pris beaucoup de photos pendant le week-end.",
+          "Il y a beaucoup de fleurs dans le parc."
+        ]
+      },
+      "recordSha256": "4d2430d1cb5db07e4eeaf4847ce6a9b1cf9f3c94e2ea2dfbda266b6576766500"
+    },
+    {
+      "record": {
+        "id": "expand-approximation-kurai",
+        "title": "くらい et ぐらい : donner une quantité approximative",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "くらい et ぐらい",
+          "approximation-kurai"
+        ],
+        "explanationFr": "Un nombre ou un groupe avec classificateur suivi de くらい ou ぐらい donne une approximation : 三十分くらい, 三人ぐらい. どのくらい demande une durée, une quantité ou une étendue selon le contexte. Pour situer autour d'une période ou d'une heure, ころ est la forme temporelle à distinguer de l'approximation d'une durée ; des emplois en くらい existent aussi avec une heure précise.",
+        "frenchLearnerTrap": "三時ごろ situe vers trois heures ; 三時間くらい indique environ trois heures de durée. Ne pas transformer ces deux informations en une seule.",
+        "examples": [
+          {
+            "ja": "駅まで三十分くらい歩きます。",
+            "reading": "えきまでさんじゅっぷんくらいあるきます。",
+            "fr": "Je marche environ trente minutes jusqu'à la gare.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "この町にはどのくらい住んでいますか。",
+            "reading": "このまちにはどのくらいすんでいますか。",
+            "fr": "Depuis combien de temps habitez-vous dans cette ville ?",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-counters",
+          "expand-clock-minutes",
+          "expand-masu-stem-godan",
+          "grammar-result-state",
+          "expand-interrogative-demonstratives",
+          "expand-endpoint-made",
+          "expand-polite-verb-question"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%8F%E3%82%89%E3%81%841",
+            "title": "Bunpro grammar: くらい1",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je marche environ trente minutes jusqu'à la gare.",
+          "Depuis combien de temps habitez-vous dans cette ville ?"
+        ]
+      },
+      "recordSha256": "26ff228081c93fb9eb3b00396401a842134b30832a61193668b599db2903ed11"
+    },
+    {
+      "record": {
+        "id": "expand-obligation-nakute-naranai",
+        "title": "なくてはならない : exprimer une obligation",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "なくてはならない",
+          "obligation-nakute-naranai"
+        ],
+        "explanationFr": "Partir de la négation correcte du verbe en ない, puis remplacer ない par なくてはならない : 読まない→読まなくてはならない. La construction signifie devoir faire l'action, avec une double négation : il ne convient pas de ne pas la faire. La forme polie utilise なくてはなりません. Le registre est relativement soutenu ; なくてはいけない est une variante fréquente dans la langue courante.",
+        "frenchLearnerTrap": "La présence de ない ne signifie pas ici interdiction : 読まなくてはならない oblige à lire. Ne pas confondre avec 読んではいけない, qui interdit de lire.",
+        "examples": [
+          {
+            "ja": "この書類を毎日読まなくてはなりません。",
+            "reading": "このしょるいをまいにちよまなくてはなりません。",
+            "fr": "Je dois lire ce document chaque jour.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "朝は早く起きなくてはならない。",
+            "reading": "あさははやくおきなくてはならない。",
+            "fr": "Le matin, il faut que je me lève tôt.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-ichidan-negative",
+          "expand-godan-negative",
+          "expand-masu-stem-godan",
+          "expand-recurring-time",
+          "expand-adjective-verb-modifier"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A6%E3%81%AF%E3%81%AA%E3%82%89%E3%81%AA%E3%81%84",
+            "title": "Bunpro grammar: なくてはならない",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je dois lire ce document chaque jour.",
+          "Le matin, il faut que je me lève tôt."
+        ]
+      },
+      "recordSha256": "d999ee114c698c5ef66d3b42f8717571bc8f6e32ec2d5cfc4348245c647f8b99"
+    },
+    {
+      "record": {
+        "id": "expand-obligation-nakute-ikenai",
+        "title": "なくてはいけない : former une obligation depuis ない",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "なくてはいけない",
+          "obligation-nakute-ikenai"
+        ],
+        "explanationFr": "Remplacer le ない final de la négation verbale par なくてはいけない : 書かない→書かなくてはいけない. La variante polie est なくてはいけません. À l'oral familier, なくては peut se contracter en なくちゃ : 書かなくちゃいけない ; いけない peut alors rester implicite. Cette double négation signifie qu'il faut faire l'action.",
+        "frenchLearnerTrap": "Le raccourci doit partir de la négation correcte : 買わない donne 買わなくちゃ. La construction ne signifie pas qu'il est interdit d'acheter.",
+        "examples": [
+          {
+            "ja": "今日は切符を買わなくてはいけません。",
+            "reading": "きょうはきっぷをかわなくてはいけません。",
+            "fr": "Aujourd'hui, je dois acheter un billet.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "明日の朝は早く起きなくちゃ。",
+            "reading": "あしたのあさははやくおきなくちゃ。",
+            "fr": "Demain matin, il faut que je me lève tôt.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-ichidan-negative",
+          "expand-godan-negative",
+          "expand-masu-stem-godan",
+          "expand-adjective-verb-modifier"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84",
+            "title": "Bunpro grammar: なくてはいけない",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Aujourd'hui, je dois acheter un billet.",
+          "Demain matin, il faut que je me lève tôt."
+        ]
+      },
+      "recordSha256": "8b9fb22a51199a1daaf75c643bb21fa195b64594dcbeb71f8f0d1e92fb2ebd93"
+    },
+    {
+      "record": {
+        "id": "expand-negative-mou",
+        "title": "もう avec une négation : ne plus",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "もう avec une négation",
+          "negative-mou"
+        ],
+        "explanationFr": "もう suivi d'un prédicat négatif indique souvent qu'une action ou une situation ne continue plus : もう行かない. Il se distingue de まだ suivi d'une négation, qui signifie pas encore. Avec un passé affirmatif, もう peut indiquer déjà ; une question comme もう終わりましたか vérifie si l'accomplissement a déjà eu lieu.",
+        "frenchLearnerTrap": "もう食べません signifie je ne mange plus ou je ne mangerai plus, selon le contexte ; まだ食べていません signifie je n'ai pas encore mangé.",
+        "examples": [
+          {
+            "ja": "この店にはもう行きません。",
+            "reading": "このみせにはもういきません。",
+            "fr": "Je n'irai plus dans cette boutique.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "もう宿題は終わりましたか。",
+            "reading": "もうしゅくだいはおわりましたか。",
+            "fr": "Avez-vous déjà terminé vos devoirs ?",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-masu-stem-godan",
+          "expand-masu-stem-ichidan",
+          "expand-polite-verb-question",
+          "expand-already-mou",
+          "grammar-case-particles",
+          "grammar-progressive",
+          "expand-not-yet-teinai"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%82%82%E3%81%86",
+            "title": "Bunpro grammar: もう",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je n'irai plus dans cette boutique.",
+          "Avez-vous déjà terminé vos devoirs ?"
+        ]
+      },
+      "recordSha256": "3e213d75ebc79a3958bfa48f9ae3173ee3afbc76d8b009f6158c224dd0b8b8d8"
+    },
+    {
+      "record": {
+        "id": "expand-adjective-te-clause",
+        "title": "くて et で : relier une qualité à une proposition",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "くて et で",
+          "adjective-te-clause"
+        ],
+        "explanationFr": "Pour relier un prédicat adjectival à une proposition suivante, remplacer le い final par くて ; une base nominale ou adjectivale en な reçoit で. いい utilise よくて. La proposition suivante garde ses propres arguments et peut avoir un autre sujet. Le lien peut être une simple association ou une cause selon le contexte ; cette forme ne permet pas de traduire toujours par parce que, ni de construire librement tous les rapports de cause.",
+        "frenchLearnerTrap": "Le で qui relie 静か à la suite n'est pas le で du lieu d'action. Pour exprimer explicitement une justification d'ordre ou de volonté, étudier aussi から et ので.",
+        "examples": [
+          {
+            "ja": "今日は暑くて、子どもたちは水をたくさん飲みます。",
+            "reading": "きょうはあつくて、こどもたちはみずをたくさんのみます。",
+            "fr": "Il fait chaud aujourd'hui, et les enfants boivent beaucoup d'eau.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "部屋が静かで、よく眠りました。",
+            "reading": "へやがしずかで、よくねむりました。",
+            "fr": "La chambre était calme, et j'ai bien dormi.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-i-adjectives",
+          "expand-na-adjective-predicate",
+          "expand-good-adjective-link",
+          "expand-quantity-takusan",
+          "expand-masu-stem-godan",
+          "expand-adjective-verb-modifier"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/adjective-%E3%81%A6-b",
+            "title": "Bunpro grammar: adjective-て-b",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Il fait chaud aujourd'hui, et les enfants boivent beaucoup d'eau.",
+          "La chambre était calme, et j'ai bien dormi."
+        ]
+      },
+      "recordSha256": "f879549803390b4761776c5b1c40ac49f86be1c2ac66237377036cad99ca807f"
+    },
+    {
+      "record": {
+        "id": "expand-good-adjective-link",
+        "title": "よくて : relier une qualité avec l'irrégulier いい",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "よくて",
+          "good-adjective-link"
+        ],
+        "explanationFr": "Pour coordonner des qualités, un adjectif en い forme くて en remplaçant son い final ; la base de いい est よ, d'où よくて. Une base d'adjectif en な ou un nom reçoit で. Le temps se marque normalement sur le dernier prédicat : よくて、便利だった décrit ici des qualités dans un récit passé. Le contexte distingue une simple coordination d'une relation de cause.",
+        "frenchLearnerTrap": "いい ne donne pas いくて. La règle en くて concerne les adjectifs en い, pas tout mot dont la prononciation finit par い.",
+        "examples": [
+          {
+            "ja": "このかばんは形がよくて、軽いです。",
+            "reading": "このかばんはかたちがよくて、かるいです。",
+            "fr": "Ce sac a une jolie forme et il est léger.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "あの店は雰囲気がよくて、静かでした。",
+            "reading": "あのみせはふんいきがよくて、しずかでした。",
+            "fr": "Cette boutique avait une bonne ambiance et elle était calme.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-i-adjectives",
+          "expand-na-adjective-predicate",
+          "expand-copula-past",
+          "expand-adjective-desu",
+          "expand-copula-plain-past"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/adjective-%E3%81%A6-noun-%E3%81%A7",
+            "title": "Bunpro grammar: adjective-て-noun-で",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Ce sac a une jolie forme et il est léger.",
+          "Cette boutique avait une bonne ambiance et elle était calme."
+        ]
+      },
+      "recordSha256": "8cd695a6bfe066c23624d1b1ae37842a718796186ef23271a624bbff88dbb9d2"
+    },
+    {
+      "record": {
+        "id": "expand-adjective-verb-modifier",
+        "title": "く et に : employer un adjectif pour décrire une action",
+        "domain": "grammar",
+        "level": "N4",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "く et に",
+          "adjective-verb-modifier"
+        ],
+        "explanationFr": "Pour qu'un adjectif décrive la manière d'effectuer une action, un adjectif en い remplace son い final par く : 早い→早く起きる. Une base d'adjectif en な reçoit に : 静か→静かに読む. L'irrégulier いい utilise よ, d'où よく devant un verbe. Le groupe ainsi formé précise comment l'action est effectuée ; il se place souvent près du verbe qu'il modifie.",
+        "frenchLearnerTrap": "Distinguer 静かな部屋, où l'adjectif qualifie un nom, de 静かに読む, où il décrit l'action. Tous les adverbes ne proviennent pas d'un adjectif ; cette règle ne s'applique pas automatiquement à des mots comme とても.",
+        "examples": [
+          {
+            "ja": "毎朝、早く起きます。",
+            "reading": "まいあさ、はやくおきます。",
+            "fr": "Je me lève tôt chaque matin.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "弟は静かに本を読みます。",
+            "reading": "おとうとはしずかにほんをよみます。",
+            "fr": "Mon petit frère lit un livre sans faire de bruit.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-i-adjectives",
+          "expand-na-adjective-predicate",
+          "expand-masu-stem-ichidan",
+          "expand-masu-stem-godan",
+          "expand-recurring-time"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/describing-verbs",
+            "title": "Bunpro grammar: describing-verbs",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je me lève tôt chaque matin.",
+          "Mon petit frère lit un livre sans faire de bruit."
+        ]
+      },
+      "recordSha256": "272b0e391a6e940c97d9a95655a980c5d0e9f0652c3ec374cca9b223a354f3af"
+    }
+  ]
+}

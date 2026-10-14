@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/expansion_review_first",
+  "humanReview": false,
+  "reviewType": "independent-adversarial-model-review",
+  "complete": true,
+  "supersedes": "ExpansionIndependentFirst.json only for the 30 listed previously blocked IDs; new plain-past card reviewed for the first time",
+  "scope": "31 exact current raw records and 62 examples re-reviewed; complete prerequisite graph of 322 authored existing-plus-expansion records checked for missing identities and cycles; 40 initial approved records verified unchanged by raw SHA256. No human/native or full-syllabus certification.",
+  "records": [
+    {
+      "id": "expand-location-existence",
+      "reviewedContentHash": "69f79530999906d9e07adc7a14492c3ce0ce91267d9f39ff70c32f3ffb34d404",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/006.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Locative existence and action-location contrast are sound; animated dog uses いる, desk uses ある correctly. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-spatial-nouns",
+      "reviewedContentHash": "3bc6c21e14154a305eff5dbd652ad64ec1f4e7e9b4a02c4d662e38816e7cfc2c",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/007.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Spatial nominal structure and both locative sentences are correct. 鍵かぎ and 中なか readings checked. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-noun-no",
+      "reviewedContentHash": "f3fdb84366b431e3f69c178f968c881c5bdfc0227e11d53abea94eb1e117d69d",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/008.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Head-final noun linkage is sound. 日本語の本 allows a Japanese-language/textbook interpretation; the French textbook reading is acceptable. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-i-adjective-noun",
+      "reviewedContentHash": "9044d7539920ed2df6b9033e83c968fcbce888022d659ab9355c25630a16410b",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/009.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Attributive i adjective syntax is correct; 新しい and 小さい correctly precede nouns without な. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-demonstrative-places",
+      "reviewedContentHash": "3ef4d9321746268df7105ce582667928bc58022960d3f017d5466c69f5f539fe",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/012.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Place demonstratives are correct; waiting-action で differs from existence に as stated. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-demonstrative-noun",
+      "reviewedContentHash": "0e996c44e2f5960bf1050ca126bf3f08ab45f3717f24d54662a5849698a41a93",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/013.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Noun-determining demonstratives and possessive ellipsis in 誰の are sound; 高い means expensive in the book example. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-interrogative-demonstratives",
+      "reviewedContentHash": "e21cf55553f4944eeeebcbf8961aa6053254a1d55f5e03e53b35aa775e394513",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/014.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Interrogative forms match their nominal/place roles; future reading of 読みます is acceptable. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-clock-hours",
+      "reviewedContentHash": "c87139a9db88edcbfbb8101f69ad03aa21a12ca4a1e8b137ba61b06f11cde476",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/018.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Four/seven/nine clock-hour readings checked; 四時よじ and 九時くじ accurate. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-clock-minutes",
+      "reviewedContentHash": "4decbd3ce9eb6e0cb45304e0909c16eb743cc97056f6f4555daa28a8128232d2",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/019.html"
+      ],
+      "findings": [],
+      "reviewNotes": "五分ごふん and 六時半ろくじはん checked; frequency contrast with duration is appropriately limited. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-relative-days",
+      "reviewedContentHash": "a6239f9d28b12245cac1ab87745f264b3eb6923b05c9d177fd166cd8185306e7",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/020.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Deictic day words and lexical readings checked. Both future Kyoto movement and past film viewing are sound. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-recurring-time",
+      "reviewedContentHash": "eed8039a1ea3f48c1af3a39dbcdbfb7b3550a35b446619798d0f75603ea08fc1",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/021.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Frequency and habitual polite verbs are correctly distinguished from full-day duration. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-polite-verb-question",
+      "reviewedContentHash": "65a077c39223a42bcdda28ba1429f762dd51042d611e6b96cb0a5636df4fed3d",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/024.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Polite positive verb question and invitation contrast agree with TUFS; 来ますきます accurate. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-polite-verb-past",
+      "reviewedContentHash": "d688bc4411b98e6a6057a1e701d5f1b39d4bc75344bd3f76f72bfea9e5c6dc58",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/025.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Polite past and negative-past construction correct; both meals/work translations accurate. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-destination-he",
+      "reviewedContentHash": "bce4d57e5a710d8270403d7a1d08d33be6e5f3958511b900d0229440d2da1c38",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/026.html"
+      ],
+      "findings": [],
+      "reviewNotes": "へ direction and pronunciation え correct; hiragana reading retains grammatical orthography へ appropriately. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-recipient-ni",
+      "reviewedContentHash": "b9d01c819791232f0852de59f2ffac655ca29f38c6558aa1f0b0c7bca7705ae1",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/028.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Recipient marker explanation is limited to outbound transfers; both writing and sending examples accurate. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-time-ni",
+      "reviewedContentHash": "db91a7a63978d06260a0fbede851bb49092114798ca1803fb80f7bf67d8cc0d9",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/029.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Clock-time に correct, 七時しちじ accurate and 始まりますはじまります appropriate intransitive verb. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-i-adjective-past",
+      "reviewedContentHash": "22c8529278c8d507ef4a5d474b391bb9fea1a411cd21838f68dd5a7785930a82",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/032.html"
+      ],
+      "findings": [],
+      "reviewNotes": "I adjective past and いい exception correct; 暑かった and よかった readings/translations accurate. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-degree-adverbs",
+      "reviewedContentHash": "74a8f4971952378d13bb097762b61b465acf8dc1a250cc8abe971115045ab64e",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/034.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Degree examples correct; negative 辛くない retains the not-very scope of あまり. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-noun-coordination-to",
+      "reviewedContentHash": "851fbe32d06d43da6149b6c2d02f152a6e6e689c265db5a353526d9bb573f53f",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/047.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Determined nominal conjunction with と correct; second example combines two existing objects. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-noun-coordination-ya",
+      "reviewedContentHash": "34af4d8e21f6a25d3e3fa7ff1141d680d3eb3eb67f035f43abf5c4d50ca920ee",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/048.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Open-ended や list correctly translated with notamment; 京都/奈良 readings accurate. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-predicate-coordination",
+      "reviewedContentHash": "79f50761e5ea1c93657cdbfc8d85ac616f64f734edf94cc746a93fec80355082",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/049.html"
+      ],
+      "findings": [],
+      "reviewNotes": "くて and で predicate connection correct; mixed i/na coordination and きれい as clean are natural. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-action-list-tari",
+      "reviewedContentHash": "07d6ade471eb6ef72ef96790081a09db2e74aca83db466d38634bc05b9c7ed0e",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/050.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Two illustrative activity lists are natural, kana accurate, and final する bears tense as explained. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash. Productive ta formation is now explicitly taught by expand-plain-verb-past, itself requiring grammar-te-form; the former unrelated relative-clause requirement is removed.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-action-sequence-te",
+      "reviewedContentHash": "45af19aabfc93ed6fcf28fcedeba36debda7619375c18dd7355c82431fe80b32",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/051.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Te-form action connection and non-universal sequencing warning agree with TUFS; both examples natural. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-verb-request",
+      "reviewedContentHash": "f1d63c9092411d6bf8ad108730f511c08becfe824cdbff89d763ac29bf3d7e68",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/056.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Te-form requests and social caution correct; 書いて and 待って correctly formed. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-polite-request-question",
+      "reviewedContentHash": "5357e740a5395fbd66018cc75191c5ba246ce4ec3bd01679828c5ef870e1b829",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/057.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Re-read both new examples: この漢字を読んでくださいませんか and 駅までの道を教えてくださいませんか. 読む→読んで and 教える→教えて are correct; kana and French requests are accurate. Neither sentence duplicates the cited primary TUFS full text. Actual graph now requires grammar-te-form; its closure includes verb groups and polite nonpast. Previous provenance finding resolved on this exact hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-invitation-masenka",
+      "reviewedContentHash": "ba74d6ebf8da4719dc3cc8325f66a5b42a09284b22f7bdc277029b1f27922d51",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/062.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Negative-question invitations are natural, with joint lunch and future walk context. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-suggestion-mashou",
+      "reviewedContentHash": "bb9c1fd16ceaade0f6617d810f58b04c8673069b5e75a2e9b39ccbff77f1c9a4",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/063.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Mashou proposal and contrast with masenka correct; both shared-action translations accurate. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-plain-verb-past",
+      "reviewedContentHash": "930b7fbdc08345f3b00a14812c067e3d6c1ded4c39a6826cf7b363510952bf40",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/038.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Read TUFS 038 section 10 and formation-system definition of て relative to た. Reverse substitution of final て→た and で→だ correctly derives 書いた, 読んだ, 行った, した and 来た. Both 見た and 帰った examples and kana are correct. French avant moi reads the contextual reference implicit in 先に; this is a valid conversational interpretation. Polite/neuter contrast and non-actual-past caveat for たり/たら are correct. New card depends on reviewed grammar-te-form, whose closure covers verb families.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-okage-de",
+      "reviewedContentHash": "0869e96ecd74da64a6fa8a1f6a1063e920b439b9f4e62f2ba92a041b937dc5f9",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8A%E3%81%8B%E3%81%92%E3%81%A7"
+      ],
+      "findings": [],
+      "reviewNotes": "Beneficial cause and sarcasm scope correct; friend benefactive help translation faithful. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-sae",
+      "reviewedContentHash": "0286f1c457fdeaa030b07596f9202a0298a4d4ed2615ff54361920e6b8d5dbcf",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%95%E3%81%88"
+      ],
+      "findings": [],
+      "reviewNotes": "Scalar even/minimum under negation correctly explained; potential eating and remembering-state examples natural. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-gachi",
+      "reviewedContentHash": "356ceefb78f3002a2b71485948f77a08b548debbd70901771c05d5c94b2144df",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C%E3%81%A1"
+      ],
+      "findings": [],
+      "reviewNotes": "Recurrent generally adverse tendency with masu stem correct; conditional breakfast omission and retreat examples natural. Current full fields re-read. Previously missing dependency paths now exist in actual record prerequisites and have been checked in the full 322-record graph. No missing identity or cycle. The prior finding is resolved for this exact current content hash.",
+      "exampleCount": 2
+    }
+  ]
+}

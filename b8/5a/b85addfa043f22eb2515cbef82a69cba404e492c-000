@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/foundation04_first",
+  "humanReview": false,
+  "complete": true,
+  "reviewType": "independent-adversarial-linguistic-review",
+  "records": [
+    {
+      "id": "expand-adjective-nominalization-no",
+      "reviewedContentHash": "d8d8871e3ef6eb3dc6e19f529deecb89050129f171eea16df0061297e7ec8807",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/adjective-%E3%81%AE-%E3%81%AF"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-quantity-takusan",
+      "reviewedContentHash": "4d2430d1cb5db07e4eeaf4847ce6a9b1cf9f3c94e2ea2dfbda266b6576766500",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%8F%E3%81%95%E3%82%93"
+      ],
+      "findings": [
+        {
+          "category": "productive-prerequisite-closure",
+          "blocking": true,
+          "detail": "L’ajout de expand-time-ni ne résout pas entièrement la réserve précédente : son explication enseigne に après une heure précise, mais l’exemple demande 週末に, une période. Aucun texte accessible ne précise encore cet emploi ; le second exemple et le contenu sur たくさん restent recevables.",
+          "proposal": "Ajouter une brève explication locale : に peut situer une action dans une période telle que 週末. Autre correction possible : retirer に après 週末 dans le premier exemple, ce qui conserve son sens."
+        }
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-approximation-kurai",
+      "reviewedContentHash": "26ff228081c93fb9eb3b00396401a842134b30832a61193668b599db2903ed11",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8F%E3%82%89%E3%81%841"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-obligation-nakute-naranai",
+      "reviewedContentHash": "d999ee114c698c5ef66d3b42f8717571bc8f6e32ec2d5cfc4348245c647f8b99",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A6%E3%81%AF%E3%81%AA%E3%82%89%E3%81%AA%E3%81%84",
+        "https://bunpro.jp/grammar_points/describing-verbs"
+      ],
+      "findings": [
+        {
+          "category": "productive-prerequisite-closure",
+          "blocking": true,
+          "detail": "Le besoin adverbial 早く ou よく est correctement enseigné par la nouvelle fiche ajoutée comme prérequis. Toutefois, cette fiche conserve une réserve de fermeture productive pour son contraste 静かな部屋, détaillée dans expand-adjective-verb-modifier. La fermeture complète ne peut donc pas encore être approuvée.",
+          "proposal": "Résoudre la réserve de expand-adjective-verb-modifier en ajoutant expand-na-adjective-noun à ses prérequis, ou en expliquant explicitement cette formation localement."
+        }
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-obligation-nakute-ikenai",
+      "reviewedContentHash": "8b9fb22a51199a1daaf75c643bb21fa195b64594dcbeb71f8f0d1e92fb2ebd93",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84",
+        "https://bunpro.jp/grammar_points/describing-verbs"
+      ],
+      "findings": [
+        {
+          "category": "productive-prerequisite-closure",
+          "blocking": true,
+          "detail": "Le besoin adverbial 早く ou よく est correctement enseigné par la nouvelle fiche ajoutée comme prérequis. Toutefois, cette fiche conserve une réserve de fermeture productive pour son contraste 静かな部屋, détaillée dans expand-adjective-verb-modifier. La fermeture complète ne peut donc pas encore être approuvée.",
+          "proposal": "Résoudre la réserve de expand-adjective-verb-modifier en ajoutant expand-na-adjective-noun à ses prérequis, ou en expliquant explicitement cette formation localement."
+        }
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-negative-mou",
+      "reviewedContentHash": "3e213d75ebc79a3958bfa48f9ae3173ee3afbc76d8b009f6158c224dd0b8b8d8",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82%E3%81%86"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-adjective-te-clause",
+      "reviewedContentHash": "f879549803390b4761776c5b1c40ac49f86be1c2ac66237377036cad99ca807f",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/adjective-%E3%81%A6-b",
+        "https://bunpro.jp/grammar_points/describing-verbs"
+      ],
+      "findings": [
+        {
+          "category": "productive-prerequisite-closure",
+          "blocking": true,
+          "detail": "Le besoin adverbial 早く ou よく est correctement enseigné par la nouvelle fiche ajoutée comme prérequis. Toutefois, cette fiche conserve une réserve de fermeture productive pour son contraste 静かな部屋, détaillée dans expand-adjective-verb-modifier. La fermeture complète ne peut donc pas encore être approuvée.",
+          "proposal": "Résoudre la réserve de expand-adjective-verb-modifier en ajoutant expand-na-adjective-noun à ses prérequis, ou en expliquant explicitement cette formation localement."
+        }
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-good-adjective-link",
+      "reviewedContentHash": "8cd695a6bfe066c23624d1b1ae37842a718796186ef23271a624bbff88dbb9d2",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/adjective-%E3%81%A6-noun-%E3%81%A7"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-adjective-verb-modifier",
+      "reviewedContentHash": "272b0e391a6e940c97d9a95655a980c5d0e9f0652c3ec374cca9b223a354f3af",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/describing-verbs"
+      ],
+      "findings": [
+        {
+          "category": "productive-prerequisite-closure",
+          "blocking": true,
+          "detail": "La nouvelle fiche enseigne correctement い→く, base en な→に et いい→よく. Ses deux exemples, lectures et traductions sont recevables et ne coïncident pas exactement avec les phrases des sources comparées. Toutefois, le piège compare 静かな部屋 à 静かに読む sans règle explicite de formation de base adjectivale en な + な + nom et sans accès à expand-na-adjective-noun. Pour la fermeture productive intégrale de tous les champs demandée, ce contraste nécessite ce prérequis supplémentaire.",
+          "proposal": "Ajouter expand-na-adjective-noun aux prérequis, ou écrire explicitement dans le piège que la base d’un adjectif en な reçoit な devant un nom."
+        }
+      ],
+      "examplesExamined": 2
+    }
+  ]
+}

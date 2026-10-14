@@ -1,0 +1,4 @@
+# Retired prototype (14 October 2026)
+
+- Matthieu confirms the application belongs to Learn, Japanese in ZenRayProgress; this local-server experiment is preserved only as a prior attempt, never launched or deployed. (14 October 2026)
+- Current production implementation: ZenRayProgress src/learn/JapaneseStudy.jsx and server/japanese.js. Database querying remains Scripts/Corpus.py, routed by the japanese-context skill. (14 October 2026)

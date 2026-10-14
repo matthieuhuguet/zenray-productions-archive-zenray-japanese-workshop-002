@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/foundation04_first",
+  "humanReview": false,
+  "complete": true,
+  "reviewType": "independent-adversarial-linguistic-review",
+  "records": [
+    {
+      "id": "expand-ga-conjunction",
+      "reviewedContentHash": "c54e3820bcd293f2101ba557f836baaf59880067d48629635b6bb97fefc00b85",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C-but"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-noun-ellipsis-no",
+      "reviewedContentHash": "9741b62cf541f95050c559e58f479d86235fbf6fa318dcc1b14d41074dabb7c7",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE-noun-ommission"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-adjective-nominalization-no",
+      "reviewedContentHash": "ef092260729834b8cc2fe167511a3bccf8297e656e7cafd0d811f1e5ab02eb5a",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/adjective-%E3%81%AE-%E3%81%AF"
+      ],
+      "findings": [
+        {
+          "category": "productive-prerequisite-closure",
+          "blocking": true,
+          "detail": "Le second exemple utilise 白いのも au sens de les blanches aussi. La fiche autorise syntaxiquement も, mais ne donne pas son sens additif ; aucun prérequis accessible ne l’enseigne. La restitution orale de la phrase française dépend donc d’une construction non enseignée.",
+          "proposal": "Préciser localement que も après le groupe nominalisé signifie aussi, ou remplacer le second exemple par une construction avec は ou が déjà expliquée."
+        }
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-degree-kekkou",
+      "reviewedContentHash": "d53c22be2439dfd21b6869b9812d3d1113f3a73a436771ca46917d00a13e3532",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%91%E3%81%A3%E3%81%93%E3%81%86",
+        "https://nj.alc.co.jp/entry/20260216"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-quantity-takusan",
+      "reviewedContentHash": "a85a2fa79111155ca97a174ebcdf63c6955139f633b34b3064d82cb8e9d84551",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%8F%E3%81%95%E3%82%93"
+      ],
+      "findings": [
+        {
+          "category": "productive-prerequisite-closure",
+          "blocking": true,
+          "detail": "週末に dans le premier exemple utilise に pour situer une action dans une période. La fermeture actuelle enseigne le lieu, la destination, le destinataire et l’existence, mais pas ce に temporel. expand-time-ni existe dans le catalogue et ne figure pas dans la fermeture accessible.",
+          "proposal": "Ajouter expand-time-ni aux prérequis et préciser que に peut accompagner une période telle que 週末, ou retirer に et conserver 週末 comme repère temporel."
+        }
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-approximation-kurai",
+      "reviewedContentHash": "ee2da4686d394e7b96f7c26024fdf11b834d48bd7eef88b644cc319ca030887e",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8F%E3%82%89%E3%81%841"
+      ],
+      "findings": [
+        {
+          "category": "productive-prerequisite-closure",
+          "blocking": true,
+          "detail": "駅まで dans le premier exemple utilise la borne spatiale nominale まで. Aucun prérequis actuel ne l’enseigne, et cette fiche explique くらい et ころ, pas Nまで. Le second exemple emploie une question polie en か sans prérequis de formation de cette question.",
+          "proposal": "Expliquer localement Nまで comme jusqu’à N ou ajouter expand-verb-until-made, dont le texte explique aussi la borne nominale ; ajouter expand-polite-verb-question pour la question en か."
+        }
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-verb-until-made",
+      "reviewedContentHash": "7ae391aa5187e235508af4bd88f8f1915ef3594a7bf90059c5a2a841481c65bf",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/v-%E3%81%BE%E3%81%A7"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-obligation-nakute-naranai",
+      "reviewedContentHash": "f507cb781b50c26dc8610908d7472375ac03f929a0973060016c6e63ec6837c3",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A6%E3%81%AF%E3%81%AA%E3%82%89%E3%81%AA%E3%81%84"
+      ],
+      "findings": [
+        {
+          "category": "productive-prerequisite-closure",
+          "blocking": true,
+          "detail": "Le second exemple demande de produire 早く à partir de tôt. La transformation adverbiale adjectif en い vers く n’est enseignée ni localement ni dans la fermeture des prérequis. Connaître la négation adjectivale en くない ne suffit pas à enseigner la fonction de く devant un verbe.",
+          "proposal": "Ajouter une courte règle locale : un adjectif en い modifiant une action remplace い par く, par exemple 早い→早く起きる ; ou choisir un second exemple sans adjectif adverbialisé."
+        }
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-obligation-nakute-ikenai",
+      "reviewedContentHash": "1fc93ae1cfd5552353d2ac235d76ee5a5e9181daaa51b984d9f2fc6e8dc05acc",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84"
+      ],
+      "findings": [
+        {
+          "category": "productive-prerequisite-closure",
+          "blocking": true,
+          "detail": "Le second exemple emploie 早く起きなくちゃ, alors que la formation et la fonction adverbiales de 早く ne sont pas enseignées dans sa fermeture. Les règles de négation des verbes ne couvrent pas cette transformation adjectivale.",
+          "proposal": "Expliquer localement adjectif en い→く devant un verbe, avec 早い→早く, ou retirer 早く du second exemple et de sa traduction."
+        }
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-explanatory-question-no",
+      "reviewedContentHash": "08d2c36702fbf48603b89b13f62c04ce537768ad90ab2c2870d5ef23b7022b6d",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE-questions"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-negative-mou",
+      "reviewedContentHash": "e5a98026dc1ac74f952237b1e3355eb9bd13627da2da17104a97477b71bc94ac",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82%E3%81%86"
+      ],
+      "findings": [
+        {
+          "category": "productive-prerequisite-closure",
+          "blocking": true,
+          "detail": "Le piège français oppose もう食べません et まだ食べていません, mais aucune carte accessible dans les prérequis n’enseigne Vている ni sa négation polie. La fiche enseigne une opposition qui demande cette construction pour être produite correctement.",
+          "proposal": "Ajouter grammar-progressive et expand-masu-stem-ichidan afin de couvrir Vている puis いません, ou employer un contraste en négation simple qui ne mobilise pas une forme nouvelle."
+        }
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-quotation-to-speech",
+      "reviewedContentHash": "d768e7e68fc3d13c52531b63cb1aa5718a74868438651c96ee72e5bea9e1ad9f",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A8"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-adjective-te-clause",
+      "reviewedContentHash": "8659c09c16c815888f7f3be6cb092ee0b547b823fac034d2263c50aa11f92112",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/adjective-%E3%81%A6-b"
+      ],
+      "findings": [
+        {
+          "category": "productive-prerequisite-closure",
+          "blocking": true,
+          "detail": "よく眠りました dans le second exemple utilise よく comme adverbe de manière. Le prérequis expand-good-adjective-link enseigne よくて, pas よく devant un verbe ; la fermeture ne donne donc pas la transformation et la fonction requises. En outre, ce prérequis utilise だった sans enseigner ni atteindre sa formation neutre passée.",
+          "proposal": "Expliquer localement いい→よく pour modifier un verbe, ou supprimer よく dans le second exemple. Réparer aussi la fermeture de expand-good-adjective-link en ajoutant expand-copula-plain-past ou en remplaçant son illustration en だった par でした."
+        }
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-good-adjective-link",
+      "reviewedContentHash": "8bc937f822890456dda51433bbf77a7a92a8e0f5e337d33701ad8e430fe3fa27",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/adjective-%E3%81%A6-noun-%E3%81%A7"
+      ],
+      "findings": [
+        {
+          "category": "productive-prerequisite-closure",
+          "blocking": true,
+          "detail": "L’explication illustre le dernier prédicat passé par 便利だった. La fermeture ne contient que expand-copula-past, qui enseigne でした et ではありませんでした, et ne contient ni expand-copula-plain ni expand-copula-plain-past. Elle ne permet pas de produire la forme neutre passée だった utilisée dans l’explication. Les deux exemples japonais, leurs kana et leurs traductions sont par ailleurs recevables.",
+          "proposal": "Ajouter expand-copula-plain-past aux prérequis, ou remplacer よくて、便利だった par よくて、便利でした dans l’explication."
+        }
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-giving-ageru-particles",
+      "reviewedContentHash": "9fbb99850289dd797e5470bccbb05247f49127c9ccea1187245a090c7379f816",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%82%E3%81%92%E3%82%8B"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-giving-kureru-particles",
+      "reviewedContentHash": "22f6296880c83d708de7191ba6bd9ae59fe72ba3210401c9db9e1603f541820b",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8F%E3%82%8C%E3%82%8B"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-receiving-morau-particles",
+      "reviewedContentHash": "3f85870634dae795d701b45799caefccb7142636884b26c60b5c53f65f535824",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82%E3%82%89%E3%81%86"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-cause-kara-attachment",
+      "reviewedContentHash": "4e03886dd9b65915d1917eed058dd246eb1b7c5ceadf0daf3764d018b8ce073c",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8B%E3%82%89-because"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-concession-kedo-attachment",
+      "reviewedContentHash": "ddcf93f6c167aadbfca3b9e1d6bde337b5d1d57210de45ae73f4c1a22bb3fa86",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%91%E3%81%A9-%E3%81%A0%E3%81%91%E3%81%A9"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-topic-wa-construction",
+      "reviewedContentHash": "f1fdc379d68b78de90dbfadf2b95f1a193956aef6dbd6c3e8b7756fe97bdc471",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AF",
+        "https://www.tofugu.com/japanese-grammar/particle-wa/"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    }
+  ]
+}

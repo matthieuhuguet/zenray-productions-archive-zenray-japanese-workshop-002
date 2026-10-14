@@ -1,0 +1,133 @@
+// 14 October 2026, 11:40 CEST: isolated browser, actual Learn component and reviewed data; no learner events written to production.
+import { chromium } from '/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayProgress/node_modules/playwright/index.mjs'
+import { readFile, writeFile } from 'node:fs/promises'
+import assert from 'node:assert/strict'
+import { emptyStudyState } from '/Users/zenray/.codex/worktrees/japanese-progress/src/learn/japaneseStudyModel.js'
+import { applyStudyEvent, appendStudyHistory } from '/Users/zenray/.codex/worktrees/japanese-progress/server/japanese.js'
+import { cookCorpusLesson } from '/Users/zenray/.codex/worktrees/japanese-progress/src/learn/japaneseCorpusModel.js'
+const root = '/Users/zenray/.claude/tmp/tmp-zenray-japanese'
+const head = JSON.parse(await readFile('/Users/zenray/.claude/Memory1/Japanese/Site/corpus/catalogue.json','utf8'))
+let state = emptyStudyState(), failWrite = false, corrupt = false
+let history = await readFile('/Users/zenray/.claude/Memory1/Japanese/Japanese1.md','utf8')
+let index = JSON.parse(await readFile('/Users/zenray/.claude/Memory1/Japanese/Site/japanese.json','utf8'))
+state.preferences.level = 'N5'
+const report = { date: '14 October 2026', scope: 'Actual Learn Japanese component, real reviewed corpus, isolated state fixture. Production learner history never touched.', checks: [], errors: [] }
+const browser = await chromium.launch({headless:true,executablePath:'/Users/zenray/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell'})
+const page = await browser.newPage({viewport:{width:1440,height:1100}})
+page.setDefaultTimeout(10000)
+page.on('pageerror', error => report.errors.push(error.message))
+await page.route('**/api/page?**', async route => {
+  try {
+    const path = new URL(route.request().url()).searchParams.get('path')
+    assert(path.startsWith('Memory/Japanese/'))
+    let markdown = await readFile('/Users/zenray/.claude/Memory1/'+path.replace(/^Memory\//,''),'utf8')
+    if(path.endsWith('/Site/japanese.json')) markdown=JSON.stringify(index)
+    if(corrupt && path.endsWith('/corpus/catalogue.json')) { const value=JSON.parse(markdown); value.cards.find(card=>card.id==='grammar-copula').examples[0].fr='Corrupted'; markdown=JSON.stringify(value) }
+    await route.fulfill({json:{markdown}})
+  } catch { await route.fulfill({status:404,json:{error:'missing'}}) }
+})
+await page.route('**/api/japanese*',async route=>{
+  let updatedIndex
+  if(new URL(route.request().url()).searchParams.get('view')==='history') return route.fulfill({json:{markdown:history}})
+  try {
+    if(route.request().method()==='POST') {
+      if(failWrite) { failWrite=false; return route.fulfill({status:503,json:{error:'Fixture network failure'}}) }
+      const body=route.request().postDataJSON()
+      const record=head.cards.find(card=>card.id===body.recordId)
+      state=applyStudyEvent(state,record,body,Date.now(),head.cards).state
+      if(['expose','review','placement'].includes(body.action)) {
+        const date=new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'long',year:'numeric'}).format(new Date())
+        const prepared=body.action==='expose'?await cookCorpusLesson([record],{learner:head.learner,date}):null
+        const appended=appendStudyHistory(history,record,body,state,Date.now(),prepared?.markdown||'')
+        if(body.action==='expose') {
+          const start=history.trimEnd().split('\n').length+2
+          index.lecons.push({id:`L${appended.number}`,numero:appended.number,titre:record.title,date,ligne:start,ancre:appended.heading,fin:appended.text.trimEnd().split('\n').length})
+          updatedIndex=index
+        }
+        history=appended.text
+      }
+    }
+    await route.fulfill({json:{ok:true,state,store:'isolated-fixture',commit:'a'.repeat(40),...(updatedIndex?{index:updatedIndex}:{})}})
+  } catch(error) { await route.fulfill({status:400,json:{error:error.message}}) }
+})
+try {
+  await page.goto('http://127.0.0.1:5174/scripts/JapaneseBrowserFixture.html',{waitUntil:'networkidle'})
+  await page.getByRole('heading',{name:'Ton parcours japonais'}).waitFor()
+  assert.equal(await page.getByRole('button',{name:'Parcours',exact:true}).count(),2)
+  assert.equal(Object.keys(state.progress).length,0)
+  report.checks.push({name:'Learn Japanese opens Parcours by default; historical gauges remain separate',passed:true})
+  await page.getByRole('button',{name:/です et la phrase nominale/}).click()
+  await page.getByRole('heading',{name:'① Retest'}).waitFor()
+  assert.equal(await page.locator('.jps-lesson table thead th').count(),2)
+  assert.equal(await page.locator('.jps-lesson details[open]').count(),0)
+  failWrite=true
+  await page.getByRole('button',{name:/Ajouter aux révisions/}).click()
+  await page.getByRole('alert').getByText('Fixture network failure',{exact:false}).waitFor()
+  assert.equal(Object.keys(state.progress).length,0)
+  await page.getByRole('button',{name:'Réessayer l’enregistrement'}).click()
+  await page.waitForFunction(()=>document.querySelector('.jps-action')?.textContent.includes('1'))
+  assert.equal(state.progress['grammar-copula'].stage,'red')
+  report.checks.push({name:'Retest, two-column lesson, closed answers, failed-write retry and exposure without mastery',passed:true})
+  await page.locator('.jp-barre').getByRole('button',{name:/Leçons/}).click()
+  await page.getByRole('button',{name:/L112/}).click()
+  await page.getByRole('dialog').getByText('Exposition consignée, aucun acquis déclaré.',{exact:false}).waitFor()
+  await page.getByRole('dialog').getByRole('button',{name:'Fermer',exact:true}).click()
+  await page.locator('.jp-barre').getByRole('button',{name:'Parcours',exact:true}).click()
+  report.checks.push({name:'Saved lesson immediately appears in historical lessons and reads the pinned Japanese1 chronology',passed:true})
+  await page.getByRole('button',{name:/Révisions dues/}).click()
+  assert.equal(await page.getByRole('button',{name:'Raté ou avec aide'}).count(),0)
+  await page.getByRole('button',{name:'Comparer ma réponse'}).click()
+  await page.getByRole('button',{name:/Juste, sans aide/}).click()
+  await page.getByText('Lot de révisions FINI.',{exact:false}).waitFor()
+  assert.equal(state.progress['grammar-copula'].stage,'orange')
+  await page.reload({waitUntil:'networkidle'})
+  await page.getByRole('heading',{name:'Ton parcours japonais'}).waitFor()
+  assert.equal(state.progress['grammar-copula'].reviews,1)
+  assert((await page.getByRole('button',{name:/です et la phrase nominale/}).textContent()).includes('En consolidation'))
+  report.checks.push({name:'Real oral prompt, answer comparison, spaced orange stage and persistence after reload',passed:true})
+  await page.getByRole('button',{name:/Trois familles de verbes/}).click()
+  await page.getByRole('button',{name:'Je connais déjà ce point : me tester'}).click()
+  for(let index=0;index<Math.min(3,head.cards.find(card=>card.id==='grammar-verb-groups').examples.length);index++) {
+    await page.getByRole('button',{name:'Comparer ma réponse'}).click()
+    await page.getByRole('button',{name:/Juste, sans aide/}).click()
+  }
+  await page.getByText('Lot de révisions FINI.',{exact:false}).waitFor()
+  assert.equal(state.progress['grammar-verb-groups'].stage,'orange')
+  assert.equal(state.progress['grammar-verb-groups'].placementPassed,true)
+  report.checks.push({name:'Diagnostic tests an existing prerequisite without inventing mastery or forcing an N5 restart',passed:true})
+  for(const [width,height,dark] of [[1440,1100,false],[1440,1100,true],[375,900,false],[375,900,true]]) {
+    await page.setViewportSize({width,height})
+    await page.evaluate(value=>document.documentElement.classList.toggle('zr-dark',value),dark)
+    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)
+    assert(!overflow)
+    await page.locator('.jps').screenshot({path:`${root}/verification/Study-${width}-${dark?'dark':'light'}.png`})
+    report.checks.push({name:`Responsive ${width} ${dark?'dark':'light'}`,passed:true})
+  }
+  await page.getByRole('button',{name:'Couverture et lacunes'}).click()
+  await page.getByText('Le parcours ne couvre pas encore tout le N1.',{exact:false}).waitFor()
+  assert.equal(await page.locator('.jps-coverage a').count(),147)
+  await page.getByLabel('Notion à compléter').fill('Lecture longue N1')
+  await page.getByRole('button',{name:'Garder cette demande'}).click()
+  await page.getByText('Lecture longue N1 : recherche et validation requises.').waitFor()
+  report.checks.push({name:'Honest coverage, 72 original lessons/PDF/audio links and durable missing notion',passed:true})
+  await page.getByRole('button',{name:'Interroger le corpus'}).click()
+  await page.getByRole('heading',{name:'Corpus et leçons à la demande'}).waitFor()
+  await page.getByLabel('Question ou mot').fill('日')
+  await page.getByLabel('Domaine',{exact:true}).selectOption('kanji')
+  await page.getByRole('button',{name:'Rechercher',exact:true}).click()
+  await page.getByRole('button',{name:'日 Kanji · Non classé'}).click()
+  await page.waitForFunction(()=>document.querySelector('.jpc-stroke img')?.naturalWidth>0)
+  report.checks.push({name:'Parcours to actual corpus search and stroke SVG',passed:true})
+  corrupt=true
+  await page.reload({waitUntil:'networkidle'})
+  await page.getByRole('heading',{name:'Ton parcours japonais'}).waitFor()
+  await page.getByRole('button',{name:/です et la phrase nominale/}).click()
+  await page.getByRole('alert').waitFor()
+  assert.equal(await page.getByRole('button',{name:/Ajouter aux révisions/}).count(),0)
+  report.checks.push({name:'Corrupted real translation cannot be taught or exported',passed:true})
+  report.passed=report.errors.length===0&&report.checks.every(check=>check.passed)
+} finally {
+  await writeFile(`${root}/verification/StudyBrowserReport.json`,JSON.stringify(report,null,2)+'\n')
+  await browser.close()
+}
+console.log(JSON.stringify(report))

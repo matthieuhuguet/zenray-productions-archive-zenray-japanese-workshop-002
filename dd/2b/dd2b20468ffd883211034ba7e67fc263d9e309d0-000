@@ -1,0 +1,85 @@
+#!/usr/bin/env python3
+# 13 October 2026, 09:44 CEST: approvals are derived from matching independent review reports, never from source availability.
+import argparse
+import hashlib
+import importlib.util
+import json
+from collections import defaultdict
+from pathlib import Path
+spec = importlib.util.spec_from_file_location('corpus', Path(__file__).with_name('Corpus.py'))
+corpus = importlib.util.module_from_spec(spec); spec.loader.exec_module(corpus)
+
+def raw_hash(value):
+    return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(',', ':')).encode()).hexdigest()
+
+def review_evidence(row):
+    return row.get('evidenceUrls') or [source['url'] for source in row.get('sources', []) if source.get('url')]
+
+def acceptable(row):
+    return (row.get('verdict') == 'approved' and not row.get('issueIds')
+            and not any(finding.get('status') != 'resolved' for finding in row.get('findings', []))
+            and bool(review_evidence(row)) and all(url.startswith('https://') for url in review_evidence(row)))
+
+def collect_votes(reports, hashes):
+    votes = defaultdict(dict)
+    for report in reports:
+        # 14 October 2026, 13:45 CEST: malformed independent reports must surface instead of silently losing every vote.
+        if not isinstance(report.get('records'), list):
+            raise ValueError('Review report requires a records array: ' + str(report.get('reviewerId', 'unknown')))
+        reviewer = report.get('reviewerId', '').strip()
+        if not reviewer or report.get('humanReview') is True:
+            # 13 October 2026: this automatic pipeline cannot assert a human identity from an unverified JSON claim.
+            continue
+        for row in report.get('records', []):
+            identity = row.get('id', row.get('recordId'))
+            digest = row.get('reviewedContentHash', row.get('recordSha256'))
+            if identity in hashes and hashes[identity] == digest:
+                votes[identity][reviewer] = dict(row, reportCheckedAt=report.get('checkedAt', report.get('date')))
+    return votes
+
+def approval(payload, votes):
+    if len(votes) < 2 or not all(acceptable(row) for row in votes.values()): return None
+    return {'status':'approved','contentVersion':'1','contentHash':corpus.lesson_content_hash(payload),
+            'reviewerIds':sorted(votes),'evidenceUrls':sorted({url for row in votes.values() for url in review_evidence(row)}),
+            'unresolvedFindings':[],
+            'reviewedAtByReviewer':{reviewer:row.get('reportCheckedAt') for reviewer,row in votes.items()},
+            'reviewType':'independent-adversarial-model-review','humanReview':False}
+
+def prepare(settings):
+    records = corpus.curated(Path(settings['researchRoot']))
+    raw_records = {}
+    for origin in {record['origin'] for record in records}:
+        content = corpus.read_json(origin)
+        rows = content if isinstance(content, list) else content.get('records', [])
+        raw_records.update({row['id']:row for row in rows if isinstance(row,dict) and row.get('id')})
+    reports = [corpus.read_json(path) for path in settings['review']['reports']]
+    hashes = {identity:raw_hash(row) for identity,row in raw_records.items()}
+    votes = collect_votes(reports, hashes)
+    approvals = {}; blocked = []
+    for record in records:
+        record['recordShard'] = corpus.bucket(record['id'], settings['recordShards'])
+        record['revisionDate'] = settings.get('recordRevisionDates', {}).get(record['id'], corpus.DATE)
+        record['markdown'] = corpus.render_record(record)
+        record['lessonContentVersion'] = '1'
+        checked = approval(record, votes[record['id']])
+        if checked: approvals[record['id']] = checked
+        else: blocked.append({'id':record['id'],'matchingReviewers':list(votes[record['id']]),'reason':'Two concordant current-content reviews required; all unresolved findings block'})
+    learner = corpus.learner_payload(settings); learner['lessonContentVersion'] = '1'
+    learner_votes = {}
+    for report in reports:
+        row = report.get('learnerReview', {})
+        reviewer = report.get('reviewerId', '').strip()
+        if reviewer and row.get('itemsSha256') == raw_hash(learner['retestItems']): learner_votes[reviewer] = dict(row, reportCheckedAt=report.get('checkedAt', report.get('date')))
+    learner_approval = approval(learner, learner_votes)
+    if learner_approval: approvals['learner-retest'] = learner_approval
+    elif learner['retestItems']: blocked.append({'id':'learner-retest','reason':'Reviewed overlay lacks two concordant current-content reviews'})
+    # 14 October 2026, 13:08 CEST: assembly date and actual report dates are distinct; never invent a review date.
+    result = {'schemaVersion':1,'date':settings.get('buildDate'),'approvals':approvals,'blocked':blocked,
+              'coverage':{'cards':len(records),'approvedCards':sum(key != 'learner-retest' for key in approvals),'blockedCards':sum(row['id'] != 'learner-retest' for row in blocked)},
+              'policy':'Missing, changed, conflicting or unresolved reviews block lessons. This is model review, not proof of infallibility or native human validation.'}
+    corpus.atomic_json(settings['review']['approvals'], result)
+    print(json.dumps({'coverage':result['coverage'],'learnerApproved':bool(learner_approval)}))
+
+if __name__ == '__main__':
+    parser=argparse.ArgumentParser(); parser.add_argument('--settings', default=str(corpus.WORKSHOP/'settings.json')); args=parser.parse_args()
+    prepare(corpus.read_json(args.settings))

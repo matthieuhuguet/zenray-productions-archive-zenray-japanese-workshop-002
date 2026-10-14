@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "14 October 2026",
+  "records": [
+    [
+      "scalar-mo",
+      "N5",
+      "も",
+      "も : même et quantité surprenante",
+      "Dans un contexte où un élément est inattendu, Nも peut se comprendre comme même N, tout en conservant son rôle d'ajout. Avec une quantité, quantité + も souligne que le locuteur la juge étonnamment importante : 二時間も, deux heures entières. Le contexte détermine l'emphase ; も ne signifie pas toujours même.",
+      "Ne pas traduire chaque も par même ; distinguer ajout ordinaire et quantité ou élément jugé surprenant.",
+      [
+        [
+          "姉もこの難しい本を読みました。",
+          "あねもこのむずかしいほんをよみました。",
+          "Dans un contexte où cela surprend : même ma sœur a lu ce livre difficile."
+        ],
+        [
+          "駅で二時間も待ちました。",
+          "えきでにじかんもまちました。",
+          "J'ai attendu deux heures entières à la gare, ce que je trouve long."
+        ]
+      ]
+    ],
+    [
+      "plain-nominal-question-ka",
+      "N5",
+      "か",
+      "か neutre : nom ou adjectif en な sans だ",
+      "Dans une question neutre en か, le だ affirmatif non passé d'un nom ou d'un adjectif en な disparaît : 学生だ → 学生か ; 安全だ → 安全か. La question directe peut paraître brusque ; préférer 学生ですか ou 安全ですか avec une personne peu familière. Dans une interrogation intégrée comme 学生か知りません, ce か marque l'inconnu sans produire automatiquement cette rudesse.",
+      "Ne pas produire 学生だか pour cette question neutre ; distinguer question directe et interrogation intégrée.",
+      [
+        [
+          "この道は安全か？",
+          "このみちはあんぜんか？",
+          "Question très directe : ce chemin est-il sûr ?"
+        ],
+        [
+          "あの人が学生か知りません。",
+          "あのひとががくせいかしりません。",
+          "Je ne sais pas si cette personne est étudiante."
+        ]
+      ]
+    ],
+    [
+      "departure-place-o",
+      "N5",
+      "を",
+      "を : le lieu que l’on quitte",
+      "Avec un verbe de départ comme 出る, lieu + を indique l'espace quitté : 家を出る, quitter la maison. Ce を n'implique pas qu'on transforme le lieu ; il marque ici un point de départ. Un espace traversé prend aussi を avec certains verbes de déplacement. から peut expliciter un point de départ, mais ne remplace pas mécaniquement tous les を de toute phrase.",
+      "Le lieu quitté et la destination ont des rôles différents : 家を出る, puis 学校に行く.",
+      [
+        [
+          "今日は六時に家を出ます。",
+          "きょうはろくじにいえをでます。",
+          "Aujourd'hui, je quitte la maison à six heures."
+        ],
+        [
+          "父は台所を出ました。",
+          "ちちはだいどころをでました。",
+          "Mon père a quitté la cuisine."
+        ]
+      ]
+    ],
+    [
+      "inanimate-accompaniment-to",
+      "N5",
+      "と-with",
+      "と : accompagner une action avec une chose",
+      "L'accompagnement en と n'est pas réservé aux personnes. Un aliment ou un objet peut être associé à ce qu'on fait : ご飯と食べる, manger avec du riz. Le groupe marqué par と est l'élément associé, tandis que l'objet directement mangé peut prendre を. Une chose inanimée ne devient pas pour autant un agent qui agit volontairement ; l'interprétation dépend du verbe et du contexte.",
+      "Ne pas convertir la notion de avec en obligation que les deux éléments soient des personnes ou accomplissent volontairement la même action.",
+      [
+        [
+          "この魚はご飯と食べます。",
+          "このさかなはごはんとたべます。",
+          "Je mange ce poisson avec du riz."
+        ],
+        [
+          "朝はパンをチーズと食べます。",
+          "あさはパンをちーずとたべます。",
+          "Le matin, je mange du pain avec du fromage."
+        ]
+      ]
+    ],
+    [
+      "deshou-basis-and-contraction",
+      "N5",
+      "でしょう",
+      "でしょう : supposition motivée et でしょ",
+      "でしょう exprime une estimation du locuteur ou demande l'accord de l'autre. Une prévision ou un indice peut motiver l'estimation ; la forme ne garantit cependant ni preuve objective ni certitude. Avec une intonation montante, la recherche d'accord est fréquente. La contraction でしょ est plus familière et conserve ces fonctions ; elle ne remplace pas une question polie neutre dans tous les contextes.",
+      "Ne pas présenter une estimation en でしょう comme un fait acquis, ni exiger une preuve objective que cette terminaison garantirait.",
+      [
+        [
+          "天気予報では、明日は雨でしょう。",
+          "てんきよほうでは、あしたはあめでしょう。",
+          "D'après les prévisions météo, il pleuvra probablement demain."
+        ],
+        [
+          "この部屋は静かでしょ？",
+          "このへやはしずかでしょ？",
+          "Dans un échange familier : cette chambre est calme, n'est-ce pas ?"
+        ]
+      ]
+    ],
+    [
+      "darou-contraction",
+      "N5",
+      "だろう",
+      "だろ : contraction familière de だろう",
+      "だろ est une contraction familière de だろう, pour une supposition ou une demande d'accord. Il suit le verbe neutre ou l'adjectif en い ; après un nom ou une base adjectivale en な, on ajoute directement だろ, sans doubler だ. L'intonation et le contexte peuvent rendre une demande d'accord insistante ; cette forme est souvent associée à un style masculin, sans être réservée à un sexe. Pour une situation polie, employer plutôt でしょう.",
+      "Ne pas confondre probabilité et ordre ; une intonation insistante peut faire pression sur l'interlocuteur.",
+      [
+        [
+          "明日は寒いだろ。",
+          "あしたはさむいだろ。",
+          "Dans un échange familier : demain, il fera probablement froid."
+        ],
+        [
+          "あの人は先生だろ？",
+          "あのひとはせんせいだろ？",
+          "Dans un échange familier et direct : cette personne est professeur, non ?"
+        ]
+      ]
+    ],
+    [
+      "referential-nominalizer-no",
+      "N5",
+      "のは",
+      "のは : identifier celui qui fait l’action",
+      "Une proposition verbale neutre + の peut désigner une personne ou une chose repérée par l'action, et pas seulement l'activité abstraite. Dans Vのは Nです, le groupe avant は pose ce qu'on identifie, puis N fournit la réponse : ici, celui qui fait l'action. Le contexte et le verbe aident à comprendre la référence. Le verbe garde une forme neutre, jamais ます devant ce の. Ce patron avec は et une réponse nominale se distingue de Vのです explicatif.",
+      "Ne pas traduire mécaniquement chaque の comme le fait de ; dans une identification, la référence peut être la personne qui agit.",
+      [
+        [
+          "明日この本を読むのは姉です。",
+          "あしたこのほんをよむのはあねです。",
+          "C'est ma sœur qui lira ce livre demain."
+        ],
+        [
+          "昨日ここに来たのは兄です。",
+          "きのうここにきたのはあにです。",
+          "C'est mon frère qui est venu ici hier."
+        ]
+      ]
+    ],
+    [
+      "change-state-suru",
+      "N5",
+      "する",
+      "する : rendre quelque chose d’une certaine manière",
+      "Pour modifier l'état de l'objet, employer objetを + adjectif en い sans い + くする : 明るい → 明るくする, rendre lumineux. Une base adjectivale en な ou un nom de résultat prend にする : 静かにする, rendre calme. する indique ici l'action qui produit le changement, tandis que なる décrit le changement de l'élément lui-même : 部屋が静かになる. Ce patron ne constitue pas la conjugaison causative en させる.",
+      "Distinguer 部屋を静かにする, rendre la pièce calme, et 部屋が静かになる, la pièce devient calme.",
+      [
+        [
+          "部屋を明るくします。",
+          "へやをあかるくします。",
+          "Je rends la pièce plus lumineuse."
+        ],
+        [
+          "昼は教室を静かにします。",
+          "ひるはきょうしつをしずかにします。",
+          "À midi, je fais en sorte que la salle de classe soit calme."
+        ]
+      ]
+    ],
+    [
+      "daisuki-intensifier",
+      "N5",
+      "すき",
+      "大好き : aimer beaucoup",
+      "大好き, だいすき, intensifie 好き et se comporte comme un adjectif en な : Nが大好きです ; 大好きなN. Pour une activité, V dictionnaire + のが大好きです exprime qu'on adore la faire. Avec une personne, le contexte peut porter une nuance affective ou romantique, mais 大好き n'est pas une déclaration romantique obligatoire.",
+      "La lecture est だいすき et non おおすき ; garder な avant le nom qualifié.",
+      [
+        [
+          "私はこの古い映画が大好きです。",
+          "わたしはこのふるいえいががだいすきです。",
+          "J'adore ce vieux film."
+        ],
+        [
+          "これは姉が大好きな歌です。",
+          "これはあねがだいすきなうたです。",
+          "C'est une chanson que ma sœur adore."
+        ]
+      ]
+    ],
+    [
+      "dore-free-choice",
+      "N5",
+      "どれ",
+      "どれでも : n’importe lequel",
+      "Le pronom どれ prend でも pour un choix libre : どれでもいいです, n'importe lequel convient. Il représente l'objet entier et n'est pas directement suivi d'un nom. Pour préciser la catégorie, employer どのNでも, par exemple どの本でも. Le choix libre どれでも se distingue de la question どれがいいですか, lequel convient ? Le contexte peut délimiter les choix disponibles.",
+      "どれでもいい n'interroge pas sur le bon choix ; il dit que chaque choix disponible convient.",
+      [
+        [
+          "この三つなら、どれでもいいです。",
+          "このみっつなら、どれでもいいです。",
+          "Parmi ces trois-là, n'importe lequel me convient."
+        ],
+        [
+          "どれでも好きな本を選んでください。",
+          "どれでもすきなほんをえらんでください。",
+          "Choisissez n'importe quel livre qui vous plaît."
+        ]
+      ]
+    ],
+    [
+      "verb-negative-naidesu",
+      "N5",
+      "るverb-ない",
+      "ないです : négation verbale polie courante",
+      "Former d'abord le négatif neutre correct, puis ajouter です : 食べる → 食べないです ; 行く → 行かないです ; する → しないです ; 来る → 来ないです, こないです. Cette forme polie est fréquente dans la conversation et paraît souvent moins formelle que ません. Pour le passé, ない devient なかった avant です : 食べなかったです. Dans une proposition qui qualifie un nom, garder le négatif neutre et ne pas insérer ce です.",
+      "Ne pas ajouter ない à la forme en ます ; partir du négatif neutre correct de chaque groupe verbal.",
+      [
+        [
+          "今日は肉を食べないです。",
+          "きょうはにくをたべないです。",
+          "Aujourd'hui, je ne mange pas de viande."
+        ],
+        [
+          "昨日は海に行かなかったです。",
+          "きのうはうみにいかなかったです。",
+          "Hier, je ne suis pas allé à la mer."
+        ]
+      ]
+    ],
+    [
+      "experience-negative-koto",
+      "N5",
+      "たことがある",
+      "たことがない : ne jamais avoir fait",
+      "V au passé neutre + ことがない dit qu'on n'a jamais vécu cette expérience jusqu'au moment de référence. La variante polie est ことがありません ; ことがないです est aussi polie à l'oral. Pour une activité passée précise qui n'a simplement pas lieu hier, employer le négatif passé ordinaire. Dans cette expression figée, こと ne se remplace pas par の.",
+      "Je n'ai jamais fait cette expérience et je ne l'ai pas faite hier n'ont pas la même portée ; conserver こと dans ce patron.",
+      [
+        [
+          "私は京都に行ったことがありません。",
+          "わたしはきょうとにいったことがありません。",
+          "Je ne suis jamais allé à Kyoto."
+        ],
+        [
+          "この料理は食べたことがないです。",
+          "このりょうりはたべたことがないです。",
+          "Je n'ai jamais mangé ce plat."
+        ]
+      ]
+    ],
+    [
+      "jouzu-activity-past",
+      "N5",
+      "のがじょうず",
+      "のが上手だった : habileté passée",
+      "Dans V dictionnaire + のが上手だった／上手でした, le passé porte sur 上手 et non sur l'activité : 泳ぐのが上手でした, était bon en natation. Le verbe dictionnaire nomme l'activité générale. La formulation renseigne sur l'habileté à cette époque ; elle n'établit pas à elle seule que la personne l'a perdue. Pour parler de soi, 得意 peut souvent être préférable à une autoévaluation élogieuse en 上手.",
+      "Ne pas transformer automatiquement le verbe en passé pour dire était bon à une activité.",
+      [
+        [
+          "祖母は歌うのが上手でした。",
+          "そぼはうたうのがじょうずでした。",
+          "Ma grand-mère chantait bien."
+        ],
+        [
+          "兄は絵を描くのが上手だった。",
+          "あにはえをかくのがじょうずだった。",
+          "Mon frère était bon en dessin."
+        ]
+      ]
+    ],
+    [
+      "heta-activity-past",
+      "N5",
+      "のがへた",
+      "のが下手だった : habileté passée limitée",
+      "Dans V dictionnaire + のが下手だった／下手でした, le passé porte sur 下手. Le verbe dictionnaire nomme l'activité dont on évaluait l'habileté. La forme ne dit pas automatiquement que l'habileté est meilleure aujourd'hui ; une phrase supplémentaire peut exprimer cette évolution. Avec autrui, 下手 peut constituer un jugement blessant, donc choisir le contexte avec soin.",
+      "Ne pas conjuguer automatiquement le verbe d'activité au passé ; c'est l'évaluation 下手 qui prend le passé.",
+      [
+        [
+          "私は料理を作るのが下手でした。",
+          "わたしはりょうりをつくるのがへたでした。",
+          "Je n'étais pas habile pour cuisiner."
+        ],
+        [
+          "昔は歌うのが下手だった。",
+          "むかしはうたうのがへただった。",
+          "Autrefois, je chantais mal."
+        ]
+      ]
+    ],
+    [
+      "kedomo-variants",
+      "N5",
+      "けど-だけど",
+      "けども : variante de concession",
+      "けども relie deux propositions comme けど, けれど ou けれども. Dans une construction neutre affirmative non passée, un nom ou une base adjectivale en な garde だ : 学生だけども, 静かだけども ; un adjectif en い ou un verbe neutre se relie directement. けど est particulièrement courant à l'oral ; けれども peut sonner plus soutenu. La longueur de la forme ne crée pas une échelle de politesse rigide indépendante du contexte. La suite peut rester implicite pour atténuer une demande.",
+      "Ne pas ajouter だ après un adjectif en い ; les variantes ont un registre contextuel et ne constituent pas une hiérarchie absolue.",
+      [
+        [
+          "この道は長いけども、安全です。",
+          "このみちはながいけども、あんぜんです。",
+          "Ce chemin est long, mais il est sûr."
+        ],
+        [
+          "部屋は静かだけども、少し寒いです。",
+          "へやはしずかだけども、すこしさむいです。",
+          "La pièce est calme, mais il y fait un peu froid."
+        ]
+      ]
+    ],
+    [
+      "mashouka-productive",
+      "N5",
+      "ましょうか",
+      "ましょうか : former une proposition ou une offre",
+      "Ajouter ましょうか à la base de ます : 書きます → 書きましょうか ; 見ます → 見ましょうか ; します → しましょうか ; 来ます → 来ましょうか, きましょうか. Le contexte indique si je propose mon aide, dois-je faire ?, ou une action commune, faisons-nous ?. ませんか formule plus directement une invitation à participer. Ce sont des tendances de fonction, pas une frontière qui interdit toute invitation avec ましょうか.",
+      "Construire la base de chaque groupe ; ne pas ajouter ましょうか après la forme dictionnaire.",
+      [
+        [
+          "この名前を書きましょうか。",
+          "このなまえをかきましょうか。",
+          "Voulez-vous que j'écrive ce nom ?"
+        ],
+        [
+          "一緒にこの映画を見ましょうか。",
+          "いっしょにこのえいがをみましょうか。",
+          "Et si nous regardions ce film ensemble ?"
+        ]
+      ]
+    ],
+    [
+      "masenka-productive",
+      "N5",
+      "ませんか",
+      "ませんか : former une invitation",
+      "Ajouter ませんか à la base de ます : 飲みます → 飲みませんか ; 食べます → 食べませんか ; します → しませんか ; 来ます → 来ませんか, きませんか. Malgré la forme négative, le contexte d'invitation propose de participer à l'action. 一緒に peut préciser ensemble. Une invitation familière peut aussi employer V négatif neutre + か, comme 行かないか ; cette question est plus directe, et le contexte ou l'intonation peut aussi lui donner une vraie lecture négative. ましょうか propose plutôt une action ou une offre.",
+      "Ne pas traduire mécaniquement chaque ませんか comme une demande de ne pas faire ; déterminer la fonction par le contexte.",
+      [
+        [
+          "一緒にこの店で食べませんか。",
+          "いっしょにこのみせでたべませんか。",
+          "Voulez-vous manger avec moi dans ce restaurant ?"
+        ],
+        [
+          "今夜、駅まで歩かないか。",
+          "こんや、えきまであるかないか。",
+          "Invitation familière et directe : on marche jusqu'à la gare ce soir ?"
+        ]
+      ]
+    ],
+    [
+      "tsumori-negative-contrast",
+      "N5",
+      "つもりだ",
+      "つもり : intention négative et absence d’intention",
+      "V négatif neutre + つもりだ exprime l'intention de ne pas faire : 行かないつもりです. V dictionnaire + つもりはない exprime l'absence d'intention de faire : 行くつもりはありません. Selon le contexte, cette seconde forme peut marquer un refus ferme, pas seulement l'absence d'un programme prévu. Dans ces patrons, garder le verbe neutre avant つもり ; la politesse ou le passé se marque sur la fin de l'expression.",
+      "Distinguer décider de ne pas faire et dire qu'on n'a aucune intention de faire ; ne pas réduire le second à une réponse sans engagement.",
+      [
+        [
+          "明日は外に出ないつもりです。",
+          "あしたはそとにでないつもりです。",
+          "J'ai l'intention de ne pas sortir demain."
+        ],
+        [
+          "この本を売るつもりはありません。",
+          "このほんをうるつもりはありません。",
+          "Je n'ai aucune intention de vendre ce livre."
+        ]
+      ]
+    ]
+  ]
+}

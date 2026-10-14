@@ -1,0 +1,117 @@
+diff --git a/scripts/AssetsService.mjs b/scripts/AssetsService.mjs
+index 46f14c50..a277cbe4 100644
+--- a/scripts/AssetsService.mjs
++++ b/scripts/AssetsService.mjs
+@@ -512,7 +512,7 @@ export class AssetsService {
+       this.contextIndexWaiting = null
+       try { this.conversationBindings = JSON.parse(await readFile(path.join(this.config.storage.stateDir, 'SessionBindings.json'), 'utf8')) } catch (error) { if (error.code !== 'ENOENT') throw error }
+       try { this.conversationMetadata = JSON.parse(await readFile(path.join(this.config.storage.stateDir, 'SessionConversationMetadata.json'), 'utf8')) } catch (error) { if (error.code !== 'ENOENT') throw error }
+-      const index = buildGlobalProjectIndex([...this.projects.keys()].map((id) => this.snapshot(id)))
++      const index = buildGlobalProjectIndex(this.projectSnapshots())
+       await atomicJson(path.join(this.config.storage.stateDir, 'GlobalProjectIndex.json'), index)
+       const directory = path.join(this.config.storage.stateDir, 'contexts')
+       await mkdir(directory, { recursive: true })
+@@ -534,14 +534,23 @@ export class AssetsService {
+   }
+ 
+   // 3 October 2026, 04:15 CEST: scene references derive from current inventories, including their declared shared libraries.
+-  sceneReferenceContexts(id) {
+-    const audits = Object.entries(this.state(id).sceneAudits || {})
+-    if (!audits.length) return []
+-    const projects = [...this.projects.values()].map((project) => ({ ...project,
++  // 13 October 2026, 00:00 CEST: build one fresh dependency view per synchronous snapshot pass, never a persistent cache.
++  buildSceneReferenceProjects() {
++    return [...this.projects.values()].map((project) => ({ ...project,
+       files: combineWorkspaceFiles(project, this.state(project.id).inventory?.localFiles || [], this.state(project.id).backups, this.state(project.id).restorations)
+         // 3 October 2026, 05:00 CEST: preserve declared source identity separately from the active copy's actual read path.
+         .map((file) => ({ ...file, canonicalPath: file.present ? file.localPath : null,
+           originCanonicalPath: file.loadedCopy ? path.join(project.sources.find((source) => source.id === file.sourceId).localPath, file.relativePath) : null })) }))
++  }
++
++  projectSnapshots({ cloud = false, sceneReferenceProjects = this.buildSceneReferenceProjects() } = {}) {
++    return [...this.projects.keys()].map((id) => this.snapshot(id, { cloud, sceneReferenceProjects }))
++  }
++
++  sceneReferenceContexts(id, sceneReferenceProjects = null) {
++    const audits = Object.entries(this.state(id).sceneAudits || {})
++    if (!audits.length) return []
++    const projects = sceneReferenceProjects ?? this.buildSceneReferenceProjects()
+     return audits.map(([sceneFileId, entry]) => {
+       const file = this.state(id).inventory?.localFiles.find((candidate) => candidate.id === sceneFileId)
+       const preparation = this.scenePreparationEvidence(id, sceneFileId, projects)
+@@ -590,7 +599,7 @@ export class AssetsService {
+     return technical ? { ...event, ...(event.detail !== undefined ? { detail: this.cloudDiagnostic(id, event.detail) } : {}), ...(event.body !== undefined ? { body: this.cloudDiagnostic(id, event.body) } : {}) } : event
+   }
+ 
+-  snapshot(id, { cloud = false } = {}) {
++  snapshot(id, { cloud = false, sceneReferenceProjects = null } = {}) {
+     const project = this.project(id), state = this.state(id)
+     const inventory = state.inventory || { checkedAt: null, localFiles: [], sources: project.sources, excluded: 0, issues: [] }
+     const files = combineWorkspaceFiles(project, inventory.localFiles, state.backups, state.restorations)
+@@ -612,7 +621,7 @@ export class AssetsService {
+         loadedCount: Object.values(state.restorations).filter((entry) => state.workspacePath && isInside(state.workspacePath, entry.path)).length,
+         releasedBytes: (state.releases || []).filter((entry) => entry.phase === 'unloaded').reduce((sum, entry) => sum + entry.allocatedBytes, 0),
+         recoverableCount: (state.releases || []).filter((entry) => !['recovered', 'cancelled'].includes(entry.phase)).length },
+-      jobs, sceneReferences: this.sceneReferenceContexts(id),
++      jobs, sceneReferences: this.sceneReferenceContexts(id, sceneReferenceProjects),
+       events: this.events.filter((event) => event.projectId === id) }
+     // 5 October 2026, 11:00 CEST: project links derive from the existing session registry, never from conversation titles.
+     result.conversations = Object.entries(this.conversationBindings || {}).filter(([, projectId]) => projectId === id).map(([sessionId]) => {
+@@ -768,9 +777,10 @@ export class AssetsService {
+   async publishProject(id) {
+     if (!this.cloudPublisher) return
+     // 3 October 2026, 04:41 CEST: a shared archive refreshes its audited consumers without recursively publishing dependencies.
+-    const consumers = [...this.projects.keys()].filter((projectId) => projectId !== id && this.sceneReferenceContexts(projectId).some((scene) => scene.dependencies?.includes(id)))
++    const sceneReferenceProjects = this.buildSceneReferenceProjects()
++    const consumers = [...this.projects.keys()].filter((projectId) => projectId !== id && this.sceneReferenceContexts(projectId, sceneReferenceProjects).some((scene) => scene.dependencies?.includes(id)))
+     // 9 October 2026, 09:57 CEST: Build the cloud context from local snapshots; project summaries no longer carry the global file map.
+-    const cloudSnapshots = [...this.projects.keys()].map((projectId) => this.snapshot(projectId, { cloud: true }))
++    const cloudSnapshots = this.projectSnapshots({ cloud: true, sceneReferenceProjects })
+     const contextIndex = buildGlobalProjectIndex(cloudSnapshots, { cloud: true })
+     for (const projectId of [id, ...consumers]) {
+       const history = await this.request('history', { projectId })
+@@ -1431,12 +1441,12 @@ export class AssetsService {
+     }
+     const id = payload.projectId
+     if (action === 'global-index' || action === 'context') {
+-      const index = payload.cloud ? buildGlobalProjectIndex([...this.projects.keys()].map((projectId) => this.snapshot(projectId, { cloud: true })), { cloud: true }) : await this.refreshContextIndex()
++      const index = payload.cloud ? buildGlobalProjectIndex(this.projectSnapshots({ cloud: true }), { cloud: true }) : await this.refreshContextIndex()
+       return action === 'context' ? { projectId: id, mapping: index.projects[id], markdown: renderProjectContext(index, id), issues: index.issues.filter((issue) => issue.projectId === id), checkedAt: index.generatedAt } : { index, checkedAt: index.generatedAt }
+     }
+     // 9 October 2026, 11:04 CEST: Keep opening Assets below a few hundred kilobytes by loading only the selected project's full snapshot.
+     if (action === 'workspace-catalogue') {
+-      const projects = [...this.projects.keys()].map((projectId) => summarizeWorkspaceProject(this.snapshot(projectId)))
++      const projects = this.projectSnapshots().map(summarizeWorkspaceProject)
+       return { schemaVersion: this.config.schemaVersion, checkedAt: new Date().toISOString(), bridge: { connected: true, state: 'connected' }, projects }
+     }
+     // 9 October 2026, 11:04 CEST: Read the verified project index so evidence links remain distinct from primary bindings.
+@@ -1459,8 +1469,9 @@ export class AssetsService {
+       await this.inventory(id)
+       const context = this.sceneReferenceContexts(id).find((entry) => entry.sceneFileId === payload.fileId)
+       for (const dependency of context?.dependencies || []) await this.inventory(dependency)
+-      const current = this.sceneReferenceContexts(id).find((entry) => entry.sceneFileId === payload.fileId)
+-      const projects = [...this.projects.keys()].map((projectId) => this.snapshot(projectId))
++      const sceneReferenceProjects = this.buildSceneReferenceProjects()
++      const current = this.sceneReferenceContexts(id, sceneReferenceProjects).find((entry) => entry.sceneFileId === payload.fileId)
++      const projects = this.projectSnapshots({ sceneReferenceProjects })
+       const plan = buildScenePreparationPlan({ projectId: id, sceneFileId: payload.fileId, projects, audit: this.state(id).sceneAudits?.[payload.fileId]?.audit, context: current })
+       return { plan, checkedAt: new Date().toISOString() }
+     }
+@@ -1500,7 +1511,7 @@ export class AssetsService {
+         if (changeToken(await descriptor.stat()) !== file.changeToken) throw new Error('Scene changed during audit verification')
+         sha256 = hash.digest('hex')
+       } finally { await descriptor.close() }
+-      const projects = [...this.projects.values()].map((project) => ({ ...project, files: this.snapshot(project.id).files }))
++      const projects = this.buildSceneReferenceProjects()
+       mapSceneReferences({ projectId: id, sceneFileId: file.id, sceneSha256: sha256, audit: payload.audit, projects })
+       this.state(id).sceneAudits ||= {}
+       this.state(id).sceneAudits[file.id] = { changeToken: file.changeToken, audit: payload.audit }
+@@ -1721,7 +1732,7 @@ export class AssetsService {
+     if (action === 'list' || action === 'status' && !id) {
+       for (const projectId of this.projects.keys()) if (!this.state(projectId).inventory) await this.inventory(projectId)
+       return { schemaVersion: this.config.schemaVersion, checkedAt: new Date().toISOString(), bridge: { connected: true, state: 'connected' },
+-        projects: [...this.projects.keys()].map((projectId) => this.snapshot(projectId)), events: this.events }
++        projects: this.projectSnapshots(), events: this.events }
+     }
+     if (action === 'inventory') return { project: await this.inventory(id), checkedAt: new Date().toISOString() }
+     // 3 October 2026, 03:44 CEST: Finder opens the verified project workshop, never a path supplied by the client.

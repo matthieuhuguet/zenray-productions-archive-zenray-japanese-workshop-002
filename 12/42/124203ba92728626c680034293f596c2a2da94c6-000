@@ -1,0 +1,2233 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/n5_coverage_second",
+  "humanReview": false,
+  "reviewType": "independent-semantic-coverage-review",
+  "release": "9cb784b90533b073",
+  "complete": true,
+  "requirements": [
+    {
+      "id": "bunpro-1",
+      "reviewedRequirementHash": "c3dde23ce3b9c669c8cf4832fd85a68901e458d0b974f4557a2cafeb4d9393fe",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A0"
+      ],
+      "coveredAspects": [
+        "Plain affirmative assertion with noun or na-adjective base",
+        "Polite counterpart です and exclusion after i-adjectives"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-2",
+      "reviewedRequirementHash": "9a90f358877d5aa8f66c3554024194d795844498e0526c1d9ccb800eeb74c17f",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A7%E3%81%99"
+      ],
+      "coveredAspects": [
+        "Polite nominal predication with Nです",
+        "Nominal polite negative and warning against adding です after ます"
+      ],
+      "missingAspects": [
+        "Adjectival です, including direct attachment after i-adjectives, is absent from the frozen lesson"
+      ],
+      "proposedRecordIds": [
+        "grammar-i-adjectives",
+        "expand-na-adjective-predicate"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-3",
+      "reviewedRequirementHash": "64975613cc2bdf34da7cc728683c5400162d319eaf39bd3f40dc350c60ec750f",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AF"
+      ],
+      "coveredAspects": [
+        "Topic and contrast meanings; pronunciation わ",
+        "Context-sensitive distinction from identifying が"
+      ],
+      "missingAspects": [
+        "Productive topic + は + predicate construction is not explained or illustrated with は; the only example demonstrates が",
+        "Distinction between a general topic and presentation of a newly observed event is not developed"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-4",
+      "reviewedRequirementHash": "8cc44f10bc9729e900f46fa56a6c2167158bba55048c936f48ee9e3c04c9cc43",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82"
+      ],
+      "coveredAspects": [
+        "Additive inclusion of a comparable element",
+        "Replacement of は or が in simple nominal cases"
+      ],
+      "missingAspects": [
+        "Negative additive use corresponding to neither/either, such as 私も行かない, is not explained"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-5",
+      "reviewedRequirementHash": "1986f063cd829d75cb4ff18fee103ef2d6a1c7ac3ec958979a47daddd72e7d1e",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%93%E3%82%8C"
+      ],
+      "coveredAspects": [
+        "Standalone demonstrative for a thing on the speaker side",
+        "Distinction from prenominal この and prohibition of これ本"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-11",
+      "reviewedRequirementHash": "6643f6167dfe15e0b9ec20058b54e2f2624e9d13836df78703096d44446739af",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9D%E3%82%8C"
+      ],
+      "coveredAspects": [
+        "Standalone thing demonstrative on the listener side",
+        "Distinction from この-type noun determiners"
+      ],
+      "missingAspects": [
+        "Anaphoric それ referring to information mentioned earlier by either speaker is explicitly deferred rather than taught"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-19",
+      "reviewedRequirementHash": "1030fe379cc4a279f16b143ad91a7516a99aafb35062a46736961b86a8b46539",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%82%E3%82%8C"
+      ],
+      "coveredAspects": [
+        "Standalone demonstrative for a thing distant from both speakers",
+        "Correct distinction between standalone and prenominal constructions"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-6",
+      "reviewedRequirementHash": "c5344349197ab54f0581e324945e0a2eb0937ea321f0da331173a48b36bc44ed",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE"
+      ],
+      "coveredAspects": [
+        "Noun + の + noun with rightmost head",
+        "Possession, origin and association instead of a possessive-only translation"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-7",
+      "reviewedRequirementHash": "de2499cddcd4d473e75a8c45100cf3687b755c9e58cdf7bc6647bc5abbb6080b",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%84%E3%81%84"
+      ],
+      "coveredAspects": [
+        "Irregular よ base in よくない and よかった",
+        "Polite affirmative past よかったです"
+      ],
+      "missingAspects": [
+        "Past negative よくなかった and its formation are not explained",
+        "Relation of everyday いい to more formal よい is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-24",
+      "reviewedRequirementHash": "b337ea0207c6acd3b2bfd5a9298d2b48650093c3d0ea0c80f240d70ed17c1224",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%84-adjectives"
+      ],
+      "coveredAspects": [
+        "Attributive i-adjective before noun without な or intervening です",
+        "Negative くない and polite です"
+      ],
+      "missingAspects": [
+        "Not every word ending in い is an i-adjective, notably きれい and 嫌い, is not taught in these candidates",
+        "The ban on affirmative i-adjective + だ is absent from the frozen candidates"
+      ],
+      "proposedRecordIds": [
+        "expand-na-adjective-noun",
+        "expand-copula-plain"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-28",
+      "reviewedRequirementHash": "a452a792220b2d19aff7d7f8df9ff46be6b7e6fcb532e26f1223bf81d9b5c452",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA-adjectives"
+      ],
+      "coveredAspects": [
+        "NAなN before nouns and NAです as a polite predicate",
+        "きれい is a na-adjective despite its final い"
+      ],
+      "missingAspects": [
+        "Plain NAだ predication is absent; the frozen predicate card only teaches です"
+      ],
+      "proposedRecordIds": [
+        "expand-copula-plain"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-8",
+      "reviewedRequirementHash": "bf252f41a22f203139f68d59f1bdd1b7a320a77525a633ebeed28fc860f724e7",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8B"
+      ],
+      "coveredAspects": [
+        "Polite noun and verb questions formed by final か"
+      ],
+      "missingAspects": [
+        "Casual か after plain forms and its direct or potentially rude register are absent",
+        "Use of か to express uncertainty rather than an addressed question is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-10",
+      "reviewedRequirementHash": "d7a0574681028483650cd2a3b7977594fc94b831627de2e75bbd9ac8e259f318",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C"
+      ],
+      "coveredAspects": [
+        "Subject marking and identifying a person with が",
+        "Existence examples containing Nがある"
+      ],
+      "missingAspects": [
+        "Presentation of a newly observed subject or event with が, distinct from identifying a person in an answer, is not explained"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-78",
+      "reviewedRequirementHash": "fd8fd577b1bac6cf883c6222ce651d0b11f6924741727e9686cd2ffb6bbbb57d",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%88"
+      ],
+      "coveredAspects": [
+        "よ draws the listener attention to information",
+        "Relation and intonation influence sentence-final particles"
+      ],
+      "missingAspects": [
+        "Sentence + よ attachment is not explicitly taught or exemplified; the sole example uses ね",
+        "Plain nouns and na-adjectives retain だ before よ, unlike i-adjectives, is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-71",
+      "reviewedRequirementHash": "fe123ca398e210c66aa4599343ce27b48b90746b9e7a605493da7b8478eb4572",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AD"
+      ],
+      "coveredAspects": [
+        "Sentence-final ね solicits or marks shared agreement and confirmation",
+        "Productive final placement demonstrated by 静かですね with contextual and intonational caution"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-12",
+      "reviewedRequirementHash": "0de48131438ba64e08c492cea629b9a603e920d58a69c06ba14e776d564a0d7d",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%8B-Verbs"
+      ],
+      "coveredAspects": [
+        "Ichidan remove る for several endings",
+        "Dictionary る does not alone identify a verb group; negative る to ない"
+      ],
+      "missingAspects": [
+        "Productive ichidan dictionary form to ます, such as 食べる to 食べます, is not taught"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-26",
+      "reviewedRequirementHash": "ed97b5290ad5082d24eb986893fbfb8699743c10edc58f84c0dd5a9c0a2bd599",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%86-Verbs"
+      ],
+      "coveredAspects": [
+        "Godan alter their final syllable and include some る verbs",
+        "Productive a-row negative, including う to わ"
+      ],
+      "missingAspects": [
+        "Godan dictionary to polite i-row + ます is absent",
+        "Dictionary/plain verb as the non-past base form is not explicitly distinguished from its other conjugations"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-21",
+      "reviewedRequirementHash": "d554c223c9debd85f6851984de54657408846dc28682ee0af4af0a9ff98b351b",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%92"
+      ],
+      "coveredAspects": [
+        "Postnominal を marks an object; 本を読みます exemplifies it",
+        "A route is listed as another possible を role"
+      ],
+      "missingAspects": [
+        "The route or traversed-location use of を is only named, without a usable movement construction or an example explaining its scope"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-1082",
+      "reviewedRequirementHash": "c838ca3cf8e066866033d35f018353072f93a578402fdc0dcfe393df39d1a116",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/polite-verb-endings"
+      ],
+      "coveredAspects": [
+        "Polite non-past habit and future meanings",
+        "Negative ません and polite past ました are identified"
+      ],
+      "missingAspects": [
+        "Productive attachment to the conjunctive stem is absent: ichidan remove る, godan use the i-row, する becomes し and 来る becomes き"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-51",
+      "reviewedRequirementHash": "222c649e82eec403cf49ae0fb656df4a3a3e20ae6f39807d0d301d73b4104a5b",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%8Bverb-%E3%81%AA%E3%81%84"
+      ],
+      "coveredAspects": [
+        "Ichidan remove る and add ない",
+        "Plain negative meaning and contrast with polite ません",
+        "Warning that some る verbs are godan"
+      ],
+      "missingAspects": [
+        "Polite ichidan remove る + ません is not given as a construction",
+        "Semi-polite ないです and its register relative to ません are absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-888",
+      "reviewedRequirementHash": "58529eaab0d9af43c7a0c6eaa48d4eb9240986b55f52b75bdf3079c656a91b1e",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%86verb--%E3%81%AA%E3%81%84"
+      ],
+      "coveredAspects": [
+        "Godan a-row + ない, exceptional う to わ and ある to ない"
+      ],
+      "missingAspects": [
+        "Godan i-row + ません is absent",
+        "Semi-polite ないです and its register relative to ません are absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-15",
+      "reviewedRequirementHash": "a97a2c12c72d5fc3f376d01f07de5e9843b999f21bb0d4a8d3042a74b89e0331",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A8-and"
+      ],
+      "coveredAspects": [
+        "Noun coordination with と presents a determined set",
+        "Explicit restriction against directly linking two verbs with this と"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-14",
+      "reviewedRequirementHash": "03bad4d3f85f25b5f4a6e4e913d141baa592d5cddf45f65b0c7c84eb786671f8",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%93%E3%81%93"
+      ],
+      "coveredAspects": [
+        "ここ designates the speaker-side place",
+        "Place word accepts に for presence and で for activity"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-20",
+      "reviewedRequirementHash": "58b5cdf4b455671a008c12ee98326c9f98abd2f490ea471d6e3a1e0119eab985",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9D%E3%81%93"
+      ],
+      "coveredAspects": [
+        "そこ identifies the listener-side or indicated place",
+        "Place word can take a locative particle"
+      ],
+      "missingAspects": [
+        "Anaphoric そこ for a previously mentioned place is not explicitly taught; the explanation is restricted to a visible scene"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-29",
+      "reviewedRequirementHash": "c9502b9d8218b4942bba4bc24af987c397af50667713994463ce1b2df2dcc846",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%82%E3%81%9D%E3%81%93"
+      ],
+      "coveredAspects": [
+        "あそこ identifies a place distant from both speakers",
+        "Locative uses and stationary place example"
+      ],
+      "missingAspects": [
+        "Discourse use for a previously known place shared by both speakers, as distinct from そこ, is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-25",
+      "reviewedRequirementHash": "97d05b92684cb99a981bf682e7984b5ad9b7c57dd8306bcf7f8e06afac359fa1",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A7"
+      ],
+      "coveredAspects": [
+        "Place + で locates an activity",
+        "Contrast with に for existence or destination",
+        "図書館で本を読みます demonstrates the construction"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-32",
+      "reviewedRequirementHash": "317cbcc19fd1cf40a502f2c39df1ab40e7346206c25c0532d48b151c37177128",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB"
+      ],
+      "coveredAspects": [
+        "Postnominal に marks existence location, destination, time and recipient",
+        "Dedicated constructions for place existence, precise clock time and recipient",
+        "Contrast with で for activity locations"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-33",
+      "reviewedRequirementHash": "1c130be369a95e4a4054a59cdb9e550fdc9d0af14f815806af53502f0e86c4b2",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8B-or"
+      ],
+      "coveredAspects": [
+        "Nominal alternatives connected by か",
+        "Distinction from sentence-final interrogative か"
+      ],
+      "missingAspects": [
+        "Alternatives after verbs, i-adjectives and na-adjectives are absent",
+        "Plain alternatives versus polite ですか or ますか as full addressed questions is not explained"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-955",
+      "reviewedRequirementHash": "d30edfbbba5ccf84036c938cb27f3e6c4bff1bed002474f3451f010936654c59",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A8-with"
+      ],
+      "coveredAspects": [
+        "Person + と for accompaniment or an action partner",
+        "Optional 一緒に and distinction from travelling to the person"
+      ],
+      "missingAspects": [
+        "Mutual interaction with と versus one-sided action directed to someone with に, such as 話す, is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-9",
+      "reviewedRequirementHash": "1654ebf3c785651145fb8fd9f4bc2d8f96a32d899a4039b9f39246ba52e4e099",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A7%E3%81%97%E3%82%87%E3%81%86"
+      ],
+      "coveredAspects": [
+        "Supposition and forecast versus intonational confirmation",
+        "Not an objective proof"
+      ],
+      "missingAspects": [
+        "Productive plain verb/adjective + でしょう and direct noun/na-adjective attachment without だ are not explained"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-18",
+      "reviewedRequirementHash": "796a45ae910d2d15f6f7846cbeffcf7dc071fc0d5fae07323fa18a1579f703bc",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A0%E3%82%8D%E3%81%86"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "Casual だろう expressing a conjecture or expectation of agreement is not taught",
+        "Productive attachment after plain verbs, adjectives and nouns, and its register relation to でしょう, are absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-13",
+      "reviewedRequirementHash": "6bffa482f4d89aab8dc1031e1128cac16397b9ddaab5f5fbf08cab7c1af192ff",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C%E3%81%82%E3%82%8B"
+      ],
+      "coveredAspects": [
+        "Inanimate existence and the plant versus mobile-animal distinction",
+        "PlaceにNがあります construction with contrast to activity で"
+      ],
+      "missingAspects": [
+        "Plain existence がある versus polite があります is not given as an explicit pair",
+        "Irregular negative ある to ない is absent from these exact candidates"
+      ],
+      "proposedRecordIds": [
+        "expand-godan-negative"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-23",
+      "reviewedRequirementHash": "7b901d6d4bef27fe239522d91e457deba540f638d2f423ba1293da3ac43b2fd9",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C%E3%81%84%E3%82%8B"
+      ],
+      "coveredAspects": [
+        "Animate existence with いる, distinct from ある",
+        "PlaceにNがいます construction for animals and people",
+        "Warning against the simplistic living versus nonliving distinction"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-30",
+      "reviewedRequirementHash": "a43b0480d3c6100dd82a0cca4b4f613458f6a6e20d773b5804d983a4d0c129b2",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%93%E3%81%AE"
+      ],
+      "coveredAspects": [
+        "この determines a noun on the speaker side",
+        "Requires a noun rather than standing alone"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-37",
+      "reviewedRequirementHash": "a5847a346c621c5d1871c0b14e6dfceb77e9ffe0233b4f2108e3b4bcf9052712",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9D%E3%81%AE"
+      ],
+      "coveredAspects": [
+        "その determines a noun on the listener side",
+        "Distinguished from standalone それ"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-47",
+      "reviewedRequirementHash": "68479da28bd936834d3e3572c5da567c6d12c6560a176b6658b7c37036a09442",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%82%E3%81%AE"
+      ],
+      "coveredAspects": [
+        "あの determines a noun distant from both speakers",
+        "Cannot stand alone in this noun-determiner use"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-17",
+      "reviewedRequirementHash": "a064b7c9a536cbdab7944fdcc581b6915b7fe44733b682bcd868a193b095956f",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/-%E3%82%93%E3%81%A7%E3%81%99-%E3%81%AE%E3%81%A7%E3%81%99"
+      ],
+      "coveredAspects": [
+        "Contextual and explanatory function of のだ or んだ",
+        "Nominal and na-adjective なのだ; polite なんです demonstrated",
+        "Warning against indiscriminate explanatory emphasis"
+      ],
+      "missingAspects": [
+        "Plain verb/i-adjective + のです or んです is not explicitly presented as a productive attachment rule",
+        "Explanation-seeking questions versus ordinary questions and the restriction against んだか are absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-1104",
+      "reviewedRequirementHash": "e6d57375dc4dc7b28c42b711c4daad52b689f79dd399305976ba3b2bd3e4feef",
+      "status": "candidate-not-identified",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE-questions"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "No frozen candidate explains contextual question + の versus an ordinary rising-intonation plain question",
+        "Verb/i-adjective + の and noun/na-adjective + なの, plus polite のですか or んですか, need an explicit question lesson"
+      ],
+      "proposedRecordIds": [
+        "adv-noda"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Empty frozen candidate set; delivered grammar catalogue inspected and a relevant unlinked lesson identified, but not counted. Proposed links require a new frozen requirement and semantic review. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-874",
+      "reviewedRequirementHash": "e0cdd0b4f7e5b77e96639a739cfe743b1595ffb931d2a667880c859dc565f53a",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/past-tense-%E3%81%84-adjectives"
+      ],
+      "coveredAspects": [
+        "Remove final adjective い, add かった, then optional politeness です",
+        "いい uses よかった; excludes 暑いでした"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-16",
+      "reviewedRequirementHash": "e461ee20d04d25d2b7dd5f5190f37b7b21571520c19035cc1ed2916490e4997d",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%AF"
+      ],
+      "coveredAspects": [
+        "の nominalizes a proposition; example Vのが好き",
+        "こと and の are not freely interchangeable"
+      ],
+      "missingAspects": [
+        "Explicit plain verb + の attachment with exclusion of polite ます/ません is absent",
+        "Concrete fixed-pattern bans, such as replacing こと in ことができる or たことがある, are not given",
+        "Nominalizing の before a case particle versus explanatory のです is not distinguished"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-953",
+      "reviewedRequirementHash": "b34374b2e81b89b3dc025a690db24f62ecfafbc72c2a235d8de4f32f15a28ccd",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%84-adjective-noun"
+      ],
+      "coveredAspects": [
+        "Affirmative non-past i-adjective directly before noun",
+        "No な and no intervening polite です; politeness belongs at the sentence end"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-954",
+      "reviewedRequirementHash": "a9d290deca74f0e5ff5e9521706072d6a013bd0c5e982f15cbc99694c42f0a30",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA-adjective-noun"
+      ],
+      "coveredAspects": [
+        "NA + な + noun modification",
+        "きれいな and distinction from predicate です"
+      ],
+      "missingAspects": [
+        "For words permitting both, な marks a quality whereas の can indicate type or purpose; this usage distinction is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-31",
+      "reviewedRequirementHash": "d3c51691e22aa1bd52ce5b1e75c2e5423d3c8a2635aa27d5afff5ecc6c9b09eb",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%B8%E3%81%84%E3%81%8F"
+      ],
+      "coveredAspects": [
+        "Place + へ with 行く or 来る indicates direction",
+        "Pronounced え; に instead emphasizes destination",
+        "Not a marker for an immobile activity location"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-22",
+      "reviewedRequirementHash": "5284148b31fffefaa132cb6f7a85dde46af8e04a1d89bb26516ae534eb60460d",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%99%E3%82%8B"
+      ],
+      "coveredAspects": [
+        "Irregular します, しない, した, して",
+        "Activity noun + する with a caution against combining every noun"
+      ],
+      "missingAspects": [
+        "Independent Nをする meaning do an activity, separate from compound nouns such as 勉強する, is not explained"
+      ],
+      "proposedRecordIds": [
+        "expand-noun-request"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-39",
+      "reviewedRequirementHash": "26f668fa334b56a03e53c1bf7254ab250e7820199ef20a269d29c95c534c9736",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8F%E3%82%8B"
+      ],
+      "coveredAspects": [
+        "Come toward a contextual reference point",
+        "Irregular くる, きます, きた, こない, きて readings"
+      ],
+      "missingAspects": [
+        "Placeに/へ来る construction is absent",
+        "来ている as having arrived and remaining temporarily, contrasted with ongoing movement, is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-895",
+      "reviewedRequirementHash": "5182e19a90b1a5c7388a395920bf4df398518fb3c136a09f6aeea47249845381",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%8B-verb-past"
+      ],
+      "coveredAspects": [
+        "Plain past formation from て to た or で to だ",
+        "食べました versus 食べた identifies register"
+      ],
+      "missingAspects": [
+        "Ichidan remove る + て prerequisite for this derivation is not taught in the frozen pair",
+        "Ichidan remove る + ました is not supplied as a productive polite past rule"
+      ],
+      "proposedRecordIds": [
+        "expand-polite-verb-past"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-41",
+      "reviewedRequirementHash": "cec3e966ea681b4ca72f08b1826993324f395a7f578372cf726cdd83b3cdac7c",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%86-verb-past"
+      ],
+      "coveredAspects": [
+        "Complete common godan te-patterns combined with て to た or で to だ",
+        "行く, する, 来る plain-past exceptions"
+      ],
+      "missingAspects": [
+        "Godan i-row + ました polite past is not taught",
+        "Source-listed exceptional 問う to 問うた and 請う to 請うた are absent"
+      ],
+      "proposedRecordIds": [
+        "expand-polite-verb-past"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-716",
+      "reviewedRequirementHash": "ffb91f0597ce09f251cec215d9581cc7956cf401d3df2a6a06c7f50e9da7e265",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%99%E3%81%8D"
+      ],
+      "coveredAspects": [
+        "Nが好きです means liking N and 好き is not a ます verb"
+      ],
+      "missingAspects": [
+        "好きな + noun attribution is absent",
+        "Strong personal or romantic implication when 好き is directed at a person is not explained"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-717",
+      "reviewedRequirementHash": "c9e884ce0a4ff0ce4fa25040ac3689df57c7c1b4742e5767dbc59721274e591d",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8D%E3%82%89%E3%81%84"
+      ],
+      "coveredAspects": [
+        "嫌い means aversion and can be too direct in a polite refusal",
+        "Generic na-adjective predicate with です"
+      ],
+      "missingAspects": [
+        "嫌い is a na-adjective despite final い is not explicitly taught",
+        "Productive Nが嫌い and 嫌いな + noun are absent"
+      ],
+      "proposedRecordIds": [
+        "expand-na-adjective-noun"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-34",
+      "reviewedRequirementHash": "57cb22a7315fb08dfc71305d682aaa228ad2320c6bde91161fce0602bf146609",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%8C%E3%81%99%E3%81%8D"
+      ],
+      "coveredAspects": [
+        "Nominalization illustrated with Vのが好きです",
+        "Nが好きです preference meaning and na-adjective status"
+      ],
+      "missingAspects": [
+        "Explicit dictionary verb + のが好き construction, not a single unexplained example, is absent",
+        "For past liking keep the activity verb in dictionary form and put the past on 好きだった/でした, is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-355",
+      "reviewedRequirementHash": "64531d8a15661317db2a0eb5056fb01661c34571652da54dd795aa89e09bc710",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C%E3%81%82%E3%82%8B-noun"
+      ],
+      "coveredAspects": [
+        "Existence ある and generic relative clause before its head noun",
+        "Relative verbs take plain form, without a relative pronoun"
+      ],
+      "missingAspects": [
+        "Nがある + head noun meaning a noun with N is not explicitly explained",
+        "Embedded subject が can alternate with の, while thematic は is normally unsuitable in this attributive construction, is absent"
+      ],
+      "proposedRecordIds": [
+        "expand-noun-no"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-873",
+      "reviewedRequirementHash": "44042d4cf3a6632b2acf1cbcebe39de5e5cfe6d50fc690a4b7292551b002aa63",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/negative-%E3%81%84-adjectives"
+      ],
+      "coveredAspects": [
+        "Final い to くない negative and くないです",
+        "Irregular よくない; rejection of ordinary i-adjective + じゃない"
+      ],
+      "missingAspects": [
+        "Formal polite negative くありません is absent",
+        "Explicit exclusion of だ after negative ない is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-36",
+      "reviewedRequirementHash": "bcc89b24ace3f6e2bd25e6e87e2a9f74fa9194905ca5517f51d90c742d3b0670",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A7-by"
+      ],
+      "coveredAspects": [
+        "Instrument, language or transport + で",
+        "Distinction from activity location and rejection of instrument に"
+      ],
+      "missingAspects": [
+        "Group + で for joint effort toward a shared external goal, contrasted with interpersonal と, is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-62",
+      "reviewedRequirementHash": "008422a95241486d937ca12dd708310ca41db0fb00e7b49531c916133c553490",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%A7"
+      ],
+      "coveredAspects": [
+        "ので connects a reason with its result with less personal insistence",
+        "Nominal/na-adjective なので construction with an example"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-45",
+      "reviewedRequirementHash": "27ddcedac25a6535fa3764e21a0c423f91e38790de548da4cc78b8ddfffbe9c9",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8B%E3%82%89-because"
+      ],
+      "coveredAspects": [
+        "Causal から and its relation to ので"
+      ],
+      "missingAspects": [
+        "Nominal and na-adjective causal だから, as distinct from なので, is absent",
+        "Productive causal verb/adjective + から attachment is not explained or exemplified"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-52",
+      "reviewedRequirementHash": "90676ee43b1be6be2fdcf0fc1e6a5b9dce0b133d92fd07ca8b4cbb37303118d9",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8B%E3%82%89"
+      ],
+      "coveredAspects": [
+        "Place, time or other starting reference + から",
+        "Distinguished from causal から"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-361",
+      "reviewedRequirementHash": "4fe39a512fa79559210426b2f03932c4b53da597809e583a78d9b612ab619691",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%91%E3%81%A9-%E3%81%A0%E3%81%91%E3%81%A9"
+      ],
+      "coveredAspects": [
+        "Related けれど is described as a softer opposition"
+      ],
+      "missingAspects": [
+        "けど as a colloquial variant of けれども is absent",
+        "Verb/i-adjective + けど and noun/na-adjective + だけど are absent",
+        "Sentence-final けど leaving an obvious or tactful continuation unsaid is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-44",
+      "reviewedRequirementHash": "4a081c9c6d8533ce7b1fa4cf373e09498caaa38246bceff0f7a9cf2fbddd4486",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C-but"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "Conjunctive が meaning but or however, distinct from subject が, is not taught",
+        "Plain noun/na-adjective + だが, polite ですが/ますが and omitted continuations need explanation"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-896",
+      "reviewedRequirementHash": "65304930be9ee77441b04a88b8695db0d804250b8edb3579c645a9a1d82e1d1b",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%8B-verb-neg-past"
+      ],
+      "coveredAspects": [
+        "Negative ない to なかった and past non-occurrence",
+        "Must begin with the correct negative base"
+      ],
+      "missingAspects": [
+        "Ichidan remove る to form that negative base is not explained in this sole frozen candidate",
+        "Productive polite ませんでした and semi-polite なかったです are absent"
+      ],
+      "proposedRecordIds": [
+        "expand-ichidan-negative",
+        "expand-polite-verb-past"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-897",
+      "reviewedRequirementHash": "f10b21690ccb07d57a0bb8a7edf6a4776a2c76f79585d2caaa63b25dca5368e8",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%86-verb-neg-past"
+      ],
+      "coveredAspects": [
+        "Godan a-row negative, う to わ, ある to ない",
+        "ない to なかった for a past negative"
+      ],
+      "missingAspects": [
+        "Godan i-row + ませんでした is absent",
+        "Semi-polite なかったです is absent"
+      ],
+      "proposedRecordIds": [
+        "expand-polite-verb-past"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-416",
+      "reviewedRequirementHash": "c2eafa3ca4b7ae18a3b26d237ea334dc96fe324ff8b7d05af1257a861be6a984",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/verb-%E3%81%A6"
+      ],
+      "coveredAspects": [
+        "Godan te-form transformations including で alternations and 行って",
+        "する to して and 来る to 来て",
+        "Connects actions or supports further constructions"
+      ],
+      "missingAspects": [
+        "Productive ichidan remove る + て is absent",
+        "Source-listed exceptions 問う to 問うて and 請う to 請うて are absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-27",
+      "reviewedRequirementHash": "9edad8798d98764a80409161ff18c51fd4675285bb060132cf3fc1de80194fdf",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A6%E3%81%84%E3%82%8B1"
+      ],
+      "coveredAspects": [
+        "Ongoing durative action with ている",
+        "Tense and politeness on いる"
+      ],
+      "missingAspects": [
+        "The authored source also explains enduring states such as 知っている or 死んでいる rather than a universal ongoing-action reading; this distinction is absent from the frozen candidate"
+      ],
+      "proposedRecordIds": [
+        "grammar-result-state"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-38",
+      "reviewedRequirementHash": "4a83d30b979e8868dc904ae3769689953a988c2c46c180e0ec485f8c83c8bfd8",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%B8"
+      ],
+      "coveredAspects": [
+        "Directional place + へ with movement verbs",
+        "Pronunciation え and destination-focused に contrast"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-48",
+      "reviewedRequirementHash": "37daf4ece39e869a6874b43e00e485086b6b8327f4a9b6f5c9ccb85d71a3b6e4",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/verb-%E3%81%AB%E3%81%84%E3%81%8F"
+      ],
+      "coveredAspects": [
+        "Masu stem + に + movement verb expresses purpose",
+        "Distinguishes activity nouns and excludes retaining ます before に"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-714",
+      "reviewedRequirementHash": "0933df820762272fc8c8521a48081b85aafcd6cb046521340e918ce4c6866764",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A0%E3%82%8C"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "誰 as an unknown-person interrogative with subject/object/recipient and possessive particles is not taught",
+        "Politer どなた and どちらさま are absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-1094",
+      "reviewedRequirementHash": "349cd72231eceb24dfb42af50962af802b68f41fcc535f4f6f961a658e66b196",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%9C"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "なぜ asks for a logical reason in formal speech or writing",
+        "Register contrast with neutral どうして and casual なんで is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-1095",
+      "reviewedRequirementHash": "f9cb0e65a2fc2157113a3d00cbaf7a378fc11accacc2751b86d626794b7d97d1",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A9%E3%81%86%E3%81%97%E3%81%A6"
+      ],
+      "coveredAspects": [
+        "どうして asks a reason; questions can demand justification depending on tone",
+        "Productive reason questions with verbs and nominal predicates"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-1096",
+      "reviewedRequirementHash": "49903127f84b9c9e431bec77b9d91b035617902a55043f70c7cb42fed6716c4d",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%82%93%E3%81%A7"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "なんで as casual why, including its potentially demanding or accusatory register, is absent",
+        "Distinction from means/method なにで and alternative neutral どうして is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-951",
+      "reviewedRequirementHash": "54a1ae7c674358fc5ccb217bd315810f8ce38d23da5fbe9b38bbd32c74a5c392",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%84-adjective-predicate"
+      ],
+      "coveredAspects": [
+        "i-adjective predicate can end in polite です",
+        "Negative predication is illustrated"
+      ],
+      "missingAspects": [
+        "Standalone affirmative i-adjective as a complete plain predicate without だ is not explained",
+        "Contextual omission of the subject and は versus が with an adjectival predicate are absent"
+      ],
+      "proposedRecordIds": [
+        "expand-copula-plain"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-952",
+      "reviewedRequirementHash": "41b77ce39d71a838599b39ab5d7da97de14e97919e2ca3385d2ea021e2aee94c",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA-adjective-predicate"
+      ],
+      "coveredAspects": [
+        "Plain NAだ and polite NAです predication",
+        "Attributive な is absent before predicate です",
+        "Distinction from i-adjectives"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-40",
+      "reviewedRequirementHash": "b105dd24b23c154907c8da29d43c7086a419659624b98e5e9864e23cae7324ec",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A0%E3%81%A3%E3%81%9F-%E3%81%A7%E3%81%97%E3%81%9F"
+      ],
+      "coveredAspects": [
+        "Polite nominal and na-adjective past でした",
+        "i-adjectives use a different past"
+      ],
+      "missingAspects": [
+        "Plain noun/na-adjective + だった is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-49",
+      "reviewedRequirementHash": "9baa455e0d2e6287749f9ab4f2588792c4cce78f1f227b92580acd1337944485",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%98%E3%82%83%E3%81%AA%E3%81%84"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "Noun/na-adjective + じゃない or ではない plain negative is not taught",
+        "Contraction では to じゃ, polite variants and rising-intonation negative questions need explanation"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-50",
+      "reviewedRequirementHash": "0ac8cf797727f2a66f8cacac9f08460477b0c5e5232d90c33aa1edd2d6eb9b05",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%98%E3%82%83%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "Noun/na-adjective + じゃなかった or ではなかった plain past negative is not taught",
+        "Relation to polite ではありませんでした and casual では to じゃ contraction is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-876",
+      "reviewedRequirementHash": "cbaf2469541f07a03396fbf8090b55529ad4d2bfdc7ce380bb73b739b578a04a",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%84-Adjective-%E3%81%8F%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F"
+      ],
+      "coveredAspects": [
+        "i-adjective くない negative and affirmative かった past are taught separately"
+      ],
+      "missingAspects": [
+        "Combining these as i-adjective くなかった is not explained",
+        "Polite くありませんでした and くなかったです, including いい to よくなかった, are absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-356",
+      "reviewedRequirementHash": "90ff45929d643d5e2b4dc91308e91c901e2eefe1c4e48eb28207d7e93aa61eba",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A8"
+      ],
+      "coveredAspects": [
+        "Plain thought content + と + 思う",
+        "Noun/na-adjective affirmative だ retained before quotative と"
+      ],
+      "missingAspects": [
+        "General quotations with 言う or 聞く, not only private thought with 思う, are absent",
+        "Omission of the quoting verb when understood is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-358",
+      "reviewedRequirementHash": "641fa4b16b142c2cea0d269df742fd347a4e08ef87998d20ab5bf4a6bc65bb2a",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A3%E3%81%A6"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "Colloquial quotative って corresponding to と, with communication verbs and frequent omission, is not taught",
+        "Casual register and its interaction with otherwise polite speech are absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-950",
+      "reviewedRequirementHash": "bfd03e08aa248788f8cc01e1f4272f11c2b21f47006a5598fdba03cd9c3d8358",
+      "status": "candidate-not-identified",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/verb-non-past"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "No frozen candidate explains dictionary/plain non-past and polite non-past as habit, general fact or future according to context",
+        "Plain versus polite non-past forms and temporal-context interpretation require an explicit combined lesson"
+      ],
+      "proposedRecordIds": [
+        "grammar-polite-nonpast",
+        "grammar-verb-groups"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Empty frozen candidate set; delivered grammar catalogue inspected and a relevant unlinked lesson identified, but not counted. Proposed links require a new frozen requirement and semantic review. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-357",
+      "reviewedRequirementHash": "67f21a7a58a2584452f4a6f950e505b7f531648b933798d8d1d246af51e34fdc",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/verb-%E3%81%9F-noun"
+      ],
+      "coveredAspects": [
+        "Plain verbal relative clause placed before the head noun without a relative pronoun",
+        "Past modification illustrated; progressive and result-state forms supply the other modifying predicates",
+        "Polite verb forms excluded by the plain-form rule"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-1103",
+      "reviewedRequirementHash": "8e62e8db8f4e9af603a0a158ca7864cc3e99a8cfbf89232b01b4b34b290ccc3c",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE-subject"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "Subject の alternating with が inside noun-modifying subordinate clauses is not taught",
+        "Main-clause exclusion and object-marked を restriction are absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-720",
+      "reviewedRequirementHash": "68c0f1e7e6e632d26aeb46e15c85780b56140e37ed79bde54a5e01563f89c901",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE-noun-ommission"
+      ],
+      "coveredAspects": [
+        "Possessive noun + の + noun and the rightmost head"
+      ],
+      "missingAspects": [
+        "Dropping a recoverable head noun after の, as in 私の for mine, is not taught",
+        "Contrast with adjective + の replacing a thing is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-66",
+      "reviewedRequirementHash": "4923ffa9a4574464e7c031ebda604599ced1af3115533eb120f3b9f51190ef78",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "Dictionary verb + な for a strong prohibition is not taught",
+        "Strength and register difference from ないでください or てはいけない are absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-43",
+      "reviewedRequirementHash": "7b7141b939315a503629e6d6e1efe488d08795dd55cb5c5027a0d6b4812acb81",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A0%E3%81%91"
+      ],
+      "coveredAspects": [
+        "だけ conveys a direct limitation; contrast with negative しか"
+      ],
+      "missingAspects": [
+        "Productive noun/verb/i-adjective + だけ attachment is absent",
+        "Adjectival NAなだけ versus noun-like NAだけ and their different meanings are absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-712",
+      "reviewedRequirementHash": "b7b95cda2056c5a442f5d27a509a32c3e6d4776084bd7d2f29163b34d01aa2e6",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A9%E3%82%8C"
+      ],
+      "coveredAspects": [
+        "どれ asks which identifiable object",
+        "Subject interrogatives often use が"
+      ],
+      "missingAspects": [
+        "Publisher distinction of three or more choices versus binary どちら/どっち is absent",
+        "どれ as a standalone substitute noun versus どの + noun is not clearly constructed in a どれ example"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-56",
+      "reviewedRequirementHash": "c29524bc0b91368846c1c59316845c251aa24e9a7806ebf729eca18b5a9a4c87",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A9%E3%81%93"
+      ],
+      "coveredAspects": [
+        "どこ asks for a place",
+        "Standalone place question 駅はどこですか"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-713",
+      "reviewedRequirementHash": "89e62f28642cc019b901d6b857f697abc44278bf017433df9e848270dbffa29b",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A9%E3%81%AE"
+      ],
+      "coveredAspects": [
+        "どの must precede a noun and cannot substitute for the noun alone",
+        "どの本を読みますか demonstrates selection"
+      ],
+      "missingAspects": [
+        "Three-or-more versus binary どちらの/どっちの distinction is absent",
+        "Whichever reading in a non-specific choice construction is not taught"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-764",
+      "reviewedRequirementHash": "d5392dbe15af5f4753c84cfcf5d1de68f25aaca5d799b2ea72e5534ea3321218",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A6%E3%81%84%E3%82%8B2"
+      ],
+      "coveredAspects": [
+        "ている describes a persisting result after a punctual change",
+        "Closed door and arrived-person interpretations; 知っている with ordinary negative 知らない",
+        "Explicit warning against interpreting every ている as ongoing change"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-64",
+      "reviewedRequirementHash": "9660e0a6cd4fbcdfe65495715af8ec113897d3ca34adb67398e09ad752dfbb75",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A6%E3%81%8B%E3%82%89"
+      ],
+      "coveredAspects": [
+        "Vてから orders the second action after completion of the first",
+        "Final predicate carries narrative tense",
+        "Distinguished from causal から"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-770",
+      "reviewedRequirementHash": "3c82a22ccb2a350fb8b606b7c6f88154623912dc4933efff1df265ae3e95dd90",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/verb-%E3%81%A6-b"
+      ],
+      "coveredAspects": [
+        "Vて connects actions in a simple sequence",
+        "Tense is on the final predicate",
+        "Other manner and cause uses are acknowledged rather than claiming every て is temporal"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-42",
+      "reviewedRequirementHash": "bf62e83cf14c8bd40674affe5f6c29762cf093646d08c5b413ac29fb75540c2d",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82%E3%81%86"
+      ],
+      "coveredAspects": [
+        "もう with affirmative past expresses already accomplished",
+        "Acknowledges that meaning depends on the predicate"
+      ],
+      "missingAspects": [
+        "もう + negative predicate meaning not anymore is only mentioned and explicitly excluded from teaching",
+        "Questions asking whether completion has already occurred are not developed"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-72",
+      "reviewedRequirementHash": "a84b7bf20ab45e97103b67707330bb06d71f7edc104688b558157fc3ba8229ed",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%A0"
+      ],
+      "coveredAspects": [
+        "まだ with an affirmative predicate indicates a continuing state",
+        "Contrasts continuity with French encore as repetition",
+        "Negative not-yet interpretation is identified as aspect-sensitive"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-83",
+      "reviewedRequirementHash": "979c8525076cf2ae956450d15cf091b59bf80179f9ba5701eb494c84ee40c3d2",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%A0-%E3%81%A6%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93"
+      ],
+      "coveredAspects": [
+        "まだ + Vていない or Vていません marks an expected action not yet accomplished",
+        "Contrasts expected accomplishment with habitual nonperformance"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-46",
+      "reviewedRequirementHash": "2571f715483799d74a5076700f7f76ed57525eb83208890dcc69fb65984a2013",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A6%E3%82%82%E3%81%84%E3%81%84"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "This publisher point is noun/na-adjective + でもいい and i-adjective stem + くてもいい",
+        "The frozen candidate only teaches verbal permission; nominal acceptance and adjectival acceptability are not explained"
+      ],
+      "proposedRecordIds": [
+        "expand-noun-permission",
+        "grammar-concessive-temo"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-59",
+      "reviewedRequirementHash": "3141eb2b84382f09b791a0bd97ad48ea3ea043b9559b757262dc976bbeb54361",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%84"
+      ],
+      "coveredAspects": [
+        "Masu stem + たい for speaker desire; behaves as an i-adjective",
+        "Caution against unsupported assertions about another person desires"
+      ],
+      "missingAspects": [
+        "Object marking by を or が with たい is absent",
+        "Wishing another person to act requires てほしい rather than たい, and invitations normally use ませんか; these distinctions are absent"
+      ],
+      "proposedRecordIds": [
+        "expand-invitation-masenka"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-79",
+      "reviewedRequirementHash": "908908289f3c6a365203a00c3687228a304aac111a4fe2b5db54a4ebcebd324e",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%82%8A-%E3%81%9F%E3%82%8A%E3%81%99%E3%82%8B"
+      ],
+      "coveredAspects": [
+        "Vた + り lists sample activities rather than an obligatory order",
+        "VたりVたりする puts tense and politeness on する"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-359",
+      "reviewedRequirementHash": "d8550f4ae3c2c5766c0a908ac06aba4bb035d7981ab7138ea8b8711f9e2bbff3",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%91%E3%81%A3%E3%81%93%E3%81%86"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "結構 as a degree adverb meaning quite is not taught",
+        "結構です as acceptance or no-thank-you depending on context is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-715",
+      "reviewedRequirementHash": "e75116f61ab2c241039faf7c0cb8b500f19622fb6d2d4ace6577baa4bc002119",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%8F%E3%81%95%E3%82%93"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "たくさん before a predicate for many/a lot is not taught",
+        "たくさんの + noun and optional の with a change in focus are absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-53",
+      "reviewedRequirementHash": "88aa7d5e0f24653eb7c68cfaf7dd3f446cc0499db24f2489367511b8e9fff637",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%88%E3%81%AB"
+      ],
+      "coveredAspects": [
+        "Dictionary verb + 前に and noun + の前に for before",
+        "Dictionary form retained even in an overall past narrative"
+      ],
+      "missingAspects": [
+        "Spatial の前に meaning in front of an object or place is not explained"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-61",
+      "reviewedRequirementHash": "163267c68b8c05237e5a6ff5b6347e767794c9b6b2bfa9a7e7e4bbd763b824e8",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8F%E3%82%89%E3%81%841"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "Number/counter + くらい or ぐらい for approximation is not taught",
+        "どのくらい extent questions and distinction from broad-time ころ are absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-58",
+      "reviewedRequirementHash": "e44a35848b3af932093c3c967c728176bca1df2aeb693eae6118660920496569",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/noun-%E3%81%BE%E3%81%A7"
+      ],
+      "coveredAspects": [
+        "Noun/place/time + まで gives an endpoint",
+        "Continued activity until an endpoint distinguished from a deadline in までに"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-360",
+      "reviewedRequirementHash": "d1e75f942eef28289de595bb1e79bd604eabb25c635978d44d58a9c7d52eafe5",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/v-%E3%81%BE%E3%81%A7"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "Dictionary/non-past verb + まで meaning until an event happens is not taught",
+        "Non-past retained inside the まで clause even in a past narrative is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-76",
+      "reviewedRequirementHash": "68b55c9e7187a86ee8a724ca28c9c19ee762bcaa5d84b1305e0a517157e4ef99",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%99%E3%81%8E%E3%82%8B"
+      ],
+      "coveredAspects": [
+        "Masu stem + すぎる, i-adjective without い and na-adjective base",
+        "いい becomes よすぎる"
+      ],
+      "missingAspects": [
+        "Negative lack/excess forms なさすぎる versus verbal なすぎる, and their scope difference from すぎない, are absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-84",
+      "reviewedRequirementHash": "20d52fb2f998d56987725f70475f4872fc276e864bc3e086c6061ad3db8b2003",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E3%81%99%E3%82%8B"
+      ],
+      "coveredAspects": [
+        "Noun + にする selects an option",
+        "Distinguishes selecting a thing from deciding an action in ことにする"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-57",
+      "reviewedRequirementHash": "21dd4b3be368b433ea85981e4c1e351b00e3678d5fe5deacd473e8c5d2fc9595",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E3%81%AA%E3%82%8B-%E3%81%8F%E3%81%AA%E3%82%8B"
+      ],
+      "coveredAspects": [
+        "Noun/na-adjective + になる and i-adjective stem + くなる express change",
+        "Irregular いい to よくなる; rejects 暖かいになる"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-55",
+      "reviewedRequirementHash": "95c64f6cfac86206e0b49153d64e0d7d1948e5398f5120c2295ee4cbd4743073",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%AA%E3%81%8B%E3%81%A7-%E3%81%8C%E3%81%84%E3%81%A1%E3%81%B0%E3%82%93"
+      ],
+      "coveredAspects": [
+        "Nの中で sets the comparison group and 一番 ranks an element for a property",
+        "Group and comparison property must be explicit; ranking is relative to that set"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-73",
+      "reviewedRequirementHash": "a5fec3580dd8934c3b089e0d252c181f83f7ffbd4213c1becee29a62e556f14b",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%88%E3%82%8A-%E3%81%AE%E3%81%BB%E3%81%86%E3%81%8C"
+      ],
+      "coveredAspects": [
+        "AよりBのほうがX compares nouns with A as reference and B at the greater degree",
+        "Avoids reversing the comparison direction"
+      ],
+      "missingAspects": [
+        "Verb + 方が, i-adjective + 方が and na-adjective + な方が are absent; the card only gives the nominal のほうが pattern"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-718",
+      "reviewedRequirementHash": "d87a0ef0335c313cd5e825d01556a37d0dd84e01e79b0f968eb5eeb9f7f23a42",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%AB%E3%81%8B-%E3%81%AA%E3%81%AB%E3%82%82"
+      ],
+      "coveredAspects": [
+        "何か means an unspecified thing",
+        "何も requires a negative predicate in the nothing construction"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-721",
+      "reviewedRequirementHash": "685105eb081fd39715ff006748740a3956fcf539af488b4ae5631890061e6fea",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E8%AA%B0%E3%81%8B-%E3%81%A9%E3%81%93%E3%81%8B-%E8%AA%B0%E3%82%82-%E3%81%A9%E3%81%93%E3%82%82"
+      ],
+      "coveredAspects": [
+        "誰か means someone; 誰も with a negative means no one",
+        "も itself is not intrinsically negative"
+      ],
+      "missingAspects": [
+        "どこか somewhere and どこも with negation nowhere are absent",
+        "Particle order 誰かに/どこかへ versus 誰にも/どこにも/誰とも is absent"
+      ],
+      "proposedRecordIds": [
+        "expand-interrogative-demonstratives"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-70",
+      "reviewedRequirementHash": "af135f8713819b2072dfb4fe5a95868f9956d3d672196e830a219578a54db99a",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%97%E3%82%87%E3%81%86"
+      ],
+      "coveredAspects": [
+        "Masu stem + ましょう proposes joint action or speaker undertaking",
+        "More affirmative than invitation ませんか"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-75",
+      "reviewedRequirementHash": "ef4f6c66888b81ff9d8d28056f8671629969770391073ff07c268f3be7cf84e0",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%E3%81%8B"
+      ],
+      "coveredAspects": [
+        "ましょうか offers assistance or proposes a joint action depending on context"
+      ],
+      "missingAspects": [
+        "Productive replacement of ます by ましょうか or explicit attachment to the masu stem is absent",
+        "Direct suggestion/question versus invitation ませんか is not explained"
+      ],
+      "proposedRecordIds": [
+        "expand-suggestion-mashou"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-82",
+      "reviewedRequirementHash": "442f169c11a950c41881b3b265185c1b6a8542d9a4e73967f8cc0d5bf4d8ff6c",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8B"
+      ],
+      "coveredAspects": [
+        "Negative polite question as an invitation to shared activity",
+        "Context distinguishes invitation from a question about nonperformance"
+      ],
+      "missingAspects": [
+        "Explicit masu stem + ませんか formation is not taught",
+        "Contrast with suggestion ましょうか and the register of casual ないか are absent"
+      ],
+      "proposedRecordIds": [
+        "expand-suggestion-mashou"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-35",
+      "reviewedRequirementHash": "6163da6e19b05c0e710b59fda7ccbfe13133a4f70c81fba8c1cf50de1578b949",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/verb-%E3%81%A6%E3%82%82%E3%81%84%E3%81%84"
+      ],
+      "coveredAspects": [
+        "Verb te-form + もいい permits an action",
+        "Adding ですか requests permission; relation and authority affect the exchange"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-60",
+      "reviewedRequirementHash": "c0b0e19f2261622d626c57dae621be482f1796cfff933ed6cc73f3651d5d2927",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84"
+      ],
+      "coveredAspects": [
+        "Verb te-form + ください requests an action",
+        "Usual in instructions but not automatically appropriate to every interlocutor"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-65",
+      "reviewedRequirementHash": "f28bfab1779edac84ff754a862fb7df538eb25ac93dd652a3a82bbe96cb0c952",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%84%E3%81%A7%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84"
+      ],
+      "coveredAspects": [
+        "Verb negative in ない + でください requests nonperformance",
+        "Instructions and protection uses"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-67",
+      "reviewedRequirementHash": "9089b5981f4b55515c32270ad0421f924a77d1f076fa5321ea5adcec7008ce3b",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84"
+      ],
+      "coveredAspects": [
+        "Verb te-form + はいけない prohibits an action",
+        "Direct address may be strong; colloquial ちゃ and じゃ contractions"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-86",
+      "reviewedRequirementHash": "029001f249a42b42f66978ad4b7eb90875af34474b3d1a4a92f462d021d694aa",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84"
+      ],
+      "coveredAspects": [
+        "なくてはいけない is identified as an obligation, not a prohibition",
+        "An example demonstrates the polite なくてはいけません"
+      ],
+      "missingAspects": [
+        "Productive ない to なくて + はいけない formation is absent",
+        "なくちゃいけない and omission of いけない in colloquial use are not explained by this candidate"
+      ],
+      "proposedRecordIds": [
+        "expand-obligation-contraction"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-87",
+      "reviewedRequirementHash": "2634a7e41e337dcddb1978ca4d6f0f304f320411bc72a12a8ac736c589496af1",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A6%E3%81%AF%E3%81%AA%E3%82%89%E3%81%AA%E3%81%84"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "The frozen card teaches なければならない and names なくてはいけない, but does not teach なくてはならない",
+        "Productive ない to なくてはならない and its relatively formal register are absent"
+      ],
+      "proposedRecordIds": [
+        "expand-obligation-contraction"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-68",
+      "reviewedRequirementHash": "a2c68491c8aa789d59694d0e451cbbf85a26b0bf423745620ebe5f940dc4f29d",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%BB%E3%81%86%E3%81%8C%E3%81%84%E3%81%84"
+      ],
+      "coveredAspects": [
+        "Plain past verb + ほうがいい advises doing an action",
+        "Grammatical past does not assert past completion",
+        "Relation and tone can make advice pressing"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-69",
+      "reviewedRequirementHash": "08471770dbf5a9db56c690218ce718b045c68efec1d7a6889f6040e167527c2c",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%84%E3%81%BB%E3%81%86%E3%81%8C%E3%81%84%E3%81%84"
+      ],
+      "coveredAspects": [
+        "Negative verb + ほうがいい advises abstention",
+        "Potentially pressing advice rather than a neutral observation"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-74",
+      "reviewedRequirementHash": "0c4886aa371f16169f86205fbf4c55e556483f292fda3d4d875aebbae54fab42",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A1%E3%82%83-%E3%81%AA%E3%81%8D%E3%82%83"
+      ],
+      "coveredAspects": [
+        "なきゃ contracts なければ; なくちゃ contracts なくては",
+        "Obligation in context; ならない or いけない may be omitted; colloquial register"
+      ],
+      "missingAspects": [
+        "Productive negative-base transformations Vない to Vなきゃ and Vなくちゃ are not explicitly taught"
+      ],
+      "proposedRecordIds": [
+        "adv-nakerebanaranai"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-81",
+      "reviewedRequirementHash": "735a538007e6c2712d1fe5e976a9c2b60ef189e5f4f85f49a2056b782196d01b",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%84"
+      ],
+      "coveredAspects": [
+        "Noun + や + noun gives non-exhaustive examples",
+        "Contrast with と; optional など; cannot directly connect verbal propositions"
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Core meaning, productive construction and important restrictions are explained by the frozen candidates; ancillary history and fun facts are not required. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-63",
+      "reviewedRequirementHash": "9590ade17ec9da968b33ebd9cc21b87baa20c4e1d9968294ec57751c3d57f465",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%93%E3%81%A8%E3%81%8C%E3%81%82%E3%82%8B"
+      ],
+      "coveredAspects": [
+        "Plain past verb + ことがある for experience",
+        "Distinguishes occasional non-past Vことがある"
+      ],
+      "missingAspects": [
+        "Vたことがない or ありません for never having the experience is absent",
+        "Explicit prohibition on substituting の for こと in this fixed expression is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-765",
+      "reviewedRequirementHash": "54aecbf22e6f61f5621d65a231fa037037e8febde9cf3c44c31169fbe508ff52",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A6%E3%81%84%E3%82%8B3"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "The frozen pair teaches progressive and result-state ている but not recurrent habitual activity",
+        "Regular activity as an ongoing personal practice, often clarified by 毎日 or 毎週, is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-769",
+      "reviewedRequirementHash": "adb2161219149035bdbeef710e99ecb8e646b374313b7b2e0b8d1461823c325f",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/adjective-%E3%81%A6-noun-%E3%81%A7"
+      ],
+      "coveredAspects": [
+        "i-adjective くて and noun/na-adjective で connect predicates",
+        "Politeness occurs at the final predicate, not after the first adjective"
+      ],
+      "missingAspects": [
+        "Irregular いい to よくて is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-771",
+      "reviewedRequirementHash": "593c461c23877d637c2ec29706b1c0c1e8df755d786bfb49942a4441657eaf8f",
+      "status": "candidate-not-identified",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/adjective-%E3%81%A6-b"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "No frozen candidate explains adjectival くて or nominal/na-adjectival で followed by a full independent predicate clause",
+        "The available predicate-coordination card names causal possibilities but only teaches properties of the same referent; clause-level linking and よくて remain to be taught"
+      ],
+      "proposedRecordIds": [
+        "expand-predicate-coordination"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Empty frozen candidate set; delivered grammar catalogue inspected and a relevant unlinked lesson identified, but not counted. Proposed links require a new frozen requirement and semantic review. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-85",
+      "reviewedRequirementHash": "84aadad1443f36ec33c4a30e7351b2a3e3f0dffc2884c43e2c48f571d080208c",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%8C%E3%81%B8%E3%81%9F"
+      ],
+      "coveredAspects": [
+        "Dictionary verb + のが下手 expresses poor ability",
+        "下手 is a na-adjective; social caution about directly evaluating another person"
+      ],
+      "missingAspects": [
+        "Past inability puts tense on 下手だった/でした while keeping the activity verb in dictionary form; this usage restriction is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-77",
+      "reviewedRequirementHash": "380774265804e7fda3489763f0bb23bb482ff8468bfc310760bbf28ddd245404",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%8C%E3%81%98%E3%82%87%E3%81%86%E3%81%9A"
+      ],
+      "coveredAspects": [
+        "Dictionary verb + のが上手 expresses ability",
+        "上手 is a na-adjective; caution about self-praise"
+      ],
+      "missingAspects": [
+        "Past ability puts tense on 上手だった/でした while keeping the activity verb in dictionary form; this usage restriction is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-719",
+      "reviewedRequirementHash": "bd2872733c4b514a167e2f5e7797af80614a1f5b0d06b283ae3e0a104922f7f0",
+      "status": "missing",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/adjective-%E3%81%AE-%E3%81%AF"
+      ],
+      "coveredAspects": [],
+      "missingAspects": [
+        "Frozen candidates teach adjectives before an overt noun, not adjective nominalization with の",
+        "i-adjective + の and na-adjective + なの replacing a thing, followed by は/が/も, are absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Delivered grammar catalogue inspected; no lesson explains this exact construction sufficiently to propose a complete match. Related forms, prerequisites, titles and isolated examples do not establish coverage. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-722",
+      "reviewedRequirementHash": "9dd4da8c27a1767997d87f9907506ebef34d36bd4797a021e9fc485d85c49c2e",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%82%E3%81%92%E3%82%8B"
+      ],
+      "coveredAspects": [
+        "あげる presents a gift directed toward someone else"
+      ],
+      "missingAspects": [
+        "Giver は/が, recipient に and gift を in an あげる sentence are not explained",
+        "Choice of verb when the recipient has higher status is absent"
+      ],
+      "proposedRecordIds": [
+        "expand-recipient-ni",
+        "grammar-honorific"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-723",
+      "reviewedRequirementHash": "ae669d35a44a59bb5e88346e95b040670daa1fa7d94e72626eb08b5ac707f03c",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8F%E3%82%8C%E3%82%8B"
+      ],
+      "coveredAspects": [
+        "くれる presents giving toward the speaker or their in-group",
+        "Example identifies a giver and gift"
+      ],
+      "missingAspects": [
+        "Recipient に and complete giver/recipient/gift particle mapping are absent",
+        "Omission of an obvious recipient and contrast with outward giving by あげる need explicit explanation"
+      ],
+      "proposedRecordIds": [
+        "expand-recipient-ni"
+      ],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. Proposed records are possible additions or neighboring support, not coverage approvals or a promise that they close every gap. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-724",
+      "reviewedRequirementHash": "4e7f3f5b13b8a6afb6fcdedb9730b272403a1ea5ccd29b9ed03029c65a16fce4",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82%E3%82%89%E3%81%86"
+      ],
+      "coveredAspects": [
+        "もらう makes the recipient the subject of receiving"
+      ],
+      "missingAspects": [
+        "Giver marked に or から, receiver は/が and object を are not taught",
+        "No もらう example constructs the same gift from the receiving viewpoint"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-54",
+      "reviewedRequirementHash": "2f2a392364f1cffc4749405f1d4a3b56e50843597ecca5f4c33c61e4004deb0d",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%91%E3%82%8C%E3%81%A9%E3%82%82"
+      ],
+      "coveredAspects": [
+        "Related けれど introduces a softer opposition than のに"
+      ],
+      "missingAspects": [
+        "けれども as the full relatively formal variant of けど is absent",
+        "Verb/i-adjective attachment versus noun/na-adjective + だけれども and polite forms is absent",
+        "Sentence-final omission of an understood continuation is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    },
+    {
+      "id": "bunpro-80",
+      "reviewedRequirementHash": "af3bbe37f8ebab62d3a544a2300ba8c935b3c14ce9036c15845d837bc6e78ef6",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A4%E3%82%82%E3%82%8A%E3%81%A0"
+      ],
+      "coveredAspects": [
+        "Plain verb + つもり expresses an intention; negative intention appears in an example",
+        "Intention differs from a collective settled decision"
+      ],
+      "missingAspects": [
+        "Contrast between Vないつもり intending not to act and Vつもりはない having no intention to act is absent"
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: Compared the frozen candidate pedagogical fields against the authored Bunpro reviewable and included.writeups; community replies excluded. Frozen candidates explain only the aspects listed; prerequisites outside the frozen set are not silently included. This is an editorial publisher benchmark, not an official exhaustive JLPT syllabus or learner mastery assessment. Source snapshot SHA256, requirement SHA256 and candidate content hashes were verified against the 352-card delivered release."
+    }
+  ]
+}

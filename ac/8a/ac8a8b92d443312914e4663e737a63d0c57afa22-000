@@ -1,0 +1,890 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/n5_refresh_second",
+  "humanReview": false,
+  "reviewType": "independent-semantic-coverage-review",
+  "release": "aba956b0fb5ab395",
+  "complete": true,
+  "requirements": [
+    {
+      "id": "bunpro-2",
+      "reviewedRequirementHash": "e6ff41e6b2b7f63016d48b367b705a81ba305190a9a22e01ee4658d54e97abaa",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A7%E3%81%99"
+      ],
+      "coveredAspects": [
+        "Noun + です identifies or predicates politely; i-adjective + です and na-adjective base + です are explicitly distinguished.",
+        "No extra だ after i-adjectives and no な before です."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "Current ordinary spoken adjective + です is taught. The publisher's categorical claims that this is incorrect Japanese are not adopted as grammar requirements. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-3",
+      "reviewedRequirementHash": "37b1870805376f46f35885c17e135b19b1ff14dd24e9923984a9e0b67c3c7bfd",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AF",
+        "https://www.tofugu.com/japanese-grammar/particle-wa/"
+      ],
+      "coveredAspects": [
+        "は follows the topic, is pronounced わ, and permits contrast.",
+        "Topic versus subject and context-sensitive newly observed が are explained with productive constructions."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "Tofugu corroborates topic, shared information and contrast. No universal prohibition on は in present events is imposed. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-7",
+      "reviewedRequirementHash": "f00540056d6d82011d43d3cd6b41bd43b8a89688a1741f19df85a78321ee34c9",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%84%E3%81%84"
+      ],
+      "coveredAspects": [
+        "The よ base is taught for よくない, よかった and よくなかった, including polite negative-past variants."
+      ],
+      "missingAspects": [
+        "Explicit lexical teaching that いい means good, and that よい is the more formal variant, is absent; a translated よかった example does not supply the missing explanation.",
+        "The source-taught distinction between adjectival よい transformations and adverbial よく meaning often/frequently is absent."
+      ],
+      "proposedRecordIds": [],
+      "notes": "The frozen cards teach transformations well but do not explain this lexical point completely. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-24",
+      "reviewedRequirementHash": "ae175fc7fca4c5cac2157cc64c223629f26c5eec67c09bf4909954b70ec484e4",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%84-adjectives"
+      ],
+      "coveredAspects": [
+        "I-adjectives modify nouns directly, predicate without だ, and take です for ordinary politeness.",
+        "きれい and 嫌い are distinguished from i-adjectives despite their final sound."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "The publisher's historical/normative claim that adjective + です is incorrect is not a binding false-grammar requirement. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-28",
+      "reviewedRequirementHash": "202a26a6f67ff00e9591787274e08058bb0f347ab3b7f6d9bbacae844a9c39b6",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA-adjectives"
+      ],
+      "coveredAspects": [
+        "Na-adjective base + な + noun and base + だ/です predicates are explicitly contrasted.",
+        "きれい is identified as na-adjectival despite final い."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "Historical origins and the とても identification heuristic are supplementary rather than necessary productive rules. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-12",
+      "reviewedRequirementHash": "cc5cbf7447f65024a5fd1e2dc4345073f64d3c4c3768e18ad67c3bfc7b2e45ee",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%8B-Verbs"
+      ],
+      "coveredAspects": [
+        "Ichidan dictionary final る is removed for productive ます and ない construction.",
+        "Final る alone does not identify a verb as ichidan; godan 帰る is contrasted."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-26",
+      "reviewedRequirementHash": "f01b8f9f9db066d5b7c54a9d5b10fad8c083a8ac2cfcc3b9244beb045470c163",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%86-Verbs"
+      ],
+      "coveredAspects": [
+        "Godan final-kana change is distinguished from ichidan removal; all nine i-row stem mappings are supplied.",
+        "Dictionary form is explained as plain nonpast, and negative a-row versus polite i-row construction is distinguished."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "The lesson need not enumerate unrelated potential and volitional constructions merely because the source illustrates five vowel rows. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-1082",
+      "reviewedRequirementHash": "e088c6dcf6efd3464460b47a426accf613df200a7e8ca12ba4625d5dff4e327b",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/polite-verb-endings"
+      ],
+      "coveredAspects": [
+        "ます expresses polite verbs; productive ichidan, godan and する/来る stems are supplied.",
+        "Habitual/future nonpast and polite affirmative/negative/past endings are distinguished."
+      ],
+      "missingAspects": [
+        "The authored distribution caution is not taught: polite ます/です normally close a sentence but may precede conjunctions such as が in polite language."
+      ],
+      "proposedRecordIds": [
+        "expand-ga-conjunction"
+      ],
+      "notes": "The proposed conjunction card is outside this frozen binding and is not counted. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-51",
+      "reviewedRequirementHash": "72b14635bf7727e05baccb4a6f05829087c1bc9afaaa6ca408617223ab166e76",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%8Bverb-%E3%81%AA%E3%81%84"
+      ],
+      "coveredAspects": [
+        "Ichidan る removal + ない and the same stem + ません are taught with plain/polite distinction."
+      ],
+      "missingAspects": [
+        "Ordinary conversational ないです and its less stiff register relative to ません are not taught."
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-888",
+      "reviewedRequirementHash": "6238ef9f73e723533e170cd633aceb840088c78cbc0987c5e876800fe67903e8",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%86verb--%E3%81%AA%E3%81%84"
+      ],
+      "coveredAspects": [
+        "Godan a-row + ない, う to わ, exceptional ある to ない, and i-row + ません are taught."
+      ],
+      "missingAspects": [
+        "Ordinary conversational ないです and its less stiff register relative to ません are not taught."
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-18",
+      "reviewedRequirementHash": "8c7f1bef4383606e1cd40a9a6adad1623e20e3e6d6353a85ba318873806f90c6",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A0%E3%82%8D%E3%81%86"
+      ],
+      "coveredAspects": [
+        "だろう expresses supposition or seeks agreement according to intonation/context; でしょう is polite.",
+        "Verb/i-adjective direct attachment and noun/na-adjective base without extra だ are productive; confidence is context-dependent."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-13",
+      "reviewedRequirementHash": "ba50080420eca38646512baa95018e7068268988878c831d45a51d262287114c",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C%E3%81%82%E3%82%8B"
+      ],
+      "coveredAspects": [
+        "Existence with ある versus animate いる, place に and entity が, polite あります and exceptional negative ない are taught."
+      ],
+      "missingAspects": [
+        "The source-taught ordinary casual omission of が in がある is not explained."
+      ],
+      "proposedRecordIds": [],
+      "notes": "有る spelling is recognition information; its absence alone does not establish a productive semantic gap. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-17",
+      "reviewedRequirementHash": "7625c5f08890338197c59850d3cb8bd5f88a91894a0d65339438ce3ff783ab61",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/-%E3%82%93%E3%81%A7%E3%81%99-%E3%81%AE%E3%81%A7%E3%81%99"
+      ],
+      "coveredAspects": [
+        "Explanatory contextual meaning of のだ/んだ and nominal なのだ are explained.",
+        "The bound question card teaches plain-form attachment, nominal な, polite explanatory questions and the ban on making that question with んだか."
+      ],
+      "missingAspects": [
+        "Declarative のです/んです attachment to verb, i-adjective and nominal predicates is not explicitly taught as a productive four-category statement pattern; isolated declarative examples do not supply it.",
+        "The source-taught preference for contracted ん in speech versus stiffer の is not explained."
+      ],
+      "proposedRecordIds": [],
+      "notes": "Question construction is not silently generalized into a complete declarative paradigm. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-1104",
+      "reviewedRequirementHash": "deeccfa493ae7e43f3387b34dc851eaadc2b5c5662039d9b4d84db0b86162b8b",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE-questions"
+      ],
+      "coveredAspects": [
+        "Plain verb/i-adjective + の and noun/na-adjective + なの form contextual explanatory questions.",
+        "Polite のですか/んですか, rising-intonation ordinary questions, and potentially intrusive explanatory nuance are explicitly contrasted."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-895",
+      "reviewedRequirementHash": "d8471192e87458d7de05a9f8867075acd2c324839bb16c58b9e033df50f52454",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%8B-verb-past"
+      ],
+      "coveredAspects": [
+        "Ichidan る removal produces て then た, with polite stem + ました; plain/polite registers are differentiated."
+      ],
+      "missingAspects": [
+        "The primary point explicitly teaches completion and continuing-result interpretations of た in addition to past events; the frozen cards explain only the ordinary past and warn about unrelated nonpast constructions."
+      ],
+      "proposedRecordIds": [],
+      "notes": "A warning that たり/たら do not prove a past event does not teach completion or a present remaining result. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-41",
+      "reviewedRequirementHash": "5fb07ac2b5d24039bfe425166160b95ad37ccb43cb32da932f20a6d50728e2d7",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%86-verb-past"
+      ],
+      "coveredAspects": [
+        "The godan て table plus て/で to た/だ replacement yields productive past forms, including 行った; polite i-row + ました is supplied."
+      ],
+      "missingAspects": [
+        "Completion and continuing-result interpretations of た, explicitly distinguished in the authored point, are not explained.",
+        "The primary structure explicitly includes 問う to 問うた and 請う to 請うた exceptions; the frozen table does not teach or delimit these exceptions."
+      ],
+      "proposedRecordIds": [],
+      "notes": "The exceptional forms are included because the source explicitly teaches them, not because of an external dictionary audit. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-873",
+      "reviewedRequirementHash": "b30ec2cf788190b9aade909fac1b3d371ee4017d58e614c6bb183dbb5858046a",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/negative-%E3%81%84-adjectives"
+      ],
+      "coveredAspects": [
+        "I-adjective final い to くない, polite くありません, conversational くないです and irregular よ forms are taught.",
+        "Direct adjective + ません and negative adjective + だ are ruled out."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-45",
+      "reviewedRequirementHash": "91d1a11882763dbdb4e1409ac15bb785c976e9587572c69f5f3549c326d550af",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8B%E3%82%89-because"
+      ],
+      "coveredAspects": [
+        "Reason + から precedes its consequence; verbs/i-adjectives attach directly and affirmative nouns/na-adjectives use だから.",
+        "Polite ますから/ですから and causal versus spatial/temporal origin are distinguished."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-361",
+      "reviewedRequirementHash": "2ae2c107a22efc27a9de9325d35b02f4af3543e41f85254563e132795f44ad30",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%91%E3%81%A9-%E3%81%A0%E3%81%91%E3%81%A9"
+      ],
+      "coveredAspects": [
+        "けど links a contrast or implicit reservation; noun/na-adjective だけど and direct verb/i-adjective attachment are explained.",
+        "けれど/けれども are less familiar variants, with polite endings and omitted continuation explained."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-44",
+      "reviewedRequirementHash": "c11a46d0cb9cf9c6a872d9b5436299c2232afabbe060105cffa2756c71d4ac4b",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C-but"
+      ],
+      "coveredAspects": [
+        "Conjunctive が follows predicates, with productive verb/i-adjective, だが and ですが/ますが constructions.",
+        "Polite request introduction and implicit continuation are distinguished from subject-marking が and strong opposition."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "The taught polite conversational context supplies the important register distinction without turning the publisher's very formal description into a universal prohibition. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-896",
+      "reviewedRequirementHash": "b64e4bbeb9605ce2bb71165bcfc7069506fe22b84c0f6af52b26fdc30f938b70",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%8B-verb-neg-past"
+      ],
+      "coveredAspects": [
+        "Ichidan る removal + ない then なかった, polite stem + ませんでした and conversational なかったです are explicitly supplied."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-897",
+      "reviewedRequirementHash": "a5ec2e3e892023a354b3b3c52a620a63b0bfe4662c5313298570c901190bb165",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%86-verb-neg-past"
+      ],
+      "coveredAspects": [
+        "Godan a-row/w exceptions form plain negative-past; i-row + ませんでした forms polite negative-past.",
+        "ある to なかった/ありませんでした and conversational なかったです are explicit."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-416",
+      "reviewedRequirementHash": "ea7d5ca086065b78890f237e2c19857f175fa60b54255ed4b967352d7cbd5290",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/verb-%E3%81%A6"
+      ],
+      "coveredAspects": [
+        "Verb て links sequential actions; ichidan removal and full regular godan mappings are supplied.",
+        "行く, する and 来る exceptions and final-predicate tense are taught."
+      ],
+      "missingAspects": [
+        "The primary authored structure and exception paragraph explicitly teach 問う to 問うて and 請う to 請うて; the frozen construction table neither supplies nor delimits these exceptions."
+      ],
+      "proposedRecordIds": [],
+      "notes": "The source explicitly presents five exceptions and teaches the two omitted forms. No external rare exceptions are added. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-27",
+      "reviewedRequirementHash": "d68e6c60238927f58ac510efa1a21046b2db6531c3edb0213c2e616b822905c2",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A6%E3%81%84%E3%82%8B1"
+      ],
+      "coveredAspects": [
+        "Verb ている presents an ongoing action, with tense/politeness on いる.",
+        "The collectively bound result-state card explains persistent results and lexical 知っている versus ordinary 知らない."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-714",
+      "reviewedRequirementHash": "a77aa1b70a06adf0337f9afdb56a9a0245ec93503dfb2021fbddb75ae99b24fe",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A0%E3%82%8C"
+      ],
+      "coveredAspects": [
+        "誰 is an unknown person; が/を/に/と/の roles and more polite どなた/どちらさま are taught."
+      ],
+      "missingAspects": [
+        "The primary point explicitly teaches 誰か for somebody and 誰も for any/everybody; neither productive particle construction nor its interpretation is taught in the named card.",
+        "The source-listed 誰で construction is not explained."
+      ],
+      "proposedRecordIds": [],
+      "notes": "No unnamed general indefinite-pronoun card is counted. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-1094",
+      "reviewedRequirementHash": "6364053c6d2ad690d166df1d2da57d3b53a3cb20439dd3f66bdfee9c9d8641b7",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%9C"
+      ],
+      "coveredAspects": [
+        "なぜ asks a logical reason/cause and is relatively formal, common in writing/serious discourse.",
+        "どうして and familiar なんで are compared; polite endings do not erase directness."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-1096",
+      "reviewedRequirementHash": "5a325ab9b7052ad67fff9e8033bd2ea2aea812070a2c33a04c2f62f74a39c113",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%82%93%E3%81%A7"
+      ],
+      "coveredAspects": [
+        "なんで is familiar why, may sound accusatory, and contrasts with neutral どうして and formal なぜ.",
+        "Means versus reason and disambiguating なにで are explained."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-951",
+      "reviewedRequirementHash": "a5ed39003b7d6f13c786ccf488a953fd5f8c4f909b234559dd68298db2363de1",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%84-adjective-predicate"
+      ],
+      "coveredAspects": [
+        "An i-adjective can be a plain predicate without だ, or take です for ordinary politeness.",
+        "The bound topic card explains subject versus topic and context-sensitive が rather than a mechanical substitution."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "Standalone 高い is explicitly described as a plain predicate; the source's overly categorical bath-topic example is not converted into a false universal rule. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-40",
+      "reviewedRequirementHash": "4e10f3f4fb0511d8d0a278ffbbbe489bc4306d72c1a39d13c7d0d3fe1a9382ce",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A0%E3%81%A3%E3%81%9F-%E3%81%A7%E3%81%97%E3%81%9F"
+      ],
+      "coveredAspects": [
+        "Noun/na-adjective base + だった and + でした express past plain/polite predication.",
+        "I-adjectives have their own past and cannot simply receive だった/でした."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-49",
+      "reviewedRequirementHash": "5fa950f4f5d3b90374ef77fd68a8dfbd26c6cc70a24093e9427628609315e7b0",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%98%E3%82%83%E3%81%AA%E3%81%84"
+      ],
+      "coveredAspects": [
+        "Nominal/na-adjective ではない and contracted じゃない, polite ではありません/じゃありません and conversational ないです variants are taught.",
+        "Rising じゃない seeks confirmation; base construction excludes retained だ."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "Rough ねえ spelling is incidental colloquial recognition rather than necessary productive coverage of ordinary negation. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-50",
+      "reviewedRequirementHash": "67be2ab0d73156bffe0cae467fedede4c0c7997c8eb77c3a5c5f699e5c5169b7",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%98%E3%82%83%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F"
+      ],
+      "coveredAspects": [
+        "Nominal/na-adjective ではなかった and contracted じゃなかった are explained with polite ありませんでした variants.",
+        "Conversational なかったです and the restriction against treating i-adjectives as nominal predicates are taught."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-876",
+      "reviewedRequirementHash": "057b4215d6c88884460ce086500642fe01dbffefc429ea42a8c85d4e16327896",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%84-Adjective-%E3%81%8F%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F"
+      ],
+      "coveredAspects": [
+        "Final i-adjective い becomes くなかった, with くありませんでした and conversational くなかったです.",
+        "Irregular よ forms and the restriction against くないでした are explicit."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-356",
+      "reviewedRequirementHash": "c8f64e88a7f53997bbea6c712444bf0831677140361b3daba33ff68869265ea6",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A8"
+      ],
+      "coveredAspects": [
+        "Quoted clause + と + speech/hearing/thought verb is productive; noun/na-adjective plain affirmative retains だ.",
+        "Quotation verb omission and distinction from companion/listing と are explained."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-358",
+      "reviewedRequirementHash": "50ad273504df3c090854eb150bb8349d96bf358a97a3bf72f4cf4ac3ffef35a0",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A3%E3%81%A6"
+      ],
+      "coveredAspects": [
+        "Familiar quotation って replaces quotation と and permits omission of a recoverable speech verb.",
+        "Internal nominal だ and friendly polite versus genuinely formal exchange restrictions are explained."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-950",
+      "reviewedRequirementHash": "9265231a78f294917f4083d2293d1ae42d1803c435999f68833bc375581b5d17",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/verb-non-past"
+      ],
+      "coveredAspects": [
+        "Dictionary/plain affirmative nonpast expresses habits, general facts and future according to context/time expressions.",
+        "Polite correspondents and the distinction from an ongoing-action reading are taught."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "The source's narrative-present aside is contextual stylistic detail; the local warning does not categorically ban narrative uses. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-1103",
+      "reviewedRequirementHash": "b0da5d7e2e513eed39379e0ef6f9aab45d4359b031ae18dce41d1226c8265d5c",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE-subject"
+      ],
+      "coveredAspects": [
+        "Subject が/の alternation is limited to a subordinate noun-modifying clause, not independent sentences or the main topic.",
+        "A clause containing an を object retains が to avoid the unwanted possessive/inappropriate construction."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "The source's stylistic motivations for choosing の do not add another required construction. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-720",
+      "reviewedRequirementHash": "fb2de138e50fca69897ef778dd90453f29527f3b04ad9dc19c93b6b54cf4c80a",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE-noun-ommission"
+      ],
+      "coveredAspects": [
+        "Possessive Nの allows a recoverable following noun to be omitted, and the remaining phrase takes case particles.",
+        "The additionally bound adjective + の card teaches one selected by quality, with contextual referent and な linkage."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-66",
+      "reviewedRequirementHash": "910450a02a665995eabed15f9a61a5c27a9ee9eb4473494e77757f521679529f",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA"
+      ],
+      "coveredAspects": [
+        "Dictionary affirmative verb + な expresses strong prohibition, suitable for abrupt orders/urgency.",
+        "Ordinary polite negative requests and the rule against using the masu stem are contrasted."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-42",
+      "reviewedRequirementHash": "299c1c8fee0550f9663398bbcaf75e2330914b0fa7b22f558a6396a4e3a18a3a",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82%E3%81%86"
+      ],
+      "coveredAspects": [
+        "もう + past affirmative expresses already; negative predicates express no longer.",
+        "まだ + negative means not yet, and もう accomplishment questions are explained."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "The exasperated interjection is a supplementary fun fact, not an additional ordinary productive requirement. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-46",
+      "reviewedRequirementHash": "0f3dcc3b7bff064cd05a66aca593fa1b5d119ff418ec501cf1ed8a0a392391bb",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A6%E3%82%82%E3%81%84%E3%81%84"
+      ],
+      "coveredAspects": [
+        "Noun/na-adjective base + でもいい and i-adjective final い to くてもいい express acceptable conditions.",
+        "Polite ですか questions are distinguished from permission to perform an action."
+      ],
+      "missingAspects": [
+        "The primary point teaches omission of も as a more direct/familiar option; neither N/na-adjective でいい nor i-adjective くていい nor the familiar-use restriction is taught.",
+        "The source-taught contextual question with final の is not constructed in this bound set."
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-359",
+      "reviewedRequirementHash": "ce6d8d684c64bbf6b4f97aed404257bd74ef78e76e459b52aa2511e1366d4b02",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%91%E3%81%A3%E3%81%93%E3%81%86",
+        "https://nj.alc.co.jp/entry/20260216"
+      ],
+      "coveredAspects": [
+        "Adverbial けっこう indicates a notable degree without な/だ before the predicate.",
+        "Standalone 結構です can approve or refuse according to context/intonation; explicit wording avoids ambiguity."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "ALC supports the approval/refusal distinction; the primary source's refusal example is not treated as the only possible reading. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-715",
+      "reviewedRequirementHash": "156df580ee96363321a9699ac1d366994d7374ba05a03e3aab81cb3ca6a0747f",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%8F%E3%81%95%E3%82%93"
+      ],
+      "coveredAspects": [
+        "たくさん modifies the predicate; たくさんの + noun emphasizes quantity of that noun.",
+        "Omitted の may distribute quantity over the wider event; quantity differs from adjectival degree."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-53",
+      "reviewedRequirementHash": "836401c68f338b52f20c446ca6ac1209afba2e2c16bf7f338a7b83e3cb266b20",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%88%E3%81%AB"
+      ],
+      "coveredAspects": [
+        "Dictionary verb + 前に and noun + の前に locate an action before another, including in a past narrative.",
+        "A general bound spatial-noun construction supplies reference noun + の + spatial noun + に."
+      ],
+      "missingAspects": [
+        "The named cards never teach 前に as physically in front of something; a generic spatial construction and 上/中 examples cannot establish its lexical spatial sense.",
+        "The primary writeup contrasts 前に with physically speaker/reference-side 手前に; this usage restriction is not taught."
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-61",
+      "reviewedRequirementHash": "cfe7debcbd379fd3053d168372a38e32a10f36d0747d30dbc2e4b914230788c8",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8F%E3%82%89%E3%81%841"
+      ],
+      "coveredAspects": [
+        "Number/counter + くらい/ぐらい approximates quantity/duration; どのくらい asks extent.",
+        "Broad temporal ころ versus duration くらい and possible specific-clock-time くらい are distinguished."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-360",
+      "reviewedRequirementHash": "c78d6b1a9f77c71ce9d0c26088f06bf1663623c077956f423a98d6f56abe0906",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/v-%E3%81%BE%E3%81%A7"
+      ],
+      "coveredAspects": [
+        "Dictionary verb + まで denotes an endpoint until which a situation continues.",
+        "The embedded verb stays nonpast in a past narrative; main predicate marks past, and deadline までに is distinguished."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-86",
+      "reviewedRequirementHash": "f906440577af8897deafdd82e5686da94045796467677b4adccee8c64112041a",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84"
+      ],
+      "coveredAspects": [
+        "Correct negative ない becomes なくてはいけない, with polite いけません and obligation rather than prohibition.",
+        "Conversational なくちゃ contraction, omission and the 買わない starting form are supplied."
+      ],
+      "missingAspects": [
+        "The source-taught register choice among ordinary speech/writing いけない, relatively formal/written ならない and familiar だめ is not explained by the frozen candidates."
+      ],
+      "proposedRecordIds": [
+        "expand-obligation-nakute-naranai"
+      ],
+      "notes": "The proposed formal-variant card exists but is outside this binding and would still need the familiar だめ comparison. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-87",
+      "reviewedRequirementHash": "00445aa50c5409489d5f0fef7bbb169b801c2d56a6a272b28fef7d570c121c3e",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A6%E3%81%AF%E3%81%AA%E3%82%89%E3%81%AA%E3%81%84"
+      ],
+      "coveredAspects": [
+        "Correct negative ない becomes なくてはならない, with positive obligation meaning and polite なりません.",
+        "Relatively formal ならない versus common conversational いけない is explained."
+      ],
+      "missingAspects": [
+        "The source-taught register restriction that familiar なくちゃ is not regularly paired with formal ならない is absent."
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-74",
+      "reviewedRequirementHash": "2cd67135da764d79361a31c1c08393c24eda364512d85295af0f526b996e8011",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A1%E3%82%83-%E3%81%AA%E3%81%8D%E3%82%83"
+      ],
+      "coveredAspects": [
+        "なくちゃ is なくては contraction and follows correct negative formation; omitted いけない/ならない in obligation context and familiar register are explained."
+      ],
+      "missingAspects": [
+        "Productively forming なきゃ from the correct negative verb is not taught: knowing that なきゃ contracts なければ does not teach how a new verb forms なければ."
+      ],
+      "proposedRecordIds": [
+        "adv-nakerebanaranai"
+      ],
+      "notes": "The proposed なければ construction card is outside the frozen set. Bare 帰らなきゃ and しなくちゃ examples do not supply its missing general formation rule. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-765",
+      "reviewedRequirementHash": "c3b9db99f2632a5c84f59df5a1c0a6d27cd941e29a088751c8237021bc95d656",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A6%E3%81%84%E3%82%8B3"
+      ],
+      "coveredAspects": [
+        "Verb て + いる presents a currently maintained repeated practice, often with 毎日/毎週; ています is polite.",
+        "Repeated practice is distinguished from uninterrupted action, current progressive and resulting state."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "Regional とる is a supplementary fun fact, not a necessary ordinary construction. 14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-769",
+      "reviewedRequirementHash": "00f1e8a3894e6ad77e012837e55f758f169f7b68a22ebe7e608cc63627becac1",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/adjective-%E3%81%A6-noun-%E3%81%A7"
+      ],
+      "coveredAspects": [
+        "I-adjective final い to くて, noun/na-adjective base + で, and irregular いい to よくて link qualities.",
+        "Final predicate carries tense/politeness; coordination versus contextual cause is explained."
+      ],
+      "missingAspects": [
+        "The source explicitly teaches a manner reading as well as linking and reason; the named cards do not explain or demonstrate the manner interpretation."
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-771",
+      "reviewedRequirementHash": "d0815515af7c36ce1d43f4a26c02e9621d26263ee954f8a826273fe55314f7d3",
+      "status": "partial",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/adjective-%E3%81%A6-b"
+      ],
+      "coveredAspects": [
+        "I-adjective くて and nominal/na-adjective で link to a full following clause with its own arguments and possibly different subject; いい gives よくて.",
+        "Association versus cause is context-dependent; not every causal relation freely permits this construction."
+      ],
+      "missingAspects": [
+        "The source explicitly distinguishes a manner reading of the link in addition to coordination and cause; this reading is not taught by the named card."
+      ],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-719",
+      "reviewedRequirementHash": "7335feff3ac40ed3460ae88b87ef1de55c0b9a479efed5e2a275badbbfb55dd4",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/adjective-%E3%81%AE-%E3%81%AF"
+      ],
+      "coveredAspects": [
+        "I-adjective + の and na-adjective + なの identify an understood object by quality.",
+        "Following は/が/も and object を are supplied; this differs from explanatory なの questions."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-722",
+      "reviewedRequirementHash": "4d2035200543d73f7f563e8f6f49ae5704607bbb74c589c544bbc775fddb06da",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%82%E3%81%92%E3%82%8B"
+      ],
+      "coveredAspects": [
+        "あげる presents giving outward; giver が/は, recipient に and gift を are explicitly assigned.",
+        "Polite あげます and respect-sensitive choice of humble 差し上げる for a respected recipient are taught."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-723",
+      "reviewedRequirementHash": "8a660ffd319f4eb9bd63a572da01943236e78baab8aa56350e92ba41752bd936",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8F%E3%82%8C%E3%82%8B"
+      ],
+      "coveredAspects": [
+        "くれる presents giving toward speaker or contextually adopted circle; giver が/は, recipient に, gift を are taught.",
+        "Obvious 私に can be omitted; circle is viewpoint-dependent rather than a fixed family list, and くれます is polite."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-724",
+      "reviewedRequirementHash": "2e0ce31ab48577bac950501ecf2aff398f86dfa2ef53587afb2553faffac83ee",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82%E3%82%89%E3%81%86"
+      ],
+      "coveredAspects": [
+        "もらう presents receiving: receiver が/は, giver に/から and gift を are explicitly assigned.",
+        "Context permits omission; に roles contrast with あげる/くれる, and もらいます is polite."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    },
+    {
+      "id": "bunpro-54",
+      "reviewedRequirementHash": "c6fc9c174d18b1f7b7aea9442c545d58a1f115f0e5a53f74263bede1047445cc",
+      "status": "covered",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%91%E3%82%8C%E3%81%A9%E3%82%82"
+      ],
+      "coveredAspects": [
+        "けれども/けれど share the contrast/linking and recoverable implicit continuation of けど, with less familiar register.",
+        "Direct verb/i-adjective attachment, nominal だけれども and polite predicate combinations are explicitly taught."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "notes": "14 October 2026: source bytes, requirement hash, frozen candidate content hashes, current approvals and catalogue correspondence verified. Only the named frozen binding is counted. Editorial Bunpro benchmark; not official exhaustive JLPT coverage or learner mastery. No human/native certification or linguistic approval changes."
+    }
+  ]
+}

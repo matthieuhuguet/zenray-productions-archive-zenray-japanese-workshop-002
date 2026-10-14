@@ -1,0 +1,1574 @@
+{
+  "schemaVersion": 1,
+  "date": "14 October 2026",
+  "policy": "Review exact complete record fields, original Japanese, kana, French translation, source alignment and learner exercise suitability. HTTP availability is not approval.",
+  "records": [
+    {
+      "record": {
+        "id": "expand-copula-plain",
+        "title": "だ : terminer une phrase nominale neutre",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "だ",
+          "copula-plain"
+        ],
+        "explanationFr": "Dans une phrase nominale affirmative neutre, だ peut suivre le nom ou la base d'un adjectif en な. La forme polie correspondante est notamment です. Le registre neutre ne dispense pas d'adapter le ton à son interlocuteur.",
+        "frenchLearnerTrap": "Ne pas ajouter だ à un adjectif en い : 高い suffit comme prédicat neutre affirmatif.",
+        "examples": [
+          {
+            "ja": "今日は休みだ。",
+            "reading": "きょうはやすみだ。",
+            "fr": "Aujourd'hui, c'est un jour de repos.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "この町は静かだ。",
+            "reading": "このまちはしずかだ。",
+            "fr": "Cette ville est calme.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-copula",
+          "expand-na-adjective-predicate"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%A0",
+            "title": "Bunpro grammar: だ",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Aujourd'hui, c'est un jour de repos.",
+          "Cette ville est calme."
+        ]
+      },
+      "recordSha256": "aa5178b3d72f1f2daee948cd7455853e47cb1abffdc64f500d6504c44a18fa87"
+    },
+    {
+      "record": {
+        "id": "expand-addition-mo",
+        "title": "も : ajouter un élément comparable",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "も",
+          "addition-mo"
+        ],
+        "explanationFr": "も indique qu'un élément appartient lui aussi à une situation déjà évoquée. Dans les exemples nominaux simples, il remplace la particule は ou が ; avec une autre particule, la combinaison doit être étudiée séparément.",
+        "frenchLearnerTrap": "Le contexte doit fournir un élément comparable, même s'il n'est pas exprimé dans la phrase.",
+        "examples": [
+          {
+            "ja": "私も学生です。",
+            "reading": "わたしもがくせいです。",
+            "fr": "Moi aussi, je suis étudiant.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "京都も好きです。",
+            "reading": "きょうともすきです。",
+            "fr": "J'aime aussi Kyoto.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-copula",
+          "expand-likes-noun"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%82%82",
+            "title": "Bunpro grammar: も",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Moi aussi, je suis étudiant.",
+          "J'aime aussi Kyoto."
+        ]
+      },
+      "recordSha256": "3e0af32ccaaf14d0a5f7559bcd294ba9390fd49315189c250ce7bdb990446654"
+    },
+    {
+      "record": {
+        "id": "expand-ichidan-negative",
+        "title": "ない : nier un verbe ichidan",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "ない",
+          "ichidan-negative"
+        ],
+        "explanationFr": "Pour un verbe ichidan, retirer le る final de la forme du dictionnaire puis ajouter ない : 食べる→食べない, 見る→見ない. ない forme ici une négation neutre ; ません est la négation polie correspondante.",
+        "frenchLearnerTrap": "Tous les verbes finissant par る ne sont pas ichidan : 帰る appartient au groupe godan.",
+        "examples": [
+          {
+            "ja": "今日は肉を食べない。",
+            "reading": "きょうはにくをたべない。",
+            "fr": "Aujourd'hui, je ne mange pas de viande.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "その番組は見ない。",
+            "reading": "そのばんぐみはみない。",
+            "fr": "Je ne regarde pas cette émission.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-verb-groups",
+          "grammar-case-particles"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%82%8Bverb-%E3%81%AA%E3%81%84",
+            "title": "Bunpro grammar: るverb-ない",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Aujourd'hui, je ne mange pas de viande.",
+          "Je ne regarde pas cette émission."
+        ]
+      },
+      "recordSha256": "17b5351e53bb5789fb324008170cb065caf97a34092709877abc977d04a5503a"
+    },
+    {
+      "record": {
+        "id": "expand-godan-negative",
+        "title": "ない : nier un verbe godan",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "ない",
+          "godan-negative"
+        ],
+        "explanationFr": "Pour un verbe godan, la syllabe finale passe à la série en あ avant ない : 書く→書かない, 読む→読まない. La finale う devient わ : 買う→買わない. ある a pour négation usuelle ない ; les verbes する et 来る ont leur propre conjugaison.",
+        "frenchLearnerTrap": "買う donne 買わない, pas 買あない ; apprendre le groupe réel du verbe avant de transformer une finale る.",
+        "examples": [
+          {
+            "ja": "今日は車を買わない。",
+            "reading": "きょうはくるまをかわない。",
+            "fr": "Aujourd'hui, je n'achète pas de voiture.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "この店では働かない。",
+            "reading": "このみせでははたらかない。",
+            "fr": "Je ne travaille pas dans cette boutique.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-verb-groups",
+          "grammar-case-particles"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%86verb--%E3%81%AA%E3%81%84",
+            "title": "Bunpro grammar: うverb--ない",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Aujourd'hui, je n'achète pas de voiture.",
+          "Je ne travaille pas dans cette boutique."
+        ]
+      },
+      "recordSha256": "26ffd702045b7c60335ecdb314bade3cb4927855a11851f76a4afe5f63630bca"
+    },
+    {
+      "record": {
+        "id": "expand-irregular-suru",
+        "title": "する : les formes principales d'un verbe irrégulier",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "する",
+          "irregular-suru"
+        ],
+        "explanationFr": "する se conjugue notamment します, しない, した et して. De nombreux noms d'activité forment un verbe en se combinant avec する, comme 勉強する ; cela ne signifie pas que tous les noms acceptent librement cette combinaison.",
+        "frenchLearnerTrap": "Ne pas fabriquer すります ou すない sur le modèle d'un verbe régulier.",
+        "examples": [
+          {
+            "ja": "毎朝、運動します。",
+            "reading": "まいあさ、うんどうします。",
+            "fr": "Je fais de l'exercice chaque matin.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "今日は掃除しない。",
+            "reading": "きょうはそうじしない。",
+            "fr": "Aujourd'hui, je ne fais pas le ménage.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-verb-groups",
+          "grammar-polite-nonpast",
+          "expand-ichidan-negative"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%99%E3%82%8B",
+            "title": "Bunpro grammar: する",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je fais de l'exercice chaque matin.",
+          "Aujourd'hui, je ne fais pas le ménage."
+        ]
+      },
+      "recordSha256": "457b041afc94196e2a0761d855405653eca2012b000a1bd95e0163398cfb968e"
+    },
+    {
+      "record": {
+        "id": "expand-irregular-kuru",
+        "title": "来る : les lectures changent avec la forme",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "来る",
+          "irregular-kuru"
+        ],
+        "explanationFr": "来る se lit くる ; 来ます et 来た se lisent きます et きた ; 来ない se lit こない ; 来て se lit きて. Le verbe décrit un déplacement vers le point de référence du locuteur ou un point adopté dans le contexte.",
+        "frenchLearnerTrap": "Le même kanji 来 ne garde pas une lecture unique dans toute la conjugaison.",
+        "examples": [
+          {
+            "ja": "友達が明日来ます。",
+            "reading": "ともだちがあしたきます。",
+            "fr": "Mon ami vient demain.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "今日は先生が来ない。",
+            "reading": "きょうはせんせいがこない。",
+            "fr": "Aujourd'hui, le professeur ne vient pas.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-verb-groups",
+          "grammar-polite-nonpast",
+          "expand-ichidan-negative"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%8F%E3%82%8B",
+            "title": "Bunpro grammar: くる",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Mon ami vient demain.",
+          "Aujourd'hui, le professeur ne vient pas."
+        ]
+      },
+      "recordSha256": "d4fa7887263e3dc1cfebed8d53a1f1dc1243e1d7ffb6fcbd9f6562ab2ad0540d"
+    },
+    {
+      "record": {
+        "id": "expand-plain-negative-past",
+        "title": "なかった : nier une action passée au registre neutre",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "なかった",
+          "plain-negative-past"
+        ],
+        "explanationFr": "La négation verbale en ない forme son passé en remplaçant ない par なかった : 食べない→食べなかった. Cette terminaison exprime une négation passée neutre ; la phrase peut adopter un autre niveau de politesse dans une construction plus longue.",
+        "frenchLearnerTrap": "Le passé se forme sur la négation déjà correcte du verbe, pas directement sur la finale du dictionnaire.",
+        "examples": [
+          {
+            "ja": "昨日は映画を見なかった。",
+            "reading": "きのうはえいがをみなかった。",
+            "fr": "Hier, je n'ai pas regardé de film.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "昨日は外に出なかった。",
+            "reading": "きのうはそとにでなかった。",
+            "fr": "Hier, je ne suis pas sorti.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-ichidan-negative"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%82%8B-verb-neg-past",
+            "title": "Bunpro grammar: る-verb-neg-past",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Hier, je n'ai pas regardé de film.",
+          "Hier, je ne suis pas sorti."
+        ]
+      },
+      "recordSha256": "39d35fca4eb093f9041b5c49b2d19b06856e0dac4c8581ab4825481d175e41c9"
+    },
+    {
+      "record": {
+        "id": "expand-accompaniment-to",
+        "title": "人と : faire avec quelqu'un",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "人と",
+          "accompaniment-to"
+        ],
+        "explanationFr": "人と indique un accompagnement ou un partenaire dans l'action. Pour préciser ensemble, 一緒に peut s'ajouter. Il faut distinguer cet emploi du と qui énumère des noms ou introduit une citation.",
+        "frenchLearnerTrap": "友達と行きます signifie que l'ami accompagne le déplacement, pas que le locuteur va chez cet ami.",
+        "examples": [
+          {
+            "ja": "友達と京都に行きます。",
+            "reading": "ともだちときょうとにいきます。",
+            "fr": "Je vais à Kyoto avec un ami.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "妹と一緒に料理します。",
+            "reading": "いもうとといっしょにりょうりします。",
+            "fr": "Je cuisine avec ma petite sœur.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-polite-nonpast",
+          "grammar-case-particles"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%A8-with",
+            "title": "Bunpro grammar: と-with",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je vais à Kyoto avec un ami.",
+          "Je cuisine avec ma petite sœur."
+        ]
+      },
+      "recordSha256": "b38a42cecc83f5c58a6591cd202f4dc0989a87b22ae3cec66d347e36e1a92832"
+    },
+    {
+      "record": {
+        "id": "expand-instrument-de",
+        "title": "で : utiliser un moyen ou un instrument",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "で",
+          "instrument-de"
+        ],
+        "explanationFr": "で peut marquer un moyen de transport, un instrument ou une langue utilisée pour effectuer une action. Le verbe et le contexte déterminent cet emploi, qui se distingue du lieu d'activité marqué lui aussi par で.",
+        "frenchLearnerTrap": "に ne remplace pas librement で pour l'instrument : バスで行きます décrit le moyen de transport.",
+        "examples": [
+          {
+            "ja": "電車で学校に行きます。",
+            "reading": "でんしゃでがっこうにいきます。",
+            "fr": "Je vais à l'école en train.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "日本語で手紙を書きます。",
+            "reading": "にほんごでてがみをかきます。",
+            "fr": "J'écris une lettre en japonais.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-case-particles",
+          "grammar-polite-nonpast"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%A7-by",
+            "title": "Bunpro grammar: で-by",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je vais à l'école en train.",
+          "J'écris une lettre en japonais."
+        ]
+      },
+      "recordSha256": "77978100e8531f13dd38b922c3d2405bdcf404ff36a80f916a2874b7166354b5"
+    },
+    {
+      "record": {
+        "id": "expand-starting-kara",
+        "title": "から : indiquer un point de départ",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "から",
+          "starting-kara"
+        ],
+        "explanationFr": "から peut suivre un lieu, une heure ou un autre repère pour indiquer le point de départ. Il se distingue du から qui relie une raison à une conséquence.",
+        "frenchLearnerTrap": "Le mot placé avant から est ici le départ, pas une explication causale.",
+        "examples": [
+          {
+            "ja": "九時から働きます。",
+            "reading": "くじからはたらきます。",
+            "fr": "Je travaille à partir de neuf heures.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "大阪から来ました。",
+            "reading": "おおさかからきました。",
+            "fr": "Je viens d'Osaka.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-polite-nonpast",
+          "expand-polite-verb-past",
+          "expand-clock-hours"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%8B%E3%82%89",
+            "title": "Bunpro grammar: から",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je travaille à partir de neuf heures.",
+          "Je viens d'Osaka."
+        ]
+      },
+      "recordSha256": "260e5d12c3b8f2f3ac2f8496723629340ac287de70eb2f4a281a76502743577d"
+    },
+    {
+      "record": {
+        "id": "expand-endpoint-made",
+        "title": "まで : indiquer une borne finale",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "まで",
+          "endpoint-made"
+        ],
+        "explanationFr": "Nまで indique jusqu'où ou jusqu'à quand une action ou une situation s'étend. までに, qui fixe une échéance avant laquelle terminer, possède un autre fonctionnement.",
+        "frenchLearnerTrap": "五時まで décrit une activité qui se prolonge jusqu'à cinq heures ; ce n'est pas automatiquement une échéance pour la terminer.",
+        "examples": [
+          {
+            "ja": "五時まで働きます。",
+            "reading": "ごじまではたらきます。",
+            "fr": "Je travaille jusqu'à cinq heures.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "駅まで歩きます。",
+            "reading": "えきまであるきます。",
+            "fr": "Je marche jusqu'à la gare.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-polite-nonpast",
+          "expand-clock-hours"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/noun-%E3%81%BE%E3%81%A7",
+            "title": "Bunpro grammar: noun-まで",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je travaille jusqu'à cinq heures.",
+          "Je marche jusqu'à la gare."
+        ]
+      },
+      "recordSha256": "5b546b3dad50ba3ea00c92a00b83a14c88f82d426117ae1e595042749efad8e3"
+    },
+    {
+      "record": {
+        "id": "expand-before-mae-ni",
+        "title": "前に : situer avant une action",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "前に",
+          "before-mae-ni"
+        ],
+        "explanationFr": "Le verbe en forme du dictionnaire suivi de 前に situe une action avant une autre. Un nom peut se construire avec の前に. La forme du dictionnaire reste requise dans cette construction même si le récit global est passé.",
+        "frenchLearnerTrap": "昨日、寝る前に se construit avec 寝る, pas automatiquement 寝た, même dans un récit passé.",
+        "examples": [
+          {
+            "ja": "寝る前に、本を読みます。",
+            "reading": "ねるまえに、ほんをよみます。",
+            "fr": "Je lis avant de dormir.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "食事の前に、手を洗います。",
+            "reading": "しょくじのまえに、てをあらいます。",
+            "fr": "Je me lave les mains avant le repas.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-verb-groups",
+          "grammar-polite-nonpast",
+          "expand-noun-no"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%88%E3%81%AB",
+            "title": "Bunpro grammar: まえに",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je lis avant de dormir.",
+          "Je me lave les mains avant le repas."
+        ]
+      },
+      "recordSha256": "499b90ba171aeb5f19765f03e757dfd1c1c8f7fdaddb651f86797c7bafc86c89"
+    },
+    {
+      "record": {
+        "id": "expand-after-te-kara",
+        "title": "てから : faire une action puis une autre",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "てから",
+          "after-te-kara"
+        ],
+        "explanationFr": "Vてから situe la seconde action après l'accomplissement de la première. La phrase met ainsi en avant un ordre entre les actions ; le temps du récit se marque sur le prédicat final.",
+        "frenchLearnerTrap": "La forme て doit être correcte avant l'ajout de から ; ce から n'exprime pas ici une cause.",
+        "examples": [
+          {
+            "ja": "宿題をしてから、散歩します。",
+            "reading": "しゅくだいをしてから、さんぽします。",
+            "fr": "Je fais une promenade après avoir fait mes devoirs.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "手を洗ってから、ご飯を食べました。",
+            "reading": "てをあらってから、ごはんをたべました。",
+            "fr": "J'ai mangé après m'être lavé les mains.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-te-form",
+          "expand-polite-verb-past"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%A6%E3%81%8B%E3%82%89",
+            "title": "Bunpro grammar: てから",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je fais une promenade après avoir fait mes devoirs.",
+          "J'ai mangé après m'être lavé les mains."
+        ]
+      },
+      "recordSha256": "e235ef84033ff0964f86a5ecf00080e0162fd17f21fd10ed5e34f33c8a340c0a"
+    },
+    {
+      "record": {
+        "id": "expand-purpose-ni-iku",
+        "title": "Vに行く : se déplacer pour faire une action",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "Vに行く",
+          "purpose-ni-iku"
+        ],
+        "explanationFr": "La base de ます suivie de に et d'un verbe de déplacement permet d'exprimer le but de ce déplacement : 食べに行く. Un nom d'activité peut aussi se combiner dans certains emplois, comme 買い物に行く.",
+        "frenchLearnerTrap": "Ne pas ajouter に directement à une forme verbale conjuguée en ます.",
+        "examples": [
+          {
+            "ja": "友達に会いに行きます。",
+            "reading": "ともだちにあいにいきます。",
+            "fr": "Je vais voir un ami.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "昼ご飯を食べに行きませんか。",
+            "reading": "ひるごはんをたべにいきませんか。",
+            "fr": "Voulez-vous aller déjeuner ?",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-polite-nonpast",
+          "expand-invitation-masenka"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/verb-%E3%81%AB%E3%81%84%E3%81%8F",
+            "title": "Bunpro grammar: verb-にいく",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je vais voir un ami.",
+          "Voulez-vous aller déjeuner ?"
+        ]
+      },
+      "recordSha256": "89485ccd26ebff1c2276b3bbc2710f5a7d0d3fde847f18b382aaf701d325fc9f"
+    },
+    {
+      "record": {
+        "id": "expand-already-mou",
+        "title": "もう : une réalisation déjà atteinte",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "もう",
+          "already-mou"
+        ],
+        "explanationFr": "Dans une phrase affirmative passée, もう peut exprimer qu'une action est déjà accomplie. Le mot possède d'autres emplois, comme encore une fois ou plus avec une négation ; cette fiche travaille seulement déjà accompli.",
+        "frenchLearnerTrap": "Le sens de もう dépend du prédicat ; ne pas traduire tous ses emplois par déjà.",
+        "examples": [
+          {
+            "ja": "もう切符を買いました。",
+            "reading": "もうきっぷをかいました。",
+            "fr": "J'ai déjà acheté le billet.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "もう昼ご飯を食べました。",
+            "reading": "もうひるごはんをたべました。",
+            "fr": "J'ai déjà déjeuné.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-polite-verb-past"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%82%82%E3%81%86",
+            "title": "Bunpro grammar: もう",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "J'ai déjà acheté le billet.",
+          "J'ai déjà déjeuné."
+        ]
+      },
+      "recordSha256": "b9d3a1420ac8d7b06c97be6c5dcf240196b6980ec8ea2b120793db709bdd444d"
+    },
+    {
+      "record": {
+        "id": "expand-still-mada",
+        "title": "まだ : un état qui se prolonge",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "まだ",
+          "still-mada"
+        ],
+        "explanationFr": "Avec un prédicat affirmatif approprié, まだ indique qu'un état ou une situation continue. Avec une négation, il peut exprimer pas encore ; cette seconde construction doit tenir compte de l'aspect du verbe.",
+        "frenchLearnerTrap": "Encore en français peut signifier une répétition ; まだ exprime ici la continuité, pas forcément une répétition.",
+        "examples": [
+          {
+            "ja": "まだ雨が降っています。",
+            "reading": "まだあめがふっています。",
+            "fr": "Il pleut encore.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "店はまだ開いています。",
+            "reading": "みせはまだあいています。",
+            "fr": "La boutique est encore ouverte.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-progressive",
+          "grammar-result-state"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%A0",
+            "title": "Bunpro grammar: まだ",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Il pleut encore.",
+          "La boutique est encore ouverte."
+        ]
+      },
+      "recordSha256": "9abe31c306752df438b4c5550be429cf9366f8203becf6066178fa697f3f42be"
+    },
+    {
+      "record": {
+        "id": "expand-not-yet-teinai",
+        "title": "まだていない : une action pas encore accomplie",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "まだていない",
+          "not-yet-teinai"
+        ],
+        "explanationFr": "まだ avec Vていない ou Vていません peut présenter une action attendue comme pas encore accomplie. Le contexte et le sens du verbe déterminent l'interprétation aspectuelle.",
+        "frenchLearnerTrap": "Pas encore terminé se distingue de ne pas faire comme habitude ; employer la construction adaptée à la réalisation attendue.",
+        "examples": [
+          {
+            "ja": "まだ宿題をしていません。",
+            "reading": "まだしゅくだいをしていません。",
+            "fr": "Je n'ai pas encore fait mes devoirs.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "まだその映画を見ていません。",
+            "reading": "まだそのえいがをみていません。",
+            "fr": "Je n'ai pas encore regardé ce film.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-progressive",
+          "grammar-te-form",
+          "grammar-polite-nonpast"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%A0-%E3%81%A6%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93",
+            "title": "Bunpro grammar: まだ-ていません",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je n'ai pas encore fait mes devoirs.",
+          "Je n'ai pas encore regardé ce film."
+        ]
+      },
+      "recordSha256": "8da19d26c6e7027d611db5d4ec89a52c51f8d22b99fded89113e4a515eff0ebd"
+    },
+    {
+      "record": {
+        "id": "expand-too-sugiru",
+        "title": "すぎる : dépasser le degré souhaitable",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "すぎる",
+          "too-sugiru"
+        ],
+        "explanationFr": "La base de ます suivie de すぎる exprime un excès dans une action. Pour un adjectif en い, retirer le い final ; pour un adjectif en な, utiliser sa base. いい donne よすぎる.",
+        "frenchLearnerTrap": "高すぎる exprime trop cher ou trop haut selon le sens de 高い ; le jugement d'excès dépend de la situation.",
+        "examples": [
+          {
+            "ja": "昨日は食べすぎました。",
+            "reading": "きのうはたべすぎました。",
+            "fr": "Hier, j'ai trop mangé.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "この靴は高すぎます。",
+            "reading": "このくつはたかすぎます。",
+            "fr": "Ces chaussures sont trop chères.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-verb-groups",
+          "grammar-i-adjectives",
+          "expand-polite-verb-past"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%99%E3%81%8E%E3%82%8B",
+            "title": "Bunpro grammar: すぎる",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Hier, j'ai trop mangé.",
+          "Ces chaussures sont trop chères."
+        ]
+      },
+      "recordSha256": "eadd08d043547437cde489498ea149049aa737a5af240b3d6f4f5814d6b39438"
+    },
+    {
+      "record": {
+        "id": "expand-change-naru",
+        "title": "になる・くなる : devenir ou changer d'état",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "になる・くなる",
+          "change-naru"
+        ],
+        "explanationFr": "Un nom ou un adjectif en な se construit avec に＋なる ; un adjectif en い remplace son い final par く avant なる. いい emploie la base よ et donne よくなる.",
+        "frenchLearnerTrap": "暖かいになる ne construit pas le changement étudié ; employer 暖かくなる.",
+        "examples": [
+          {
+            "ja": "春になりました。",
+            "reading": "はるになりました。",
+            "fr": "Le printemps est arrivé.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "部屋が暖かくなりました。",
+            "reading": "へやがあたたかくなりました。",
+            "fr": "La pièce est devenue plus chaude.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-i-adjectives",
+          "expand-polite-verb-past"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%AB%E3%81%AA%E3%82%8B-%E3%81%8F%E3%81%AA%E3%82%8B",
+            "title": "Bunpro grammar: になる-くなる",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Le printemps est arrivé.",
+          "La pièce est devenue plus chaude."
+        ]
+      },
+      "recordSha256": "636aef2d2a9d6494e3598fb911c6e774237467823df9b7c3cb27fc4bc17ce100"
+    },
+    {
+      "record": {
+        "id": "expand-choice-ni-suru",
+        "title": "にする : arrêter un choix",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "にする",
+          "choice-ni-suru"
+        ],
+        "explanationFr": "Dans une situation de choix, Nにする exprime que l'on retient l'option N. Ce fonctionnement se distingue de la décision sur une action en Vことにする et des autres emplois de する.",
+        "frenchLearnerTrap": "Ne pas employer にする comme traduction universelle du verbe faire.",
+        "examples": [
+          {
+            "ja": "飲み物はお茶にします。",
+            "reading": "のみものはおちゃにします。",
+            "fr": "Pour la boisson, je choisis du thé.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "昼ご飯はそばにします。",
+            "reading": "ひるごはんはそばにします。",
+            "fr": "Pour le déjeuner, je choisis des soba.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-copula",
+          "grammar-polite-nonpast"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%AB%E3%81%99%E3%82%8B",
+            "title": "Bunpro grammar: にする",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Pour la boisson, je choisis du thé.",
+          "Pour le déjeuner, je choisis des soba."
+        ]
+      },
+      "recordSha256": "b16548af70786ce3448a7c77ce0f24d1009607c2ccac298aea75d3bb1fdd43f3"
+    },
+    {
+      "record": {
+        "id": "expand-comparison-yori",
+        "title": "より・ほうが : comparer une propriété",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "より・ほうが",
+          "comparison-yori"
+        ],
+        "explanationFr": "Dans AよりBのほうがX, A est le repère et B est présenté comme davantage X. X peut exprimer une préférence, une taille ou une autre propriété ; le contexte fixe la dimension.",
+        "frenchLearnerTrap": "L'ordre français peut être différent : le terme devant より est celui par rapport auquel on compare.",
+        "examples": [
+          {
+            "ja": "バスより電車のほうが速いです。",
+            "reading": "ばすよりでんしゃのほうがはやいです。",
+            "fr": "Le train est plus rapide que le bus.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "夏より春のほうが好きです。",
+            "reading": "なつよりはるのほうがすきです。",
+            "fr": "Je préfère le printemps à l'été.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-i-adjectives",
+          "expand-likes-noun"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%82%88%E3%82%8A-%E3%81%AE%E3%81%BB%E3%81%86%E3%81%8C",
+            "title": "Bunpro grammar: より-のほうが",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Le train est plus rapide que le bus.",
+          "Je préfère le printemps à l'été."
+        ]
+      },
+      "recordSha256": "1a1e29b73e4d7137e3690aec8e6604ae2c85fdec7c8ac63e177cee8519830c81"
+    },
+    {
+      "record": {
+        "id": "expand-superlative-ichiban",
+        "title": "一番 : classer une propriété dans un ensemble",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "一番",
+          "superlative-ichiban"
+        ],
+        "explanationFr": "Dans un ensemble indiqué par Nの中で, 一番 met au premier rang l'élément pour une propriété donnée. L'ensemble et la propriété doivent être clairs, faute de quoi la comparaison reste incomplète.",
+        "frenchLearnerTrap": "Le classement est relatif à l'ensemble envisagé ; il ne signifie pas le meilleur dans tous les contextes.",
+        "examples": [
+          {
+            "ja": "この三つの中で、どれが一番安いですか。",
+            "reading": "このみっつのなかで、どれがいちばんやすいですか。",
+            "fr": "Parmi ces trois choses, laquelle est la moins chère ?",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "季節の中で、春が一番好きです。",
+            "reading": "きせつのなかで、はるがいちばんすきです。",
+            "fr": "Parmi les saisons, je préfère le printemps.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-i-adjectives",
+          "expand-likes-noun",
+          "grammar-counters",
+          "expand-interrogative-demonstratives"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%AA%E3%81%8B%E3%81%A7-%E3%81%8C%E3%81%84%E3%81%A1%E3%81%B0%E3%82%93",
+            "title": "Bunpro grammar: のなかで-がいちばん",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Parmi ces trois choses, laquelle est la moins chère ?",
+          "Parmi les saisons, je préfère le printemps."
+        ]
+      },
+      "recordSha256": "650749fa30a23f4a6a80dc15d4f1b4a4babc78ea0ea3d89a82d14ab017d2c3e3"
+    },
+    {
+      "record": {
+        "id": "expand-something-nanika",
+        "title": "何か・何も : quelque chose ou rien",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "何か・何も",
+          "something-nanika"
+        ],
+        "explanationFr": "何か renvoie à quelque chose de non précisé. Dans les exemples de cette fiche, 何も avec une négation exprime rien. L'accord entre le mot interrogatif, la particule et la négation est essentiel.",
+        "frenchLearnerTrap": "何も n'est pas une négation à lui seul dans toutes les constructions ; ici, le prédicat est négatif.",
+        "examples": [
+          {
+            "ja": "何か食べませんか。",
+            "reading": "なにかたべませんか。",
+            "fr": "Voulez-vous manger quelque chose ?",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "今日は何も買いません。",
+            "reading": "きょうはなにもかいません。",
+            "fr": "Aujourd'hui, je n'achète rien.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-invitation-masenka",
+          "grammar-polite-nonpast"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%AB%E3%81%8B-%E3%81%AA%E3%81%AB%E3%82%82",
+            "title": "Bunpro grammar: なにか-なにも",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Voulez-vous manger quelque chose ?",
+          "Aujourd'hui, je n'achète rien."
+        ]
+      },
+      "recordSha256": "e200c79306ad3792336894df09cd321b569f692918f9ad409bb667fb1a267611"
+    },
+    {
+      "record": {
+        "id": "expand-someone-dareka",
+        "title": "誰か・誰も : quelqu'un ou personne",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "誰か・誰も",
+          "someone-dareka"
+        ],
+        "explanationFr": "誰か désigne une personne non précisée. Dans une phrase négative, 誰も peut exprimer que personne n'effectue ou ne présente l'état indiqué. Ces emplois ne signifient pas que 誰も est toujours négatif.",
+        "frenchLearnerTrap": "La négation du prédicat reste nécessaire pour le personne de cette fiche.",
+        "examples": [
+          {
+            "ja": "玄関に誰かいます。",
+            "reading": "げんかんにだれかいます。",
+            "fr": "Il y a quelqu'un à l'entrée.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "部屋には誰もいません。",
+            "reading": "へやにはだれもいません。",
+            "fr": "Il n'y a personne dans la pièce.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-existence",
+          "expand-location-existence"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E8%AA%B0%E3%81%8B-%E3%81%A9%E3%81%93%E3%81%8B-%E8%AA%B0%E3%82%82-%E3%81%A9%E3%81%93%E3%82%82",
+            "title": "Bunpro grammar: 誰か-どこか-誰も-どこも",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Il y a quelqu'un à l'entrée.",
+          "Il n'y a personne dans la pièce."
+        ]
+      },
+      "recordSha256": "3b49ca5c358e9a70096278d3f52e6ecae7b7a1abea73f8d3eb65a7abff7b2f2f"
+    },
+    {
+      "record": {
+        "id": "expand-offer-mashouka",
+        "title": "ましょうか : proposer son aide",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "ましょうか",
+          "offer-mashouka"
+        ],
+        "explanationFr": "Vましょうか peut proposer une action du locuteur pour aider l'interlocuteur, ou proposer une action commune selon le contexte. Cette fiche travaille une offre d'aide.",
+        "frenchLearnerTrap": "La phrase n'est pas seulement une question sur un futur certain ; elle soumet une proposition à l'autre.",
+        "examples": [
+          {
+            "ja": "荷物を持ちましょうか。",
+            "reading": "にもつをもちましょうか。",
+            "fr": "Voulez-vous que je porte vos bagages ?",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "窓を閉めましょうか。",
+            "reading": "まどをしめましょうか。",
+            "fr": "Voulez-vous que je ferme la fenêtre ?",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-suggestion-mashou",
+          "grammar-case-particles"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%E3%81%8B",
+            "title": "Bunpro grammar: ましょうか",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Voulez-vous que je porte vos bagages ?",
+          "Voulez-vous que je ferme la fenêtre ?"
+        ]
+      },
+      "recordSha256": "4b7b5167a1953f84bdb3f70ed3f9141898a481ef153d458486a066d7bf189bc6"
+    },
+    {
+      "record": {
+        "id": "expand-skill-jouzu",
+        "title": "のが上手 : être habile dans une action",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "のが上手",
+          "skill-jouzu"
+        ],
+        "explanationFr": "Un verbe en forme du dictionnaire suivi de のが上手 décrit une habileté dans l'activité. 上手 est un adjectif en な ; la forme polie affirmative se termine par です.",
+        "frenchLearnerTrap": "Se qualifier soi-même de 上手 peut paraître se vanter ; la construction grammaticale reste distincte du choix social de l'énoncé.",
+        "examples": [
+          {
+            "ja": "姉は絵を描くのが上手です。",
+            "reading": "あねはえをかくのがじょうずです。",
+            "fr": "Ma grande sœur dessine bien.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "友達は料理するのが上手です。",
+            "reading": "ともだちはりょうりするのがじょうずです。",
+            "fr": "Mon ami cuisine bien.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-nominalization",
+          "expand-na-adjective-predicate"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%8C%E3%81%98%E3%82%87%E3%81%86%E3%81%9A",
+            "title": "Bunpro grammar: のがじょうず",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Ma grande sœur dessine bien.",
+          "Mon ami cuisine bien."
+        ]
+      },
+      "recordSha256": "2ccc3bbf9db5daa325333b3bd40a0f97a89019269e8095c1887c9ba4073fb4c6"
+    },
+    {
+      "record": {
+        "id": "expand-skill-heta",
+        "title": "のが下手 : manquer d'habileté dans une action",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "のが下手",
+          "skill-heta"
+        ],
+        "explanationFr": "Un verbe en forme du dictionnaire suivi de のが下手 décrit un manque d'habileté dans l'activité. 下手 se lit へた dans cet emploi et se construit comme un adjectif en な.",
+        "frenchLearnerTrap": "Dire directement à quelqu'un qu'il est 下手 peut être blessant ; apprendre la forme ne signifie pas l'employer dans toute relation.",
+        "examples": [
+          {
+            "ja": "私は歌うのが下手です。",
+            "reading": "わたしはうたうのがへたです。",
+            "fr": "Je chante mal.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "私は道を覚えるのが下手です。",
+            "reading": "わたしはみちをおぼえるのがへたです。",
+            "fr": "J'ai du mal à retenir les itinéraires.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-nominalization",
+          "expand-na-adjective-predicate"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%8C%E3%81%B8%E3%81%9F",
+            "title": "Bunpro grammar: のがへた",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je chante mal.",
+          "J'ai du mal à retenir les itinéraires."
+        ]
+      },
+      "recordSha256": "afd44a597446984a89d5130320139ba81cd111c1d20fb94c381666a73f591cf5"
+    },
+    {
+      "record": {
+        "id": "expand-obligation-contraction",
+        "title": "なきゃ・なくちゃ : obligation dans la conversation",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "なきゃ・なくちゃ",
+          "obligation-contraction"
+        ],
+        "explanationFr": "なきゃ est une contraction de なければ, et なくちゃ de なくては. Dans une conversation qui fournit le contexte d'obligation, la suite ならない ou いけない peut être omise. Ces finales abrégées n'ont pas le même registre qu'une phrase formelle complète.",
+        "frenchLearnerTrap": "La contraction ne transforme pas toutes les négations en obligations ; c'est l'ensemble de la construction et le contexte qui donnent le sens.",
+        "examples": [
+          {
+            "ja": "もう帰らなきゃ。",
+            "reading": "もうかえらなきゃ。",
+            "fr": "Il faut que je rentre maintenant.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "週末は庭を掃除しなくちゃ。",
+            "reading": "しゅうまつはにわをそうじしなくちゃ。",
+            "fr": "Il faut que je nettoie le jardin ce week-end.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "adv-nakerebanaranai",
+          "expand-godan-negative",
+          "expand-irregular-suru"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A1%E3%82%83-%E3%81%AA%E3%81%8D%E3%82%83",
+            "title": "Bunpro grammar: なくちゃ-なきゃ",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Il faut que je rentre maintenant.",
+          "Il faut que je nettoie le jardin ce week-end."
+        ]
+      },
+      "recordSha256": "8b36bdd3264f7e4f8ba2f29038288053a1b145bbfebbb257864bb1c47d51a890"
+    },
+    {
+      "record": {
+        "id": "expand-or-ka",
+        "title": "か : proposer deux options",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "か",
+          "or-ka"
+        ],
+        "explanationFr": "か peut relier des options nominales, souvent avec か après chaque option. Le choix est alors ouvert entre les éléments nommés, au lieu d'affirmer une liste réunissant les deux.",
+        "frenchLearnerTrap": "Ce か entre les options ne se confond pas avec le か qui termine une question polie.",
+        "examples": [
+          {
+            "ja": "お茶かコーヒーをください。",
+            "reading": "おちゃかこーひーをください。",
+            "fr": "Du thé ou du café, s'il vous plaît.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "土曜日か日曜日に行きます。",
+            "reading": "どようびかにちようびにいきます。",
+            "fr": "J'y vais samedi ou dimanche.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-noun-request",
+          "expand-time-ni"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%8B-or",
+            "title": "Bunpro grammar: か-or",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Du thé ou du café, s'il vous plaît.",
+          "J'y vais samedi ou dimanche."
+        ]
+      },
+      "recordSha256": "7f48188dcdfd469913256f3e31f3918c1ea76f852f65e5a190343d1dd8f58634"
+    },
+    {
+      "record": {
+        "id": "expand-why-doushite",
+        "title": "どうして : demander une raison",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "どうして",
+          "why-doushite"
+        ],
+        "explanationFr": "どうして permet de demander la raison d'une situation ou d'une action. Le mot peut également signifier de quelle manière dans certains contextes ; cette fiche travaille les questions de raison.",
+        "frenchLearnerTrap": "Une question sur la raison peut sembler demander une justification ; adapter le ton à la relation.",
+        "examples": [
+          {
+            "ja": "どうして日本語を勉強していますか。",
+            "reading": "どうしてにほんごをべんきょうしていますか。",
+            "fr": "Pourquoi étudiez-vous le japonais ?",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "どうして今日は休みですか。",
+            "reading": "どうしてきょうはやすみですか。",
+            "fr": "Pourquoi est-ce un jour de repos aujourd'hui ?",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-progressive",
+          "grammar-copula"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%A9%E3%81%86%E3%81%97%E3%81%A6",
+            "title": "Bunpro grammar: どうして",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Pourquoi étudiez-vous le japonais ?",
+          "Pourquoi est-ce un jour de repos aujourd'hui ?"
+        ]
+      },
+      "recordSha256": "fb06eb3339f2ee5d15d437c16e4fd835ac9bdf9c2e897ad354dbd302ac677870"
+    }
+  ]
+}

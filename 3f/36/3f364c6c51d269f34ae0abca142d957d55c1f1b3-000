@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/expansion_review_second",
+  "humanReview": false,
+  "complete": true,
+  "reviewType": "independent-adversarial-model-review",
+  "scope": "Full re-review of the two corrected records, four examples, their source alignment and changed dependency. Supersedes only these two IDs from ExpansionIndependentSecond.json; other 69 decisions retain their existing exact hashes. No other reviewer reports read.",
+  "limitations": [
+    "Model review, not human/native certification or exhaustive JLPT coverage."
+  ],
+  "checks": {
+    "packetHashesVerified": 2,
+    "examplesChecked": 4,
+    "approved": 2,
+    "blocked": 0
+  },
+  "records": [
+    {
+      "id": "expand-capability-koto",
+      "reviewedContentHash": "ee70995a015254777d894d0b29def09c0b17df116cca6701eca73663649df7eb",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/072.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Re-reviewed the complete changed record and both unchanged Japanese/kana/French exercises. The rule is now explicitly scoped to this productive construction and voluntary actions, excluding rain events and わかる as TUFS 072 section 5 requires. It does not assert that all possible expressions of ability or possibilities use only volitional verbs. Both examples use intentional 読む/撮る, and the permission/capability distinction remains sound. Original blocker capability-volitional-restriction is resolved on this exact new hash.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ta-tokoro-de",
+      "reviewedContentHash": "8dbf889f691cdcfc80fc57b589cb74b739a6899b2fcff65d645df2a6aa393eb5",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%A8%E3%81%93%E3%82%8D%E3%81%A7"
+      ],
+      "findings": [],
+      "reviewNotes": "Re-reviewed the complete changed record and both Japanese/kana/French exercises against publisher たところで structure and explanation. Exact morphology prerequisite expand-plain-verb-past now teaches Vた before this card, including voiced で→だ needed by 急ぐ→急いだ and する→した needed by 説明する. The dependency exists and descends through te formation without introducing a cycle. Futile hypothetical concession, nonpast outcome and probability in the second translation remain correct. Original blocker plain-past-morphology-prerequisite is resolved on this exact new hash.",
+      "exampleCount": 2
+    }
+  ]
+}

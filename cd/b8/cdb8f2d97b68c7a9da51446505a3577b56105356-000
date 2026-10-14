@@ -1,0 +1,11 @@
+{
+  "checkedAt": "14 October 2026",
+  "release": "29324aff31146a9c",
+  "requirements": 132,
+  "modifiedBindingsReviewedTwice": 27,
+  "covered": 88,
+  "open": 44,
+  "completeAudit": true,
+  "completeCoverage": false,
+  "gateTestsPassed": 20
+}

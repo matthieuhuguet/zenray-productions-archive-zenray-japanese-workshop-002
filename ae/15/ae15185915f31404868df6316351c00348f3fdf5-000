@@ -1,0 +1,473 @@
+#!/usr/bin/env python3
+"""12 October 2026, 15:00 CEST: sourced corpus, deterministic lookup and lesson cooking."""
+import argparse
+import datetime
+import hashlib
+import json
+import os
+import re
+import sqlite3
+import sys
+import tempfile
+import unicodedata
+from collections import Counter, defaultdict
+from pathlib import Path
+
+WORKSHOP = Path('/Users/zenray/.claude/tmp/tmp-zenray-japanese')
+DATE = '12 October 2026'
+ACCENTS = str.maketrans('àâäéèêëîïôöùûüÿçœ', 'aaaeeeeiioouuuyco')
+
+
+def normalized(text):
+    return unicodedata.normalize('NFKC', str(text)).lower().replace('œ', 'oe').translate(ACCENTS)
+
+
+def tokens(text):
+    return set(re.findall(r"[\w]+", normalized(text), re.UNICODE))
+
+
+# 12 October 2026: retain compatibility and supplementary kanji in character searches.
+def is_japanese_character(character):
+    return '\u3040' <= character <= '\u9fff' or '\uf900' <= character <= '\ufaff' or '\U00020000' <= character <= '\U000323af'
+
+
+def bucket(text, count):
+    value = 2166136261
+    for char in text:
+        value = ((value ^ ord(char)) * 16777619) & 0xffffffff
+    return value % count
+
+
+def read_json(path):
+    return json.loads(Path(path).read_text())
+
+
+def atomic_text(path, text):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fd, name = tempfile.mkstemp(dir=path.parent, prefix='.' + path.name)
+    try:
+        with os.fdopen(fd, 'w') as handle:
+            handle.write(text)
+        os.replace(name, path)
+    finally:
+        if os.path.exists(name):
+            os.unlink(name)
+
+
+def atomic_json(path, data):
+    atomic_text(path, json.dumps(data, ensure_ascii=False, separators=(',', ':')) + '\n')
+
+
+def source(url, title, publisher, license_name):
+    return {'url': url, 'title': title, 'publisher': publisher, 'checkedAt': DATE, 'license': license_name}
+
+
+def validate(records):
+    seen = set()
+    for record in records:
+        if not record.get('id') or record['id'] in seen:
+            raise ValueError('Missing or duplicated record ID: ' + str(record.get('id')))
+        seen.add(record['id'])
+        for field in ['title', 'domain', 'explanationFr', 'sources']:
+            if not record.get(field):
+                raise ValueError(f"{record['id']}: missing {field}")
+        if any(not item.get('url', '').startswith('https://') for item in record['sources']):
+            raise ValueError(record['id'] + ': missing HTTPS source')
+        if record.get('domain') == 'grammar' and record.get('level') not in ['N5','N4','N3','N2','N1','beyond']:
+            raise ValueError(record['id'] + ': unknown grammar level')
+        for example in record.get('examples', []):
+            if not example.get('ja') or not example.get('fr'):
+                raise ValueError(record['id'] + ': incomplete example')
+    return seen
+
+
+def render_record(record):
+    revision_date = record.get('revisionDate', DATE)
+    clean = lambda text: str(text).replace('|', '\\|').replace('\n', ' ')
+    lines = [f"## {record['id']} : {record['title']} ({revision_date})", '',
+             f"Domaine : {record['domain']} ; niveau : {record.get('level','non classé')} ; statut : {record.get('status','source-imported')}. ({revision_date})", '',
+             record['explanationFr'] + f' ({revision_date})', '']
+    if record.get('examples'):
+        lines += ['| Japonais et lecture | Français |', '|---|---|']
+        for example in record['examples']:
+            ja = example['ja']
+            if example.get('reading') and example['reading'] != ja:
+                ja += ' (' + example['reading'] + ')'
+            lines.append(f"| {clean(ja)} | {clean(example['fr'])} ({revision_date}) |")
+        lines.append('')
+    if record.get('prerequisites'):
+        lines += ['Prérequis : ' + ', '.join(record['prerequisites']) + f'. ({revision_date})', '']
+    for item in record['sources']:
+        lines.append(f"- [{item.get('title',item['url'])}]({item['url']}) ; {item.get('publisher','source')} ; {item.get('license',item.get('reuse','droit à vérifier'))} ; vérifié : {item.get('checkedAt',DATE)}. ({revision_date})")
+    lines.append('')
+    return '\n'.join(lines)
+
+
+def curated(research):
+    records = []
+    for directory in ['language', 'japan']:
+        for filename in sorted((research / directory).glob('*.json')):
+            payload = read_json(filename)
+            items = payload if isinstance(payload, list) else payload.get('records', [])
+            if not isinstance(items,list):
+                continue
+            for item in items:
+                if isinstance(item, dict) and item.get('id') and item.get('explanationFr'):
+                    item.setdefault('aliases', [])
+                    item.setdefault('examples', [])
+                    item.setdefault('prerequisites', [])
+                    item.setdefault('status', 'research')
+                    item['levelEstimated'] = item.get('level','') in ['N5','N4','N3','N2','N1']
+                    item['origin'] = str(filename)
+                    item['corpus'] = directory
+                    records.append(item)
+    ids = validate(records)
+    missing = [(record['id'], prerequisite) for record in records for prerequisite in record.get('prerequisites',[]) if prerequisite not in ids]
+    if missing:
+        raise ValueError('Missing prerequisite links: ' + str(missing[:10]))
+    return records
+
+
+def dictionary_records(research, dataset_paths=None):
+    dataset_paths = dataset_paths or read_json(WORKSHOP / "settings.json")["datasets"]
+    directory = research / 'datasets'
+    filename = directory / dataset_paths['dictionary']
+    if filename.exists():
+        data = read_json(filename)
+        tags = data.get('tags', {})
+        attribution = source('https://www.edrdg.org/wiki/JMdict-EDICT_Dictionary_Project.html', 'JMdict', 'EDRDG, James Breen and contributors; French: Jean-Marc Desperrier and internationalization contributors', 'Japanese/English: CC BY-SA 4.0; French: separate compiler copyright, Jean-Marc Desperrier and JMdict internationalization contributors')
+        for word in data['words']:
+            forms = [item['text'] for item in word.get('kanji', [])]
+            readings = [item['text'] for item in word.get('kana', [])]
+            meanings = []
+            senses = []
+            for sense in word.get('sense', []):
+                glosses = [g for g in sense.get('gloss', []) if g['lang'] in ['fre', 'eng']]
+                if not glosses:
+                    continue
+                senses.append({**sense, 'gloss': glosses})
+                labels = [tags.get(t, t) for t in sense.get('partOfSpeech', []) + sense.get('misc', []) + sense.get('field', []) + sense.get('dialect', [])]
+                text = '; '.join(('FR : ' if g['lang'] == 'fre' else 'EN : ') + g['text'] for g in glosses)
+                if labels:
+                    text += ' [' + ', '.join(labels) + ']'
+                meanings.append(text)
+            if not meanings:
+                continue
+            languages = sorted({g['lang'] for s in senses for g in s['gloss']})
+            yield {'id': 'word-' + str(word['id']), 'title': (forms or readings)[0], 'aliases': list(dict.fromkeys(forms + readings)),
+                   'domain': 'dictionary', 'level': 'unclassified', 'levelEstimated': False, 'status': 'source-imported',
+                   'explanationFr': '\n\n'.join(meanings), 'glossLanguages': languages, 'senses': senses,
+                   'examples': [], 'prerequisites': [], 'sources': [attribution], 'reading': ' / '.join(readings)}
+    filename = directory / dataset_paths['kanji']
+    if filename.exists():
+        data = read_json(filename)
+        attribution = source('https://www.edrdg.org/wiki/KANJIDIC_Project.html', 'KANJIDIC2', 'EDRDG and named contributors', 'CC BY-SA 4.0')
+        for char in data['characters']:
+            readings, meanings = [], []
+            for group in (char.get('readingMeaning') or {}).get('groups', []):
+                readings += [r['value'] for r in group.get('readings', []) if r['type'] in ['ja_on', 'ja_kun']]
+                meanings += [('FR : ' if m['lang'] == 'fr' else 'EN : ') + m['value'] for m in group.get('meanings', []) if m['lang'] in ['fr', 'en']]
+            literal = char['literal']
+            yield {'id': f'kanji-{ord(literal):05x}', 'title': literal, 'aliases': readings, 'domain': 'kanji',
+                   'level': 'unclassified', 'status': 'source-imported', 'meaningLanguages': sorted({m['lang'] for g in (char.get('readingMeaning') or {}).get('groups',[]) for m in g.get('meanings',[]) if m['lang'] in ['fr','en']}), 'radicals': char.get('radicals',[]), 'explanationFr': '; '.join(meanings) or 'Sens français et anglais absent de la source.',
+                   'examples': [], 'reading': ' / '.join(readings), 'prerequisites': [], 'misc': char.get('misc', {}),
+                   'sources': [attribution], 'strokeFile': f'strokes/{ord(literal):05x}.svg' if (directory / 'strokes' / f'{ord(literal):05x}.svg').exists() else None}
+    filename = directory / dataset_paths['sentences']
+    if filename.exists():
+        for line in filename.open():
+            pair = json.loads(line)
+            jp, fr = pair['japanese'], pair['french']
+            yield {'id': f"sentence-{jp['id']}-{fr['id']}", 'title': jp['text'], 'aliases': [],
+                   'domain': 'sentence', 'level': 'unclassified', 'status': 'community-unreviewed',
+                   'explanationFr': fr['text'], 'examples': [{'ja': jp['text'], 'fr': fr['text']}],
+                   'prerequisites': [], 'original': pair,
+                   'sources': [source(item['url'], f"Tatoeba {item['id']}", item['author'] or 'anonymous contributor', 'CC BY 2.0 FR') for item in [jp,fr]]}
+
+
+# 13 October 2026, 00:10 CEST: teaching requires content-bound adversarial evidence.
+def lesson_content_hash(payload):
+    content = {key: value for key, value in payload.items() if key not in ['lessonValidation', 'lessonContentHash']}
+    return hashlib.sha256(json.dumps(content, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
+
+
+def attach_lesson_validation(payload, approvals, identity):
+    payload['lessonContentVersion'] = '1'
+    payload['lessonContentHash'] = lesson_content_hash(payload)
+    payload['lessonValidation'] = approvals.get(identity, {'status': 'blocked', 'reason': 'Adversarial review required'})
+    return payload
+
+
+def require_lesson_validation(payload):
+    approval = payload.get('lessonValidation', {})
+    digest = lesson_content_hash(payload)
+    reviewers = approval.get('reviewerIds', [])
+    evidence = approval.get('evidenceUrls', [])
+    valid = (approval.get('status') == 'approved'
+             and payload.get('lessonContentVersion') == '1'
+             and approval.get('contentVersion') == payload.get('lessonContentVersion')
+             and approval.get('contentHash') == payload.get('lessonContentHash') == digest
+             and isinstance(reviewers, list)
+             and all(isinstance(item, str) and item.strip() for item in reviewers)
+             and len(set(item.strip() for item in reviewers)) >= 2
+             and isinstance(evidence, list) and len(evidence) > 0
+             and all(isinstance(item, str) and item.startswith('https://') for item in evidence)
+             and approval.get('unresolvedFindings') == [])
+    if not valid:
+        raise ValueError('Lesson blocked: adversarial validation is missing, incomplete or stale for ' + payload.get('id', 'learner retest'))
+
+
+def learner_payload(config):
+    learner = dict(config.get('learner', {}))
+    learner['retestItems'] = read_json(learner['retestSource']).get('items', [])[:learner.get('retestCount', 2)] if learner.get('retestSource') else []
+    learner['acquiredFromCorpus'] = False
+    return learner
+
+
+def cook_lesson(record, config, options=None, retest=None):
+    require_lesson_validation(record)
+    settings = {**config['lesson'], **(options or {})}
+    if settings['mode'] not in ['oral','reading'] or settings['script'] not in ['reading','mixed']:
+        raise ValueError('Unknown lesson mode or script')
+    if not 1 <= int(settings['maxDrills']) <= 4:
+        raise ValueError('Choose between 1 and 4 drills')
+    examples = record.get('examples', [])
+    if settings['script'] == 'reading' and any(not e.get('reading') and re.search(r'[一-龯]',e['ja']) for e in examples):
+        raise ValueError('Kana lesson requires an attested reading for every example; choose mixed script for reference reading.')
+    if not examples:
+        raise ValueError('This source entry has no paired example. Consult it as a reference; research a lesson before teaching it.')
+    # 14 October 2026, 11:45 CEST: cooking uses today's date without changing immutable source revisions.
+    lesson_date = datetime.datetime.now().astimezone().strftime('%d %B %Y').lstrip('0')
+    lines = [f"# BOUCLE : {record['title']} ({lesson_date}, {settings['minutes']} min)", '',
+             'La disponibilité du corpus ne mesure ni ton exposition ni tes acquis.', '', '## ① RETEST', '']
+    if retest is None and config.get('learner',{}).get('retestSource'):
+        learner = learner_payload(config)
+        approvals = read_json(config['review']['approvals']).get('approvals', {})
+        attach_lesson_validation(learner, approvals, 'learner-retest')
+        require_lesson_validation(learner)
+        retest = learner['retestItems']
+    elif retest:
+        raise ValueError('Explicit retest bypass is forbidden; validate the configured learner payload')
+    if retest:
+        lines += [f"Dis à voix haute : {e['fr']}" for e in retest]
+    else:
+        lines += ['Retest à renseigner depuis le DrillTracker ; aucun acquis supposé.']
+    lines += ['', f"## ② NEUF : {record['title']}", '', '| Japonais | Français |', '|---|---|']
+    for example in examples[:int(settings['maxDrills'])]:
+        text = (example.get('reading') or example['ja']) if settings['script'] == 'reading' else example['ja'] + (' (' + example['reading'] + ')' if example.get('reading') and example['reading'] != example['ja'] else '')
+        lines.append('| ' + text.replace('|','\\|') + ' | ' + example['fr'].replace('|','\\|') + ' |')
+    lines += ['', record['explanationFr'], '', '## ③ DRILL', '',
+              "> 🗣️ ORAL : n'écris PAS, dis à voix haute" if settings['mode'] == 'oral' else '> Lis, puis reformule sans regarder.', '']
+    lines += [f"**{i+1}.** {e['fr']}" for i,e in enumerate(examples[:int(settings['maxDrills'])])]
+    lines += ['', '<details><summary>Réponses après restitution</summary>', '']
+    lines += [e['ja'] + (' (' + e['reading'] + ')' if e.get('reading') else '') for e in examples[:int(settings['maxDrills'])]]
+    if retest:
+        lines += ['', 'Réponses du retest :'] + [e['ja'] for e in retest]
+    lines += ['', '</details>', '', f"STATUT : FINI après ton drill. Pause {settings['pauseMinutes']} min.", '', '## Sources', '']
+    lines += [f"- [{s.get('title','Source')}]({s['url']})" for s in record['sources']]
+    return '\n'.join(lines)
+
+
+def build(config):
+    root = Path(config['memoryRoot'])
+    research = Path(config['researchRoot'])
+    cards = curated(research)
+    approvals = read_json(config['review']['approvals']).get('approvals', {})
+    database = root / 'Corpus' / 'japanese.sqlite'
+    database.parent.mkdir(parents=True, exist_ok=True)
+    temporary = database.with_name('.japanese.sqlite.new')
+    temporary.unlink(missing_ok=True)
+    conn = sqlite3.connect(temporary)
+    conn.execute('CREATE TABLE records (id TEXT PRIMARY KEY, domain TEXT, level TEXT, title TEXT, body TEXT, payload TEXT)')
+    conn.execute('CREATE VIRTUAL TABLE search USING fts5(id UNINDEXED, body, tokenize="unicode61")')
+    counts = Counter()
+    record_shards = defaultdict(list)
+    search_shards = defaultdict(lambda: defaultdict(list))
+    mappings = []
+    headings = {
+        'language': f'# Japanese2 : corpus de langue ({DATE})\n\nDisponibilité documentaire, pas mesure des acquis. Niveaux pédagogiques estimés. Aucune liste exhaustive officielle JLPT revendiquée. ({DATE})\n\nDictionnaires : [JMdict](https://www.edrdg.org/wiki/JMdict-EDICT_Dictionary_Project.html), [KANJIDIC2](https://www.edrdg.org/wiki/KANJIDIC_Project.html), EDRDG et contributeurs, [CC BY-SA 4.0](https://www.edrdg.org/edrdg/licence.html). Données transformées : sélection français/anglais et indexation. Attributions françaises conservées dans les sources archivées. ({DATE})\n\nPhrases : [Tatoeba](https://tatoeba.org/en/downloads), CC BY 2.0 FR ; auteurs et liens dans chaque fiche du moteur. Tracés : [KanjiVG](https://kanjivg.tagaini.net/), Ulrich Apel et contributeurs, CC BY-SA 3.0. ({DATE})\n\nDétails des sens, restrictions lexicales et sources : Corpus/japanese.sqlite, requête par identifiant stable. ({DATE})\n\n',
+        'japan': f'# Japanese3 : Japon ({DATE})\n\nFaits sourcés, contextes précis, pratiques variables ; aucune pensée attribuée à tous les Japonais. ({DATE})\n\n'
+    }
+    prior_mapping_path = root / 'Corpus' / 'mapping.json'
+    previous = {item['id']: item for item in read_json(prior_mapping_path)} if prior_mapping_path.exists() else {}
+    old_lines = {}
+    corpus_text = {}
+    total_lines = {}
+    for key, heading in headings.items():
+        filename = root / ('Japanese3.md' if key == 'japan' else 'Japanese2.md')
+        old_lines[filename.name] = filename.read_text().splitlines() if filename.exists() else []
+        prefix = f'\n\n## Extension du corpus ({DATE})\n\n' if filename.exists() else heading
+        corpus_text[key] = [prefix]
+        total_lines[key] = len(old_lines[filename.name]) + len(prefix.splitlines()) + 1
+    for mapped_file in {item['file'] for item in previous.values()}:
+        if mapped_file not in old_lines:
+            old_lines[mapped_file] = (root / mapped_file).read_text().splitlines()
+    new_sections = Counter()
+    for record in iter_records(cards, research, config["datasets"]):
+        validate([record])
+        record['recordShard'] = bucket(record['id'], config['recordShards'])
+        if record['domain'] not in ['dictionary', 'kanji', 'sentence']:
+            record['revisionDate'] = config.get('recordRevisionDates', {}).get(record['id'], DATE)
+        record['markdown'] = render_record(record)
+        if record['domain'] not in ['dictionary', 'kanji', 'sentence']:
+            attach_lesson_validation(record, approvals, record['id'])
+        text = record['title'] + ' ' + ' '.join(record.get('aliases', [])) + ' ' + record['explanationFr']
+        encoded = json.dumps(record, ensure_ascii=False)
+        conn.execute('INSERT INTO records VALUES (?,?,?,?,?,?)', (record['id'],record['domain'],record.get('level','unclassified'),record['title'],normalized(text),encoded))
+        conn.execute('INSERT INTO search VALUES (?,?)', (record['id'],text))
+        counts[record['domain']] += 1
+        record_shards[record['recordShard']].append(record)
+        record_tokens = tokens(text)
+        # 12 October 2026: character lookup remains possible inside dictionary compounds.
+        record_tokens.update(c for c in normalized(record['title']) if is_japanese_character(c))
+        for token in record_tokens:
+            if len(token) < 2 and not any(is_japanese_character(c) for c in token):
+                continue
+            search_shards[bucket(token[:2], config['searchShards'])][token].append(record['id'])
+        corpus_key = 'japan' if record.get('corpus') == 'japan' else 'language'
+        if record['domain'] in ['dictionary','kanji','sentence']:
+            meaning = record['explanationFr'].replace('\n',' ').replace('|','\\|')
+            reading = record.get('reading','')
+            section = f"- **{record['id']} {record['title']}** : {reading} ; {meaning}. ({DATE})\n"
+        else:
+            section = record['markdown'] + '\n'
+        filename = 'Japanese3.md' if corpus_key == 'japan' else 'Japanese2.md'
+        content_hash = hashlib.sha256(section.strip().encode()).hexdigest()
+        prior = previous.get(record['id'])
+        prior_hash = None
+        if prior and prior.get('file') in old_lines:
+            prior_hash = prior.get('contentSha256')
+            if not prior_hash:
+                old_section = '\n'.join(old_lines[prior['file']][prior['line']-1:prior['end']]).strip()
+                prior_hash = hashlib.sha256(old_section.encode()).hexdigest()
+        if prior and prior_hash == content_hash:
+            mappings.append({**prior,'contentSha256':content_hash,'recordShard':record['recordShard']})
+        else:
+            start = total_lines[corpus_key]
+            corpus_text[corpus_key].append(section)
+            total_lines[corpus_key] += len(section.splitlines())
+            mappings.append({'id':record['id'],'file':filename,'line':start,'end':total_lines[corpus_key]-1,'recordShard':record['recordShard'],'contentSha256':content_hash})
+            new_sections[corpus_key] += 1
+    conn.commit()
+    conn.close()
+    os.replace(temporary, database)
+    release_digest = hashlib.sha256(Path(__file__).read_bytes())
+    release_digest.update(json.dumps(cards,ensure_ascii=False,sort_keys=True).encode())
+    for input_path in sorted(research.rglob('*.json')):
+        if input_path.name in [config['datasets']['dictionary'],config['datasets']['kanji'],'LanguageRecords.json','JapanCards.json','downloads.json','LanguageAdvancedRecords.json','JapanAdvancedRecords.json']:
+            with input_path.open('rb') as input_handle:
+                while True:
+                    chunk = input_handle.read(1024*1024)
+                    if not chunk: break
+                    release_digest.update(chunk)
+    release_digest.update(json.dumps(config,sort_keys=True).encode())
+    release_digest.update(json.dumps(approvals,ensure_ascii=False,sort_keys=True).encode())
+    release_hash = release_digest.hexdigest()[:16]
+    site_root = root / 'Site' / 'corpus'
+    site = site_root / 'releases' / release_hash
+    import shutil
+    stroke_source = research / 'datasets' / 'strokes'
+    if stroke_source.exists():
+        shutil.copytree(stroke_source, site / 'strokes', dirs_exist_ok=True)
+    for index in range(config['recordShards']):
+        atomic_json(site / 'records' / f'{index:03}.json', record_shards[index])
+    for index in range(config['searchShards']):
+        atomic_json(site / 'search' / f'{index:03}.json', search_shards[index])
+
+    for key, parts in corpus_text.items():
+        if not new_sections[key]:
+            continue
+        filename = root / ('Japanese2.md' if key == 'language' else 'Japanese3.md')
+        delta = ''.join(parts)
+        # 12 October 2026: only changed records append; a rebuild never duplicates the dictionary.
+        if filename.exists() and filename.stat().st_size + len(delta.encode()) > config['maxMarkdownBytes']:
+            volume_name = f'Corpus/Volumes/{filename.stem}.{release_hash}.md'
+            volume = root / volume_name
+            atomic_text(volume, delta)
+            prior_line_count = len(old_lines[filename.name])
+            for mapping in mappings:
+                if mapping['file'] == filename.name and mapping['line'] > prior_line_count:
+                    mapping['file'] = volume_name
+                    mapping['line'] -= prior_line_count
+                    mapping['end'] -= prior_line_count
+            with filename.open('a') as handle:
+                handle.write(f'\n\n## Extension sourcée ({DATE})\n\nLes nouvelles versions des fiches sont dans [{volume.name}]({volume_name}). Le mapping sélectionne la version courante sans effacer les précédentes. ({DATE})\n')
+        elif filename.exists():
+            with filename.open('a') as handle:
+                handle.write(delta)
+        else:
+            atomic_text(filename, delta)
+    metadata = {'schemaVersion':1,'projectId':config['projectId'],'builtAt':config.get('buildDate', DATE),'counts':dict(counts),
+                'recordShards':config['recordShards'],'searchShards':config['searchShards'],
+                'cards':[dict(r,recordShard=bucket(r['id'],config['recordShards'])) for r in cards],
+                'coverageStatus':'expanding','officialJlptList':False,
+                'notice':'Corpus en expansion : disponibilités documentaires distinctes des acquis ; niveaux pédagogiques estimés. Dictionnaires EDRDG CC BY-SA 4.0, tracés KanjiVG CC BY-SA 3.0, phrases Tatoeba selon leurs licences.'}
+    if config.get('learner',{}).get('retestSource'):
+        metadata['learner'] = attach_lesson_validation(learner_payload(config), approvals, 'learner-retest')
+    metadata['basePath'] = f'Memory/Japanese/Site/corpus/releases/{release_hash}'
+    metadata['release'] = release_hash
+    metadata['lesson'] = config['lesson']
+    atomic_json(site / 'catalogue.json', metadata)
+    atomic_json(site_root / 'catalogue.json', metadata)
+    atomic_json(root / 'Corpus' / 'mapping.json', mappings)
+    atomic_json(root / 'Corpus' / 'build-report.json', {'counts':dict(counts),'records':sum(counts.values()),'newSections':dict(new_sections),'mappingEntries':len(mappings),'sqliteBytes':database.stat().st_size})
+    print(json.dumps({'counts':dict(counts),'records':sum(counts.values()),'sqliteBytes':database.stat().st_size}))
+
+
+def iter_records(cards, research, dataset_paths):
+    yield from cards
+    yield from dictionary_records(research, dataset_paths)
+
+
+def query(config, text, limit=None, domain=None, level=None):
+    conn = sqlite3.connect(Path(config['memoryRoot']) / 'Corpus' / 'japanese.sqlite')
+    limit = limit or config['resultLimit']
+    # 12 October 2026: SQL arguments are bound, including user text and filters.
+    clauses, params = ["body LIKE ? ESCAPE '\\'"], ['%' + normalized(text).replace('%','\\%').replace('_','\\_') + '%']
+    if domain:
+        clauses.append('domain=?')
+        params.append(domain)
+    # 14 October 2026, 11:55 CEST: personal lesson queries can restrict estimated level and prioritize named notions.
+    if level:
+        clauses.append('level=?')
+        params.append(level)
+    sql = 'SELECT payload FROM records WHERE ' + ' AND '.join(clauses) + " ORDER BY (title=?) DESC, (title LIKE ? ESCAPE '\\') DESC, (title LIKE ? ESCAPE '\\') DESC, (domain='dictionary') ASC, id LIMIT ?"
+    literal = str(text).replace('\\', '\\\\').replace('%', '\\%').replace('_', '\\_')
+    result = [json.loads(row[0]) for row in conn.execute(sql, params + [text, literal + '%', '%' + literal + '%', limit])]
+    conn.close()
+    return result
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--settings', default=str(WORKSHOP / 'settings.json'))
+    commands = parser.add_subparsers(dest='command', required=True)
+    commands.add_parser('build')
+    find = commands.add_parser('query')
+    find.add_argument('text')
+    find.add_argument('--domain')
+    find.add_argument('--level')
+    find.add_argument('--limit', type=int)
+    lesson = commands.add_parser('lesson')
+    lesson.add_argument('id')
+    lesson.add_argument('--mode', choices=['oral','reading'])
+    lesson.add_argument('--script', choices=['reading','mixed'])
+    lesson.add_argument('--out', required=True)
+    args = parser.parse_args()
+    config = read_json(args.settings)
+    if args.command == 'build':
+        build(config)
+    elif args.command == 'query':
+        print(json.dumps(query(config,args.text,args.limit,args.domain,args.level),ensure_ascii=False,indent=2))
+    else:
+        conn = sqlite3.connect(Path(config['memoryRoot']) / 'Corpus' / 'japanese.sqlite')
+        row = conn.execute('SELECT payload FROM records WHERE id=?',(args.id,)).fetchone()
+        if not row:
+            raise ValueError('Unknown lesson record: ' + args.id)
+        options = {key:getattr(args,key) for key in ['mode','script'] if getattr(args,key)}
+        atomic_text(args.out,cook_lesson(json.loads(row[0]),config,options))
+        print(args.out)
+
+
+if __name__ == '__main__':
+    main()

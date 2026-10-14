@@ -1,0 +1,423 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026 23:10:31 CEST",
+  "reviewerId": "/root/n5_foundation05_coverage_second",
+  "humanReview": false,
+  "complete": true,
+  "release": "29324aff31146a9c",
+  "reviewType": "independent-semantic-coverage-review",
+  "requirements": [
+    {
+      "id": "bunpro-4",
+      "reviewedRequirementHash": "8174d3ec345204ce4254b95adbcc3287e0c70bb8037e77382356a5bb5ec7090b",
+      "status": "partial",
+      "coveredAspects": [
+        "expand-addition-mo explicitly teaches Nも replacing は/が in simple nominal contexts, shared comparable context and additive meaning.",
+        "expand-negative-addition-mo explicitly teaches the same construction with a negative predicate and the resulting non plus meaning."
+      ],
+      "missingAspects": [
+        "The source explicitly includes surprising/emphatic even meaning of Nも. Neither candidate explains or illustrates this use; additive aussi/non plus alone does not teach its scalar emphasis."
+      ],
+      "proposedRecordIds": [
+        "expand-addition-mo"
+      ],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82"
+      ]
+    },
+    {
+      "id": "bunpro-11",
+      "reviewedRequirementHash": "b4886bd8e9dfe4fdf126caccb64b1820b20a9638e129d14b240f0ccaaecb4ceb",
+      "status": "covered",
+      "coveredAspects": [
+        "expand-demonstrative-things teaches standalone それ referring to the listener side, contrasting このN.",
+        "expand-discourse-sore explicitly teaches reference to prior information from either speaker and productive attachment of は/が/を according to role."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9D%E3%82%8C"
+      ]
+    },
+    {
+      "id": "bunpro-7",
+      "reviewedRequirementHash": "5e43467f7bbc81f9ce5617ea76b189e916aa59bad22b83dc6a1d6fbd2e3c1777",
+      "status": "covered",
+      "coveredAspects": [
+        "expand-good-ii-yoi teaches good, いい/よい register and the よ stem for よくない/よかった/よくなかった with optional polite です.",
+        "The adjective candidates provide productive negative, past and past-negative transformations; expand-good-ii-yoi separates adverbial よく meaning well or often from judging something good."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%84%E3%81%84"
+      ]
+    },
+    {
+      "id": "bunpro-8",
+      "reviewedRequirementHash": "10ae4ad33477ebfdb9d55515ca9df0ea1d7bf1b671377cb546188088568cc5a1",
+      "status": "covered",
+      "coveredAspects": [
+        "The nominal and verbal question cards teach ですか and ますか; expand-plain-question-ka teaches neutral predicate + か, directness/rudeness dependent on intonation and familiar questions without か.",
+        "expand-plain-question-ka explicitly teaches embedded interrogatives expressing uncertainty, illustrated by 誰が明日来るか知りません; embedded か is not automatically rude."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8B"
+      ]
+    },
+    {
+      "id": "bunpro-10",
+      "reviewedRequirementHash": "79ba50cf9d68cda69bec047eda845221a47ac5a84c68128168c9d25bca008438",
+      "status": "covered",
+      "coveredAspects": [
+        "grammar-topic and expand-new-subject-ga explicitly teach noun subject + が, newly noticed events and answering who by identifying the actor, including 私が.",
+        "Topic versus identification is contextual, with 私は for general self-description. Tofugu independently illustrates 私が社長です versus 私は社長です; the source caution is a preference, not a ban on first-person が."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C",
+        "https://www.tofugu.com/japanese-grammar/particle-ga/"
+      ]
+    },
+    {
+      "id": "bunpro-78",
+      "reviewedRequirementHash": "5a3cc0c1d24e0fd32c63ba0e2bb611eb7e90eb725ad6f8de7069854e1fe65189",
+      "status": "covered",
+      "coveredAspects": [
+        "expand-final-yo-construction teaches information/emphasis at sentence end, neutral verb/i-adjective + よ, noun/na-adjective + だよ and polite ですよ/ますよ.",
+        "It teaches よね as information plus shared agreement and explains that tone/context determine whether よ sounds insistent, advisory or contradictory."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%88"
+      ]
+    },
+    {
+      "id": "bunpro-21",
+      "reviewedRequirementHash": "41c0d7bb26c3d9064010ad603028cda5274570850cbaf0d7e65a8fbc10ba9293",
+      "status": "partial",
+      "coveredAspects": [
+        "grammar-case-particles explicitly identifies postnominal を as object marker; its 本を読みます example illustrates the rule.",
+        "expand-traversed-place-o teaches place + を with appropriate movement verbs, contrasts location で and destination に/へ, and provides productive 道を歩く/橋を渡る patterns."
+      ],
+      "missingAspects": [
+        "The source study question 家を出ます teaches を for a point of departure. Neither candidate explains departure Nを出る/離れる; an object mention and a traversed-space rule do not establish this distinct location role."
+      ],
+      "proposedRecordIds": [
+        "expand-traversed-place-o"
+      ],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%92"
+      ]
+    },
+    {
+      "id": "bunpro-20",
+      "reviewedRequirementHash": "f5cc516cf35388dfc7a0a7217f56e1e8224f12172d2f0e33fe135f97acc093f4",
+      "status": "covered",
+      "coveredAspects": [
+        "The place demonstrative card teaches そこ near the listener; expand-discourse-soko adds reference to an already mentioned place.",
+        "It teaches そこに/そこで according to existence/destination versus action and explicitly distinguishes place from directional そっち."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9D%E3%81%93"
+      ]
+    },
+    {
+      "id": "bunpro-29",
+      "reviewedRequirementHash": "87ea358070b1333cd2137e13298cb57891dfb36c2fa86f6543178960c0958f23",
+      "status": "covered",
+      "coveredAspects": [
+        "The place demonstrative card teaches あそこ distant from both interlocutors; expand-discourse-asoko adds shared previously experienced/known locations.",
+        "The cards provide productive あそこで and あそこには, distinguish directional あっち and warn that mere mention without shared knowledge does not automatically license discourse あそこ."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%82%E3%81%9D%E3%81%93"
+      ]
+    },
+    {
+      "id": "bunpro-33",
+      "reviewedRequirementHash": "f93c16042d76057927b3eef1de3b4a15df6d75e6cd232dc3dff6491d8160be0e",
+      "status": "covered",
+      "coveredAspects": [
+        "expand-or-ka teaches nominal alternatives and repeated か; expand-predicate-alternatives-ka explicitly adds neutral verb and adjective alternatives, including omission of だ after noun/na-adjective bases.",
+        "Integrated alternatives depend on predicates such as 考える/決める; polite ますか/ですか can instead form autonomous questions, so formal questions are not banned generally."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8B-or"
+      ]
+    },
+    {
+      "id": "bunpro-955",
+      "reviewedRequirementHash": "5d8f8ad10125ef3f882ce4067a6c665048cd44ebd275dc4b2c4d4d68be0938cc",
+      "status": "covered",
+      "coveredAspects": [
+        "expand-accompaniment-to teaches person + と + action and optional 一緒に; expand-interaction-to-ni teaches reciprocal partner と versus directed recipient に.",
+        "The candidate correctly avoids inferring that に means the recipient never responds or と excludes a shared external goal. Tofugu original companion and interactive-action explanations support this contextual distinction."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A8-with",
+        "https://www.tofugu.com/japanese-grammar/particle-to/"
+      ]
+    },
+    {
+      "id": "bunpro-9",
+      "reviewedRequirementHash": "51144205b5ed405c210aa9a45838f78c0ad003aadadf186a9770442bff41c6b5",
+      "status": "covered",
+      "coveredAspects": [
+        "The two cards explicitly teach probability/supposition versus confirmation by tone; expand-deshou-attachment supplies neutral verb/i-adjective attachment and noun/na-adjective base without だ.",
+        "They teach shortened familiar でしょ, avoid ordinary ますでしょう while acknowledging formal/old uses, and distinguish judgement of probability from certainty."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A7%E3%81%97%E3%82%87%E3%81%86"
+      ]
+    },
+    {
+      "id": "bunpro-13",
+      "reviewedRequirementHash": "29f7255fb6a28bc6b49301be338d490e6064c808ac00ac0c909bae3c83475267",
+      "status": "covered",
+      "coveredAspects": [
+        "expand-existence-neutral-negative teaches Nがある/Nがあります, irregular neutral ない rather than あらない and polite ありません from あり.",
+        "The existence/location cards teach existential に and ordinary ある for things including plants versus いる for animate people/animals; TUFS explicitly illustrates 木があります, correcting Bunpro’s overbroad living/nonliving wording.",
+        "expand-existence-neutral-negative explicitly teaches casual が omission and 有る as an orthographic variant."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C%E3%81%82%E3%82%8B",
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/005.html"
+      ]
+    },
+    {
+      "id": "bunpro-17",
+      "reviewedRequirementHash": "ec81b5fe4d2aeab36b03379becf4236fda1650e1cf99b0eb1da6ff098079eccb",
+      "status": "covered",
+      "coveredAspects": [
+        "adv-noda and expand-explanatory-statement-noda teach context-linked explanation using neutral verb/i-adjective + のだ/んだ/のです/んです and noun/na-adjective + なの/なん.",
+        "The cards distinguish spoken contraction ん from more formal の and explicitly teach polite explanatory questions のですか/んですか without adding か to んだ; insistence depends on context. They do not repeat Bunpro’s unsupported suggestion that common spoken ん is incorrect Japanese."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/-%E3%82%93%E3%81%A7%E3%81%99-%E3%81%AE%E3%81%A7%E3%81%99"
+      ]
+    },
+    {
+      "id": "bunpro-16",
+      "reviewedRequirementHash": "5300adec9818f5ddf9629aa1ed3f3eda3b4aff604ea768a37fcadea4a73c4a78",
+      "status": "partial",
+      "coveredAspects": [
+        "expand-verb-nominalization-no teaches a neutral verbal clause + の as a noun group, subsequent は/が/を, past/negative possibilities and exclusion of direct ます/ません attachment.",
+        "It explicitly excludes substitution for fixed ことができる/たことがある and distinguishes explanatory Vのです/Vんです from nominalization followed by a particle."
+      ],
+      "missingAspects": [
+        "The source meaning and many questions teach identification of the person/entity through VのはN, e.g. 読むのは私です. Candidates teach nominalized actions and liking, but do not explicitly teach the referential one-who/that-which interpretation and identification construction."
+      ],
+      "proposedRecordIds": [
+        "expand-verb-nominalization-no"
+      ],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%AF"
+      ]
+    },
+    {
+      "id": "bunpro-954",
+      "reviewedRequirementHash": "6b2e20e9266f0d86fdeb90642fe8ab49239a3eed995be2ef828aa73a176bf734",
+      "status": "covered",
+      "coveredAspects": [
+        "expand-na-adjective-noun teaches adjective base + な + noun, the predicate contrast and きれい despite final い.",
+        "expand-na-no-noun-attribution explicitly distinguishes qualification 健康な生活 from a noun relationship 健康の話; nominal use is lexical, not permission to replace な universally. Tofugu confirms noun-like bases and variable な/の relations, rather than reducing every の relationship to purpose."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA-adjective-noun",
+        "https://www.tofugu.com/japanese-grammar/na-adjective/"
+      ]
+    },
+    {
+      "id": "bunpro-22",
+      "reviewedRequirementHash": "1a8d9e9e2d529e901cf16309c01cabb5238d6f7349049984cc3067e6e358e62a",
+      "status": "partial",
+      "coveredAspects": [
+        "expand-irregular-suru teaches irregular する/します/しない/した/して and lexical activity compounds.",
+        "expand-noun-object-suru teaches activity Nをする, optional established compounds such as 勉強する, and the restriction that arbitrary nouns do not freely become activities."
+      ],
+      "missingAspects": [
+        "The source explicitly includes making something a certain way/to make into in its meaning and writeup. Candidates restrict explanations to activity doing and established activity compounds, without explaining this change-of-state meaning or a productive construction. The source postpones causative/imperative conjugations, so those advanced forms are not demanded here."
+      ],
+      "proposedRecordIds": [
+        "expand-noun-object-suru"
+      ],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%99%E3%82%8B"
+      ]
+    },
+    {
+      "id": "bunpro-39",
+      "reviewedRequirementHash": "8548e7dfb9a05ea36708b8ebf3a3956bb7d8b520c80740dea1767d07a53c3bfa",
+      "status": "covered",
+      "coveredAspects": [
+        "expand-irregular-kuru explicitly teaches come toward a reference point and changing readings くる/きます/きた/こない/きて.",
+        "expand-come-reference-result explicitly teaches destination に/へ, contextual reference points and 来ている for arrival with continuing presence versus coming in progress. Ordinary presence at one’s own home is not automatically 来ている; the source’s always/temporary-only language is treated as contextual guidance, not a universal ban."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8F%E3%82%8B"
+      ]
+    },
+    {
+      "id": "bunpro-716",
+      "reviewedRequirementHash": "2c7e4ad158025aeb281ac79b250b408561bd98e86b91357269b630494615c321",
+      "status": "partial",
+      "coveredAspects": [
+        "expand-likes-noun teaches Nが好きです as liking with a na-adjective; expand-like-na-attribution adds 好きだ/好きです, 好きなN and past forms.",
+        "The attribution card explicitly teaches the possible romantic interpretation when addressing a person, without asserting that every liking of a person is romantic."
+      ],
+      "missingAspects": [
+        "The source explicitly explains 大好き as intensified liking/love and includes a 大好き study example. Neither of the two candidates teaches 大好き or its construction; romantic nuance of plain 好き is a different aspect."
+      ],
+      "proposedRecordIds": [
+        "expand-like-na-attribution"
+      ],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%99%E3%81%8D"
+      ]
+    },
+    {
+      "id": "bunpro-717",
+      "reviewedRequirementHash": "adf55a7d47467da9aa3a675b5a05401ecde02d7f5a5a458f3e9e80e397a2fc5f",
+      "status": "covered",
+      "coveredAspects": [
+        "expand-dislike-kirai-attribution explicitly teaches Nが嫌いだ/です, 嫌いなN, past 嫌いだった/でした and emphatic 大嫌い.",
+        "It classifies final-い 嫌い as a na-adjective, rejects 嫌くない in favor of 嫌いではない and explains interpersonal force."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8D%E3%82%89%E3%81%84"
+      ]
+    },
+    {
+      "id": "bunpro-34",
+      "reviewedRequirementHash": "738911584b4b271fb823a8e0ed05fc6ccb8b972ae5692facea928a2ed81daca7",
+      "status": "covered",
+      "coveredAspects": [
+        "expand-activity-liking-tense explicitly teaches dictionary verb + のが好きだ/です, equally applicable to verbal groups, and polite questions with か.",
+        "It teaches past preference on 好きだった/でした while retaining dictionary form for the activity, rather than mechanically past-tense 走ったの."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%8C%E3%81%99%E3%81%8D"
+      ]
+    },
+    {
+      "id": "bunpro-355",
+      "reviewedRequirementHash": "06760bc1af73a00a06c5a82cb7380e3fa66d06a5c78cb30dc4dd3f197bf38e15",
+      "status": "covered",
+      "coveredAspects": [
+        "grammar-relative-clause and expand-attributive-existence-gaaru explicitly teach Nがある + head noun meaning a noun with N, without French relative pronouns.",
+        "The attributive card teaches internal が/の alternation, no ordinary topic は replacement and plain ある rather than あります before the head noun."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C%E3%81%82%E3%82%8B-noun"
+      ]
+    },
+    {
+      "id": "bunpro-36",
+      "reviewedRequirementHash": "261da6c69fdcfa003e41f733315c87877dc03c6d610d946a07b3cede2895121c",
+      "status": "covered",
+      "coveredAspects": [
+        "expand-instrument-de explicitly teaches noun + で for selected transport/instrument/language, contrasting action location and に.",
+        "expand-group-participants-de explicitly teaches 二人で/家族で/全員で/一人で as group participation and number, contrasting partner 人と. Tofugu confirms these patterns; its と page shows accompanying people can jointly pursue an external action, so Bunpro’s categorical goal-based division is overbroad."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A7-by",
+        "https://www.tofugu.com/japanese-grammar/particle-de/",
+        "https://www.tofugu.com/japanese-grammar/particle-to/"
+      ]
+    },
+    {
+      "id": "bunpro-43",
+      "reviewedRequirementHash": "df648f861af9e87870753ddd830e60fc17bbc87ea23dcc906117f3d65f19151c",
+      "status": "covered",
+      "coveredAspects": [
+        "expand-dake-attachment explicitly teaches limiting scope and noun/neutral verb/i-adjective + だけ, na-adjective quality + なだけ.",
+        "It explains lexically nominal 幸せだけ versus adjectival 幸せなだけ and warns against freely dropping な; 本だけを読む versus 本を読むだけ makes productive scope clear."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A0%E3%81%91"
+      ]
+    },
+    {
+      "id": "bunpro-712",
+      "reviewedRequirementHash": "d1b3023d9924e2f685ea4206a0eff78fdeae65b30285cb6e97ba94bb0a4fe1a7",
+      "status": "partial",
+      "coveredAspects": [
+        "expand-choice-dore-binary explicitly teaches noun-replacing どれ, subject が/object を and Nはどれですか, contrasting prenominal どのN.",
+        "It teaches customary どちら/どっち for a clearly binary choice and the introductory three-or-more presentation; TUFS independently teaches identified-object selection without asserting a universal numerical prohibition."
+      ],
+      "missingAspects": [
+        "The source studyQuestions teach free-choice どれでもいい and どれでも好き. Neither candidate explains the productive whichever/free-choice どれでも construction; the separate どの requirement cannot supply a candidate not bound to this requirement."
+      ],
+      "proposedRecordIds": [
+        "expand-choice-dore-binary"
+      ],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A9%E3%82%8C",
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/014.html"
+      ]
+    },
+    {
+      "id": "bunpro-713",
+      "reviewedRequirementHash": "caf7c9bd7dbc50ae068ed8f5400637bee6e1f706a8823c30df5522e5bb15e0d4",
+      "status": "covered",
+      "coveredAspects": [
+        "expand-choice-dono-freechoice explicitly teaches prenominal どのN for selecting an option, contrasting standalone どれ and customary binary どちらのN/どっちのN.",
+        "It explicitly teaches open choice どのNでもいい with a productive room example and separates this from universal どのNも. TUFS confirms the productive prenominal construction without the source’s absolute three-or-more ban."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A9%E3%81%AE",
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/014.html"
+      ]
+    },
+    {
+      "id": "bunpro-59",
+      "reviewedRequirementHash": "5b6432cbd56b51a13872111ee23c1c027147ff7aa6ccadd93f33653cbb647d41",
+      "status": "covered",
+      "coveredAspects": [
+        "expand-tai-object-and-scope explicitly teaches ます stem + たい, を/が for the desired object and adjective transformations たくない/たかった/たくなかった with polite endings.",
+        "It teaches normally speaker desire, listener questions and reporting others, distinguishes Vてほしい for another actor and ませんか for joint invitations. TUFS supports contextual direct desire を/が, rather than the source’s unsupported universal claim that が always means greater intensity."
+      ],
+      "missingAspects": [],
+      "proposedRecordIds": [],
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%84",
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/067.html"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/foundation02_first",
+  "humanReview": false,
+  "reviewType": "independent-adversarial-model-review",
+  "complete": true,
+  "scope": "Correction re-review of the entire current expand-obligation-contraction record and both examples. Other records retain their earlier separately hashed review decisions.",
+  "records": [
+    {
+      "id": "expand-obligation-contraction",
+      "reviewedContentHash": "8b36bdd3264f7e4f8ba2f29038288053a1b145bbfebbb257864bb1c47d51a890",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A1%E3%82%83-%E3%81%AA%E3%81%8D%E3%82%83"
+      ],
+      "findings": [],
+      "reviewNotes": "Entire current frozen record inspected again, not the correction summary. Bunpro authored reviewable and included.writeups support なきゃ from なければ and なくちゃ from なくては, casual register and omitted obligation endings. もう帰らなきゃ。 is natural with the exact reading もうかえらなきゃ。 and French obligation interpretation. 週末は庭を掃除しなくちゃ。 is a natural weekend cleaning obligation; 週末 is しゅうまつ, 庭 is にわ, 掃除 is そうじ, and する contracts through しなくては to しなくちゃ. French and oral prompt accurately preserve weekend, garden, cleaning and obligation. Neither sentence exactly matches authored studyQuestions in the 30 cited Bunpro snapshots after markup, furigana and punctuation normalization. The former blocked homework-source coincidence is removed. Listed godan, irregular する and full obligation prerequisites are unchanged, exist in the current source corpus and have acyclic transitive closure. The first sentence is reused from the local prerequisite record adv-nakerebanaranai, which is internal example reuse, not a new external publisher provenance concern. This model review does not establish human/native certification or universal originality outside the inspected sources.",
+      "exampleCount": 2
+    }
+  ]
+}

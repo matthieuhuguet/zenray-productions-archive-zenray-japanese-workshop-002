@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+"""14 October 2026, 11:35 CEST: primary-provider navigation metadata, no copied textbook lessons."""
+import hashlib
+import json
+import re
+import subprocess
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.parse import urljoin
+
+ROOT = Path(__file__).resolve().parent.parent
+PROVIDER = 'https://www.irodori.jpf.go.jp/'
+PARTS = [('starter', 'A1'), ('elementary01', 'A2'), ('elementary02', 'A2'), ('pre-intermediate', 'A2/B1')]
+
+
+class Navigation(HTMLParser):
+    def __init__(self, page, part, level):
+        super().__init__()
+        self.page, self.part, self.level = page, part, level
+        self.heading = None
+        self.current = None
+        self.items = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == 'h4':
+            self.heading = ''
+            self.current = None
+        if tag == 'a' and self.current:
+            link = urljoin(self.page, dict(attrs).get('href', ''))
+            if link.startswith(PROVIDER) and link.endswith('.pdf') and 'pdfUrl' not in self.current:
+                self.current['pdfUrl'] = link
+            if link.startswith(PROVIDER) and '/audio/lesson' in link:
+                self.current['audioUrl'] = link
+
+    def handle_data(self, data):
+        if self.heading is not None:
+            self.heading += data
+
+    def handle_endtag(self, tag):
+        if tag != 'h4' or self.heading is None:
+            return
+        title = ' '.join(self.heading.split())
+        self.heading = None
+        match = re.match(r'Lesson\s+(\d+)\s+(.+)', title)
+        if match:
+            self.current = {'id': f'irodori-{self.part}-{int(match[1]):02d}', 'title': match[2],
+                            'lessonNumber': int(match[1]), 'course': self.part, 'level': self.level,
+                            'sourceUrl': self.page, 'publisher': 'The Japan Foundation',
+                            'checkedAt': '14 October 2026', 'kind': 'external-primary-lesson',
+                            'localLesson': False, 'mastery': 'not-assessed'}
+            self.items.append(self.current)
+
+
+def main():
+    items, sources = [], []
+    for part, level in PARTS:
+        url = PROVIDER + f'en/{part}/pdf.html'
+        raw = subprocess.check_output(['curl', '--fail', '--silent', '--show-error', '--max-time', '30', url])
+        parser = Navigation(url, part, level)
+        parser.feed(raw.decode('utf-8'))
+        if sorted(item['lessonNumber'] for item in parser.items) != list(range(1, 19)):
+            raise ValueError('Primary navigation incomplete: ' + part)
+        if any(not item.get('pdfUrl') or not item.get('audioUrl') for item in parser.items):
+            raise ValueError('Missing primary PDF link: ' + part)
+        items.extend(parser.items)
+        sources.append({'url': url, 'sha256': hashlib.sha256(raw).hexdigest(), 'checkedAt': '14 October 2026'})
+    output = {'schemaVersion': 1, 'checkedAt': '14 October 2026', 'items': items, 'sources': sources,
+              'notice': 'Original lessons stay on the producer site; navigation is indexed, not translated or reproduced. No JLPT equivalence or acquired knowledge inferred.'}
+    path = ROOT / 'research/OfficialLearningResources.json'
+    path.write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n')
+    print(json.dumps({'resources': len(items), 'sources': len(sources), 'output': str(path)}))
+
+
+if __name__ == '__main__':
+    main()

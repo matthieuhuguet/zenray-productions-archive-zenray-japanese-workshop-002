@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "14 October 2026",
+  "records": [
+    [
+      "ga-conjunction",
+      "N5",
+      "が-but",
+      "が : relier deux propositions ou amorcer une demande",
+      "Après un prédicat, が peut relier deux propositions avec un contraste, souvent traduit par mais. Il suit la forme verbale ou l'adjectif en い ; un nom ou un adjectif en な affirmatif non passé reçoit だが au registre neutre ou ですが au registre poli. On rencontre aussi ますが et des formes adjectivales polies comme 高いですが. La suite peut rester implicite, notamment lorsqu'une phrase en が amorce une demande ou une réserve.",
+      "Ce が conjonctif ne marque pas le sujet ; il ne signifie pas toujours une opposition forte. Dans un échange poli, ですが ou ますが peut préparer ce que l'on souhaite demander.",
+      [
+        [
+          "このかばんは小さいですが、便利です。",
+          "このかばんはちいさいですが、べんりです。",
+          "Ce sac est petit, mais pratique."
+        ],
+        [
+          "質問があるのですが……。",
+          "しつもんがあるのですが……。",
+          "J'ai une question…"
+        ]
+      ]
+    ],
+    [
+      "noun-ellipsis-no",
+      "N5",
+      "の-noun-ommission",
+      "Nの : laisser implicite un nom déjà identifiable",
+      "Après un nom relié par の à un autre nom, on peut omettre le second lorsque le contexte permet de l'identifier : 私のかばん peut devenir 私の si le sac est déjà le sujet de l'échange. Le groupe ainsi obtenu peut recevoir は, が, を ou d'autres particules selon sa fonction. Il ne s'agit pas d'un pronom autonome utilisable sans référent clair.",
+      "私の ne signifie pas toujours mon sac : l'objet sous-entendu dépend du contexte. Distinguer cette omission de l'emploi adjectif + の, comme 赤いの.",
+      [
+        [
+          "このかばんは私のです。",
+          "このかばんはわたしのです。",
+          "Ce sac est le mien."
+        ],
+        [
+          "私の傘は家にあるから、妹のを借ります。",
+          "わたしのかさはいえにあるから、いもうとのをかります。",
+          "Comme mon parapluie est à la maison, j'emprunte celui de ma petite sœur."
+        ]
+      ]
+    ],
+    [
+      "adjective-nominalization-no",
+      "N5",
+      "adjective-の-は",
+      "Adjectif + の : désigner celui qui a cette qualité",
+      "Pour désigner un objet identifiable par une qualité sans répéter son nom, un adjectif en い reçoit の : 赤いの. Un adjectif en な utilise な devant の : 静かなの. Le groupe peut être suivi de は, が ou も selon son rôle, et d'une particule de cas dans une autre fonction, comme 赤いのを買う. Le contexte doit rendre l'objet sous-entendu clair.",
+      "Ne pas ajouter だ devant ce の : 静かなの désigne celui qui est calme. Il faut distinguer cette construction d'une question explicative terminée par なの？.",
+      [
+        [
+          "かばんは小さいのが好きです。",
+          "かばんはちいさいのがすきです。",
+          "Pour les sacs, je préfère les petits."
+        ],
+        [
+          "赤い花を買いました。白いのもきれいでした。",
+          "あかいはなをかいました。しろいのもきれいでした。",
+          "J'ai acheté des fleurs rouges. Les blanches étaient belles aussi."
+        ]
+      ]
+    ],
+    [
+      "degree-kekkou",
+      "N5",
+      "けっこう",
+      "けっこう : un degré assez élevé et une réponse à interpréter",
+      "Comme adverbe, けっこう indique un degré notable, traduit selon le contexte par assez ou plutôt : けっこう重い. La réponse autonome 結構です peut en revanche approuver une proposition ou refuser une offre, selon l'échange et l'intonation. Pour exprimer son choix sans ambiguïté, préciser l'acceptation ou le refus au lieu de compter uniquement sur ces deux mots.",
+      "Ne pas traduire automatiquement 結構です par oui ou par non merci. L'adverbe de degré devant un prédicat et la réponse autonome n'ont pas le même fonctionnement.",
+      [
+        [
+          "この箱はけっこう重いです。",
+          "このはこはけっこうおもいです。",
+          "Cette boîte est assez lourde."
+        ],
+        [
+          "いいえ、もう結構です。ありがとうございます。",
+          "いいえ、もうけっこうです。ありがとうございます。",
+          "Non merci, cela me suffit. Merci."
+        ]
+      ]
+    ],
+    [
+      "quantity-takusan",
+      "N5",
+      "たくさん",
+      "たくさん : une grande quantité",
+      "たくさん peut modifier un prédicat pour indiquer beaucoup : 本をたくさん読む. たくさんの suivi d'un nom met en avant une grande quantité de ce nom : たくさんの本. Certains emplois omettent の devant le nom ; cette position peut alors se comprendre comme une quantité portant sur l'ensemble de l'action ou de la situation, plutôt que comme un simple qualificatif du nom.",
+      "Ne pas confondre quantité et degré d'une qualité : たくさんの人 décrit beaucoup de personnes, tandis que とても寒い exprime un froid intense.",
+      [
+        [
+          "週末、写真をたくさん撮りました。",
+          "しゅうまつ、しゃしんをたくさんとりました。",
+          "J'ai pris beaucoup de photos pendant le week-end."
+        ],
+        [
+          "公園にはたくさんの花があります。",
+          "こうえんにはたくさんのはながあります。",
+          "Il y a beaucoup de fleurs dans le parc."
+        ]
+      ]
+    ],
+    [
+      "approximation-kurai",
+      "N5",
+      "くらい1",
+      "くらい et ぐらい : donner une quantité approximative",
+      "Un nombre ou un groupe avec classificateur suivi de くらい ou ぐらい donne une approximation : 三十分くらい, 三人ぐらい. どのくらい demande une durée, une quantité ou une étendue selon le contexte. Pour situer autour d'une période ou d'une heure, ころ est la forme temporelle à distinguer de l'approximation d'une durée ; des emplois en くらい existent aussi avec une heure précise.",
+      "三時ごろ situe vers trois heures ; 三時間くらい indique environ trois heures de durée. Ne pas transformer ces deux informations en une seule.",
+      [
+        [
+          "駅まで三十分くらい歩きます。",
+          "えきまでさんじゅっぷんくらいあるきます。",
+          "Je marche environ trente minutes jusqu'à la gare."
+        ],
+        [
+          "この町にはどのくらい住んでいますか。",
+          "このまちにはどのくらいすんでいますか。",
+          "Depuis combien de temps habitez-vous dans cette ville ?"
+        ]
+      ]
+    ],
+    [
+      "verb-until-made",
+      "N5",
+      "v-まで",
+      "Vまで : attendre le moment où une action arrive",
+      "Dans cette construction temporelle, la forme du dictionnaire du verbe suivie de まで désigne la borne jusqu'à laquelle une situation se prolonge : 友達が来るまで待つ. Même dans un récit passé, le verbe devant まで garde cette forme non passée ; le passé se marque sur le prédicat principal. Un nom peut aussi recevoir まで pour une borne temporelle ou spatiale, mais cette fiche enseigne la borne définie par une action.",
+      "J'ai attendu jusqu'à son arrivée se construit ici avec 来るまで待った, pas avec 来たまで待った. までに, qui indique une échéance, est une autre construction.",
+      [
+        [
+          "雨が止むまで、店で待ちました。",
+          "あめがやむまで、みせでまちました。",
+          "J'ai attendu dans la boutique jusqu'à ce que la pluie s'arrête."
+        ],
+        [
+          "父が帰るまで、ここにいます。",
+          "ちちがかえるまで、ここにいます。",
+          "Je reste ici jusqu'à ce que mon père rentre."
+        ]
+      ]
+    ],
+    [
+      "obligation-nakute-naranai",
+      "N5",
+      "なくてはならない",
+      "なくてはならない : exprimer une obligation",
+      "Partir de la négation correcte du verbe en ない, puis remplacer ない par なくてはならない : 読まない→読まなくてはならない. La construction signifie devoir faire l'action, avec une double négation : il ne convient pas de ne pas la faire. La forme polie utilise なくてはなりません. Le registre est relativement soutenu ; なくてはいけない est une variante fréquente dans la langue courante.",
+      "La présence de ない ne signifie pas ici interdiction : 読まなくてはならない oblige à lire. Ne pas confondre avec 読んではいけない, qui interdit de lire.",
+      [
+        [
+          "この書類を毎日読まなくてはなりません。",
+          "このしょるいをまいにちよまなくてはなりません。",
+          "Je dois lire ce document chaque jour."
+        ],
+        [
+          "朝は早く起きなくてはならない。",
+          "あさははやくおきなくてはならない。",
+          "Le matin, il faut que je me lève tôt."
+        ]
+      ]
+    ],
+    [
+      "obligation-nakute-ikenai",
+      "N5",
+      "なくてはいけない",
+      "なくてはいけない : former une obligation depuis ない",
+      "Remplacer le ない final de la négation verbale par なくてはいけない : 書かない→書かなくてはいけない. La variante polie est なくてはいけません. À l'oral familier, なくては peut se contracter en なくちゃ : 書かなくちゃいけない ; いけない peut alors rester implicite. Cette double négation signifie qu'il faut faire l'action.",
+      "Le raccourci doit partir de la négation correcte : 買わない donne 買わなくちゃ. La construction ne signifie pas qu'il est interdit d'acheter.",
+      [
+        [
+          "今日は切符を買わなくてはいけません。",
+          "きょうはきっぷをかわなくてはいけません。",
+          "Aujourd'hui, je dois acheter un billet."
+        ],
+        [
+          "明日の朝は早く起きなくちゃ。",
+          "あしたのあさははやくおきなくちゃ。",
+          "Demain matin, il faut que je me lève tôt."
+        ]
+      ]
+    ],
+    [
+      "explanatory-question-no",
+      "N5",
+      "の-questions",
+      "の？ et んですか : demander le contexte d'une situation",
+      "Une question terminée par の peut demander un contexte ou une explication, souvent à partir d'un indice observé. Le verbe neutre ou l'adjectif en い reçoit directement の ; un nom ou la base d'un adjectif en な reçoit なの. Au registre poli, utiliser のですか ou んですか, avec なのですか ou なんですか après la base nominale ou adjectivale en な. Une question neutre familière peut déjà se former avec une intonation montante ; ajouter の n'est donc pas simplement ajouter un point d'interrogation.",
+      "Une question en の peut paraître insistante si elle demande inutilement une justification. Ne pas ajouter のだか ou んだか pour former cette question explicative.",
+      [
+        [
+          "今日は休みなの？",
+          "きょうはやすみなの？",
+          "Tu es en repos aujourd'hui ?"
+        ],
+        [
+          "どうして窓を開けたんですか。",
+          "どうしてまどをあけたんですか。",
+          "Pourquoi avez-vous ouvert la fenêtre ?"
+        ]
+      ]
+    ],
+    [
+      "negative-mou",
+      "N5",
+      "もう",
+      "もう avec une négation : ne plus",
+      "もう suivi d'un prédicat négatif indique souvent qu'une action ou une situation ne continue plus : もう行かない. Il se distingue de まだ suivi d'une négation, qui signifie pas encore. Avec un passé affirmatif, もう peut indiquer déjà ; une question comme もう終わりましたか vérifie si l'accomplissement a déjà eu lieu.",
+      "もう食べません signifie je ne mange plus ou je ne mangerai plus, selon le contexte ; まだ食べていません signifie je n'ai pas encore mangé.",
+      [
+        [
+          "この店にはもう行きません。",
+          "このみせにはもういきません。",
+          "Je n'irai plus dans cette boutique."
+        ],
+        [
+          "もう宿題は終わりましたか。",
+          "もうしゅくだいはおわりましたか。",
+          "Avez-vous déjà terminé vos devoirs ?"
+        ]
+      ]
+    ],
+    [
+      "quotation-to-speech",
+      "N5",
+      "と",
+      "と : rapporter des paroles",
+      "Une citation suivie de と puis d'un verbe comme 言う ou 聞く présente ce qui est dit ou entendu. La proposition citée garde sa forme interne ; dans une citation indirecte affirmative neutre avec un nom ou un adjectif en な, conserver notamment だ : 休みだと言う. Si le contexte rend le verbe de parole évident, celui-ci peut parfois être omis. Cette fonction ne se confond pas avec le と de partenaire ou d'énumération.",
+      "Le と citationnel ne transforme pas automatiquement une citation en la politesse de la phrase principale : sa forme interne et celle du verbe de parole doivent être distinguées.",
+      [
+        [
+          "友達は「来週は休みだ」と言いました。",
+          "ともだちは「らいしゅうはやすみだ」といいました。",
+          "Mon ami a dit : « La semaine prochaine, je suis en repos. »"
+        ],
+        [
+          "先生が明日来ると聞きました。",
+          "せんせいがあしたくるとききました。",
+          "J'ai entendu dire que le professeur vient demain."
+        ]
+      ]
+    ],
+    [
+      "adjective-te-clause",
+      "N5",
+      "adjective-て-b",
+      "くて et で : relier une qualité à une proposition",
+      "Pour relier un prédicat adjectival à une proposition suivante, remplacer le い final par くて ; une base nominale ou adjectivale en な reçoit で. いい utilise よくて. La proposition suivante garde ses propres arguments et peut avoir un autre sujet. Le lien peut être une simple association ou une cause selon le contexte ; cette forme ne permet pas de traduire toujours par parce que, ni de construire librement tous les rapports de cause.",
+      "Le で qui relie 静か à la suite n'est pas le で du lieu d'action. Pour exprimer explicitement une justification d'ordre ou de volonté, étudier aussi から et ので.",
+      [
+        [
+          "今日は暑くて、子どもたちは水をたくさん飲みます。",
+          "きょうはあつくて、こどもたちはみずをたくさんのみます。",
+          "Il fait chaud aujourd'hui, et les enfants boivent beaucoup d'eau."
+        ],
+        [
+          "部屋が静かで、よく眠りました。",
+          "へやがしずかで、よくねむりました。",
+          "La chambre était calme, et j'ai bien dormi."
+        ]
+      ]
+    ],
+    [
+      "good-adjective-link",
+      "N5",
+      "adjective-て-noun-で",
+      "よくて : relier une qualité avec l'irrégulier いい",
+      "Pour coordonner des qualités, un adjectif en い forme くて en remplaçant son い final ; la base de いい est よ, d'où よくて. Une base d'adjectif en な ou un nom reçoit で. Le temps se marque normalement sur le dernier prédicat : よくて、便利だった décrit ici des qualités dans un récit passé. Le contexte distingue une simple coordination d'une relation de cause.",
+      "いい ne donne pas いくて. La règle en くて concerne les adjectifs en い, pas tout mot dont la prononciation finit par い.",
+      [
+        [
+          "このかばんは形がよくて、軽いです。",
+          "このかばんはかたちがよくて、かるいです。",
+          "Ce sac a une jolie forme et il est léger."
+        ],
+        [
+          "あの店は雰囲気がよくて、静かでした。",
+          "あのみせはふんいきがよくて、しずかでした。",
+          "Cette boutique avait une bonne ambiance et elle était calme."
+        ]
+      ]
+    ],
+    [
+      "giving-ageru-particles",
+      "N5",
+      "あげる",
+      "あげる : identifier le donneur, le destinataire et l'objet",
+      "Dans une phrase de don avec あげる, le donneur est le sujet marqué par が ou présenté comme thème avec は, le destinataire reçoit に et le cadeau reçoit を. あげる décrit généralement un don vers autrui, vu depuis le donneur ou un observateur. La forme polie est あげます. Pour un don à une personne à qui l'on doit un respect particulier, choisir la forme appropriée au contexte, notamment l'humble 差し上げる, sans utiliser mécaniquement あげる.",
+      "Dans 姉に本をあげる, 姉 est la destinataire, pas la donneuse. Ne pas utiliser あげる à la place de くれる pour un cadeau reçu par le locuteur.",
+      [
+        [
+          "私は弟に新しいノートをあげました。",
+          "わたしはおとうとにあたらしいのーとをあげました。",
+          "J'ai donné un cahier neuf à mon petit frère."
+        ],
+        [
+          "姉は友達に花をあげます。",
+          "あねはともだちにはなをあげます。",
+          "Ma grande sœur donne des fleurs à son amie."
+        ]
+      ]
+    ],
+    [
+      "giving-kureru-particles",
+      "N5",
+      "くれる",
+      "くれる : présenter un don reçu par soi ou son entourage",
+      "くれる décrit un don dirigé vers le locuteur, ou vers une personne que celui-ci présente depuis son propre cercle. Le donneur est sujet avec が ou thème avec は, le destinataire reçoit に et l'objet を. Lorsque le destinataire est le locuteur et que cela est évident, 私に reste souvent implicite. La forme polie est くれます. Le choix de くれる exprime un point de vue, pas simplement la présence d'un objet offert.",
+      "くれる et あげる ont les mêmes rôles de particules, mais ne présentent pas la direction du don de la même manière. Ne pas décider du cercle du locuteur par une liste fixe valable dans tous les contextes.",
+      [
+        [
+          "友達が私に地図をくれました。",
+          "ともだちがわたしにちずをくれました。",
+          "Un ami m'a donné une carte."
+        ],
+        [
+          "先生が弟に本をくれました。",
+          "せんせいがおとうとにほんをくれました。",
+          "Le professeur a donné un livre à mon petit frère."
+        ]
+      ]
+    ],
+    [
+      "receiving-morau-particles",
+      "N5",
+      "もらう",
+      "もらう : mettre le bénéficiaire au centre de la phrase",
+      "Avec もらう, le bénéficiaire qui reçoit est le sujet marqué par が ou le thème marqué par は. Le donneur reçoit に ou から et l'objet reçu を : 私は姉に本をもらう. La forme polie est もらいます. Un rôle déjà évident dans le contexte peut être omis ; la phrase reste construite depuis le point de vue de celui qui reçoit.",
+      "に marque ici le donneur, contrairement à あげる et くれる où il marque le destinataire. Comparer les rôles, plutôt que mémoriser に comme toujours à quelqu'un.",
+      [
+        [
+          "私は姉から古いカメラをもらいました。",
+          "わたしはあねからふるいかめらをもらいました。",
+          "J'ai reçu un ancien appareil photo de ma grande sœur."
+        ],
+        [
+          "弟は友達に写真をもらいました。",
+          "おとうとはともだちにしゃしんをもらいました。",
+          "Mon petit frère a reçu une photo de son ami."
+        ]
+      ]
+    ],
+    [
+      "cause-kara-attachment",
+      "N5",
+      "から-because",
+      "から et だから : raccorder une raison au résultat",
+      "Pour donner une raison, から suit un prédicat verbal ou un adjectif en い : 行くから, 寒いから. Avec un nom ou un adjectif en な affirmatif non passé au registre neutre, conserver だ : 休みだから, 静かだから. Au registre poli, on peut utiliser ますから ou ですから. La raison précède la conséquence ; la phrase finale porte son propre niveau de politesse.",
+      "寒いから ne reçoit pas un だ supplémentaire. Nから peut aussi indiquer un départ spatial ou temporel ; ne pas confondre ce départ avec le prédicat nominal causal Nだから.",
+      [
+        [
+          "今日は休みだから、家で本を読みます。",
+          "きょうはやすみだから、いえでほんをよみます。",
+          "Comme aujourd'hui est un jour de repos, je lis à la maison."
+        ],
+        [
+          "風が強いから、窓を閉めます。",
+          "かぜがつよいから、まどをしめます。",
+          "Comme le vent est fort, je ferme la fenêtre."
+        ]
+      ]
+    ],
+    [
+      "concession-kedo-attachment",
+      "N5",
+      "けど-だけど",
+      "けど et けれども : ajouter une réserve ou un contraste",
+      "けど relie deux propositions et exprime souvent mais, ou amorce une réserve dont la suite reste implicite. Il suit un verbe ou un adjectif en い ; un nom ou un adjectif en な affirmatif non passé neutre reçoit だけど. Les variantes けれど et けれども sont généralement moins familières ; les mêmes raccords s'appliquent : 行くけれども, 学生だけれども. Des formes polies comme ですけど ou ますけれども existent également.",
+      "Une phrase qui se termine par けど peut laisser une demande ou une réserve à comprendre. Ne pas inventer automatiquement une suite précise si le contexte ne la fournit pas.",
+      [
+        [
+          "この部屋は狭いけど、明るいです。",
+          "このへやはせまいけど、あかるいです。",
+          "Cette chambre est petite, mais lumineuse."
+        ],
+        [
+          "今日は休みだけれども、少し勉強します。",
+          "きょうはやすみだけれども、すこしべんきょうします。",
+          "Aujourd'hui, c'est un jour de repos, mais j'étudie un peu."
+        ]
+      ]
+    ],
+    [
+      "topic-wa-construction",
+      "N5",
+      "は",
+      "は : poser un thème et lui apporter une information",
+      "La particule は, prononcée わ, présente le thème dont on parle : この店は静かです apporte une information sur cette boutique. Le thème n'est pas toujours le sujet grammatical ; dans 私は魚が好きです, 私 est le thème et 魚 est l'élément auquel se rapporte 好き. は peut aussi opposer un élément à un autre, explicitement ou par le contexte. Pour présenter un sujet nouvellement observé, が est souvent naturel, mais le choix dépend de l'information partagée et de ce que l'on veut mettre en relief.",
+      "Ne pas remplacer automatiquement tous les が par は, ni interdire は dans toute phrase sur une situation présente. Le rôle de thème et celui de sujet sont distincts.",
+      [
+        [
+          "この店は静かです。",
+          "このみせはしずかです。",
+          "Cette boutique est calme."
+        ],
+        [
+          "私は犬が好きです。",
+          "わたしはいぬがすきです。",
+          "Moi, j'aime les chiens."
+        ]
+      ]
+    ],
+    [
+      "adjective-verb-modifier",
+      "N4",
+      "describing-verbs",
+      "く et に : employer un adjectif pour décrire une action",
+      "Pour qu'un adjectif décrive la manière d'effectuer une action, un adjectif en い remplace son い final par く : 早い→早く起きる. Une base d'adjectif en な reçoit に : 静か→静かに読む. L'irrégulier いい utilise よ, d'où よく devant un verbe. Le groupe ainsi formé précise comment l'action est effectuée ; il se place souvent près du verbe qu'il modifie.",
+      "Distinguer 静かな部屋, où l'adjectif qualifie un nom, de 静かに読む, où il décrit l'action. Tous les adverbes ne proviennent pas d'un adjectif ; cette règle ne s'applique pas automatiquement à des mots comme とても.",
+      [
+        [
+          "毎朝、早く起きます。",
+          "まいあさ、はやくおきます。",
+          "Je me lève tôt chaque matin."
+        ],
+        [
+          "弟は静かに本を読みます。",
+          "おとうとはしずかにほんをよみます。",
+          "Mon petit frère lit un livre sans faire de bruit."
+        ]
+      ]
+    ]
+  ]
+}

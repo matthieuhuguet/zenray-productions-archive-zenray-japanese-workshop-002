@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/foundation02_first",
+  "humanReview": false,
+  "reviewType": "independent-adversarial-model-review",
+  "complete": true,
+  "scope": "30 exact frozen records and 60 examples; independent linguistic and pedagogical model review. This is not human or native-speaker certification, learner mastery assessment, or exhaustive grammar coverage.",
+  "records": [
+    {
+      "id": "expand-copula-plain",
+      "reviewedContentHash": "aa5178b3d72f1f2daee948cd7455853e47cb1abffdc64f500d6504c44a18fa87",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A0"
+      ],
+      "findings": [],
+      "reviewNotes": "Nominal and na-adjective predicates are correctly distinguished from i-adjectives. Both readings and French translations preserve the plain affirmative sense; polite versus formal is not conflated. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-addition-mo",
+      "reviewedContentHash": "3e0af32ccaaf14d0a5f7559bcd294ba9390fd49315189c250ce7bdb990446654",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82"
+      ],
+      "findings": [],
+      "reviewNotes": "Additive scope is correct in both subject and preference examples. Comparable context is explicitly required; no unsupported universal particle substitution rule. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ichidan-negative",
+      "reviewedContentHash": "17b5351e53bb5789fb324008170cb065caf97a34092709877abc977d04a5503a",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%8Bverb-%E3%81%AA%E3%81%84"
+      ],
+      "findings": [],
+      "reviewNotes": "Stem removal is correct for 食べる and 見る. 帰る caveat prevents overgeneralization. Both negative examples are natural, with exact kana. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-godan-negative",
+      "reviewedContentHash": "26ffd702045b7c60335ecdb314bade3cb4927855a11851f76a4afe5f63630bca",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%86verb--%E3%81%AA%E3%81%84"
+      ],
+      "findings": [],
+      "reviewNotes": "A-row change, う to わ and exceptional ある are correct. 買わない and 働かない are properly formed; locative では has prerequisite support. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-irregular-suru",
+      "reviewedContentHash": "457b041afc94196e2a0761d855405653eca2012b000a1bd95e0163398cfb968e",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%99%E3%82%8B"
+      ],
+      "findings": [],
+      "reviewNotes": "する forms and activity-noun restriction are correct. 運動します and 掃除しない are natural. Extra conjugation forms are useful preview, not unsupported productive requirements. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-irregular-kuru",
+      "reviewedContentHash": "d4fa7887263e3dc1cfebed8d53a1f1dc1243e1d7ffb6fcbd9f6562ab2ad0540d",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8F%E3%82%8B"
+      ],
+      "findings": [],
+      "reviewNotes": "くる, きます, きた, こない and きて are correct. Both original examples use the proper readings; deixis explanation permits the adopted contextual reference point. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-plain-negative-past",
+      "reviewedContentHash": "39d35fca4eb093f9041b5c49b2d19b06856e0dac4c8581ab4825481d175e41c9",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%8B-verb-neg-past"
+      ],
+      "findings": [],
+      "reviewNotes": "Transformation from a correctly formed ない is valid. Both examples use ichidan verbs supported by the prerequisites. Explicit yesterday anchors a completed past negative rather than not yet. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-accompaniment-to",
+      "reviewedContentHash": "b38a42cecc83f5c58a6591cd202f4dc0989a87b22ae3cec66d347e36e1a92832",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A8-with"
+      ],
+      "findings": [],
+      "reviewNotes": "Mutual accompaniment and partner meaning aligns with the authored explanation. Both examples are idiomatic; 妹 and 一緒 readings and sister translation are correct. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-instrument-de",
+      "reviewedContentHash": "77978100e8531f13dd38b922c3d2405bdcf404ff36a80f916a2874b7166354b5",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A7-by"
+      ],
+      "findings": [],
+      "reviewNotes": "Transport and language as means are correct and distinct from action location. Both particle chains are natural; kana and French preserve instrument versus destination. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-starting-kara",
+      "reviewedContentHash": "260e5d12c3b8f2f3ac2f8496723629340ac287de70eb2f4a281a76502743577d",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8B%E3%82%89"
+      ],
+      "findings": [],
+      "reviewNotes": "Starting-point scope is correct for time and place. 九時 is くじ. French Je viens d'Osaka is an idiomatic rendering of origin after arrival expressed by 来ました, not a demand to change Japanese tense. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-endpoint-made",
+      "reviewedContentHash": "5b546b3dad50ba3ea00c92a00b83a14c88f82d426117ae1e595042749efad8e3",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/noun-%E3%81%BE%E3%81%A7"
+      ],
+      "findings": [],
+      "reviewNotes": "Boundary versus deadline distinction is accurate. 五時まで and 駅まで naturally express continuing activity to an endpoint; both readings are exact. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-before-mae-ni",
+      "reviewedContentHash": "499b90ba171aeb5f19765f03e757dfd1c1c8f7fdaddb651f86797c7bafc86c89",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%88%E3%81%AB"
+      ],
+      "findings": [],
+      "reviewNotes": "Dictionary verb form and nominal の attachment are correct. Past-narrative caveat is valid. Both action order and French translations are accurate. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-after-te-kara",
+      "reviewedContentHash": "e235ef84033ff0964f86a5ecf00080e0162fd17f21fd10ed5e34f33c8a340c0a",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A6%E3%81%8B%E3%82%89"
+      ],
+      "findings": [],
+      "reviewNotes": "Completion and subsequent action ordering align with the source. して and 洗って are correct; final tense is preserved in both translations. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-purpose-ni-iku",
+      "reviewedContentHash": "89485ccd26ebff1c2276b3bbc2710f5a7d0d3fde847f18b382aaf701d325fc9f",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/verb-%E3%81%AB%E3%81%84%E3%81%8F"
+      ],
+      "findings": [],
+      "reviewNotes": "Masu-stem attachment is correct. 会いに and 食べに are well formed; meeting target に is supported by case-particle closure. Invitation prerequisite supports the second example. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-already-mou",
+      "reviewedContentHash": "b9d3a1420ac8d7b06c97be6c5dcf240196b6980ec8ea2b120793db709bdd444d",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82%E3%81%86"
+      ],
+      "findings": [],
+      "reviewNotes": "Scope is explicitly restricted to affirmative accomplished action. Both past-polite predicates and exact kana support already rather than no longer. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-still-mada",
+      "reviewedContentHash": "9abe31c306752df438b4c5550be429cf9366f8203becf6066178fa697f3f42be",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%A0"
+      ],
+      "findings": [],
+      "reviewNotes": "Continuity is correctly separated from repetition. 降っています is progressive; 開いています is the resultant open state, with あいて rather than ひらいて. Both prerequisites support this distinction. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-not-yet-teinai",
+      "reviewedContentHash": "8da19d26c6e7027d611db5d4ec89a52c51f8d22b99fded89113e4a515eff0ebd",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%A0-%E3%81%A6%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93"
+      ],
+      "findings": [],
+      "reviewNotes": "Both predicates naturally express expected actions not accomplished yet. The explanation avoids equating every te-inai form with past negation; exact readings and French are appropriate. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-too-sugiru",
+      "reviewedContentHash": "eadd08d043547437cde489498ea149049aa737a5af240b3d6f4f5814d6b39438",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%99%E3%81%8E%E3%82%8B"
+      ],
+      "findings": [],
+      "reviewNotes": "Verb stem, i-adjective stem, na-adjective base and いい to よ are correct. 食べすぎました and 高すぎます are natural; expensive interpretation is established by shoes context. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-change-naru",
+      "reviewedContentHash": "636aef2d2a9d6494e3598fb911c6e774237467823df9b7c3cb27fc4bc17ce100",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E3%81%AA%E3%82%8B-%E3%81%8F%E3%81%AA%E3%82%8B"
+      ],
+      "findings": [],
+      "reviewNotes": "Noun/na に and i-adjective く are correctly distinguished, including いい. 春になりました naturally means spring has arrived; warmer is a sound contextual translation of 暖かくなりました. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-choice-ni-suru",
+      "reviewedContentHash": "b16548af70786ce3448a7c77ce0f24d1009607c2ccac298aea75d3bb1fdd43f3",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E3%81%99%E3%82%8B"
+      ],
+      "findings": [],
+      "reviewNotes": "Choice scope is appropriately restricted; noun options お茶 and そば with にします are natural. Readings and French correctly describe selecting rather than physically making the food. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-comparison-yori",
+      "reviewedContentHash": "1a1e29b73e4d7137e3690aec8e6604ae2c85fdec7c8ac63e177cee8519830c81",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%88%E3%82%8A-%E3%81%AE%E3%81%BB%E3%81%86%E3%81%8C"
+      ],
+      "findings": [],
+      "reviewNotes": "Reference item before より and favored or higher-degree item before のほうが are correctly oriented. Both rapidity and preference examples preserve the comparison and exact readings. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-superlative-ichiban",
+      "reviewedContentHash": "650749fa30a23f4a6a80dc15d4f1b4a4babc78ea0ea3d89a82d14ab017d2c3e3",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%AA%E3%81%8B%E3%81%A7-%E3%81%8C%E3%81%84%E3%81%A1%E3%81%B0%E3%82%93"
+      ],
+      "findings": [],
+      "reviewNotes": "Set, member and ranking property align with the source. 三つ is みっつ; cheapest and favorite translations are correct. Counter and interrogative prerequisites cover productive examples. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-something-nanika",
+      "reviewedContentHash": "e200c79306ad3792336894df09cd321b569f692918f9ad409bb667fb1a267611",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%AB%E3%81%8B-%E3%81%AA%E3%81%AB%E3%82%82"
+      ],
+      "findings": [],
+      "reviewNotes": "Indefinite something and negative nothing are correctly paired with positive invitation and negative predicate. 何か and 何も readings are exact; invitation versus literal negation is supported. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-someone-dareka",
+      "reviewedContentHash": "3b49ca5c358e9a70096278d3f52e6ecae7b7a1abea73f8d3eb65a7abff7b2f2f",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E8%AA%B0%E3%81%8B-%E3%81%A9%E3%81%93%E3%81%8B-%E8%AA%B0%E3%82%82-%E3%81%A9%E3%81%93%E3%82%82"
+      ],
+      "findings": [],
+      "reviewNotes": "Indefinite person and no-one-in-negative construction are correct. 玄関 and 部屋 readings and existence particles are natural. The explanation avoids declaring 誰も inherently negative. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-offer-mashouka",
+      "reviewedContentHash": "4b7b5167a1953f84bdb3f70ed3f9141898a481ef153d458486a066d7bf189bc6",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%E3%81%8B"
+      ],
+      "findings": [],
+      "reviewNotes": "Shall-I offers are natural for carrying luggage and closing a window; mutual suggestion remains contextual. Masu-stem form and existing suggestion prerequisite support production. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-skill-jouzu",
+      "reviewedContentHash": "2ccc3bbf9db5daa325333b3bd40a0f97a89019269e8095c1887c9ba4073fb4c6",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%8C%E3%81%98%E3%82%87%E3%81%86%E3%81%9A"
+      ],
+      "findings": [],
+      "reviewNotes": "Dictionary form plus nominalizing のが and na-adjective 上手 are correct. 描く is かく here; both examples naturally describe ability in a family member or friend, avoiding self-praise. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-skill-heta",
+      "reviewedContentHash": "afd44a597446984a89d5130320139ba81cd111c1d20fb94c381666a73f591cf5",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%8C%E3%81%B8%E3%81%9F"
+      ],
+      "findings": [],
+      "reviewNotes": "Dictionary form plus のが下手 is correct. Both examples are idiomatic, including difficulty remembering routes. へた reading and interpersonal caution are accurate. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-obligation-contraction",
+      "reviewedContentHash": "1cf4192a2702b50ef7fe49bb63d1c650a5f21aa0718ed02f126966b726d99b97",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A1%E3%82%83-%E3%81%AA%E3%81%8D%E3%82%83"
+      ],
+      "findings": [
+        {
+          "id": "foundation02-first-originality-coincidence",
+          "field": "examples[1].origin",
+          "detail": "The claimed original sentence 宿題をしなくちゃ。 exactly matches the primary publisher studyQuestion 155420 in the cited Bunpro snapshot after removing its furigana and markup. The snapshot content is 宿題（しゅくだい）をしなくちゃ。 This brief conventional sentence can be an independent coincidence, so this does not establish copying, but unconditional originality is not established by the available evidence. Replace this example with a clearly independent context or clarify provenance before approval. Preserve matching Japanese, kana, French and oral prompt if replacing.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Contraction expansions and omitted obligation endings align with the authored writeup. Both examples are grammatically natural, with correct readings and French. The originality claim for the homework example remains unresolved because of an exact source coincidence. Primary authored reviewable, included.writeups and authored studyQuestions examined; forum replies excluded. Listed prerequisite transitive closure exists and is acyclic.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-or-ka",
+      "reviewedContentHash": "7f48188dcdfd469913256f3e31f3918c1ea76f852f65e5a190343d1dd8f58634",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8B-or"
+      ],
+      "findings": [],
+      "reviewNotes": "Alternative nominal options are valid with a single linking か as in both examples; the explanation does not require a final か. Readings of weekday nouns and French alternatives are accurate. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-why-doushite",
+      "reviewedContentHash": "fb06eb3339f2ee5d15d437c16e4fd835ac9bdf9c2e897ad354dbd302ac677870",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A9%E3%81%86%E3%81%97%E3%81%A6"
+      ],
+      "findings": [],
+      "reviewNotes": "Reason questions are natural with ongoing study and a nominal day-off predicate. Exact readings and French preserve the why question; interpersonal caution is proportionate. Primary authored reviewable and included.writeups examined; forum replies excluded. Both examples checked individually for Japanese, kana and French. Listed prerequisite transitive closure exists and is acyclic. No exact sentence match found among authored examples in the 30 cited snapshots.",
+      "exampleCount": 2
+    }
+  ]
+}

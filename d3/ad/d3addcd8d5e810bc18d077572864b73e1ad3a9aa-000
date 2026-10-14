@@ -1,0 +1,131 @@
+#!/usr/bin/env python3
+# 14 October 2026, 12:30 CEST: source indexes bound the expansion; navigation never becomes an approved lesson.
+import hashlib
+import json
+import re
+from collections import Counter
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.parse import urljoin, quote
+
+ROOT = Path(__file__).resolve().parent.parent
+DATE = '14 October 2026'
+DIRECTORY = ROOT / 'research' / 'coverage'
+
+class SourceLinks(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.heading = None
+        self.section = ''
+        self.href = None
+        self.parts = []
+        self.rows = []
+    def handle_starttag(self, tag, attrs):
+        if tag in ('h2', 'h3'):
+            self.heading = tag
+            self.parts = []
+        if tag == 'a':
+            self.href = dict(attrs).get('href')
+            self.parts = []
+    def handle_data(self, text):
+        if self.heading or self.href:
+            self.parts.append(text)
+    def handle_endtag(self, tag):
+        if tag == self.heading:
+            self.section = ''.join(self.parts).strip()
+            self.heading = None
+        if tag == 'a' and self.href:
+            self.rows.append({'href': self.href, 'title': ''.join(self.parts).strip(), 'section': self.section})
+            self.href = None
+
+def read(path):
+    return json.loads(path.read_text())
+
+def write(path, data):
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
+
+def canonical_url(url):
+    from urllib.parse import unquote
+    return unquote(url).lower().rstrip('/')
+
+def build():
+    scope = read(DIRECTORY / 'CoverageParameters.json')
+    raw = (DIRECTORY / 'BunproIndex.html').read_text()
+    data = json.loads(re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', raw).group(1))
+    points = data['props']['pageProps']['grammarPoints']
+    assert len(points) >= 900, 'Truncated benchmark must not silently shrink the scope'
+    requirements = []
+    for point in points:
+        level = 'N' + point['level'][-1] if re.fullmatch('JLPT[1-5]', point['level']) else 'beyond-N1'
+        requirements.append({'id': 'bunpro-' + str(point['id']), 'domain': 'grammar', 'level': level,
+            'label': point['title'], 'sourceUrl': 'https://bunpro.jp/grammar_points/' + quote(point['slug']),
+            'publisher': 'Bunpro', 'allocationBasis': 'Publisher editorial allocation, not an official JLPT list',
+            'sourceCategory': point['level'], 'sourceOrder': point['grammar_order']})
+    parser = SourceLinks()
+    parser.feed((DIRECTORY / 'TufsIndex.html').read_text())
+    for point in parser.rows:
+        match = re.search(r'/card/(\d+)\.html$', point['href'])
+        if match:
+            requirements.append({'id': 'tufs-' + match[1], 'domain': 'foundation', 'level': 'foundation',
+                'label': point['title'], 'sourceUrl': urljoin('https://www.coelang.tufs.ac.jp/mt/ja/gmod/', point['href'].replace('/card/', '/explanation/')),
+                'publisher': 'Tokyo University of Foreign Studies', 'allocationBasis': 'University foundation curriculum; no JLPT equivalence inferred'})
+    parser = SourceLinks()
+    parser.feed((DIRECTORY / 'ImabiIndex.html').read_text())
+    seen = set()
+    for point in parser.rows:
+        if point['section'] not in scope['beyondSourceSections'] or not point['href'].startswith('https://imabi.org/') or point['href'] in seen:
+            continue
+        seen.add(point['href'])
+        requirements.append({'id': 'imabi-' + hashlib.sha256(point['href'].encode()).hexdigest()[:16],
+            'domain': 'advanced-language', 'level': 'beyond-N1', 'label': point['title'],
+            'sourceUrl': point['href'], 'publisher': 'Seth Coonrod, IMABI', 'sourceSection': point['section'],
+            'allocationBasis': 'Local extended curriculum: not all these topics are harder than N1'})
+    for level, targets in scope['levelTargets'].items():
+        for domain, count in targets.items():
+            for index in range(1, count + 1):
+                requirements.append({'id': f'{level.lower()}-{domain}-{index:05}', 'domain': domain, 'level': level,
+                    'label': f'{domain} {index}', 'allocationBasis': 'Explicit local pedagogical minimum; not an official JLPT threshold',
+                    'needsItemSelection': True})
+    assert len({row['id'] for row in requirements}) == len(requirements)
+    cards = []
+    for directory in ['language', 'japan']:
+        for path in (ROOT / 'research' / directory).glob('*.json'):
+            data = read(path)
+            rows = data if isinstance(data, list) else data.get('records', [])
+            if isinstance(rows, list):
+                cards.extend(row for row in rows if isinstance(row, dict) and row.get('id') and row.get('explanationFr'))
+    approvals = read(ROOT / 'review' / 'Approvals.json')['approvals']
+    mappings = read(DIRECTORY / 'CoverageLinks.json')['links']
+    by_id = {card['id']: card for card in cards}
+    approved = 0
+    for requirement in requirements:
+        links = mappings.get(requirement['id'], [])
+        assert all(link['recordId'] in by_id for link in links), requirement['id']
+        requirement['recordLinks'] = links
+        verified = [link for link in links if link.get('coverageReviewStatus') == 'approved' and link['recordId'] in approvals]
+        # 14 October 2026: matching a title or sharing a source URL is only a research lead, never coverage evidence.
+        requirement['status'] = 'covered' if verified else ('mapped-pending-review' if links else 'missing')
+        approved += bool(verified)
+    levels = {}
+    for level in ['N5', 'N4', 'N3', 'N2', 'N1', 'beyond-N1', 'foundation']:
+        selected = [row for row in requirements if row['level'] == level]
+        levels[level] = {'requirements': len(selected), 'statuses': dict(Counter(row['status'] for row in selected)),
+            'domains': dict(Counter(row['domain'] for row in selected)),
+            'authoredGrammarCards': sum(card.get('domain') == 'grammar' and card.get('level') == level for card in cards),
+            'approvedGrammarCards': sum(card.get('domain') == 'grammar' and card.get('level') == level and card['id'] in approvals for card in cards)}
+    report = {'schemaVersion': 1, 'checkedAt': DATE, 'scopeVersion': scope['scopeVersion'],
+        'scopePolicy': 'Complete means every explicit requirement has independently approved content and coverage evidence; dictionary entries, source links and draft cards do not count as lessons.',
+        'officialJlptItemList': False, 'learnerMasteryInferred': False,
+        'requirementCount': len(requirements), 'coveredCount': approved, 'complete': approved == len(requirements),
+        'levels': levels, 'requirements': requirements,
+        'sourceSnapshots': [{'file': name, 'sha256': hashlib.sha256((DIRECTORY / name).read_bytes()).hexdigest()} for name in ['BunproIndex.html','TufsIndex.html','ImabiIndex.html','JlptTypes.html']]}
+    write(DIRECTORY / 'CoverageManifest.json', report)
+    lines = ['# Corpus coverage (' + DATE + ')', '', 'This is a finite expansion contract, not a claim of an official exhaustive JLPT syllabus. Source index links are not authored lessons. (' + DATE + ')', '', '| Level | Grammar benchmark | Authored grammar | Approved grammar |', '| :--- | ---: | ---: | ---: |']
+    for level, data in levels.items():
+        lines.append(f"| {level} | {data['domains'].get('grammar', 0)} | {data['authoredGrammarCards']} | {data['approvedGrammarCards']} |")
+    lines += ['', 'Vocabulary, kanji, sustained reading, listening, spoken interaction and writing require their own selected and reviewed exercises. The slots are explicit local minima, not official test word counts. (' + DATE + ')', '', 'Beyond N1 includes modern register, specialist reading and an introduction to classical language; it is a bounded first extension, not all Japanese. (' + DATE + ')', '', f"Requirements: {len(requirements)}. Approved coverage mappings: {approved}. Completion: {report['complete']}. ({DATE})", '']
+    (DIRECTORY / 'CoverageReport.md').write_text('\n'.join(lines))
+    print(json.dumps({'requirements':len(requirements),'levels':levels,'complete':report['complete']}, ensure_ascii=False))
+
+if __name__ == '__main__':
+    build()

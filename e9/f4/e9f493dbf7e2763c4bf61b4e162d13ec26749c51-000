@@ -1,0 +1,163 @@
+#!/usr/bin/env python3
+# 14 October 2026, 22:34 CEST: exact frozen scopes preserve valid reviews and block changed source or teaching content.
+# 14 October 2026: bind semantic coverage to exact sources, delivered lessons and independent unanimous reviews.
+import argparse
+import hashlib
+import json
+from collections import Counter
+from pathlib import Path
+
+import Corpus
+
+ROOT = Path(__file__).resolve().parent.parent
+STATUSES = {'covered', 'partial', 'missing', 'candidate-not-identified'}
+
+
+def digest(value):
+    return hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
+
+
+def read_json(path):
+    return json.loads(Path(path).read_text())
+
+
+def combine(packet, reports, minimum_reviewers):
+    if minimum_reviewers < 2:
+        raise ValueError('At least two independent reviewers are required')
+    expected = {row['requirement']['id']: row for row in packet['requirements']}
+    if len(expected) != len(packet['requirements']):
+        raise ValueError('Duplicate packet requirements')
+    votes = {}
+    reused = {}
+    provenance = {}
+    for entry in reports:
+        report = entry.get('report', entry)
+        reviewed_packet = entry.get('packet', packet)
+        scope = {row['requirement']['id']: row for row in reviewed_packet['requirements']}
+        reviewer = report.get('reviewerId', '').strip()
+        if not reviewer or reviewer in votes:
+            raise ValueError('Missing or duplicate reviewer identity')
+        if (report.get('complete') is not True or report.get('humanReview') is not False
+                or report.get('reviewType') != 'independent-semantic-coverage-review'
+                or report.get('release') != reviewed_packet['release']
+                or not isinstance(report.get('checkedAt'), str) or not report['checkedAt'].strip()):
+            raise ValueError('Incomplete or incompatible coverage report')
+        rows = report.get('requirements')
+        if not isinstance(rows, list):
+            raise ValueError('Coverage report needs a requirements array')
+        indexed = {row['id']: row for row in rows}
+        if len(scope) != len(reviewed_packet['requirements']) or not set(scope).issubset(expected):
+            raise ValueError('Invalid frozen review scope')
+        if len(indexed) != len(rows) or set(indexed) != set(scope):
+            raise ValueError('Coverage report must decide every requirement exactly once')
+        for identity, row in indexed.items():
+            if row.get('reviewedRequirementHash') != scope[identity]['requirementHash']:
+                raise ValueError('Stale requirement review: ' + identity)
+            if row.get('status') not in STATUSES:
+                raise ValueError('Unknown coverage status: ' + identity)
+            urls = row.get('evidenceUrls')
+            if (not isinstance(urls, list) or not urls
+                    or any(not isinstance(url, str) or not url.startswith('https://') for url in urls)):
+                raise ValueError('Missing HTTPS primary evidence: ' + identity)
+            if scope[identity]['requirement']['sourceUrl'] not in urls:
+                raise ValueError('Evidence does not identify the reviewed primary source: ' + identity)
+            for field in ['coveredAspects', 'missingAspects', 'proposedRecordIds']:
+                if not isinstance(row.get(field), list):
+                    raise ValueError('Missing coverage detail: ' + identity + ' ' + field)
+            if row['status'] == 'covered' and (row['missingAspects'] or not row['coveredAspects']):
+                raise ValueError('Covered verdict has incomplete or absent teaching evidence: ' + identity)
+        # 14 October 2026: retain actual review decisions only for an identical full requirement binding.
+        votes[reviewer] = {identity: row for identity, row in indexed.items()
+                           if row['reviewedRequirementHash'] == expected[identity]['requirementHash']}
+        reused[reviewer] = reviewed_packet['release'] != packet['release']
+        provenance[reviewer] = {'checkedAt': report['checkedAt'], 'release': reviewed_packet['release'],
+                                'packetHash': digest(reviewed_packet), 'reportPath': entry.get('reportPath')}
+    if len(votes) < minimum_reviewers:
+        raise ValueError('Insufficient independent coverage reviews')
+    results = []
+    for identity, frozen in expected.items():
+        decisions = {reviewer: rows[identity] for reviewer, rows in votes.items() if identity in rows}
+        statuses = {row['status'] for row in decisions.values()}
+        status = ('unreviewed' if len(decisions) < minimum_reviewers else
+                  'covered' if statuses == {'covered'} else 'missing' if statuses == {'missing'} else 'open')
+        if status == 'covered' and not frozen['requirement']['candidateRecordIds']:
+            raise ValueError('Empty candidate set cannot prove coverage: ' + identity)
+        results.append({
+            **frozen['requirement'], 'requirementHash': frozen['requirementHash'],
+            'status': status, 'reviewerIds': list(decisions),
+            'reusedReviewerIds': [reviewer for reviewer in decisions if reused[reviewer]],
+            'reviewProvenance': {reviewer: provenance[reviewer] for reviewer in decisions},
+            'reviewDecisions': decisions,
+            'missingAspects': list(dict.fromkeys(item for row in decisions.values() for item in row['missingAspects'])),
+            'proposedRecordIds': sorted({item for row in decisions.values() for item in row['proposedRecordIds']}),
+        })
+    return results
+
+
+def verify_frozen_packet(packet):
+    for row in packet['requirements']:
+        requirement = row['requirement']
+        if digest(requirement) != row['requirementHash']:
+            raise ValueError('Changed frozen requirement: ' + requirement['id'])
+        if hashlib.sha256(Path(row['sourceCache']).read_bytes()).hexdigest() != requirement['sourceSha256']:
+            raise ValueError('Changed primary source snapshot: ' + requirement['id'])
+        if set(requirement['recordContentHashes']) != set(requirement['candidateRecordIds']):
+            raise ValueError('Candidate/hash set mismatch: ' + requirement['id'])
+        for identity, reviewed_hash in requirement['recordContentHashes'].items():
+            if identity not in packet['records']:
+                raise ValueError('Missing frozen candidate: ' + identity)
+            card = packet['records'][identity]
+            Corpus.require_lesson_validation(card)
+            if card['lessonContentHash'] != reviewed_hash:
+                raise ValueError('Changed frozen candidate lesson: ' + identity)
+
+
+def verify_snapshot(packet, catalogue):
+    if packet['release'] != catalogue['release']:
+        raise ValueError('Catalogue release changed; prepare and review a new packet')
+    verify_frozen_packet(packet)
+    cards = {card['id']: card for card in catalogue['cards']}
+    for row in packet['requirements']:
+        for identity, reviewed_hash in row['requirement']['recordContentHashes'].items():
+            if identity not in cards:
+                raise ValueError('Missing delivered candidate: ' + identity)
+            card = cards[identity]
+            Corpus.require_lesson_validation(card)
+            if card['lessonContentHash'] != reviewed_hash:
+                raise ValueError('Changed candidate lesson: ' + identity)
+
+
+def compile_audit(parameters):
+    packet = read_json(ROOT / parameters['packetPath'])
+    if len(packet['requirements']) != parameters['expectedRequirements']:
+        raise ValueError('Benchmark size changed')
+    if any(row['requirement']['level'] != parameters['level'] for row in packet['requirements']):
+        raise ValueError('Unexpected benchmark level')
+    verify_snapshot(packet, read_json(parameters['cataloguePath']))
+    reports = []
+    for item in parameters['reportPaths']:
+        if isinstance(item, str):
+            reports.append({'report': read_json(ROOT / item), 'packet': packet, 'reportPath': str(ROOT / item)})
+        else:
+            reviewed_packet = read_json(ROOT / item['packetPath'])
+            verify_frozen_packet(reviewed_packet)
+            reports.append({'report': read_json(ROOT / item['path']), 'packet': reviewed_packet,
+                            'reportPath': str(ROOT / item['path'])})
+    rows = combine(packet, reports, parameters['minimumIndependentReviewers'])
+    counts = dict(Counter(row['status'] for row in rows))
+    output = {
+        'schemaVersion': 1, 'checkedAt': parameters['checkedAt'], 'release': packet['release'],
+        'level': parameters['level'], 'packetHash': digest(packet), 'completeAudit': counts.get('unreviewed', 0) == 0,
+        'completeCoverage': counts.get('covered', 0) == parameters['expectedRequirements'],
+        'scope': 'Editorial Bunpro benchmark only; not an official exhaustive JLPT syllabus or learner mastery.',
+        'counts': counts, 'requirements': rows,
+    }
+    destination = ROOT / parameters['outputPath']
+    destination.write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n')
+    print(json.dumps({'output': str(destination), 'counts': counts, 'completeCoverage': output['completeCoverage']}))
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--parameters', default=str(ROOT / 'research/coverage/CoverageAuditParameters.json'))
+    compile_audit(read_json(parser.parse_args().parameters))

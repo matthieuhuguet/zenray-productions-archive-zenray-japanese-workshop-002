@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/foundation06_first",
+  "humanReview": false,
+  "complete": true,
+  "reviewType": "independent-adversarial-linguistic-review",
+  "records": [
+    {
+      "id": "expand-scalar-mo",
+      "reviewedContentHash": "981b33861da58f176764f17ce2629b686992766e4a233580bfc6f0efc5b692ed",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82",
+        "https://www.tofugu.com/japanese-grammar/particle-mo/"
+      ],
+      "findings": [
+        "14 October 2026: Productive prerequisite gap in example 1. 姉もこの難しい本を読みました requires この + noun and direct i-adjective + noun attachment. Neither expand-demonstrative-noun nor expand-i-adjective-noun is in the combined transitive prerequisite closure; grammar-i-adjectives explains predicate negation and politeness, not noun attachment. Proposed fix: add expand-demonstrative-noun and expand-i-adjective-noun to prerequisites, or simplify the example so these constructions are not required. The Japanese, kana, contextual scalar translation and cited scalar evidence themselves are sound."
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-plain-nominal-question-ka",
+      "reviewedContentHash": "2568334b6f8f4f23d17eba51b2dc41c49d755b62fd2e19780a5b203d6717b64e",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8B",
+        "https://www.tofugu.com/japanese-grammar/particle-ka/"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-departure-place-o",
+      "reviewedContentHash": "3997490286f3e66f6e141d370d04d2a44504ee182db83d523cd3eee6e9f457a8",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%92",
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/053.html"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-inanimate-accompaniment-to",
+      "reviewedContentHash": "b7d2e8bc0f262970f1844bc6ae3d30c087f43e9be2faf79417a2c753cd94846e",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A8-with"
+      ],
+      "findings": [
+        "14 October 2026: Productive prerequisite gap in example 1. この魚 requires demonstrative noun modification, but expand-demonstrative-noun is absent from the complete prerequisite closure. Proposed fix: add expand-demonstrative-noun, or remove この from both Japanese/reading and adjust the French consistently. The inanimate と analysis is supported by Bunpro's primary curry-with-rice study question, and does not inherit its overbroad mutual-agent claim."
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-deshou-basis-and-contraction",
+      "reviewedContentHash": "0d5674091d576077be755211c02eefa87112f2498da2c83c251c47ea1dcca210",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A7%E3%81%97%E3%82%87%E3%81%86"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-darou-contraction",
+      "reviewedContentHash": "6e73e48e53230e87878adc1ffcea503e4360297fed8fb6a6fa1efdf89ba76a4f",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A0%E3%82%8D%E3%81%86"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-referential-nominalizer-no",
+      "reviewedContentHash": "b553db408f3c1bcea2aecc1efe28bad99b13690a8795c3166952977fa613313c",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%AF"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-change-state-suru",
+      "reviewedContentHash": "5199199741132444987a28e050206144172390e338b0d42fd2046c171d7d3522",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%99%E3%82%8B"
+      ],
+      "findings": [
+        "14 October 2026: Source alignment gap. The sole cited primary source, Bunpro する, says broadly that する can make something a certain way, but its writeup and complete primary studyQuestions do not document the central productive rule objectを + Aくする / NAにする, its noun-result branch, or the explicit contrast with なる. The draft rule and both examples are linguistically plausible, but the supplied source evidence is insufficient to approve this specific lesson under the project's source-alignment gate. Proposed fix: add and cache a primary publisher/university grammar page explicitly teaching Aくする / NAにする and verify its exact attachment rules, then review the updated hashed record."
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-daisuki-intensifier",
+      "reviewedContentHash": "8c61914248b94d417c7f1b45a9ec2d770e70ed0fa3715041ec944d9b68a46971",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%99%E3%81%8D"
+      ],
+      "findings": [
+        "14 October 2026: Productive prerequisite gaps. Example 1 uses 古い映画, but the complete prerequisite closure lacks expand-i-adjective-noun; grammar-i-adjectives does not teach this attachment. The explanation also teaches V dictionary + のが大好きです, while neither expand-verb-nominalization-no nor grammar-nominalization is reachable. Proposed fix: add expand-i-adjective-noun and expand-verb-nominalization-no to prerequisites (the latter also supplies productive dictionary-form grounding), or remove the unsupported activity extension and simplify example 1. The existing noun examples, kana, French and 大好き register explanation are otherwise sound."
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-dore-free-choice",
+      "reviewedContentHash": "5acff2f47e80834044c49e8aace32c4e870a6cb6d4f695a00372ea4c53e965bf",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A9%E3%82%8C"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-verb-negative-naidesu",
+      "reviewedContentHash": "421e9abd78bd29a6cfb5753e09a06705f8427807d11d1a656994139d14738108",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%8Bverb-%E3%81%AA%E3%81%84",
+        "https://www.tofugu.com/japanese-grammar/desu/"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-experience-negative-koto",
+      "reviewedContentHash": "ea58a5a1715ce8ef095f7be7ff95a700fce0fd778851a7dc186ac8d5d725788c",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%93%E3%81%A8%E3%81%8C%E3%81%82%E3%82%8B"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-jouzu-activity-past",
+      "reviewedContentHash": "a2459b06b989bfe38df54bc8893cd312ee3fccf603b47db267eb7547673afba3",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%8C%E3%81%98%E3%82%87%E3%81%86%E3%81%9A"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-heta-activity-past",
+      "reviewedContentHash": "c7b6aff9e36da6bcfc90fd827793a850041cff90873e52e5a4d492c6ed13431e",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%8C%E3%81%B8%E3%81%9F"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-kedomo-variants",
+      "reviewedContentHash": "77d42569c5d60cc11a5882b283826d4b9c4b952805bf745a169877f05390796d",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%91%E3%81%A9-%E3%81%A0%E3%81%91%E3%81%A9"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-mashouka-productive",
+      "reviewedContentHash": "24df0185925cc73fc8374761defe70065785f37682bd5865863026c77a22e2df",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%E3%81%8B"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-masenka-productive",
+      "reviewedContentHash": "55a13a2cf1c9d3d0de2f43d5d86756855d988307359cc8fc8857491f1886261a",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8B",
+        "https://www.mangolanguages.com/resources/learn/grammar/japanese/invitations-how-to-say-let-s-in-japanese-"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-tsumori-negative-contrast",
+      "reviewedContentHash": "9a8010db507d3b28019fbfb57fb00004515a29e1705b4d8fb1d5ccfcd1bfcb47",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A4%E3%82%82%E3%82%8A%E3%81%A0"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    }
+  ]
+}

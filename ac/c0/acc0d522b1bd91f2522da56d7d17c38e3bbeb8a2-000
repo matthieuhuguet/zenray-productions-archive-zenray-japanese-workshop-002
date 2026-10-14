@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "date": "14 October 2026",
+  "policy": "Review exact complete record fields, original Japanese, kana, French translation, source alignment and learner exercise suitability. HTTP availability is not approval.",
+  "records": [
+    {
+      "record": {
+        "id": "expand-discourse-asoko",
+        "title": "あそこ : rappeler un lieu connu des deux personnes",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "あそこ",
+          "discourse-asoko"
+        ],
+        "explanationFr": "あそこ désigne normalement un lieu éloigné du locuteur et de l'interlocuteur. Dans le discours, il peut aussi rappeler un lieu dont les deux personnes ont une connaissance partagée, par exemple un endroit qu'elles ont fréquenté ensemble. Il se distingue de そこ, qui peut reprendre un lieu simplement mentionné ; あっち met davantage l'accent sur une direction.",
+        "frenchLearnerTrap": "Pour rappeler un lieu, ne pas utiliser automatiquement あそこ si l'interlocuteur ne sait pas de quel endroit il s'agit.",
+        "examples": [
+          {
+            "ja": "昨日、一緒に行った店は静かでしたね。あそこでまた食べたいです。",
+            "reading": "きのう、いっしょにいったみせはしずかでしたね。あそこでまたたべたいです。",
+            "fr": "La boutique où nous sommes allés ensemble hier était calme, n'est-ce pas ? Je voudrais y manger à nouveau.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "二人で行った公園を覚えていますか。あそこには池がありましたね。",
+            "reading": "ふたりでいったこうえんをおぼえていますか。あそこにはいけがありましたね。",
+            "fr": "Vous vous souvenez du parc où nous sommes allés tous les deux ? Il y avait un étang là-bas, n'est-ce pas ?",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-demonstrative-places",
+          "grammar-relative-clause",
+          "expand-masu-stem-ichidan",
+          "grammar-result-state",
+          "grammar-desire",
+          "expand-copula-past",
+          "grammar-final-particles",
+          "expand-group-participants-de",
+          "expand-accompaniment-to",
+          "expand-plain-verb-past"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%82%E3%81%9D%E3%81%93",
+            "title": "Bunpro grammar: あそこ",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "La boutique où nous sommes allés ensemble hier était calme, n'est-ce pas ? Je voudrais y manger à nouveau.",
+          "Vous vous souvenez du parc où nous sommes allés tous les deux ? Il y avait un étang là-bas, n'est-ce pas ?"
+        ]
+      },
+      "recordSha256": "c950b4c73d8fc90c52007ecfa8f32f9f72e9e258fab3aa72ae100f7ade723fa7"
+    },
+    {
+      "record": {
+        "id": "expand-predicate-alternatives-ka",
+        "title": "か : proposer des alternatives verbales ou adjectivales",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "か",
+          "predicate-alternatives-ka"
+        ],
+        "explanationFr": "か peut relier des alternatives nominales, verbales ou adjectivales : 行くか帰るか, 高いか安いか. Dans une proposition intégrée, utiliser les prédicats neutres ; un nom ou une base adjectivale en な affirmatif non passé ne prend pas un だ supplémentaire avant ce か : 安全か危険か. La phrase intégrée peut ensuite dépendre de 考える ou 決める. Une succession en ますか ou ですか peut en revanche poser des questions polies autonomes, sans jouer exactement le même rôle de liste intégrée.",
+        "frenchLearnerTrap": "行きますか、帰りますか peut adresser deux questions ; ne pas le traiter comme la même structure intégrée que 行くか帰るか考える.",
+        "examples": [
+          {
+            "ja": "今日は歩くか走るか考えています。",
+            "reading": "きょうはあるくかはしるかかんがえています。",
+            "fr": "Je réfléchis à marcher ou à courir aujourd'hui.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "この部屋が安全か危険か調べます。",
+            "reading": "このへやがあんぜんかきけんかしらべます。",
+            "fr": "Je vérifie si cette chambre est sûre ou dangereuse.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-plain-question-ka",
+          "expand-verb-dictionary-nonpast",
+          "expand-na-adjective-predicate",
+          "grammar-progressive",
+          "expand-ichidan-te-past",
+          "expand-masu-stem-ichidan",
+          "grammar-i-adjectives"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%8B-or",
+            "title": "Bunpro grammar: か-or",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          },
+          {
+            "url": "https://www.tofugu.com/japanese-grammar/particle-ka/",
+            "title": "Particle ka: a marker of the unknown",
+            "publisher": "Tofugu, original grammar publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je réfléchis à marcher ou à courir aujourd'hui.",
+          "Je vérifie si cette chambre est sûre ou dangereuse."
+        ]
+      },
+      "recordSha256": "fac2a26d33fc16f6943689ef357af4634f34b94dd9bf6b231827d354341094e7"
+    },
+    {
+      "record": {
+        "id": "expand-tai-object-and-scope",
+        "title": "たい : objet du désir et personne concernée",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "たい",
+          "tai-object-and-scope"
+        ],
+        "explanationFr": "Ajouter たい à la base de ます pour exprimer le désir de faire : 食べたい. Avec un verbe transitif, l'objet peut être marqué par を ou が selon le contexte et la mise en relief. たい suit ensuite les transformations d'un adjectif en い : たくない, たかった, たくなかった, et leurs variantes polies en です ou ありません. Une assertion directe exprime normalement le désir du locuteur ; on peut demander son désir à l'interlocuteur ou rapporter des propos d'autrui. Pour souhaiter qu'une autre personne fasse l'action, utiliser notamment Vてほしい ; pour inviter ensemble, ませんか est souvent plus approprié.",
+        "frenchLearnerTrap": "先生に話したい exprime que je veux parler au professeur ; souhaiter que le professeur parle exige une autre construction et un autre rôle de sujet.",
+        "examples": [
+          {
+            "ja": "今日は温かいスープが飲みたいです。",
+            "reading": "きょうはあたたかいすーぷがのみたいです。",
+            "fr": "Aujourd'hui, je voudrais boire une soupe chaude.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "昨日は外に出たくありませんでした。",
+            "reading": "きのうはそとにでたくありませんでした。",
+            "fr": "Hier, je ne voulais pas sortir.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-desire",
+          "expand-masu-stem-godan",
+          "grammar-i-adjectives",
+          "expand-i-adjective-negative-past",
+          "expand-i-adjective-noun",
+          "expand-masu-stem-ichidan"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%84",
+            "title": "Bunpro grammar: たい",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Aujourd'hui, je voudrais boire une soupe chaude.",
+          "Hier, je ne voulais pas sortir."
+        ]
+      },
+      "recordSha256": "5f2d8d660e800f737efb1821638c37d477bc0d59f292e2678634d9247368fe00"
+    }
+  ]
+}

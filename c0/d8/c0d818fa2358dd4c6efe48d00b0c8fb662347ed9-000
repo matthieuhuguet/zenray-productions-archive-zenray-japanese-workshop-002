@@ -1,0 +1,164 @@
+#!/usr/bin/env python3
+# 14 October 2026, 22:34 CEST: exact frozen scopes preserve valid reviews and block changed source or teaching content.
+# 14 October 2026: prove coverage fails closed on stale, conflicting, fabricated and incomplete review evidence.
+import copy
+import hashlib
+import tempfile
+import unittest
+from pathlib import Path
+
+import CompileCoverageAudit as audit
+
+
+class CoverageGate(unittest.TestCase):
+    def setUp(self):
+        self.packet = {'release': 'synthetic', 'requirements': [{
+            'requirement': {'id': 'synthetic-point', 'candidateRecordIds': ['synthetic-card'],
+                            'sourceUrl': 'https://example.org/synthetic'},
+            'requirementHash': 'synthetic-hash'}]}
+        self.row = {'id': 'synthetic-point', 'reviewedRequirementHash': 'synthetic-hash',
+                    'status': 'covered', 'evidenceUrls': ['https://example.org/synthetic'],
+                    'coveredAspects': ['Synthetic teaching evidence'], 'missingAspects': [], 'proposedRecordIds': []}
+        self.reports = [{'reviewerId': reviewer, 'complete': True, 'humanReview': False,
+                         'checkedAt': '14 October 2026',
+                         'reviewType': 'independent-semantic-coverage-review', 'release': 'synthetic',
+                         'requirements': [copy.deepcopy(self.row)]} for reviewer in ['synthetic-a', 'synthetic-b']]
+
+    def combine(self):
+        return audit.combine(self.packet, self.reports, 2)[0]
+
+    def test_unanimous_current_coverage_passes(self):
+        self.assertEqual(self.combine()['status'], 'covered')
+
+    def test_disagreement_remains_open(self):
+        self.reports[1]['requirements'][0].update(status='partial', missingAspects=['Missing construction'])
+        self.assertEqual(self.combine()['status'], 'open')
+        self.assertEqual(self.combine()['missingAspects'], ['Missing construction'])
+
+    def test_unanimous_absence_is_missing(self):
+        for report in self.reports:
+            report['requirements'][0].update(status='missing', missingAspects=['Missing construction'])
+        self.assertEqual(self.combine()['status'], 'missing')
+
+    def test_stale_hash_rejected(self):
+        self.reports[1]['requirements'][0]['reviewedRequirementHash'] = 'stale'
+        with self.assertRaisesRegex(ValueError, 'Stale'):
+            self.combine()
+
+    def test_duplicate_reviewer_rejected(self):
+        self.reports[1]['reviewerId'] = 'synthetic-a'
+        with self.assertRaisesRegex(ValueError, 'duplicate reviewer'):
+            self.combine()
+
+    def test_missing_review_rejected(self):
+        self.reports.pop()
+        with self.assertRaisesRegex(ValueError, 'Insufficient'):
+            self.combine()
+
+    def test_incomplete_report_rejected(self):
+        self.reports[1]['requirements'] = []
+        with self.assertRaisesRegex(ValueError, 'every requirement'):
+            self.combine()
+
+    def test_covered_with_open_gap_rejected(self):
+        self.reports[1]['requirements'][0]['missingAspects'] = ['Open gap']
+        with self.assertRaisesRegex(ValueError, 'incomplete'):
+            self.combine()
+
+    def test_evidence_required(self):
+        self.reports[1]['requirements'][0]['evidenceUrls'] = []
+        with self.assertRaisesRegex(ValueError, 'HTTPS'):
+            self.combine()
+
+    def test_empty_candidates_cannot_be_covered(self):
+        self.packet['requirements'][0]['requirement']['candidateRecordIds'] = []
+        with self.assertRaisesRegex(ValueError, 'Empty candidate'):
+            self.combine()
+
+    def test_unrelated_primary_source_rejected(self):
+        self.reports[1]['requirements'][0]['evidenceUrls'] = ['https://example.org/unrelated']
+        with self.assertRaisesRegex(ValueError, 'reviewed primary source'):
+            self.combine()
+
+    def historical_reports(self):
+        historical = copy.deepcopy(self.packet)
+        historical['release'] = 'older-release'
+        self.reports = [{'report': {**report, 'release': 'older-release'}, 'packet': historical}
+                        for report in self.reports]
+
+    def test_exact_binding_survives_an_unrelated_release_addition(self):
+        self.historical_reports()
+        result = self.combine()
+        self.assertEqual(result['status'], 'covered')
+        self.assertEqual(result['reusedReviewerIds'], ['synthetic-a', 'synthetic-b'])
+
+    def test_changed_candidate_binding_is_unreviewed(self):
+        self.historical_reports()
+        self.packet['requirements'][0]['requirementHash'] = 'new-candidate-binding'
+        result = self.combine()
+        self.assertEqual(result['status'], 'unreviewed')
+        self.assertEqual(result['reviewerIds'], [])
+
+    def test_changed_source_binding_is_unreviewed(self):
+        self.historical_reports()
+        self.packet['requirements'][0]['requirementHash'] = 'new-source-binding'
+        self.assertEqual(self.combine()['status'], 'unreviewed')
+
+    def test_partial_review_scopes_need_two_votes_per_requirement(self):
+        second_row = copy.deepcopy(self.packet['requirements'][0])
+        second_row['requirement']['id'] = 'another-point'
+        self.packet['requirements'].append(second_row)
+        scope = {**self.packet, 'requirements': self.packet['requirements'][:1]}
+        self.reports = [{'report': report, 'packet': scope} for report in self.reports]
+        results = audit.combine(self.packet, self.reports, 2)
+        self.assertEqual([row['status'] for row in results], ['covered', 'unreviewed'])
+
+
+class FrozenSnapshotGate(unittest.TestCase):
+    # 14 October 2026: exercise real source bytes and content hashes, not merely synthetic hash labels.
+    def setUp(self):
+        self.folder = tempfile.TemporaryDirectory()
+        self.addCleanup(self.folder.cleanup)
+        self.source = Path(self.folder.name) / 'primary.html'
+        self.source.write_text('Synthetic authored primary source')
+        card = {'id': 'synthetic-card', 'title': 'Synthetic lesson', 'lessonContentVersion': '1'}
+        card['lessonContentHash'] = audit.Corpus.lesson_content_hash(card)
+        card['lessonValidation'] = {'status': 'approved', 'contentVersion': '1',
+                                    'contentHash': card['lessonContentHash'],
+                                    'reviewerIds': ['synthetic-linguist-a', 'synthetic-linguist-b'],
+                                    'evidenceUrls': ['https://example.org/primary'], 'unresolvedFindings': []}
+        requirement = {'id': 'synthetic-point', 'sourceUrl': 'https://example.org/primary',
+                       'sourceSha256': hashlib.sha256(self.source.read_bytes()).hexdigest(),
+                       'candidateRecordIds': [card['id']],
+                       'recordContentHashes': {card['id']: card['lessonContentHash']}}
+        self.packet = {'release': 'synthetic', 'records': {card['id']: card}, 'requirements': [{
+            'requirement': requirement, 'requirementHash': audit.digest(requirement),
+            'sourceCache': str(self.source)}]}
+        self.catalogue = {'release': 'synthetic', 'cards': [copy.deepcopy(card)]}
+
+    def test_real_bound_snapshot_passes(self):
+        audit.verify_snapshot(self.packet, self.catalogue)
+
+    def test_changed_primary_bytes_are_rejected(self):
+        self.source.write_text('Changed source bytes')
+        with self.assertRaisesRegex(ValueError, 'primary source snapshot'):
+            audit.verify_snapshot(self.packet, self.catalogue)
+
+    def test_changed_delivered_content_is_rejected(self):
+        self.catalogue['cards'][0]['title'] = 'Changed teaching content'
+        with self.assertRaisesRegex(ValueError, 'Lesson blocked'):
+            audit.verify_snapshot(self.packet, self.catalogue)
+
+    def test_changed_candidate_set_without_new_binding_is_rejected(self):
+        self.packet['requirements'][0]['requirement']['candidateRecordIds'].append('another-card')
+        with self.assertRaisesRegex(ValueError, 'Changed frozen requirement'):
+            audit.verify_snapshot(self.packet, self.catalogue)
+
+    def test_changed_record_inside_frozen_packet_is_rejected(self):
+        self.packet['records']['synthetic-card']['title'] = 'Edited frozen text'
+        with self.assertRaisesRegex(ValueError, 'Lesson blocked'):
+            audit.verify_snapshot(self.packet, self.catalogue)
+
+
+if __name__ == '__main__':
+    unittest.main()

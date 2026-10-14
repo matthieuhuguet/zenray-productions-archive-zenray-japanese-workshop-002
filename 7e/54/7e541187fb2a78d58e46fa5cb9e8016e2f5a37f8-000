@@ -1,0 +1,137 @@
+"""14 October 2026, 11:25 CEST: exercise approval, spacing, replay and persistence on real records."""
+import copy
+import json
+import sqlite3
+import tempfile
+import unittest
+from pathlib import Path
+import Corpus
+import LocalApp
+
+
+class LocalAppTests(unittest.TestCase):
+    def setUp(self):
+        self.folder = tempfile.TemporaryDirectory()
+        self.root = Path(self.folder.name)
+        config = Corpus.read_json(LocalApp.ROOT / 'params/local-app.json')
+        config['stateDatabase'] = str(self.root / 'progress.sqlite')
+        config['corpusSettings'] = str(self.root / 'settings.json')
+        config['resources'] = str(self.root / 'none.json')
+        self.settings = Corpus.read_json(LocalApp.ROOT / 'settings.json')
+        self.settings['memoryRoot'] = str(self.root)
+        (self.root / 'Corpus').mkdir()
+        self.database = self.root / 'Corpus/japanese.sqlite'
+        self.connection = sqlite3.connect(self.database)
+        self.connection.execute('CREATE TABLE records (id TEXT PRIMARY KEY, domain TEXT, level TEXT, title TEXT, body TEXT, payload TEXT)')
+        with sqlite3.connect(Path(Corpus.read_json(LocalApp.ROOT / 'settings.json')['memoryRoot']) / 'Corpus/japanese.sqlite') as source:
+            records = source.execute('SELECT * FROM records WHERE id IN (?,?,?)', ('grammar-copula', 'grammar-topic', 'grammar-condition-ba')).fetchall()
+        self.connection.executemany('INSERT INTO records VALUES(?,?,?,?,?,?)', records)
+        self.connection.commit()
+        (self.root / 'settings.json').write_text(json.dumps(self.settings))
+        (self.root / 'app.json').write_text(json.dumps(config))
+        self.now = 1000000.0
+        self.app = LocalApp.Application(self.root / 'app.json', lambda: self.now)
+        self.base = 'grammar-copula'
+
+    def tearDown(self):
+        self.connection.close()
+        self.folder.cleanup()
+
+    def review(self, grade='fluent', seconds=1):
+        challenge = self.app.challenge(self.base)
+        while True:
+            self.now += seconds
+            self.app.reveal(challenge['token'])
+            result = self.app.grade(challenge['token'], grade, challenge['index'])
+            if result['complete']:
+                return result
+            challenge = result['challenge']
+
+    def test_exposure_is_not_mastery_and_persists(self):
+        self.app.enroll(self.base, 'start')
+        self.assertEqual(self.app.dashboard()['mastered'], 0)
+        reopened = LocalApp.Application(self.root / 'app.json', lambda: self.now)
+        self.assertEqual(reopened.active_progress()[self.base]['stage'], 'red')
+        self.app.enroll(self.base, 'start')
+        self.assertEqual(len(self.app.export()['events']), 1)
+
+    def test_spaced_success_and_prerequisites(self):
+        with self.assertRaises(ValueError):
+            self.app.enroll('grammar-topic', 'locked')
+        self.app.enroll(self.base, 'start')
+        self.assertEqual(self.review()['stage'], 'orange')
+        with self.assertRaises(ValueError):
+            self.app.challenge(self.base)
+        self.now += 2 * 86400
+        self.assertEqual(self.review()['stage'], 'green')
+        self.now += 5 * 86400
+        self.assertEqual(self.review()['stage'], 'green')
+        self.now += 5 * 86400
+        self.assertEqual(self.review()['stage'], 'mastered')
+        self.app.enroll('grammar-topic', 'unlocked')
+        self.assertEqual(self.app.dashboard()['mastered'], 1)
+
+    def test_hesitation_and_failure_are_not_success(self):
+        self.app.enroll(self.base, 'start')
+        self.assertEqual(self.review(seconds=6)['stage'], 'red')
+        self.now += 900
+        self.assertEqual(self.review('failed')['stage'], 'red')
+
+    def test_cannot_grade_without_reveal_or_replay(self):
+        self.app.enroll(self.base, 'start')
+        challenge = self.app.challenge(self.base)
+        with self.assertRaises(ValueError):
+            self.app.grade(challenge['token'], 'fluent', 0)
+        self.app.reveal(challenge['token'])
+        self.app.grade(challenge['token'], 'fluent', 0)
+        with self.assertRaises(ValueError):
+            self.app.grade(challenge['token'], 'fluent', 0)
+
+    def test_parallel_challenges_cannot_advance_twice(self):
+        self.app.enroll(self.base, 'start')
+        stale = self.app.challenge(self.base)
+        self.review()
+        with self.assertRaises(ValueError):
+            self.app.reveal(stale['token'])
+
+    def test_modified_content_blocks_lesson_and_suspends_progress(self):
+        self.app.enroll(self.base, 'start')
+        record = self.app.record(self.base)
+        record['examples'][0]['fr'] = 'Corrupted translation'
+        self.connection.execute('UPDATE records SET payload=? WHERE id=?', (json.dumps(record), self.base))
+        self.connection.commit()
+        with self.assertRaises(ValueError):
+            self.app.lesson(self.base)
+        self.assertNotIn(self.base, self.app.active_progress())
+        self.assertEqual(self.app.dashboard()['suspended'], 1)
+
+    def test_reference_cannot_be_enrolled(self):
+        record = self.app.record(self.base)
+        del record['lessonValidation']
+        self.connection.execute('UPDATE records SET payload=? WHERE id=?', (json.dumps(record), self.base))
+        self.connection.commit()
+        with self.assertRaises(ValueError):
+            self.app.enroll(self.base, 'bad')
+
+    def test_approved_lesson_and_retest(self):
+        lesson = self.app.lesson('grammar-condition-ba')
+        self.assertIn('① RETEST', lesson['markdown'])
+        self.assertEqual(len(lesson['retest']), 2)
+        self.assertEqual(lesson['missingPrerequisites'], ['grammar-verb-groups'])
+
+    def test_filters_and_literal_sql(self):
+        self.assertEqual(len(self.app.search('ば :', 'grammar', 'N4')['records']), 1)
+        self.assertEqual(self.app.search("%' OR 1=1 --")['records'], [])
+        self.assertEqual(self.app.search('ば', 'kanji')['records'], [])
+
+    def test_preferences_and_gap_dedup(self):
+        self.assertEqual(self.app.save_preferences({'scale': 20})['scale'], 20)
+        with self.assertRaises(ValueError):
+            self.app.save_preferences({'scale': 99})
+        self.app.add_gap('Compréhension orale N1')
+        self.app.add_gap('Compréhension orale N1')
+        self.assertEqual(len(self.app.dashboard()['gaps']), 1)
+
+
+if __name__ == '__main__':
+    unittest.main()

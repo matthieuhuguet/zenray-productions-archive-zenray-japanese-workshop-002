@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/foundation04_second",
+  "humanReview": false,
+  "complete": true,
+  "reviewType": "independent-adversarial-linguistic-review",
+  "records": [
+    {
+      "id": "expand-ga-conjunction",
+      "reviewedContentHash": "c54e3820bcd293f2101ba557f836baaf59880067d48629635b6bb97fefc00b85",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C-but"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-noun-ellipsis-no",
+      "reviewedContentHash": "9741b62cf541f95050c559e58f479d86235fbf6fa318dcc1b14d41074dabb7c7",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE-noun-ommission"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-adjective-nominalization-no",
+      "reviewedContentHash": "d8d8871e3ef6eb3dc6e19f529deecb89050129f171eea16df0061297e7ec8807",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/adjective-%E3%81%AE-%E3%81%AF"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-degree-kekkou",
+      "reviewedContentHash": "d53c22be2439dfd21b6869b9812d3d1113f3a73a436771ca46917d00a13e3532",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%91%E3%81%A3%E3%81%93%E3%81%86",
+        "https://nj.alc.co.jp/entry/20260216"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-quantity-takusan",
+      "reviewedContentHash": "c0214b5fc9e57f58309b9bdf226068fa1bed8584a1da88ecd238af132e5f3ce8",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%8F%E3%81%95%E3%82%93"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-approximation-kurai",
+      "reviewedContentHash": "26ff228081c93fb9eb3b00396401a842134b30832a61193668b599db2903ed11",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8F%E3%82%89%E3%81%841"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-verb-until-made",
+      "reviewedContentHash": "7ae391aa5187e235508af4bd88f8f1915ef3594a7bf90059c5a2a841481c65bf",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/v-%E3%81%BE%E3%81%A7"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-obligation-nakute-naranai",
+      "reviewedContentHash": "d999ee114c698c5ef66d3b42f8717571bc8f6e32ec2d5cfc4348245c647f8b99",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A6%E3%81%AF%E3%81%AA%E3%82%89%E3%81%AA%E3%81%84"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-obligation-nakute-ikenai",
+      "reviewedContentHash": "8b9fb22a51199a1daaf75c643bb21fa195b64594dcbeb71f8f0d1e92fb2ebd93",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-explanatory-question-no",
+      "reviewedContentHash": "08d2c36702fbf48603b89b13f62c04ce537768ad90ab2c2870d5ef23b7022b6d",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE-questions"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-negative-mou",
+      "reviewedContentHash": "3e213d75ebc79a3958bfa48f9ae3173ee3afbc76d8b009f6158c224dd0b8b8d8",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82%E3%81%86"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-quotation-to-speech",
+      "reviewedContentHash": "d768e7e68fc3d13c52531b63cb1aa5718a74868438651c96ee72e5bea9e1ad9f",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A8"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-adjective-te-clause",
+      "reviewedContentHash": "f879549803390b4761776c5b1c40ac49f86be1c2ac66237377036cad99ca807f",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/adjective-%E3%81%A6-b"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-good-adjective-link",
+      "reviewedContentHash": "8cd695a6bfe066c23624d1b1ae37842a718796186ef23271a624bbff88dbb9d2",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/adjective-%E3%81%A6-noun-%E3%81%A7"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-giving-ageru-particles",
+      "reviewedContentHash": "9fbb99850289dd797e5470bccbb05247f49127c9ccea1187245a090c7379f816",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%82%E3%81%92%E3%82%8B"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-giving-kureru-particles",
+      "reviewedContentHash": "22f6296880c83d708de7191ba6bd9ae59fe72ba3210401c9db9e1603f541820b",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8F%E3%82%8C%E3%82%8B"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-receiving-morau-particles",
+      "reviewedContentHash": "3f85870634dae795d701b45799caefccb7142636884b26c60b5c53f65f535824",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82%E3%82%89%E3%81%86"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-cause-kara-attachment",
+      "reviewedContentHash": "4e03886dd9b65915d1917eed058dd246eb1b7c5ceadf0daf3764d018b8ce073c",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8B%E3%82%89-because"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-concession-kedo-attachment",
+      "reviewedContentHash": "ddcf93f6c167aadbfca3b9e1d6bde337b5d1d57210de45ae73f4c1a22bb3fa86",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%91%E3%81%A9-%E3%81%A0%E3%81%91%E3%81%A9"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-topic-wa-construction",
+      "reviewedContentHash": "f1fdc379d68b78de90dbfadf2b95f1a193956aef6dbd6c3e8b7756fe97bdc471",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AF",
+        "https://www.tofugu.com/japanese-grammar/particle-wa/"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-adjective-verb-modifier",
+      "reviewedContentHash": "2f40cb840b1785a285f394d7d59e044a5ff377397be677e43ed8c89ae7d0c703",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/describing-verbs"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    }
+  ]
+}

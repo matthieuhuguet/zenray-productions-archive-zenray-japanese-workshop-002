@@ -1,0 +1,77 @@
+#!/usr/bin/env python3
+# 14 October 2026, 12:40 CEST: original examples remain drafts until two matching independent reviews approve them.
+import hashlib
+import json
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.request import urlopen
+from urllib.parse import quote
+import re
+
+ROOT = Path(__file__).resolve().parent.parent
+DATE = '14 October 2026'
+LANGUAGE = ROOT / 'research' / 'language'
+SOURCES = ROOT / 'research' / 'coverage' / 'foundation-sources'
+
+class PlainText(HTMLParser):
+    def __init__(self): super().__init__(); self.parts = []; self.skip = 0
+    def handle_starttag(self, tag, attrs):
+        if tag in ('script','style'): self.skip += 1
+    def handle_endtag(self, tag):
+        if tag in ('script','style'): self.skip -= 1
+    def handle_data(self, data):
+        if not self.skip and data.strip(): self.parts.append(data.strip())
+
+def build():
+    SOURCES.mkdir(exist_ok=True)
+    parameters = json.loads((LANGUAGE / 'ExpansionParameters.json').read_text())
+    rows = [row for filename in parameters['seedFiles'] for row in json.loads((LANGUAGE / filename).read_text())['records']]
+    records = []; evidence = []
+    for identifier, level, source_number, title, explanation, trap, examples in rows:
+        university_source = isinstance(source_number, int)
+        url = (f'https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/{source_number:03}.html'
+               if university_source else 'https://bunpro.jp/grammar_points/' + quote(source_number))
+        path = SOURCES / (f'{source_number:03}.html' if university_source else hashlib.sha256(url.encode()).hexdigest()[:16] + '.html')
+        if not path.exists(): path.write_bytes(urlopen(url, timeout=20).read())
+        raw = path.read_bytes()
+        parser = PlainText(); parser.feed(raw.decode('utf-8'))
+        text = '\n'.join(parser.parts)
+        assert len(text) > 200, url
+        if not university_source:
+            source_payload = json.loads(re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', raw.decode()).group(1))['props']['pageProps']
+            assert not source_payload.get('error') and source_payload['reviewable']['slug'] == source_number, url
+        evidence.append({'id':'expand-' + identifier,'url':url,'sha256':hashlib.sha256(raw).hexdigest(),'sourceText':text,'checkedAt':DATE})
+        record = {'id':'expand-' + identifier,'title':title,'domain':'grammar','level':level,
+            'levelBasis':'Local editorial estimate; not an official JLPT item allocation','aliases':[title.split(' : ')[0],identifier],
+            'explanationFr':explanation,'frenchLearnerTrap':trap,
+            'examples':[{'ja':ja,'reading':reading,'fr':fr,'origin':'Original example; independent adversarial review pending'} for ja,reading,fr in examples],
+            'prerequisites':parameters['prerequisites']['expand-' + identifier],
+            'sources':[{'url':url,'title':('TUFS Japanese grammar module ' + f'{source_number:03}' if university_source else 'Bunpro grammar: ' + source_number),
+                'publisher':('Tokyo University of Foreign Studies' if university_source else 'Bunpro, original pedagogical publisher'),'checkedAt':DATE,'license':'Copyright retained by publisher; no open licence verified',
+                'reuse':'Link and original concise explanation/examples only; no publisher lesson or audio reproduced'}],
+            'status':'editorial-draft','reviewScope':'Source available; content alignment, kana and translations await independent reviews',
+            'createdAt':DATE,'learnerState':'not-assessed','oralPromptsFr':[example[2] for example in examples]}
+        # 14 October 2026: attach configurable complementary primary sources only to the records that need them.
+        for extra in parameters.get('supplementalSources', {}).get(record['id'], []):
+            extra_path = SOURCES / (hashlib.sha256(extra['url'].encode()).hexdigest()[:16] + '.html')
+            if not extra_path.exists(): extra_path.write_bytes(urlopen(extra['url'], timeout=20).read())
+            extra_raw = extra_path.read_bytes()
+            extra_parser = PlainText(); extra_parser.feed(extra_raw.decode('utf-8'))
+            extra_text = '\n'.join(extra_parser.parts)
+            assert len(extra_text) > 200, extra['url']
+            evidence.append({'id':record['id'], 'url':extra['url'], 'sha256':hashlib.sha256(extra_raw).hexdigest(),
+                'sourceText':extra_text, 'checkedAt':DATE})
+            record['sources'].append({**extra, 'checkedAt':DATE,
+                'license':'Copyright retained by publisher; no open licence verified',
+                'reuse':'Link and original concise explanation/examples only; no publisher lesson or audio reproduced'})
+        records.append(record)
+    text = json.dumps({'schemaVersion':1,'createdAt':DATE,'scope':'Original N5-N1 expansion, not full coverage','records':records},ensure_ascii=False,indent=2)+'\n'
+    assert '\u2014' not in text and '\u2013' not in text
+    (LANGUAGE/'LanguageExpansionRecords.json').write_text(text)
+    (ROOT/'review'/'ExpansionSourceEvidence.json').write_text(json.dumps({'date':DATE,'sources':evidence},ensure_ascii=False,indent=2)+'\n')
+    packet = {'schemaVersion':1,'date':DATE,'policy':'Review exact complete record fields, original Japanese, kana, French translation, source alignment and learner exercise suitability. HTTP availability is not approval.',
+        'records':[{'record':record,'recordSha256':hashlib.sha256(json.dumps(record,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()} for record in records]}
+    (ROOT/'review'/'ExpansionReviewPacket.json').write_text(json.dumps(packet,ensure_ascii=False,indent=2)+'\n')
+    print(json.dumps({'draftCards':len(records),'examples':sum(len(r['examples']) for r in records),'sourcePages':len(evidence)}))
+
+if __name__ == '__main__': build()

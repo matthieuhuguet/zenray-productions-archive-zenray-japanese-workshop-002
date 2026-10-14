@@ -1,0 +1,25 @@
+{
+  "id": "cd8f69c2-b900-45f3-b712-3546cc0690f3",
+  "projectId": "zenray-japanese",
+  "type": "archive",
+  "state": "error",
+  "createdAt": "2026-10-13T08:06:17.739Z",
+  "error": "Asset engine timed out after 300000 ms",
+  "startedAt": "2026-10-13T08:06:17.741Z",
+  "sourceConflictCount": 0,
+  "progress": {
+    "zr": 1,
+    "ev": "done",
+    "chunked": 275,
+    "images": 0,
+    "videos": 0,
+    "media": 0,
+    "unchanged": 0,
+    "reused": 8,
+    "restored": 0,
+    "skipped": [],
+    "verifyKo": 0,
+    "sourceId": "workshop"
+  },
+  "finishedAt": "2026-10-13T08:12:46.345Z"
+}

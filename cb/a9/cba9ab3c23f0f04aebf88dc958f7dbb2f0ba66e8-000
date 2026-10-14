@@ -1,0 +1,98 @@
+// @vitest-environment node
+// 13 October 2026, 00:00 CEST: shared views must preserve fresh audit evidence while avoiding repeated whole-registry construction.
+import { afterEach, describe, expect, it, vi } from 'vitest'
+import { mkdtemp, rm } from 'node:fs/promises'
+import { tmpdir } from 'node:os'
+import path from 'node:path'
+import { AssetsService } from './AssetsService.mjs'
+
+const directories = []
+afterEach(async () => { await Promise.all(directories.splice(0).map(directory => rm(directory, { recursive: true, force: true }))) })
+
+async function fixture() {
+  const directory = await mkdtemp(path.join(tmpdir(), 'assets-scene-snapshot-'))
+  directories.push(directory)
+  const service = Object.create(AssetsService.prototype)
+  Object.assign(service, {
+    config: { schemaVersion: 2, roots: { tmp: directory }, storage: { stateDir: directory, workspaceDir: directory } },
+    repoRoot: directory, projects: new Map(), states: new Map(), jobs: new Map(), events: [],
+    sceneAuditTimers: new Map(), sceneAuditTasks: new Map(), sceneAuditErrors: new Map(), watchErrors: new Map(),
+    conversationMirror: { state: () => ({ entries: {} }) }, conversationIndexSync: { status: () => ({ projects: {} }) },
+    contextIndexQueue: Promise.resolve(), save: vi.fn(async () => {}), cloudPublisher: vi.fn(async () => {}),
+  })
+  const add = (id, files, dependencies = [], audit = null) => {
+    service.projects.set(id, { id, name: id, schemaVersion: 2, folder: `pages/ZenRayAssets/${id}`,
+      sources: [{ id: 'workshop', namespace: 'tmp', localPath: path.join(directory, id) }], dependencies })
+    service.states.set(id, { inventory: { localFiles: files, sources: service.project(id).sources, issues: [], excluded: 0 },
+      backups: {}, restorations: {}, jobs: [], sceneAudits: audit ? { 'workshop:scene.hiplc': { changeToken: 'current', audit } } : {} })
+  }
+  const file = (id, name, sha256) => ({ id: `workshop:${name}`, sourceId: 'workshop', relativePath: name,
+    localPath: path.join(directory, id, name), changeToken: 'current', sha256, size: 10 })
+  add('shared-library', [file('shared-library', 'roof.hda', 'resource-hash')])
+  for (const id of ['scene-one', 'scene-two', 'scene-three']) {
+    add(id, [file(id, 'scene.hiplc', 'scene-hash')], ['shared-library'], {
+      sceneSha256: 'scene-hash', references: [{ canonicalPath: path.join(directory, 'shared-library', 'roof.hda'),
+        pathKind: 'absolute', mode: 'input', existsAtCurrentFrame: true, parameterPath: '/obj/roof/file' }],
+    })
+  }
+  return service
+}
+
+describe('one fresh scene dependency view per global pass', () => {
+  it('builds exactly once for catalogue, list, cloud index, context refresh and publishing', async () => {
+    const service = await fixture()
+    const construction = vi.spyOn(service, 'buildSceneReferenceProjects')
+    for (const action of ['workspace-catalogue', 'list', 'global-index']) {
+      construction.mockClear()
+      await service.request(action, { cloud: true })
+      expect(construction).toHaveBeenCalledTimes(1)
+    }
+    construction.mockClear()
+    await service.refreshContextIndex()
+    expect(construction).toHaveBeenCalledTimes(1)
+    const request = service.request.bind(service)
+    service.request = (action, payload) => action === 'history' ? Promise.resolve({ events: [] }) : request(action, payload)
+    construction.mockClear()
+    await service.publishProject('shared-library')
+    expect(construction).toHaveBeenCalledTimes(1)
+    expect(service.cloudPublisher).toHaveBeenCalledTimes(4)
+  })
+
+  it('detects the previous repeated-construction traversal as a failing count', async () => {
+    const service = await fixture()
+    const construction = vi.spyOn(service, 'buildSceneReferenceProjects')
+    const oldTraversal = () => [...service.projects.keys()].map(id => service.snapshot(id))
+    oldTraversal()
+    expect(construction).toHaveBeenCalledTimes(3)
+    construction.mockClear()
+    service.projectSnapshots()
+    expect(construction).toHaveBeenCalledTimes(1)
+  })
+
+  it('keeps valid dependencies and stale audits identical to individual snapshots', async () => {
+    const service = await fixture()
+    const individual = [...service.projects.keys()].map(id => service.snapshot(id))
+    expect(service.projectSnapshots()).toEqual(individual)
+    const scene = service.projectSnapshots().find(project => project.id === 'scene-one').sceneReferences[0]
+    expect(scene).toMatchObject({ state: 'current', dependencies: ['shared-library'],
+      references: [{ type: 'mapped', targets: [{ projectId: 'shared-library', sha256: 'resource-hash' }] }] })
+    service.state('scene-one').inventory.localFiles[0].changeToken = 'changed'
+    expect(service.projectSnapshots().find(project => project.id === 'scene-one').sceneReferences[0]).toMatchObject({ state: 'stale', references: [], portabilityVerified: false })
+  })
+
+  it('rebuilds after content changes and preserves loaded-copy relocation evidence', async () => {
+    const service = await fixture()
+    const before = service.projectSnapshots().find(project => project.id === 'scene-one').sceneReferences[0]
+    const resource = service.state('shared-library').inventory.localFiles[0]
+    resource.sha256 = 'new-resource-hash'
+    const after = service.projectSnapshots().find(project => project.id === 'scene-one').sceneReferences[0]
+    expect(before.references[0].targets[0].sha256).toBe('resource-hash')
+    expect(after.references[0].targets[0].sha256).toBe('new-resource-hash')
+    const origin = resource.localPath
+    resource.loadedCopy = true
+    resource.localPath = path.join(service.config.storage.workspaceDir, 'loaded', 'roof.hda')
+    const relocated = service.projectSnapshots().find(project => project.id === 'scene-one').sceneReferences[0]
+    expect(relocated.references[0]).toMatchObject({ type: 'relocation-required', targets: [{ projectId: 'shared-library' }] })
+    expect(service.buildSceneReferenceProjects().find(project => project.id === 'shared-library').files[0].originCanonicalPath).toBe(origin)
+  })
+})

@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/foundation03_first",
+  "humanReview": false,
+  "complete": true,
+  "reviewType": "independent-adversarial-linguistic-review",
+  "records": [
+    {
+      "id": "expand-masu-stem-ichidan",
+      "reviewedContentHash": "5851c7dc164a2c7fb610443c37a289850dab0c18b24b0772622c2f7a37a74173",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%8B-Verbs"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-masu-stem-godan",
+      "reviewedContentHash": "908f466cea9aa945efb50eb057f134dcdcac4d9829cabd27aa94633699b8a947",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%86-Verbs"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-masu-stem-irregular",
+      "reviewedContentHash": "3024de976d8a75971b54d8ed9b8e4012a3ad03529101d84e101bb64ca4d61651",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/polite-verb-endings"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-ichidan-te-past",
+      "reviewedContentHash": "9fc93991b67df4d753c6d40bc1b2011cd60090f072f2ee8319849a03832c87af",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/verb-%E3%81%A6"
+      ],
+      "findings": [
+        {
+          "field": "prerequisites",
+          "severity": "blocking",
+          "finding": "14 October 2026 : Le premier exercice exige de produire 寝ました, alors que les prérequis accessibles indiquent la valeur de ます sans enseigner la base ichidan suivie de ました. La formation du passé neutre en た enseignée ici ne suffit pas à former le passé poli.",
+          "proposal": "14 October 2026 : Ajouter expand-masu-stem-ichidan aux prérequis, ou remplacer le premier exemple par 窓を閉めて、寝た。 avec la lecture まどをしめて、ねた。 et la même traduction française."
+        }
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-copula-plain-past",
+      "reviewedContentHash": "496e92d14cc78bc311ed1c4932565d799a85778411180aa5e6f36b078b5fcad0",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A0%E3%81%A3%E3%81%9F-%E3%81%A7%E3%81%97%E3%81%9F"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-copula-plain-negative",
+      "reviewedContentHash": "65e3bd71a0111d0340ee6bdcd0f25f83ce7f43934fbb5d76c1e15ff77b2a962e",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%98%E3%82%83%E3%81%AA%E3%81%84"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-copula-plain-negative-past",
+      "reviewedContentHash": "9acc76d23a287452913c9c868ce2f9351cbd21e3584bfce4de987a880d438cfa",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%98%E3%82%83%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-i-adjective-negative-past",
+      "reviewedContentHash": "8d71119441a34c255891ae6d2025a799e3751a9ea86a00acfffaa5a0f0f6529f",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%84-Adjective-%E3%81%8F%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-i-adjective-polite-negative",
+      "reviewedContentHash": "0cce501b636cef3da2fc8d031c47823579b59df1f6ac214020e22400f50191ac",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/negative-%E3%81%84-adjectives"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-adjective-desu",
+      "reviewedContentHash": "a2a6c03d5e86ae72cc76a5a1ade8998c3f1158f6aaf514a52695737b11713921",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A7%E3%81%99"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-polite-verb-negative-past",
+      "reviewedContentHash": "8794e49f8d9b21263fc63308973233f135ee5b17bab9fed4b8b17306222e749f",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%86-verb-neg-past"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-verb-dictionary-nonpast",
+      "reviewedContentHash": "aa3432f0c3bfa95e43cb4782af8766eb323c71023cffe5ef57ddb7f24ceecc40",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/verb-non-past"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-teiru-habit",
+      "reviewedContentHash": "e9405f5b0e90675141035eaae4428d9c364f470c658a566414af86e6835ba55a",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A6%E3%81%84%E3%82%8B3"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-prohibition-na",
+      "reviewedContentHash": "70812d6509ad78182303af151b55a1768b7a51a2c1738e787b44e4bc205b0322",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-nonverbal-acceptability",
+      "reviewedContentHash": "b7eb3c5d636f6376a633d774375f90ee99646a527af8f71a12b408d7c5b7f244",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A6%E3%82%82%E3%81%84%E3%81%84"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-person-dare",
+      "reviewedContentHash": "7ae4932cd1937823c335826c2ae0f5fe8d2a519da79607569730210016dbc586",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A0%E3%82%8C"
+      ],
+      "findings": [
+        {
+          "field": "prerequisites",
+          "severity": "blocking",
+          "finding": "14 October 2026 : Le premier exercice exige 渡します, mais aucun prérequis direct ou transitif ne fournit la formation productive de la base godan en い. grammar-polite-nonpast décrit les valeurs du non-passé et ません, sans donner la transformation 渡す→渡し.",
+          "proposal": "14 October 2026 : Ajouter expand-masu-stem-godan aux prérequis afin que 渡します puisse être produit et non simplement répété."
+        }
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-probability-darou",
+      "reviewedContentHash": "6e0d51e9c5e880a09e82848b059c8f9d961da2e6a356beb386ebd5bb21a613d4",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A0%E3%82%8D%E3%81%86"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-why-naze",
+      "reviewedContentHash": "2d7ea9d731d683419c9f4165735b5009828f9a4547daab9baaf60956f1f6bdaa",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%9C"
+      ],
+      "findings": [
+        {
+          "field": "prerequisites",
+          "severity": "blocking",
+          "finding": "14 October 2026 : Le premier exemple utilise 狭いのですか, qui exige la construction prédicative d’un adjectif en い avant のです. Aucun prérequis direct ou transitif ne couvre les adjectifs en い. adv-noda indique なのだ après les noms et adjectifs en な, mais ne définit pas la classe en い ni son prédicat sans だ.",
+          "proposal": "14 October 2026 : Ajouter grammar-i-adjectives aux prérequis."
+        }
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-why-nande",
+      "reviewedContentHash": "a632dbd162b9176f78ade8ea1230bdabb370d55ac318de105d3cc8a668d3586d",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%82%93%E3%81%A7"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-colloquial-quotation-tte",
+      "reviewedContentHash": "4cf74e19677f638d4c39262153401ad41dd2719ae4223c560b3c5641351170bd",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A3%E3%81%A6"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-subject-no-attributive",
+      "reviewedContentHash": "175b635701c217b5d7d28bd63d79b4a90bbe4427f39f693ef8157c93a57e32fa",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE-subject"
+      ],
+      "findings": [
+        {
+          "field": "prerequisites",
+          "severity": "blocking",
+          "finding": "14 October 2026 : Le premier exercice exige 撮りました, mais les prérequis accessibles ne donnent pas la transformation productive du godan 撮る en 撮り avant ました. grammar-desire utilise une base de ます déjà connue et grammar-polite-nonpast explique les valeurs de ます ; aucune de ces cartes ne forme cette base. La règle prudente sur le sujet の en présence de を est, en revanche, acceptable telle qu’elle est rédigée et ne prétend pas établir une impossibilité universelle.",
+          "proposal": "14 October 2026 : Ajouter expand-masu-stem-godan aux prérequis. Aucune modification de l’explication sur が/の n’est demandée."
+        }
+      ],
+      "examplesExamined": 2
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "checkedAt": "14 October 2026",
+  "release": "8148e6b6ebd8e4c7",
+  "newCards": 21,
+  "newExamples": 42,
+  "preparedLessons": 21,
+  "curatedCards": 373,
+  "grammarByLevel": {
+    "N4": 39,
+    "N3": 48,
+    "N2": 48,
+    "N1": 41,
+    "N5": 103
+  },
+  "allNewCurrentHashesApproved": true,
+  "learnerHistoryWritten": false,
+  "passed": true
+}

@@ -1,0 +1,19 @@
+// 14 October 2026, 12:10 CEST: real pinned chronology and expected invalid-lesson refusal, no learner writes.
+import {readFile,writeFile} from 'node:fs/promises'
+import assert from 'node:assert/strict'
+const root='/Users/zenray/.claude/tmp/tmp-zenray-japanese'
+const source=await readFile('/Users/zenray/.claude/Memory1/AGENTS.md','utf8')
+const secret=source.match(/Mot de passe maître du drive ZenRayProgress\s*=\s*`([^`]+)`/)?.[1]
+assert(secret)
+const existing=JSON.parse(await readFile(root+'/verification/StudyProductionReport.json','utf8'))
+const base='https://zenray-progress.pages.dev/api/japanese'
+const history=await fetch(base+'?view=history&ref='+existing.preferencesCommit,{headers:{'x-zr-auth':secret},signal:AbortSignal.timeout(30000)})
+const value=await history.json()
+assert(history.ok&&value.markdown.includes('## L111'))
+const invalid=await fetch(base,{method:'POST',headers:{'x-zr-auth':secret,'content-type':'application/json'},body:JSON.stringify({action:'expose',eventId:'invalid-lesson-check-14-October',recordId:'missing-validation-probe'}),signal:AbortSignal.timeout(30000)})
+const denied=await invalid.json()
+assert.equal(invalid.status,400)
+assert(denied.error.includes('Leçon bloquée'))
+const report={date:'14 October 2026',production:true,historyRef:existing.preferencesCommit,chronologyContainsL111:true,invalidLessonStatus:invalid.status,noLearnerWrite:true,passed:true}
+await writeFile(root+'/verification/StudyHistoryProductionReport.json',JSON.stringify(report,null,2)+'\n')
+console.log(JSON.stringify(report))

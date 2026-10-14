@@ -1,0 +1,437 @@
+#!/usr/bin/env python3
+"""14 October 2026, 11:15 CEST: local corpus app and durable oral self-assessment, no LLM."""
+import argparse
+import contextlib
+import datetime
+import hashlib
+import json
+import mimetypes
+import secrets
+import sqlite3
+import threading
+import time
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from pathlib import Path
+from urllib.parse import parse_qs, urlparse
+import Corpus
+
+ROOT = Path(__file__).resolve().parent.parent
+REFERENCE_DOMAINS = ('dictionary', 'kanji', 'sentence')
+LEVELS = ('N5', 'N4', 'N3', 'N2', 'N1', 'beyond-N1', 'culture', 'all')
+
+
+def dated():
+    return datetime.datetime.now().astimezone().strftime('%d %B %Y, %H:%M:%S %z')
+
+
+class Application:
+    def __init__(self, config_path, clock=time.time):
+        self.config_path = Path(config_path).resolve()
+        self.config = Corpus.read_json(self.config_path)
+        self.clock = clock
+        self.settings = Corpus.read_json(self.resolve(self.config['corpusSettings']))
+        self.corpus_path = Path(self.settings['memoryRoot']) / 'Corpus/japanese.sqlite'
+        self.state_path = self.resolve(self.config['stateDatabase'])
+        self.state_path.parent.mkdir(parents=True, exist_ok=True)
+        self.lock = threading.RLock()
+        self.token = secrets.token_urlsafe(32)
+        self.challenges = {}
+        self.cards = self.load_cards()
+        self.by_id = {record['id']: record for record in self.cards}
+        self.counts = self.load_counts()
+        self.corpus_stamp = self.corpus_path.stat().st_mtime_ns
+        with self.state() as connection:
+            connection.executescript('''
+                CREATE TABLE IF NOT EXISTS progress (
+                    id TEXT PRIMARY KEY, content_hash TEXT NOT NULL, stage TEXT NOT NULL,
+                    due REAL NOT NULL, green_successes INTEGER NOT NULL, reviews INTEGER NOT NULL);
+                CREATE TABLE IF NOT EXISTS events (
+                    event_id TEXT PRIMARY KEY, at REAL NOT NULL, kind TEXT NOT NULL, payload TEXT NOT NULL);
+                CREATE TABLE IF NOT EXISTS preferences (id INTEGER PRIMARY KEY CHECK(id=1), payload TEXT NOT NULL);
+                CREATE TABLE IF NOT EXISTS gaps (id TEXT PRIMARY KEY, at REAL NOT NULL, query TEXT NOT NULL);
+            ''')
+            connection.execute('INSERT OR IGNORE INTO preferences VALUES(1,?)', (json.dumps(self.config['preferences']),))
+
+    def resolve(self, value):
+        return (self.config_path.parent / value).resolve()
+
+    @contextlib.contextmanager
+    def state(self):
+        with self.lock:
+            connection = sqlite3.connect(self.state_path, timeout=10)
+            connection.row_factory = sqlite3.Row
+            try:
+                with connection:
+                    yield connection
+            finally:
+                connection.close()
+
+    @contextlib.contextmanager
+    def corpus(self):
+        connection = sqlite3.connect(self.corpus_path.as_uri() + '?mode=ro', uri=True)
+        try:
+            yield connection
+        finally:
+            connection.close()
+
+    def load_cards(self):
+        with self.corpus() as connection:
+            return [json.loads(row[0]) for row in connection.execute(
+                "SELECT payload FROM records WHERE domain NOT IN ('dictionary','kanji','sentence')")]
+
+    def load_counts(self):
+        with self.corpus() as connection:
+            return dict(connection.execute('SELECT domain,count(*) FROM records GROUP BY domain'))
+
+    def record(self, identity):
+        with self.corpus() as connection:
+            row = connection.execute('SELECT payload FROM records WHERE id=?', (identity,)).fetchone()
+        if not row:
+            raise ValueError('Fiche inconnue.')
+        return json.loads(row[0])
+
+    def eligible(self, record):
+        Corpus.require_lesson_validation(record)
+        if not record.get('examples') or any(not e.get('ja') or not e.get('fr') or not e.get('reading') for e in record['examples']):
+            raise ValueError('Référence consultable, sans exercices oraux validés complets.')
+        return record
+
+    def progress(self):
+        with self.state() as connection:
+            rows = [dict(row) for row in connection.execute('SELECT * FROM progress')]
+        return {row['id']: row for row in rows}
+
+    def active_progress(self):
+        self.refresh_corpus()
+        result = {}
+        for identity, row in self.progress().items():
+            record = self.by_id.get(identity)
+            try:
+                self.eligible(record or {})
+                if row['content_hash'] == record['lessonContentHash']:
+                    result[identity] = row
+            except ValueError:
+                pass
+        return result
+
+    def refresh_corpus(self):
+        with self.lock:
+            stamp = self.corpus_path.stat().st_mtime_ns
+            if stamp != self.corpus_stamp:
+                self.cards = self.load_cards()
+                self.by_id = {record['id']: record for record in self.cards}
+                self.counts = self.load_counts()
+                self.corpus_stamp = stamp
+
+    def missing_prerequisites(self, record, progress):
+        return [identity for identity in record.get('prerequisites', [])
+                if progress.get(identity, {}).get('stage') != 'mastered']
+
+    def card_summary(self, record, progress):
+        try:
+            self.eligible(record)
+            blocked = ''
+        except ValueError as error:
+            blocked = str(error)
+        state = progress.get(record['id'])
+        missing = self.missing_prerequisites(record, progress)
+        return {'id': record['id'], 'title': record['title'], 'domain': record['domain'],
+                'level': record.get('level', 'all'), 'stage': state['stage'] if state else 'new',
+                'due': state['due'] if state else None, 'blocked': blocked,
+                'missingPrerequisites': missing, 'available': not blocked and not missing and not state}
+
+    def dashboard(self):
+        progress = self.active_progress()
+        cards = [self.card_summary(record, progress) for record in self.cards]
+        cards.sort(key=lambda c: (LEVELS.index(c['level']) if c['level'] in LEVELS else 99, bool(c['missingPrerequisites']), c['id']))
+        now = self.clock()
+        with self.state() as connection:
+            preferences = json.loads(connection.execute('SELECT payload FROM preferences').fetchone()[0])
+            history = [dict(row) for row in connection.execute('SELECT at,kind,payload FROM events ORDER BY at DESC LIMIT 20')]
+            gaps = [dict(row) for row in connection.execute('SELECT * FROM gaps ORDER BY at DESC')]
+        return {'cards': cards, 'counts': self.counts, 'preferences': preferences,
+                'due': [c for c in cards if c['stage'] not in ('new', 'mastered') and c['due'] <= now and not c['blocked']],
+                'mastered': sum(c['stage'] == 'mastered' for c in cards),
+                'exposed': len(progress), 'suspended': len(self.progress()) - len(progress),
+                'history': history, 'gaps': gaps, 'srs': self.config['srs'],
+                'resources': Corpus.read_json(self.resolve(self.config['resources'])) if self.resolve(self.config['resources']).exists() else {'items': []},
+                'coverageComplete': False, 'serverTime': now, 'date': dated()}
+
+    def search(self, text='', domain='', level='', offset=0):
+        text = str(text).strip()
+        if len(text) > self.config['search']['maxQueryLength'] or offset < 0 or offset > 100000:
+            raise ValueError('Recherche trop longue ou page hors limites.')
+        clauses, arguments = [], []
+        if text:
+            clauses.append("body LIKE ? ESCAPE '\\'")
+            arguments.append('%' + Corpus.normalized(text).replace('\\','\\\\').replace('%','\\%').replace('_','\\_') + '%')
+        if domain:
+            clauses.append('domain=?')
+            arguments.append(domain)
+        if level:
+            clauses.append('level=?')
+            arguments.append(level)
+        page_size = self.config['search']['pageSize']
+        sql = 'SELECT payload FROM records' + (' WHERE ' + ' AND '.join(clauses) if clauses else '')
+        sql += ' ORDER BY (title=?) DESC, (domain IN (\'dictionary\',\'kanji\',\'sentence\')) ASC, id LIMIT ? OFFSET ?'
+        with self.corpus() as connection:
+            rows = [json.loads(row[0]) for row in connection.execute(sql, arguments + [text, page_size + 1, offset])]
+        return {'records': rows[:page_size], 'hasMore': len(rows) > page_size, 'offset': offset, 'pageSize': page_size}
+
+    def lesson(self, identity, options=None):
+        record = self.eligible(self.record(identity))
+        safe = {key: value for key, value in (options or {}).items() if key in ('mode', 'script', 'maxDrills')}
+        return {'record': record, 'markdown': Corpus.cook_lesson(record, self.settings, safe),
+                'retest': self.reviewed_retest(), 'missingPrerequisites': self.missing_prerequisites(record, self.active_progress())}
+
+    def reviewed_retest(self):
+        learner = Corpus.learner_payload(self.settings)
+        approvals = Corpus.read_json(self.settings['review']['approvals']).get('approvals', {})
+        Corpus.attach_lesson_validation(learner, approvals, 'learner-retest')
+        Corpus.require_lesson_validation(learner)
+        return learner['retestItems']
+
+    def event(self, connection, identity, kind, payload):
+        connection.execute('INSERT INTO events VALUES(?,?,?,?)', (identity, self.clock(), kind, json.dumps(payload, ensure_ascii=False)))
+
+    def enroll(self, identity, event_id):
+        record = self.eligible(self.record(identity))
+        # 14 October 2026: existing history never grants untested mastery to a corpus record.
+        if self.missing_prerequisites(record, self.active_progress()):
+            raise ValueError('Révise les prérequis avant de commencer ce point. La consultation reste ouverte.')
+        with self.state() as connection:
+            if connection.execute('SELECT 1 FROM events WHERE event_id=?', (event_id,)).fetchone():
+                return {'saved': True, 'duplicate': True}
+            existing = connection.execute('SELECT * FROM progress WHERE id=?', (identity,)).fetchone()
+            if existing and existing['content_hash'] == record['lessonContentHash']:
+                raise ValueError('Cette leçon est déjà dans tes révisions.')
+            connection.execute('INSERT OR REPLACE INTO progress VALUES(?,?,?,?,?,?)',
+                               (identity, record['lessonContentHash'], 'red', self.clock(), 0, 0))
+            self.event(connection, event_id, 'exposure', {'id': identity, 'contentHash': record['lessonContentHash'], 'mastered': False})
+        return {'saved': True}
+
+    def challenge(self, identity):
+        with self.lock:
+            record = self.eligible(self.record(identity))
+            progress = self.active_progress().get(identity)
+            if not progress or progress['stage'] == 'mastered' or progress['due'] > self.clock():
+                raise ValueError('Cette révision n’est pas encore due.')
+            self.challenges = {key: value for key, value in self.challenges.items() if value['expires'] > self.clock()}
+            token = secrets.token_urlsafe(24)
+            self.challenges[token] = {'id': identity, 'hash': record['lessonContentHash'], 'expires': self.clock() + self.config['reviewSessionSeconds'],
+                                      'stage': progress['stage'], 'reviews': progress['reviews'], 'started': self.clock(), 'index': 0, 'grades': [], 'revealed': False}
+            return self.prompt(token, record)
+
+    def prompt(self, token, record):
+        challenge = self.challenges[token]
+        index = challenge['index']
+        return {'token': token, 'id': record['id'], 'title': record['title'], 'prompt': record['examples'][index]['fr'],
+                'index': index, 'count': len(record['examples']), 'stage': challenge['stage']}
+
+    def checked_challenge(self, token):
+        value = self.challenges.get(token)
+        if not value or value['expires'] <= self.clock():
+            raise ValueError('Révision expirée. Recommence depuis le tableau de bord.')
+        record = self.eligible(self.record(value['id']))
+        progress = self.active_progress().get(value['id'])
+        if record['lessonContentHash'] != value['hash'] or not progress or progress['reviews'] != value['reviews'] or progress['stage'] != value['stage']:
+            raise ValueError('Contenu ou progression modifiés. Recommence cette révision.')
+        return value, record
+
+    def reveal(self, token):
+        with self.lock:
+            value, record = self.checked_challenge(token)
+            if not value['revealed']:
+                value['elapsed'] = self.clock() - value['started']
+                value['revealed'] = True
+            example = record['examples'][value['index']]
+            return {'ja': example['ja'], 'reading': example['reading'], 'fr': example['fr'], 'elapsed': value['elapsed'],
+                    'sources': record['sources'], 'fluentAllowed': value['elapsed'] <= self.config['srs']['fluentSeconds']}
+
+    def grade(self, token, grade, index):
+        with self.lock:
+            value, record = self.checked_challenge(token)
+            if not value['revealed'] or index != value['index'] or grade not in ('fluent', 'hesitated', 'failed'):
+                raise ValueError('Révèle et compare la réponse avant de noter cet exercice.')
+            if grade == 'fluent' and value['elapsed'] > self.config['srs']['fluentSeconds']:
+                grade = 'hesitated'
+            value['grades'].append(grade)
+            value['index'] += 1
+            value['revealed'] = False
+            value['started'] = self.clock()
+            if value['index'] < len(record['examples']):
+                return {'complete': False, 'challenge': self.prompt(token, record)}
+            worst = 'failed' if 'failed' in value['grades'] else 'hesitated' if 'hesitated' in value['grades'] else 'fluent'
+            with self.state() as connection:
+                row = dict(connection.execute('SELECT * FROM progress WHERE id=?', (record['id'],)).fetchone())
+                if row['reviews'] != value['reviews']:
+                    raise ValueError('Révision déjà enregistrée ailleurs.')
+                stage, successes, delay = next_stage(row, worst, self.config['srs'])
+                connection.execute('UPDATE progress SET stage=?,green_successes=?,due=?,reviews=reviews+1 WHERE id=?',
+                                   (stage, successes, self.clock() + delay, record['id']))
+                self.event(connection, token, 'review', {'id': record['id'], 'grades': value['grades'], 'grade': worst,
+                                                       'stage': stage, 'contentHash': value['hash'], 'assessment': 'oral-self-assessment'})
+            del self.challenges[token]
+            return {'complete': True, 'stage': stage, 'grade': worst, 'nextDue': self.clock() + delay}
+
+    def save_preferences(self, updates):
+        ranges = {'scale': (14, 23), 'lessonBatch': (1, 20), 'reviewBatch': (1, 50)}
+        for key, value in updates.items():
+            if key in ranges:
+                if type(value) is not int or not ranges[key][0] <= value <= ranges[key][1]:
+                    raise ValueError('Réglage hors limites : ' + key)
+            elif key == 'theme' and value in ('light', 'dark'):
+                pass
+            elif key == 'level' and value in LEVELS:
+                pass
+            else:
+                raise ValueError('Réglage inconnu : ' + key)
+        with self.state() as connection:
+            preferences = json.loads(connection.execute('SELECT payload FROM preferences').fetchone()[0])
+            preferences.update(updates)
+            connection.execute('UPDATE preferences SET payload=? WHERE id=1', (json.dumps(preferences),))
+        return preferences
+
+    def add_gap(self, query):
+        query = str(query).strip()
+        if not query or len(query) > 500:
+            raise ValueError('Décris une notion à rechercher, en moins de 500 caractères.')
+        identity = hashlib.sha256(Corpus.normalized(query).encode()).hexdigest()[:24]
+        with self.state() as connection:
+            connection.execute('INSERT OR IGNORE INTO gaps VALUES(?,?,?)', (identity, self.clock(), query))
+        return {'saved': True, 'id': identity, 'status': 'research-required'}
+
+    def export(self):
+        with self.state() as connection:
+            return {'schemaVersion': 1, 'projectId': 'zenray-japanese', 'exportedAt': dated(),
+                    'progress': [dict(row) for row in connection.execute('SELECT * FROM progress')],
+                    'events': [dict(row) for row in connection.execute('SELECT * FROM events ORDER BY at')],
+                    'preferences': json.loads(connection.execute('SELECT payload FROM preferences').fetchone()[0]),
+                    'gaps': [dict(row) for row in connection.execute('SELECT * FROM gaps')]}
+
+
+def next_stage(row, grade, config):
+    stage, successes = row['stage'], row['green_successes']
+    if grade != 'fluent':
+        return ('orange', 0, config['orangeDays'] * 86400) if stage == 'green' and grade == 'failed' else ('red', 0, config['redRetrySeconds'])
+    if stage == 'red':
+        return 'orange', 0, config['orangeDays'] * 86400
+    if stage == 'orange':
+        return 'green', 0, config['greenDays'] * 86400
+    if stage == 'green':
+        successes += 1
+        return ('mastered', successes, 0) if successes >= config['greenSuccesses'] else ('green', successes, config['greenDays'] * 86400)
+    raise ValueError('État de révision inconnu.')
+
+
+class Handler(BaseHTTPRequestHandler):
+    def log_message(self, *args):
+        pass
+
+    def reply(self, value, status=200, mime='application/json; charset=utf-8'):
+        data = json.dumps(value, ensure_ascii=False).encode() if mime.startswith('application/json') else value
+        self.send_response(status)
+        self.send_header('Content-Type', mime)
+        self.send_header('Content-Length', str(len(data)))
+        self.send_header('Cache-Control', 'no-store')
+        self.send_header('X-Content-Type-Options', 'nosniff')
+        self.send_header('Content-Security-Policy', "default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' blob:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'")
+        self.end_headers()
+        self.wfile.write(data)
+
+    def same_host(self):
+        expected = '127.0.0.1:' + str(self.server.server_port)
+        return self.headers.get('Host') == expected
+
+    def do_GET(self):
+        if not self.same_host():
+            return self.reply({'error': 'Hôte refusé.'}, 403)
+        try:
+            app = self.server.app
+            url = urlparse(self.path)
+            args = {key: values[0] for key, values in parse_qs(url.query).items()}
+            if url.path == '/api/bootstrap':
+                return self.reply({'token': app.token, **app.dashboard()})
+            if url.path == '/api/dashboard':
+                return self.reply(app.dashboard())
+            if url.path == '/api/search':
+                return self.reply(app.search(args.get('q', ''), args.get('domain', ''), args.get('level', ''), int(args.get('offset', 0))))
+            if url.path == '/api/record':
+                return self.reply(app.record(args.get('id', '')))
+            if url.path == '/api/export':
+                return self.reply(app.export())
+            if url.path == '/api/health':
+                return self.reply({'ok': True, 'records': sum(app.counts.values()), 'date': dated()})
+            if url.path == '/api/stroke':
+                record = app.record(args.get('id', ''))
+                relative = record.get('strokeSvg')
+                if not relative:
+                    raise ValueError('Tracé indisponible.')
+                corpus_root = Path(app.settings['memoryRoot']).resolve()
+                path = (corpus_root / relative).resolve()
+                if not path.is_relative_to(corpus_root / 'Site/corpus'):
+                    raise ValueError('Chemin de tracé refusé.')
+                return self.reply(path.read_bytes(), mime='image/svg+xml')
+            path = (ROOT / 'LocalApp' / (url.path.lstrip('/') or 'index.html')).resolve()
+            if not path.is_relative_to(ROOT / 'LocalApp') or not path.is_file():
+                return self.reply({'error': 'Fichier introuvable.'}, 404)
+            return self.reply(path.read_bytes(), mime=mimetypes.guess_type(path)[0] or 'application/octet-stream')
+        except (ValueError, KeyError, FileNotFoundError) as error:
+            self.reply({'error': str(error)}, 400)
+        except Exception:
+            self.reply({'error': 'Erreur serveur. Consulte le terminal local.'}, 500)
+            raise
+
+    def do_POST(self):
+        app = self.server.app
+        origin = 'http://127.0.0.1:' + str(self.server.server_port)
+        if not self.same_host() or self.headers.get('Origin') not in (None, origin) or self.headers.get('X-Local-Token') != app.token:
+            return self.reply({'error': 'Requête locale non autorisée.'}, 403)
+        try:
+            size = int(self.headers.get('Content-Length', 0))
+            if not 0 < size <= 16384:
+                raise ValueError('Requête trop volumineuse.')
+            data = json.loads(self.rfile.read(size))
+            route = urlparse(self.path).path
+            with app.lock:
+                if route == '/api/lesson':
+                    result = app.lesson(data['id'], data.get('options'))
+                elif route == '/api/enroll':
+                    result = app.enroll(data['id'], data['eventId'])
+                elif route == '/api/challenge':
+                    result = app.challenge(data['id'])
+                elif route == '/api/reveal':
+                    result = app.reveal(data['token'])
+                elif route == '/api/grade':
+                    result = app.grade(data['token'], data['grade'], data['index'])
+                elif route == '/api/preferences':
+                    result = app.save_preferences(data)
+                elif route == '/api/gap':
+                    result = app.add_gap(data['query'])
+                else:
+                    raise ValueError('Commande inconnue.')
+            return self.reply(result)
+        except (ValueError, KeyError, TypeError) as error:
+            return self.reply({'error': str(error)}, 400)
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--config', default=str(ROOT / 'params/local-app.json'))
+    parser.add_argument('--port', type=int)
+    args = parser.parse_args()
+    app = Application(args.config)
+    server = ThreadingHTTPServer(('127.0.0.1', args.port or app.config['port']), Handler)
+    server.daemon_threads = True
+    server.app = app
+    print(f'ZenRay Japanese : http://127.0.0.1:{server.server_port}/', flush=True)
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        server.server_close()
+
+
+if __name__ == '__main__':
+    main()

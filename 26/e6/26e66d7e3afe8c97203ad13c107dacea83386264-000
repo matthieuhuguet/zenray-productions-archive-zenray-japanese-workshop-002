@@ -1,0 +1,1562 @@
+{
+  "schemaVersion": 1,
+  "date": "14 October 2026",
+  "policy": "Review exact complete record fields, original Japanese, kana, French translation, source alignment and learner exercise suitability. HTTP availability is not approval.",
+  "records": [
+    {
+      "record": {
+        "id": "expand-negative-addition-mo",
+        "title": "も avec une négation : non plus",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "も avec une négation",
+          "negative-addition-mo"
+        ],
+        "explanationFr": "Après un nom, も peut ajouter un élément à une situation négative déjà évoquée : 私も行かない signifie moi non plus, je n'y vais pas. Le sens additif reste le même que dans une phrase affirmative ; c'est le prédicat négatif qui produit non plus. Dans ces phrases simples, も peut remplacer は ou が ; ses combinaisons avec une particule de cas ont leurs règles propres.",
+        "frenchLearnerTrap": "Ne pas traduire automatiquement も par aussi sans tenir compte de la négation et de la situation comparable déjà connue.",
+        "examples": [
+          {
+            "ja": "姉は肉を食べません。私も食べません。",
+            "reading": "あねはにくをたべません。わたしもたべません。",
+            "fr": "Ma grande sœur ne mange pas de viande. Moi non plus.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "父は今日出かけません。母も出かけません。",
+            "reading": "ちちはきょうでかけません。ははもでかけません。",
+            "fr": "Mon père ne sort pas aujourd'hui. Ma mère non plus.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-addition-mo",
+          "expand-masu-stem-ichidan",
+          "expand-masu-stem-godan"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%82%82",
+            "title": "Bunpro grammar: も",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Ma grande sœur ne mange pas de viande. Moi non plus.",
+          "Mon père ne sort pas aujourd'hui. Ma mère non plus."
+        ]
+      },
+      "recordSha256": "b827725097602b060475c96ef715601078e8654adb87c622fc873a0a7a6bd9ed"
+    },
+    {
+      "record": {
+        "id": "expand-discourse-sore",
+        "title": "それ : reprendre ce dont on vient de parler",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "それ",
+          "discourse-sore"
+        ],
+        "explanationFr": "それ peut désigner une chose près de l'interlocuteur, mais aussi reprendre une chose ou une information déjà mentionnée par l'un ou l'autre locuteur. Le référent vient alors du discours, pas nécessairement d'un objet visible. それ fonctionne comme un groupe nominal et peut recevoir は, が, を ou une autre particule selon son rôle.",
+        "frenchLearnerTrap": "Un それ dans une conversation n'indique pas toujours un objet physiquement posé près de l'autre personne ; identifier l'information à laquelle il renvoie.",
+        "examples": [
+          {
+            "ja": "新しい本を買いました。それは料理の本です。",
+            "reading": "あたらしいほんをかいました。それはりょうりのほんです。",
+            "fr": "J'ai acheté un nouveau livre. C'est un livre de cuisine.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "姉が新しい店を開きました。それを昨日聞きました。",
+            "reading": "あねがあたらしいみせをひらきました。それをきのうききました。",
+            "fr": "Ma grande sœur a ouvert une nouvelle boutique. Je l'ai appris hier.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-demonstrative-things",
+          "expand-noun-no",
+          "expand-i-adjective-noun",
+          "expand-masu-stem-godan",
+          "expand-relative-days"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%9D%E3%82%8C",
+            "title": "Bunpro grammar: それ",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "J'ai acheté un nouveau livre. C'est un livre de cuisine.",
+          "Ma grande sœur a ouvert une nouvelle boutique. Je l'ai appris hier."
+        ]
+      },
+      "recordSha256": "9264d3a66e3effa1a28baf1ffd136c3fa0aafcb76ba7981f22f7a3d6fed16c7d"
+    },
+    {
+      "record": {
+        "id": "expand-discourse-soko",
+        "title": "そこ : reprendre un lieu déjà mentionné",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "そこ",
+          "discourse-soko"
+        ],
+        "explanationFr": "そこ peut désigner un lieu près de l'interlocuteur ou reprendre un lieu évoqué dans la conversation. La particule qui le suit reste celle qu'exige la phrase : そこに pour une présence ou une destination, そこで pour le lieu d'une action. そっち met plutôt en avant un côté ou une direction et ne se substitue pas mécaniquement à そこ.",
+        "frenchLearnerTrap": "そこ ne signifie pas toujours près de toi : le lieu peut être rappelé sans être visible.",
+        "examples": [
+          {
+            "ja": "妹は京都に住んでいます。私もそこに住んでいます。",
+            "reading": "いもうとはきょうとにすんでいます。わたしもそこにすんでいます。",
+            "fr": "Ma petite sœur habite à Kyoto. Moi aussi, j'y habite.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "昨日、美術館に行きました。そこには大きい庭がありました。",
+            "reading": "きのう、びじゅつかんにいきました。そこにはおおきいにわがありました。",
+            "fr": "Hier, je suis allé au musée. Il y avait un grand jardin là-bas.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-demonstrative-places",
+          "expand-location-existence",
+          "expand-addition-mo",
+          "grammar-result-state",
+          "expand-masu-stem-godan",
+          "expand-copula-past",
+          "expand-i-adjective-noun"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%9D%E3%81%93",
+            "title": "Bunpro grammar: そこ",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Ma petite sœur habite à Kyoto. Moi aussi, j'y habite.",
+          "Hier, je suis allé au musée. Il y avait un grand jardin là-bas."
+        ]
+      },
+      "recordSha256": "bacafc55a8bae5601ef1ac97b9b5fa980a4ff17f6756a6c3fd837ea8e0acaac8"
+    },
+    {
+      "record": {
+        "id": "expand-discourse-asoko",
+        "title": "あそこ : rappeler un lieu connu des deux personnes",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "あそこ",
+          "discourse-asoko"
+        ],
+        "explanationFr": "あそこ désigne normalement un lieu éloigné du locuteur et de l'interlocuteur. Dans le discours, il peut aussi rappeler un lieu dont les deux personnes ont une connaissance partagée, par exemple un endroit qu'elles ont fréquenté ensemble. Il se distingue de そこ, qui peut reprendre un lieu simplement mentionné ; あっち met davantage l'accent sur une direction.",
+        "frenchLearnerTrap": "Pour rappeler un lieu, ne pas utiliser automatiquement あそこ si l'interlocuteur ne sait pas de quel endroit il s'agit.",
+        "examples": [
+          {
+            "ja": "昨日、一緒に行った店は静かでしたね。あそこでまた食べたいです。",
+            "reading": "きのう、いっしょにいったみせはしずかでしたね。あそこでまたたべたいです。",
+            "fr": "La boutique où nous sommes allés ensemble hier était calme, n'est-ce pas ? Je voudrais y manger à nouveau.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "二人で行った公園を覚えていますか。あそこには池がありましたね。",
+            "reading": "ふたりでいったこうえんをおぼえていますか。あそこにはいけがありましたね。",
+            "fr": "Vous vous souvenez du parc où nous sommes allés tous les deux ? Il y avait un étang là-bas, n'est-ce pas ?",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-demonstrative-places",
+          "grammar-relative-clause",
+          "expand-masu-stem-ichidan",
+          "grammar-result-state",
+          "grammar-desire",
+          "expand-copula-past",
+          "grammar-final-particles",
+          "expand-group-participants-de",
+          "expand-accompaniment-to",
+          "expand-plain-verb-past"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%82%E3%81%9D%E3%81%93",
+            "title": "Bunpro grammar: あそこ",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "La boutique où nous sommes allés ensemble hier était calme, n'est-ce pas ? Je voudrais y manger à nouveau.",
+          "Vous vous souvenez du parc où nous sommes allés tous les deux ? Il y avait un étang là-bas, n'est-ce pas ?"
+        ]
+      },
+      "recordSha256": "c950b4c73d8fc90c52007ecfa8f32f9f72e9e258fab3aa72ae100f7ade723fa7"
+    },
+    {
+      "record": {
+        "id": "expand-plain-question-ka",
+        "title": "か : question familière et information encore inconnue",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "か",
+          "plain-question-ka"
+        ],
+        "explanationFr": "Dans une question polie, か suit notamment です ou ます. Après une forme neutre, un か montant peut sembler direct ou brusque ; une question familière peut aussi se former sans か, par l'intonation. Un か descendant peut exprimer la prise en compte d'une information nouvelle. か peut également terminer une proposition interrogative intégrée, comme 誰が来るか知りません : ce qui est inconnu devient l'objet de savoir ou de penser, sans constituer une question adressée directement à l'autre.",
+        "frenchLearnerTrap": "Ne pas appliquer la rudesse éventuelle d'une question neutre en か à toute proposition interrogative intégrée : les fonctions et le contexte sont différents.",
+        "examples": [
+          {
+            "ja": "昨日はどこに行ったか？",
+            "reading": "きのうはどこにいったか？",
+            "fr": "Question très directe : où es-tu allé hier ?",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "誰が明日来るか知りません。",
+            "reading": "だれがあしたくるかしりません。",
+            "fr": "Je ne sais pas qui vient demain.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-verb-dictionary-nonpast",
+          "expand-plain-verb-past",
+          "expand-person-dare",
+          "expand-masu-stem-godan",
+          "expand-relative-days"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%8B",
+            "title": "Bunpro grammar: か",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          },
+          {
+            "url": "https://www.tofugu.com/japanese-grammar/particle-ka/",
+            "title": "Particle ka: a marker of the unknown",
+            "publisher": "Tofugu, original grammar publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Question très directe : où es-tu allé hier ?",
+          "Je ne sais pas qui vient demain."
+        ]
+      },
+      "recordSha256": "a7cce636ca1a635e8b830bfdbe0a9d4c19498848a73d93ff180acc7c0f382b38"
+    },
+    {
+      "record": {
+        "id": "expand-new-subject-ga",
+        "title": "が : présenter un sujet nouvellement observé",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "が",
+          "new-subject-ga"
+        ],
+        "explanationFr": "が marque le sujet d'un prédicat. Il est notamment naturel pour présenter une personne ou un événement que l'on vient de remarquer, plutôt que poser d'abord un thème déjà partagé. Il peut aussi identifier précisément celui qui répond à une question en qui. Le choix avec は dépend de l'information partagée et du contraste voulu ; ce n'est pas une opposition mécanique entre présent et passé.",
+        "frenchLearnerTrap": "私が peut être correct pour identifier qui fait l'action ; ne pas interdire が avec la première personne. 私は sert souvent à parler de soi comme thème.",
+        "examples": [
+          {
+            "ja": "あ、庭に猫がいます。",
+            "reading": "あ、にわにねこがいます。",
+            "fr": "Ah, il y a un chat dans le jardin.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "誰が窓を開けましたか。私が開けました。",
+            "reading": "だれがまどをあけましたか。わたしがあけました。",
+            "fr": "Qui a ouvert la fenêtre ? C'est moi qui l'ai ouverte.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-case-particles",
+          "grammar-existence",
+          "expand-location-existence",
+          "expand-person-dare",
+          "expand-masu-stem-ichidan"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%8C",
+            "title": "Bunpro grammar: が",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          },
+          {
+            "url": "https://www.tofugu.com/japanese-grammar/particle-ga/",
+            "title": "Particle ga: subject marker",
+            "publisher": "Tofugu, original grammar publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Ah, il y a un chat dans le jardin.",
+          "Qui a ouvert la fenêtre ? C'est moi qui l'ai ouverte."
+        ]
+      },
+      "recordSha256": "90cc0a6811b34393141c4c77ad6b6daa4ec0f9f8e4eef681adbe7160f2aa2484"
+    },
+    {
+      "record": {
+        "id": "expand-final-yo-construction",
+        "title": "よ : apporter une information à l'interlocuteur",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "よ",
+          "final-yo-construction"
+        ],
+        "explanationFr": "よ s'ajoute à la fin d'une phrase pour informer l'interlocuteur ou renforcer ce que l'on lui dit. Un verbe ou un adjectif en い garde sa forme devant よ : 行くよ, 寒いよ. Un nom ou un adjectif en な affirmatif neutre non passé garde だ : 休みだよ, 静かだよ. On utilise aussi les terminaisons polies ですよ et ますよ. よね associe l'information apportée à une recherche de compréhension ou d'accord partagé.",
+        "frenchLearnerTrap": "よ ne garantit ni douceur ni politesse : le contexte et le ton peuvent donner une impression de conseil, d'insistance ou de contradiction.",
+        "examples": [
+          {
+            "ja": "この店は日曜日も開いていますよ。",
+            "reading": "このみせはにちようびもあいていますよ。",
+            "fr": "Cette boutique est ouverte le dimanche aussi, vous savez.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "この道は危ないよ。",
+            "reading": "このみちはあぶないよ。",
+            "fr": "Attention, cette route est dangereuse.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-copula-plain",
+          "expand-adjective-desu",
+          "grammar-result-state",
+          "expand-addition-mo",
+          "expand-recurring-time"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%82%88",
+            "title": "Bunpro grammar: よ",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Cette boutique est ouverte le dimanche aussi, vous savez.",
+          "Attention, cette route est dangereuse."
+        ]
+      },
+      "recordSha256": "c54a5583587072f7107b7c2eadbb0bd854c537316486e9b2e9e526bc204ecac6"
+    },
+    {
+      "record": {
+        "id": "expand-traversed-place-o",
+        "title": "Lieuを : parcourir un trajet",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "Lieuを",
+          "traversed-place-o"
+        ],
+        "explanationFr": "Avec un verbe de déplacement approprié, を peut marquer un espace parcouru ou traversé : 道を歩く, 橋を渡る. Il ne désigne alors pas un objet que l'on manipule. で peut situer l'activité dans un lieu, tandis que に ou へ peuvent en indiquer la destination ; le choix dépend du rôle que l'on donne au lieu et du verbe.",
+        "frenchLearnerTrap": "橋を渡る décrit le pont traversé, pas une destination marquée comme 駅に行く. Ne pas remplacer tous les を de trajet par で.",
+        "examples": [
+          {
+            "ja": "毎朝、この橋を渡ります。",
+            "reading": "まいあさ、このはしをわたります。",
+            "fr": "Je traverse ce pont chaque matin.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "昨日は川のそばの道を歩きました。",
+            "reading": "きのうはかわのそばのみちをあるきました。",
+            "fr": "Hier, j'ai marché sur le chemin au bord de la rivière.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-case-particles",
+          "expand-masu-stem-godan",
+          "expand-noun-no",
+          "expand-relative-days"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%82%92",
+            "title": "Bunpro grammar: を",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je traverse ce pont chaque matin.",
+          "Hier, j'ai marché sur le chemin au bord de la rivière."
+        ]
+      },
+      "recordSha256": "5ea7171f61121e467ed5978cabf0ef73a90855b4903b45b6b877c83768daaefc"
+    },
+    {
+      "record": {
+        "id": "expand-predicate-alternatives-ka",
+        "title": "か : proposer des alternatives verbales ou adjectivales",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "か",
+          "predicate-alternatives-ka"
+        ],
+        "explanationFr": "か peut relier des alternatives nominales, verbales ou adjectivales : 行くか帰るか, 高いか安いか. Dans une proposition intégrée, utiliser les prédicats neutres ; un nom ou une base adjectivale en な affirmatif non passé ne prend pas un だ supplémentaire avant ce か : 安全か危険か. La phrase intégrée peut ensuite dépendre de 考える ou 決める. Une succession en ますか ou ですか peut en revanche poser des questions polies autonomes, sans jouer exactement le même rôle de liste intégrée.",
+        "frenchLearnerTrap": "行きますか、帰りますか peut adresser deux questions ; ne pas le traiter comme la même structure intégrée que 行くか帰るか考える.",
+        "examples": [
+          {
+            "ja": "今日は歩くか走るか考えています。",
+            "reading": "きょうはあるくかはしるかかんがえています。",
+            "fr": "Je réfléchis à marcher ou à courir aujourd'hui.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "この部屋が安全か危険か調べます。",
+            "reading": "このへやがあんぜんかきけんかしらべます。",
+            "fr": "Je vérifie si cette chambre est sûre ou dangereuse.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-plain-question-ka",
+          "expand-verb-dictionary-nonpast",
+          "expand-na-adjective-predicate",
+          "grammar-progressive",
+          "expand-ichidan-te-past",
+          "expand-masu-stem-ichidan",
+          "grammar-i-adjectives"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%8B-or",
+            "title": "Bunpro grammar: か-or",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          },
+          {
+            "url": "https://www.tofugu.com/japanese-grammar/particle-ka/",
+            "title": "Particle ka: a marker of the unknown",
+            "publisher": "Tofugu, original grammar publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je réfléchis à marcher ou à courir aujourd'hui.",
+          "Je vérifie si cette chambre est sûre ou dangereuse."
+        ]
+      },
+      "recordSha256": "fac2a26d33fc16f6943689ef357af4634f34b94dd9bf6b231827d354341094e7"
+    },
+    {
+      "record": {
+        "id": "expand-interaction-to-ni",
+        "title": "と et に : partenaire de l'échange ou destinataire",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "と et に",
+          "interaction-to-ni"
+        ],
+        "explanationFr": "Avec une action qui peut être réciproque, と présente l'autre personne comme partenaire : 友達と話す met en avant une conversation avec l'ami. に présente plutôt la personne comme destinataire ou cible de ce que l'on fait : 友達に話す met en avant ce qu'on lui dit. Le contraste dépend du verbe et du contexte ; il ne prouve pas à lui seul que la personne marquée par に ne répond jamais.",
+        "frenchLearnerTrap": "La particule と d'accompagnement peut aussi réunir des personnes qui poursuivent le même but. Ne pas réduire toute phrase en と à une action dirigée l'un contre l'autre.",
+        "examples": [
+          {
+            "ja": "昼休みに友達と話しました。",
+            "reading": "ひるやすみにともだちとはなしました。",
+            "fr": "J'ai discuté avec un ami pendant la pause de midi.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "先生に昨日の出来事を話しました。",
+            "reading": "せんせいにきのうのできごとをはなしました。",
+            "fr": "J'ai raconté au professeur ce qui s'est passé hier.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-accompaniment-to",
+          "expand-recipient-ni",
+          "expand-masu-stem-godan",
+          "expand-time-ni",
+          "expand-noun-no"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%A8-with",
+            "title": "Bunpro grammar: と-with",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "J'ai discuté avec un ami pendant la pause de midi.",
+          "J'ai raconté au professeur ce qui s'est passé hier."
+        ]
+      },
+      "recordSha256": "ce4febdf53f87a693517e9480aa61060ea806a44cfd921f927ef8974659349a3"
+    },
+    {
+      "record": {
+        "id": "expand-deshou-attachment",
+        "title": "でしょう et でしょ : raccorder une supposition",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "でしょう et でしょ",
+          "deshou-attachment"
+        ],
+        "explanationFr": "でしょう suit normalement une forme neutre verbale ou un adjectif en い. Après un nom ou un adjectif en な affirmatif non passé, il suit la base sans だ : 雨でしょう, 静かでしょう. Il exprime une supposition ou cherche l'accord de l'interlocuteur selon le ton et le contexte. La forme raccourcie でしょ est plus familière. On évite normalement de raccorder directement ます à でしょう dans l'usage courant, même si cela existe dans certains registres très formels ou anciens.",
+        "frenchLearnerTrap": "Une supposition en でしょう n'est pas une certitude ; ne pas produire 雨だでしょう dans ce raccord nominal.",
+        "examples": [
+          {
+            "ja": "夕方は涼しくなるでしょう。",
+            "reading": "ゆうがたはすずしくなるでしょう。",
+            "fr": "Il fera probablement plus frais en fin d'après-midi.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "日曜日の朝は静かでしょう。",
+            "reading": "にちようびのあさはしずかでしょう。",
+            "fr": "Dimanche matin sera probablement calme.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-verb-dictionary-nonpast",
+          "expand-copula-plain",
+          "grammar-i-adjectives",
+          "expand-change-naru",
+          "expand-na-adjective-predicate"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%A7%E3%81%97%E3%82%87%E3%81%86",
+            "title": "Bunpro grammar: でしょう",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Il fera probablement plus frais en fin d'après-midi.",
+          "Dimanche matin sera probablement calme."
+        ]
+      },
+      "recordSha256": "677bbd2164b9b49839fbd803c6cf418dad1c93e7d187c7ea8a13f94ed600eb25"
+    },
+    {
+      "record": {
+        "id": "expand-existence-neutral-negative",
+        "title": "ある et ない : existence neutre et négative",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "ある et ない",
+          "existence-neutral-negative"
+        ],
+        "explanationFr": "Nがある présente l'existence d'une chose, tandis que Nがあります est sa forme polie. La négation neutre irrégulière est ない, et non あらない ; la négation polie est ありません, formée à partir de la base あり. Pour une personne ou un animal considéré comme animé, utiliser normalement いる. À l'oral familier, le が de Nがある peut être omis lorsque le sens est clair. 有る est une écriture possible de ある, sans constituer une nouvelle conjugaison.",
+        "frenchLearnerTrap": "ない exprime ici l'absence d'une chose ; ne pas fabriquer あらない sur le modèle d'un godan régulier.",
+        "examples": [
+          {
+            "ja": "この部屋には机がある。",
+            "reading": "このへやにはつくえがある。",
+            "fr": "Il y a un bureau dans cette chambre.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "今日は時間がありません。",
+            "reading": "きょうはじかんがありません。",
+            "fr": "Aujourd'hui, je n'ai pas le temps.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-existence",
+          "expand-location-existence",
+          "expand-godan-negative",
+          "expand-masu-stem-godan"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%8C%E3%81%82%E3%82%8B",
+            "title": "Bunpro grammar: がある",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Il y a un bureau dans cette chambre.",
+          "Aujourd'hui, je n'ai pas le temps."
+        ]
+      },
+      "recordSha256": "602c1f1b524a716349403162ae1adc8f3be3c67d9a373588e0d2d091c9572164"
+    },
+    {
+      "record": {
+        "id": "expand-explanatory-statement-noda",
+        "title": "のだ et んです : présenter une explication",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "のだ et んです",
+          "explanatory-statement-noda"
+        ],
+        "explanationFr": "Dans une assertion explicative, une forme neutre verbale ou un adjectif en い reçoit のだ, んだ, のです ou んです : 行くんです, 寒いんだ. Un nom ou une base adjectivale en な affirmatif non passé utilise な devant の ou ん : 休みなのです, 静かなんです. ん est très courant à l'oral, tandis que la forme non contractée の peut sembler plus soutenue. La construction relie ce que l'on affirme au contexte, souvent pour expliquer une situation, plutôt que simplement augmenter sa certitude.",
+        "frenchLearnerTrap": "Une question polie explicative se termine par のですか ou んですか ; ne pas ajouter か directement à のだ ou んだ pour cette question.",
+        "examples": [
+          {
+            "ja": "明日は休みなんです。",
+            "reading": "あしたはやすみなんです。",
+            "fr": "C'est que je suis en repos demain.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "今日は少し寒いんです。",
+            "reading": "きょうはすこしさむいんです。",
+            "fr": "C'est qu'il fait un peu froid aujourd'hui.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-verb-dictionary-nonpast",
+          "expand-copula-plain",
+          "grammar-i-adjectives",
+          "expand-na-adjective-predicate",
+          "expand-explanatory-question-no"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/-%E3%82%93%E3%81%A7%E3%81%99-%E3%81%AE%E3%81%A7%E3%81%99",
+            "title": "Bunpro grammar: -んです-のです",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "C'est que je suis en repos demain.",
+          "C'est qu'il fait un peu froid aujourd'hui."
+        ]
+      },
+      "recordSha256": "38e25f6774a20712679bff96d0d33f45dd987f51112246385f23d23ffd8fb3f1"
+    },
+    {
+      "record": {
+        "id": "expand-verb-nominalization-no",
+        "title": "Vの : traiter une proposition comme un groupe nominal",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "Vの",
+          "verb-nominalization-no"
+        ],
+        "explanationFr": "Une proposition verbale neutre suivie de の peut fonctionner comme un groupe nominal : 本を読むの. Le groupe reçoit ensuite は, が, を ou une autre particule selon sa fonction. Le verbe peut être au passé ou au négatif selon le sens, mais on ne raccorde pas directement une terminaison polie ます ou ません à ce の nominalisant. Dans les expressions fixées de capacité Vことができる et d'expérience Vたことがある, ne pas remplacer librement こと par の. Vのです ou Vんです relève normalement de la construction explicative, à distinguer de la nominalisation suivie d'une particule.",
+        "frenchLearnerTrap": "Ne pas transformer automatiquement toute proposition nominalisée en une expérience ou une capacité : les constructions fixées choisissent leur propre nom grammatical.",
+        "examples": [
+          {
+            "ja": "日本語を読むのは楽しいです。",
+            "reading": "にほんごをよむのはたのしいです。",
+            "fr": "Lire du japonais est agréable.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "料理するのが好きです。",
+            "reading": "りょうりするのがすきです。",
+            "fr": "J'aime cuisiner.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-verb-dictionary-nonpast",
+          "expand-likes-noun",
+          "expand-masu-stem-irregular",
+          "grammar-case-particles",
+          "expand-i-adjective-noun"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%AF",
+            "title": "Bunpro grammar: のは",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Lire du japonais est agréable.",
+          "J'aime cuisiner."
+        ]
+      },
+      "recordSha256": "7bce1898fc4511d4f8ce75c5a6b41b65fa8f3646bcd31a004cb054148f53dcfb"
+    },
+    {
+      "record": {
+        "id": "expand-na-no-noun-attribution",
+        "title": "な et の devant un nom : qualité ou rapport nominal",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "な et の devant un nom",
+          "na-no-noun-attribution"
+        ],
+        "explanationFr": "Une base adjectivale en な utilise な pour qualifier un nom : 健康な生活. Certains mots ont aussi un emploi nominal et peuvent alors se relier par の, qui indique un rapport à cette notion, par exemple 健康の話. Selon les mots, ce rapport peut relever d'un type, d'un domaine ou d'un usage plutôt que d'une qualité. Il faut apprendre les emplois attestés ; ce n'est pas une autorisation de remplacer な par の après tout adjectif en な.",
+        "frenchLearnerTrap": "健康な生活 décrit un mode de vie sain ; 健康の話 désigne une conversation sur la santé. Le choix dépend du sens et du statut lexical du mot.",
+        "examples": [
+          {
+            "ja": "健康な生活を送りたいです。",
+            "reading": "けんこうなせいかつをおくりたいです。",
+            "fr": "Je voudrais mener une vie saine.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "父と健康の話をしました。",
+            "reading": "ちちとけんこうのはなしをしました。",
+            "fr": "J'ai parlé de santé avec mon père.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-na-adjective-noun",
+          "expand-noun-no",
+          "grammar-desire",
+          "expand-masu-stem-godan",
+          "expand-accompaniment-to",
+          "expand-noun-object-suru"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%AA-adjective-noun",
+            "title": "Bunpro grammar: な-adjective-noun",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          },
+          {
+            "url": "https://www.tofugu.com/japanese-grammar/na-adjective/",
+            "title": "Na adjectives and lexical noun uses",
+            "publisher": "Tofugu, original grammar publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je voudrais mener une vie saine.",
+          "J'ai parlé de santé avec mon père."
+        ]
+      },
+      "recordSha256": "061cd6c2853846af933cae41bca294cd08eba725fd50e8d70037e9018104493d"
+    },
+    {
+      "record": {
+        "id": "expand-noun-object-suru",
+        "title": "Nをする : faire une activité",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "Nをする",
+          "noun-object-suru"
+        ],
+        "explanationFr": "Un nom d'activité peut former un groupe objet suivi de をする : 掃除をする, 料理をする. Certains noms forment aussi un verbe composé avec する sans を, comme 勉強する. する garde ses formes irrégulières, notamment します, しない, した et して. Tous les noms ne désignent pas une activité susceptible de recevoir librement をする ou de former un composé en する.",
+        "frenchLearnerTrap": "家をする ne signifie pas automatiquement faire le ménage dans la maison ; choisir le nom d'activité et préciser le lieu avec la construction appropriée.",
+        "examples": [
+          {
+            "ja": "土曜日に庭の掃除をします。",
+            "reading": "どようびににわのそうじをします。",
+            "fr": "Samedi, je fais le ménage dans le jardin.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "昨日は家で料理をしました。",
+            "reading": "きのうはいえでりょうりをしました。",
+            "fr": "Hier, j'ai cuisiné à la maison.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-irregular-suru",
+          "expand-masu-stem-irregular",
+          "grammar-case-particles",
+          "expand-noun-no",
+          "expand-time-ni"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%99%E3%82%8B",
+            "title": "Bunpro grammar: する",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Samedi, je fais le ménage dans le jardin.",
+          "Hier, j'ai cuisiné à la maison."
+        ]
+      },
+      "recordSha256": "b385a0a440612e302761136970e3cee9617c6609fb9e969146a13d7cacf770ce"
+    },
+    {
+      "record": {
+        "id": "expand-come-reference-result",
+        "title": "来る : destination et présence après l'arrivée",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "来る",
+          "come-reference-result"
+        ],
+        "explanationFr": "Un lieu suivi de に ou de へ peut indiquer où quelqu'un vient : 学校に来る, 学校へ来る. Le point de référence est celui du locuteur ou un lieu adopté dans le contexte. 来る se lit くる ; 来ます et 来て se lisent きます et きて ; 来ない se lit こない. 来ている peut présenter une personne arrivée et encore sur place, notamment en visite, plutôt qu'un déplacement actuellement en cours. Le contexte permet de choisir la lecture ; on ne remplace pas automatiquement la description d'une présence ordinaire au domicile par 来ている.",
+        "frenchLearnerTrap": "友達が来ています peut signifier qu'un ami est venu et se trouve maintenant sur place ; ne pas toujours traduire par est en train de venir.",
+        "examples": [
+          {
+            "ja": "友達が今、家に来ています。",
+            "reading": "ともだちがいま、いえにきています。",
+            "fr": "Un ami est venu chez moi et il y est en ce moment.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "明日、妹がこの店に来ます。",
+            "reading": "あした、いもうとがこのみせにきます。",
+            "fr": "Demain, ma petite sœur vient dans cette boutique.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-irregular-kuru",
+          "expand-masu-stem-irregular",
+          "grammar-result-state",
+          "expand-location-existence",
+          "expand-destination-he"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%8F%E3%82%8B",
+            "title": "Bunpro grammar: くる",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Un ami est venu chez moi et il y est en ce moment.",
+          "Demain, ma petite sœur vient dans cette boutique."
+        ]
+      },
+      "recordSha256": "228b919320b3856573834842f6997d9bb75bb228d59bd4fb58121f821da901db"
+    },
+    {
+      "record": {
+        "id": "expand-like-na-attribution",
+        "title": "好き et 好きなN : exprimer et attribuer un goût",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "好き et 好きなN",
+          "like-na-attribution"
+        ],
+        "explanationFr": "好き est un adjectif en な : Nが好きだ ou Nが好きです exprime un goût, tandis que 好きなN rattache ce goût au nom, comme 好きな本. Les formes passées du prédicat sont 好きだった et 好きでした. Lorsqu'on dit directement à une personne qu'on l'aime avec 好き, le contexte peut donner une interprétation amoureuse ; ce sens n'est pas obligatoire dans toute phrase qui parle d'une personne.",
+        "frenchLearnerTrap": "好きな本 désigne un livre que l'on aime, pas nécessairement le livre le plus aimé. 好き se comporte comme un adjectif en な, même si le français le traduit souvent par un verbe.",
+        "examples": [
+          {
+            "ja": "好きな本を友達に貸しました。",
+            "reading": "すきなほんをともだちにかしました。",
+            "fr": "J'ai prêté à un ami un livre que j'aime.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "去年はこの歌が好きでした。",
+            "reading": "きょねんはこのうたがすきでした。",
+            "fr": "L'an dernier, j'aimais cette chanson.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-likes-noun",
+          "expand-na-adjective-noun",
+          "expand-copula-plain-past",
+          "expand-copula-past",
+          "expand-recipient-ni",
+          "expand-masu-stem-godan"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%99%E3%81%8D",
+            "title": "Bunpro grammar: すき",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "J'ai prêté à un ami un livre que j'aime.",
+          "L'an dernier, j'aimais cette chanson."
+        ]
+      },
+      "recordSha256": "d5ca0bc8585362608da3a222b30fd853426806de0f4a41d76b0df9556661a6e4"
+    },
+    {
+      "record": {
+        "id": "expand-dislike-kirai-attribution",
+        "title": "嫌い : un adjectif en な malgré sa finale い",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "嫌い",
+          "dislike-kirai-attribution"
+        ],
+        "explanationFr": "嫌い（きらい） est un adjectif en な. Construire Nが嫌いだ ou Nが嫌いです pour dire qu'on n'aime pas N ; devant un nom, utiliser 嫌いなN. Au passé, employer 嫌いだった ou 嫌いでした. 大嫌い renforce l'aversion. Dire directement 嫌い à propos d'une personne ou de ce qu'elle propose peut être très fort ; adapter l'expression à la situation.",
+        "frenchLearnerTrap": "Ne pas fabriquer 嫌くない sur le modèle d'un adjectif en い : la négation du prédicat utilise notamment 嫌いではない.",
+        "examples": [
+          {
+            "ja": "私は大きい音が嫌いです。",
+            "reading": "わたしはおおきいおとがきらいです。",
+            "fr": "Je n'aime pas les bruits forts.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "嫌いな食べ物はありますか。",
+            "reading": "きらいなたべものはありますか。",
+            "fr": "Y a-t-il des aliments que vous n'aimez pas ?",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-na-adjective-noun",
+          "expand-na-adjective-predicate",
+          "expand-copula-plain-negative",
+          "expand-copula-plain-past",
+          "expand-copula-past",
+          "grammar-i-adjectives",
+          "grammar-existence",
+          "expand-polite-verb-question"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%8D%E3%82%89%E3%81%84",
+            "title": "Bunpro grammar: きらい",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je n'aime pas les bruits forts.",
+          "Y a-t-il des aliments que vous n'aimez pas ?"
+        ]
+      },
+      "recordSha256": "61503f8f93661dbe842c1f5338f428588477b6b33e28f1eb829f72af5dff555b"
+    },
+    {
+      "record": {
+        "id": "expand-activity-liking-tense",
+        "title": "Vのが好き : garder l'activité au dictionnaire",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "Vのが好き",
+          "activity-liking-tense"
+        ],
+        "explanationFr": "Pour exprimer un goût pour une activité, utiliser la forme du dictionnaire du verbe suivie de のが好きだ ou のが好きです : 歩くのが好きです. Le verbe de l'activité garde cette forme pour parler d'un goût passé ; le passé porte sur 好き : 歩くのが好きだった ou 好きでした. Ajouter か à la forme polie permet de poser une question sur les goûts de l'interlocuteur.",
+        "frenchLearnerTrap": "J'aimais courir se construit ici avec 走るのが好きでした, sans mettre automatiquement l'activité au passé en 走ったの.",
+        "examples": [
+          {
+            "ja": "夜に本を読むのが好きです。",
+            "reading": "よるにほんをよむのがすきです。",
+            "fr": "J'aime lire le soir.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "前は朝に散歩するのが好きでした。",
+            "reading": "まえはあさにさんぽするのがすきでした。",
+            "fr": "Avant, j'aimais me promener le matin.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-verb-dictionary-nonpast",
+          "expand-verb-nominalization-no",
+          "expand-likes-noun",
+          "expand-copula-plain-past",
+          "expand-copula-past",
+          "expand-time-ni"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%8C%E3%81%99%E3%81%8D",
+            "title": "Bunpro grammar: のがすき",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "J'aime lire le soir.",
+          "Avant, j'aimais me promener le matin."
+        ]
+      },
+      "recordSha256": "31d075928f2a9c9786b3d75bd8b3a2af174f0e1ec73650720ee26ea837b706ec"
+    },
+    {
+      "record": {
+        "id": "expand-attributive-existence-gaaru",
+        "title": "NがあるN : décrire ce qui possède quelque chose",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "NがあるN",
+          "attributive-existence-gaaru"
+        ],
+        "explanationFr": "Une proposition Nがある placée directement devant un nom peut le décrire : 庭がある家 signifie une maison avec un jardin. Dans cette modification nominale, le sujet interne peut aussi recevoir の : 庭のある家. Ne pas remplacer simplement ce が interne par un は de thème ; le groupe entier sert ensuite dans la phrase avec sa propre particule. Le verbe attributif reste en forme neutre, sans あります devant le nom.",
+        "frenchLearnerTrap": "Une relative japonaise se place avant le nom sans ajouter un qui ou un dont traduit mot à mot depuis le français.",
+        "examples": [
+          {
+            "ja": "庭がある家に住みたいです。",
+            "reading": "にわがあるいえにすみたいです。",
+            "fr": "Je voudrais habiter une maison avec un jardin.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "大きい窓のある部屋を選びました。",
+            "reading": "おおきいまどのあるへやをえらびました。",
+            "fr": "J'ai choisi une chambre avec une grande fenêtre.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-relative-clause",
+          "expand-existence-neutral-negative",
+          "expand-subject-no-attributive",
+          "grammar-desire",
+          "expand-masu-stem-godan",
+          "expand-i-adjective-noun"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%8C%E3%81%82%E3%82%8B-noun",
+            "title": "Bunpro grammar: がある-noun",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Je voudrais habiter une maison avec un jardin.",
+          "J'ai choisi une chambre avec une grande fenêtre."
+        ]
+      },
+      "recordSha256": "12a7d85e006f9176909916d52c6ee00a5ce71f682a3b379474e8bee90e98ca76"
+    },
+    {
+      "record": {
+        "id": "expand-group-participants-de",
+        "title": "人数で : préciser le groupe qui fait l'action",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "人数で",
+          "group-participants-de"
+        ],
+        "explanationFr": "Un nombre de personnes ou un nom de groupe suivi de で précise le groupe qui participe à une activité : 二人で, 家族で, 全員で. 一人で signifie seul. Ce で peut mettre en avant un effort commun ou l'ensemble des participants ; 人と présente plutôt une autre personne comme accompagnateur ou partenaire. Les deux constructions peuvent être possibles selon le point de vue : と n'interdit pas que les personnes poursuivent un même objectif.",
+        "frenchLearnerTrap": "二人で compte les deux participants ensemble ; 友達と indique avec qui l'on agit sans donner automatiquement le nombre total.",
+        "examples": [
+          {
+            "ja": "日曜日は二人で庭を掃除します。",
+            "reading": "にちようびはふたりでにわをそうじします。",
+            "fr": "Dimanche, nous nettoyons le jardin à deux.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "今日は一人で図書館に行きます。",
+            "reading": "きょうはひとりでとしょかんにいきます。",
+            "fr": "Aujourd'hui, je vais seul à la bibliothèque.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-counters",
+          "expand-noun-object-suru",
+          "expand-masu-stem-godan",
+          "expand-masu-stem-irregular",
+          "expand-recurring-time",
+          "expand-accompaniment-to"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%A7-by",
+            "title": "Bunpro grammar: で-by",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          },
+          {
+            "url": "https://www.tofugu.com/japanese-grammar/particle-de/",
+            "title": "Particle de: groups of people",
+            "publisher": "Tofugu, original grammar publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Dimanche, nous nettoyons le jardin à deux.",
+          "Aujourd'hui, je vais seul à la bibliothèque."
+        ]
+      },
+      "recordSha256": "aa4241c55ddb395148c5241441d3e8324467af1e92329a01388bf89446ea8a4b"
+    },
+    {
+      "record": {
+        "id": "expand-dake-attachment",
+        "title": "だけ : limiter une chose, une action ou une qualité",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "だけ",
+          "dake-attachment"
+        ],
+        "explanationFr": "だけ indique que la portée se limite à ce qui précède. Il suit un nom, un verbe neutre ou un adjectif en い : 水だけ, 読むだけ, 高いだけ. Avec un adjectif en な employé comme qualité, utiliser なだけ : 静かなだけ. Une base qui a réellement un emploi nominal peut recevoir だけ dans cet emploi : 幸せだけ désigne seulement le bonheur, tandis que 幸せなだけ décrit le fait d'être simplement heureux. Ce contraste dépend du mot et ne permet pas de retirer な partout.",
+        "frenchLearnerTrap": "Identifier ce que だけ limite : 本だけを読む limite les livres choisis, tandis que 本を読むだけ limite l'action effectuée.",
+        "examples": [
+          {
+            "ja": "今日はこの本だけを読みます。",
+            "reading": "きょうはこのほんだけをよみます。",
+            "fr": "Aujourd'hui, je lis seulement ce livre.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "この部屋は静かなだけです。",
+            "reading": "このへやはしずかなだけです。",
+            "fr": "Cette chambre est seulement calme, c'est tout.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-verb-dictionary-nonpast",
+          "expand-copula-plain",
+          "grammar-i-adjectives",
+          "expand-na-adjective-predicate",
+          "expand-na-adjective-noun",
+          "expand-masu-stem-godan"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%A0%E3%81%91",
+            "title": "Bunpro grammar: だけ",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Aujourd'hui, je lis seulement ce livre.",
+          "Cette chambre est seulement calme, c'est tout."
+        ]
+      },
+      "recordSha256": "0dfdcf28fbac5822921d6c4ff5c86f4f04ef7467453cf29b6fdeb696e9fc09de"
+    },
+    {
+      "record": {
+        "id": "expand-choice-dore-binary",
+        "title": "どれ et どちら : demander lequel",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "どれ et どちら",
+          "choice-dore-binary"
+        ],
+        "explanationFr": "どれ remplace un nom pour demander lequel dans un ensemble identifiable, souvent présenté comme trois options ou davantage dans les cours débutants. Il peut être sujet avec が, objet avec を, ou prédicat dans Nはどれですか. Pour un choix clairement binaire, on emploie habituellement どちら ou le familier どっち ; cette préférence de présentation n'est pas une permission de déduire que toute autre formulation est impossible. どの se construit au contraire devant un nom exprimé.",
+        "frenchLearnerTrap": "Ne pas dire どれ本 : demander どの本 ou utiliser どれ pour remplacer le nom.",
+        "examples": [
+          {
+            "ja": "あなたのかばんはどれですか。",
+            "reading": "あなたのかばんはどれですか。",
+            "fr": "Lequel est votre sac ?",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "赤と青では、どちらが好きですか。",
+            "reading": "あかとあおでは、どちらがすきですか。",
+            "fr": "Entre le rouge et le bleu, lequel préférez-vous ?",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-interrogative-demonstratives",
+          "expand-noun-no",
+          "expand-likes-noun",
+          "expand-nominal-question"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%A9%E3%82%8C",
+            "title": "Bunpro grammar: どれ",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          },
+          {
+            "url": "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/014.html",
+            "title": "TUFS module14: dore and dono noun",
+            "publisher": "Tokyo University of Foreign Studies",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Lequel est votre sac ?",
+          "Entre le rouge et le bleu, lequel préférez-vous ?"
+        ]
+      },
+      "recordSha256": "5f11bc31e97581d8f0d6d01a5781a202f8a03d897be53e002a53df9ba808d6f9"
+    },
+    {
+      "record": {
+        "id": "expand-choice-dono-freechoice",
+        "title": "どのN : préciser le nom et laisser le choix ouvert",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "どのN",
+          "choice-dono-freechoice"
+        ],
+        "explanationFr": "どの doit précéder un nom : どの本. Il permet de demander quelle option est choisie dans un ensemble ; pour deux options clairement opposées, on emploie habituellement どちらのN ou どっちのN. Avec une construction comme どのNでもいい, le choix peut rester indifférent : n'importe quel N convient. どのNも présente au contraire tous les N du domaine envisagé ; ce n'est pas toujours la même portée que n'importe lequel.",
+        "frenchLearnerTrap": "Ne pas isoler どの comme si c'était どれ : どの conserve un nom après lui.",
+        "examples": [
+          {
+            "ja": "どの電車に乗りますか。",
+            "reading": "どのでんしゃにのりますか。",
+            "fr": "Quel train prenez-vous ?",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "どの部屋でもいいです。",
+            "reading": "どのへやでもいいです。",
+            "fr": "N'importe quelle chambre me convient.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "expand-demonstrative-noun",
+          "expand-polite-verb-question",
+          "expand-masu-stem-godan",
+          "expand-nonverbal-acceptability"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%A9%E3%81%AE",
+            "title": "Bunpro grammar: どの",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          },
+          {
+            "url": "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/014.html",
+            "title": "TUFS module14: dore and dono noun",
+            "publisher": "Tokyo University of Foreign Studies",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Quel train prenez-vous ?",
+          "N'importe quelle chambre me convient."
+        ]
+      },
+      "recordSha256": "6db79b17155dea18e50f7fb782d952c9814a8f93a356c2ce1a439d835c0d1ad5"
+    },
+    {
+      "record": {
+        "id": "expand-tai-object-and-scope",
+        "title": "たい : objet du désir et personne concernée",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "たい",
+          "tai-object-and-scope"
+        ],
+        "explanationFr": "Ajouter たい à la base de ます pour exprimer le désir de faire : 食べたい. Avec un verbe transitif, l'objet peut être marqué par を ou が selon le contexte et la mise en relief. たい suit ensuite les transformations d'un adjectif en い : たくない, たかった, たくなかった, et leurs variantes polies en です ou ありません. Une assertion directe exprime normalement le désir du locuteur ; on peut demander son désir à l'interlocuteur ou rapporter des propos d'autrui. Pour souhaiter qu'une autre personne fasse l'action, utiliser notamment Vてほしい ; pour inviter ensemble, ませんか est souvent plus approprié.",
+        "frenchLearnerTrap": "先生に話したい exprime que je veux parler au professeur ; souhaiter que le professeur parle exige une autre construction et un autre rôle de sujet.",
+        "examples": [
+          {
+            "ja": "今日は温かいスープが飲みたいです。",
+            "reading": "きょうはあたたかいすーぷがのみたいです。",
+            "fr": "Aujourd'hui, je voudrais boire une soupe chaude.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "昨日は外に出たくありませんでした。",
+            "reading": "きのうはそとにでたくありませんでした。",
+            "fr": "Hier, je ne voulais pas sortir.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-desire",
+          "expand-masu-stem-godan",
+          "grammar-i-adjectives",
+          "expand-i-adjective-negative-past",
+          "expand-i-adjective-noun",
+          "expand-masu-stem-ichidan"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%84",
+            "title": "Bunpro grammar: たい",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Aujourd'hui, je voudrais boire une soupe chaude.",
+          "Hier, je ne voulais pas sortir."
+        ]
+      },
+      "recordSha256": "5f2d8d660e800f737efb1821638c37d477bc0d59f292e2678634d9247368fe00"
+    },
+    {
+      "record": {
+        "id": "expand-good-ii-yoi",
+        "title": "いい, よい et よく : qualité et emploi adverbial",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "いい, よい et よく",
+          "good-ii-yoi"
+        ],
+        "explanationFr": "いい signifie bon ou bien dans un prédicat adjectival courant. よい a le même sens de base et peut paraître plus soutenu ; 良い se lit notamment よい ou いい selon l'usage. Les transformations utilisent la base よ : よくない, よかった, よくなかった, puis éventuellement です pour la politesse. Devant un verbe, よく peut décrire une action bien effectuée ou sa fréquence : le contexte distingue bien et souvent. Une fréquence élevée ne signifie pas automatiquement que l'action est bonne.",
+        "frenchLearnerTrap": "Comparer よい本, un bon livre, et よく読む, lire souvent ou lire attentivement/bien selon le contexte ; ne pas déduire le sens de よく uniquement de l'adjectif いい.",
+        "examples": [
+          {
+            "ja": "これはよい本です。",
+            "reading": "これはよいほんです。",
+            "fr": "C'est un bon livre.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "私はこの図書館によく来ます。",
+            "reading": "わたしはこのとしょかんによくきます。",
+            "fr": "Je viens souvent dans cette bibliothèque.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-i-adjectives",
+          "expand-i-adjective-past",
+          "expand-i-adjective-negative-past",
+          "expand-adjective-verb-modifier",
+          "expand-irregular-kuru",
+          "expand-masu-stem-irregular"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%84%E3%81%84",
+            "title": "Bunpro grammar: いい",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "C'est un bon livre.",
+          "Je viens souvent dans cette bibliothèque."
+        ]
+      },
+      "recordSha256": "50d6142c2ddedb8339c054c4b870d179875f07691a40f3070bbd5c44f4daf3e3"
+    }
+  ]
+}

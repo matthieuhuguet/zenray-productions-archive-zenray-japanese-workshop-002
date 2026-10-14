@@ -1,0 +1,65 @@
+#!/usr/bin/env python3
+# 12 October 2026: verify actual compiled records, exact mappings and real retrieval paths.
+import argparse
+import hashlib
+import importlib.util
+import json
+import sqlite3
+from pathlib import Path
+
+module_path=Path(__file__).with_name('Corpus.py')
+spec=importlib.util.spec_from_file_location('corpus',module_path)
+corpus=importlib.util.module_from_spec(spec); spec.loader.exec_module(corpus)
+parser=argparse.ArgumentParser(); parser.add_argument('--settings',default=str(corpus.WORKSHOP/'settings.json')); args=parser.parse_args()
+settings=corpus.read_json(args.settings); root=Path(settings['memoryRoot'])
+conn=sqlite3.connect(root/'Corpus/japanese.sqlite')
+counts=dict(conn.execute('SELECT domain,count(*) FROM records GROUP BY domain'))
+mappings=corpus.read_json(root/'Corpus/mapping.json')
+assert len(mappings)==sum(counts.values()), 'Mapping has omitted records'
+lines={f:(root/f).read_text().splitlines() for f in {record['file'] for record in mappings}}
+for record in mappings:
+    assert record['line']>0 and record['end']>=record['line']
+    assert record['id'] in lines[record['file']][record['line']-1], f"Wrong bound: {record['id']}"
+    if record.get('contentSha256'):
+        content='\n'.join(lines[record['file']][record['line']-1:record['end']]).strip()
+        assert hashlib.sha256(content.encode()).hexdigest()==record['contentSha256'], f"Wrong content hash: {record['id']}"
+source_counts=corpus.read_json(Path(settings['researchRoot'])/'datasets/counts.json')
+assert counts['dictionary']==source_counts[settings['datasets']['dictionary']]
+assert counts['kanji']==source_counts[settings['datasets']['kanji']]
+assert counts['sentence']==source_counts['directJapaneseFrenchPairs']
+catalogue=corpus.read_json(root/'Site/corpus/catalogue.json')
+assert catalogue['counts']==counts
+release=root/'Site/corpus/releases'/catalogue['release']
+assert sum(len(corpus.read_json(release/'records'/f'{i:03}.json')) for i in range(settings['recordShards']))==sum(counts.values())
+# 12 October 2026: every dictionary kanji, including non-BMP characters, must have a web lookup.
+search_cache={}
+for identifier,title in conn.execute('SELECT id,title FROM records WHERE domain="kanji"'):
+    key=corpus.normalized(title)
+    number=corpus.bucket(key[:2],settings['searchShards'])
+    if number not in search_cache:search_cache[number]=corpus.read_json(release/'search'/f'{number:03}.json')
+    assert identifier in search_cache[number].get(key,[]), f'Kanji omitted from web search: {identifier} {title}'
+for text,domain in [('日本語','dictionary'),('猫','kanji'),('なら','grammar')]:
+    hits=corpus.query(settings,text,limit=3,domain=domain)
+    assert hits, f'Real search failed: {text}'
+    shard=corpus.read_json(release/'search'/f"{corpus.bucket(corpus.normalized(text)[:2],settings['searchShards']):03}.json")
+    assert any(token.startswith(corpus.normalized(text)) for token in shard), f'Web search failed: {text}'
+    ids={r['id'] for r in corpus.read_json(release/'records'/f"{hits[0]['recordShard']:03}.json")}
+    assert hits[0]['id'] in ids
+nara=json.loads(conn.execute('SELECT payload FROM records WHERE id=?',('grammar-condition-nara',)).fetchone()[0])
+# 13 October 2026: real unapproved lessons must fail closed; structural checks never approve content.
+try:
+    lesson = corpus.cook_lesson(nara,settings)
+except ValueError as error:
+    assert 'adversarial validation' in str(error)
+else:
+    corpus.require_lesson_validation(nara)
+    assert 'テイクアウトで' in lesson and '一人です' in lesson, 'Reviewed personal retest absent'
+negative_gate = False
+try:
+    corpus.cook_lesson({'examples':[]},settings)
+except ValueError:
+    negative_gate = True
+assert negative_gate
+report={'counts':counts,'mappedRecords':len(mappings),'release':catalogue['release'],'realQueries':['日本語','猫','なら'],'lessonValidationGate':True,'negativeGate':True,'verifiedAt':settings.get('buildDate')}
+corpus.atomic_json(root/'Corpus/verification.json',report)
+print(json.dumps(report,ensure_ascii=False))

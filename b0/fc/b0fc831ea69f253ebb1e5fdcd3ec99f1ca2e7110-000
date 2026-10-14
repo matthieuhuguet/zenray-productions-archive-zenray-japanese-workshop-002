@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/expansion_review_first",
+  "humanReview": false,
+  "reviewType": "independent-adversarial-model-review",
+  "complete": true,
+  "supersedes": "Earlier first-review reports only for expand-capability-koto and expand-ta-tokoro-de",
+  "scope": "Two actual final corrected records and four examples; exact current raw hashes checked. Source details read from primary producer full text. No human/native certification or full-syllabus completeness claimed.",
+  "records": [
+    {
+      "id": "expand-capability-koto",
+      "reviewedContentHash": "ee70995a015254777d894d0b29def09c0b17df116cca6701eca73663649df7eb",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/072.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Actual amended explanation read against TUFS 072 section 5: the restriction is explicitly scoped to this productive V dictionary-form plus ことができる construction, with voluntary-action examples and exclusions for rainfall and わかる. It does not assert that nonvolitional predicates lack other possible grammatical expressions. Ability/circumstantial possibility distinction, Japanese sentences, kana and French translations rechecked; no open finding.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ta-tokoro-de",
+      "reviewedContentHash": "8dbf889f691cdcfc80fc57b589cb74b739a6899b2fcff65d645df2a6aa393eb5",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%A8%E3%81%93%E3%82%8D%E3%81%A7"
+      ],
+      "findings": [],
+      "reviewNotes": "Actual amended record directly depends on expand-plain-verb-past. The prerequisite exists and itself depends on grammar-te-form; the earlier verified graph path teaches 急ぐ→急いだ and する→した. Bunpro producer-authored explanation supports hypothetical concession with unfavorable nonpast results. Both original sentences, readings and French translations rechecked; no open finding.",
+      "exampleCount": 2
+    }
+  ]
+}

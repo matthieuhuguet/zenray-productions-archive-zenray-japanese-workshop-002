@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/foundation05_first",
+  "humanReview": false,
+  "complete": true,
+  "reviewType": "independent-adversarial-linguistic-review",
+  "records": [
+    {
+      "id": "expand-negative-addition-mo",
+      "reviewedContentHash": "b827725097602b060475c96ef715601078e8654adb87c622fc873a0a7a6bd9ed",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-discourse-sore",
+      "reviewedContentHash": "9264d3a66e3effa1a28baf1ffd136c3fa0aafcb76ba7981f22f7a3d6fed16c7d",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9D%E3%82%8C"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-discourse-soko",
+      "reviewedContentHash": "bacafc55a8bae5601ef1ac97b9b5fa980a4ff17f6756a6c3fd837ea8e0acaac8",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9D%E3%81%93"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-discourse-asoko",
+      "reviewedContentHash": "b5f9eb3c37ea7f74f1c98f1b3fcb50eee5dc9601a7c014b2f766b6328189856a",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%82%E3%81%9D%E3%81%93"
+      ],
+      "findings": [
+        "14 October 2026: Productive prerequisite gap. Both oral examples require the godan plain past 行った. The complete combined prerequisite closure contains grammar-te-form, which gives 行って, and grammar-relative-clause, which requires a neutral verb, but not expand-plain-verb-past, which explicitly teaches the て to た transformation and 行った. Add expand-plain-verb-past as a prerequisite. The Japanese, readings, translations and shared-reference explanation otherwise pass."
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-plain-question-ka",
+      "reviewedContentHash": "a7cce636ca1a635e8b830bfdbe0a9d4c19498848a73d93ff180acc7c0f382b38",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8B",
+        "https://www.tofugu.com/japanese-grammar/particle-ka/"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-new-subject-ga",
+      "reviewedContentHash": "90cc0a6811b34393141c4c77ad6b6daa4ec0f9f8e4eef681adbe7160f2aa2484",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C",
+        "https://www.tofugu.com/japanese-grammar/particle-ga/"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-final-yo-construction",
+      "reviewedContentHash": "c54a5583587072f7107b7c2eadbb0bd854c537316486e9b2e9e526bc204ecac6",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%88"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-traversed-place-o",
+      "reviewedContentHash": "5ea7171f61121e467ed5978cabf0ef73a90855b4903b45b6b877c83768daaefc",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%92"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-predicate-alternatives-ka",
+      "reviewedContentHash": "186c04f07cc8fd21a498e9a2f6e8e0d9392be25f565f5628c0d9c55d0a211330",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8B-or",
+        "https://www.tofugu.com/japanese-grammar/particle-ka/"
+      ],
+      "findings": [
+        "14 October 2026: Example 2 and its oral prompt do not establish a clear pedagogical alternative: この部屋が静かか便利か調べます / Je vérifie si cette chambre est calme ou pratique. Quietness and convenience are independent qualities, and the isolated prompt does not explain why these are competing hypotheses. The morphology is possible, but the intended interpretation is too uncertain for an introductory oral-production exercise. Replace this example with contextualized alternatives or a clear contrast using adjective predicates, for example この部屋が安全か危険か調べます, with matching kana and French. Retain the correct omission of だ before embedded か. Example 1, explanation and register distinction otherwise pass."
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-interaction-to-ni",
+      "reviewedContentHash": "ce4febdf53f87a693517e9480aa61060ea806a44cfd921f927ef8974659349a3",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A8-with",
+        "https://www.tofugu.com/japanese-grammar/particle-de/"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-deshou-attachment",
+      "reviewedContentHash": "677bbd2164b9b49839fbd803c6cf418dad1c93e7d187c7ea8a13f94ed600eb25",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A7%E3%81%97%E3%82%87%E3%81%86"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-existence-neutral-negative",
+      "reviewedContentHash": "602c1f1b524a716349403162ae1adc8f3be3c67d9a373588e0d2d091c9572164",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C%E3%81%82%E3%82%8B"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-explanatory-statement-noda",
+      "reviewedContentHash": "38e25f6774a20712679bff96d0d33f45dd987f51112246385f23d23ffd8fb3f1",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/-%E3%82%93%E3%81%A7%E3%81%99-%E3%81%AE%E3%81%A7%E3%81%99"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-verb-nominalization-no",
+      "reviewedContentHash": "7bce1898fc4511d4f8ce75c5a6b41b65fa8f3646bcd31a004cb054148f53dcfb",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%AF"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-na-no-noun-attribution",
+      "reviewedContentHash": "061cd6c2853846af933cae41bca294cd08eba725fd50e8d70037e9018104493d",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA-adjective-noun",
+        "https://www.tofugu.com/japanese-grammar/na-adjective/"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-noun-object-suru",
+      "reviewedContentHash": "b385a0a440612e302761136970e3cee9617c6609fb9e969146a13d7cacf770ce",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%99%E3%82%8B"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-come-reference-result",
+      "reviewedContentHash": "228b919320b3856573834842f6997d9bb75bb228d59bd4fb58121f821da901db",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8F%E3%82%8B"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-like-na-attribution",
+      "reviewedContentHash": "d5ca0bc8585362608da3a222b30fd853426806de0f4a41d76b0df9556661a6e4",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%99%E3%81%8D"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-dislike-kirai-attribution",
+      "reviewedContentHash": "61503f8f93661dbe842c1f5338f428588477b6b33e28f1eb829f72af5dff555b",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8D%E3%82%89%E3%81%84"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-activity-liking-tense",
+      "reviewedContentHash": "31d075928f2a9c9786b3d75bd8b3a2af174f0e1ec73650720ee26ea837b706ec",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%8C%E3%81%99%E3%81%8D"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-attributive-existence-gaaru",
+      "reviewedContentHash": "12a7d85e006f9176909916d52c6ee00a5ce71f682a3b379474e8bee90e98ca76",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C%E3%81%82%E3%82%8B-noun"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-group-participants-de",
+      "reviewedContentHash": "aa4241c55ddb395148c5241441d3e8324467af1e92329a01388bf89446ea8a4b",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A7-by",
+        "https://www.tofugu.com/japanese-grammar/particle-de/"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-dake-attachment",
+      "reviewedContentHash": "0dfdcf28fbac5822921d6c4ff5c86f4f04ef7467453cf29b6fdeb696e9fc09de",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A0%E3%81%91"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-choice-dore-binary",
+      "reviewedContentHash": "5f11bc31e97581d8f0d6d01a5781a202f8a03d897be53e002a53df9ba808d6f9",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A9%E3%82%8C",
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/014.html"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-choice-dono-freechoice",
+      "reviewedContentHash": "6db79b17155dea18e50f7fb782d952c9814a8f93a356c2ce1a439d835c0d1ad5",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A9%E3%81%AE",
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/014.html"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-tai-object-and-scope",
+      "reviewedContentHash": "b81c4fccdb118d6fad744e1c3193f1af2278f5332e963f19c36d71670a06b203",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%84"
+      ],
+      "findings": [
+        "14 October 2026: Productive prerequisite gap. Example 2 requires forming the ichidan stem 出 from 出る before たい, then 出たくありませんでした. The combined prerequisite closure includes the godan stem builder but not expand-masu-stem-ichidan. The general verb-group card mentions removing る before several endings without explicitly identifying the ます stem, and grammar-desire presupposes that stem. Add expand-masu-stem-ichidan as a prerequisite so this oral target is productively covered. The Japanese, reading, French translation, adjective transformations and subject-of-desire qualification otherwise pass."
+      ],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-good-ii-yoi",
+      "reviewedContentHash": "50d6142c2ddedb8339c054c4b870d179875f07691a40f3070bbd5c44f4daf3e3",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%84%E3%81%84"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "checkedAt": "14 October 2026",
+  "release": "aba956b0fb5ab395",
+  "reviewedRequirements": 132,
+  "covered": 70,
+  "open": 62,
+  "unreviewed": 0,
+  "reusedCovered": 43,
+  "newlyCovered": 27,
+  "changedBindingsReviewedTwice": 56,
+  "changedBindingCandidateCards": 77,
+  "gateTestsPassed": 20,
+  "completeAudit": true,
+  "completeCoverage": false,
+  "learnerHistoryWritten": false,
+  "corpusCardsChangedThisTurn": 0
+}

@@ -1,0 +1,991 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/expansion_review_first",
+  "humanReview": false,
+  "reviewType": "independent-adversarial-model-review",
+  "complete": true,
+  "scope": "70 frozen records, 140 Japanese/kana/French examples, explanations, traps, source alignment and lesson prerequisite suitability. Primary TUFS and producer-authored Bunpro About sections read from captured full texts; community discussions not used as evidence.",
+  "records": [
+    {
+      "id": "expand-nominal-question",
+      "reviewedContentHash": "d9b49a2facbf6afdc1d2154213f51060411885a6ff6e76aeda4425336a301afe",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/003.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Nominal questions and both direct addressee readings are sound. Source treatment of はい/いいえ supports the deliberately limited warning. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-copula-past",
+      "reviewedContentHash": "421199510479fbbc9fdc2d36433b0ab2648e77f5cf05bcb8997bb71847b4c185",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/004.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Past copula and negative past agree with TUFS. Yesterday/repose translations and kana are accurate. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-location-existence",
+      "reviewedContentHash": "e4e058ab3b1de75b63c534c649ff0d2663126c20fa626cbe13e3578abdf78edb",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/006.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-location-existence-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-existence. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Locative existence and action-location contrast are sound; animated dog uses いる, desk uses ある correctly. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-spatial-nouns",
+      "reviewedContentHash": "689277606d16c740aef92bb401b27d7219fca58a12bb5899589ad8ce9641c02f",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/007.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-spatial-nouns-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): expand-noun-no, expand-location-existence. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Spatial nominal structure and both locative sentences are correct. 鍵かぎ and 中なか readings checked. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-noun-no",
+      "reviewedContentHash": "a86eaf47c3a6cf7e0bca760cac4bcc9026026c233ee906b5d48fabaf33505769",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/008.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-noun-no-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-polite-nonpast. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Head-final noun linkage is sound. 日本語の本 allows a Japanese-language/textbook interpretation; the French textbook reading is acceptable. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-i-adjective-noun",
+      "reviewedContentHash": "f9adbbdf40e724f72b37bd3bfb5d880405aec12034e64614edf72d631fcfa195",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/009.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-i-adjective-noun-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-i-adjectives, expand-polite-verb-past. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Attributive i adjective syntax is correct; 新しい and 小さい correctly precede nouns without な. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-na-adjective-noun",
+      "reviewedContentHash": "9dcf08fcfc8bbb0beceb1200cee77017b9e968df9ba06cec6e749e4902e16fe7",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/010.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Na adjective modification and きれい classification agree with TUFS; ね confirmation translation is faithful. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-demonstrative-things",
+      "reviewedContentHash": "039b7bb84d6ea39282d879ba1ad6bc82948ce4a06fb102ec78baa5ccabff38db",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/011.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Situational ko/so/a distinction is appropriately limited; both copular demonstrative examples are correct. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-demonstrative-places",
+      "reviewedContentHash": "81d9209b4071fbc194770a902189ffaf9235381ee0001bc332ffcbcbbda82b31",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/012.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-demonstrative-places-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-polite-nonpast, grammar-case-particles. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Place demonstratives are correct; waiting-action で differs from existence に as stated. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-demonstrative-noun",
+      "reviewedContentHash": "37fe1521479b1140a4f43ef8a628efc0a4e3c475b5103f9ffa728762408a5153",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/013.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-demonstrative-noun-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): expand-noun-no, grammar-i-adjectives. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Noun-determining demonstratives and possessive ellipsis in 誰の are sound; 高い means expensive in the book example. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-interrogative-demonstratives",
+      "reviewedContentHash": "3935c318661f98acb2f397dcd6503aa0b09b396ed5ca09aaa85349ec013bdf3d",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/014.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-interrogative-demonstratives-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-polite-nonpast. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Interrogative forms match their nominal/place roles; future reading of 読みます is acceptable. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-clock-hours",
+      "reviewedContentHash": "2604b9a1d3992a665a5a3c502c54dfbb84c654290cb32bc966c8ac82c90ee972",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/018.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-clock-hours-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-polite-nonpast. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Four/seven/nine clock-hour readings checked; 四時よじ and 九時くじ accurate. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-clock-minutes",
+      "reviewedContentHash": "2eb8ed52ec7b7f53a08527538076d65e52a365d1cce21bb3f7f558ad0d923ec8",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/019.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-clock-minutes-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): expand-clock-hours, grammar-polite-nonpast. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "五分ごふん and 六時半ろくじはん checked; frequency contrast with duration is appropriately limited. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-relative-days",
+      "reviewedContentHash": "80d39a316a06bc9a2e675234dad7d21284a901a9dda314c1efb964b4b01f8c75",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/020.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-relative-days-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): expand-polite-verb-past, grammar-polite-nonpast. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Deictic day words and lexical readings checked. Both future Kyoto movement and past film viewing are sound. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-recurring-time",
+      "reviewedContentHash": "66f4ef8cfe425acf8d53209701fd4b937c724da66b4c3ecf2e545cc8771f1d57",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/021.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-recurring-time-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-polite-nonpast. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Frequency and habitual polite verbs are correctly distinguished from full-day duration. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-calendar-date",
+      "reviewedContentHash": "6a48a6f27c02c9cea81f663b2ab683c3b422ed183d3b46d3bc3645306874cde1",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/022.html"
+      ],
+      "findings": [],
+      "reviewNotes": "四月しがつ, 一日ついたち and 六月二日ろくがつふつか checked against date readings; both dates accurate. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-polite-verb-question",
+      "reviewedContentHash": "a97763135b1b08f0a8a18a85e391645f5850ea6ce67efecbac8132acdf36cbf7",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/024.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-polite-verb-question-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-polite-nonpast. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Polite positive verb question and invitation contrast agree with TUFS; 来ますきます accurate. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-polite-verb-past",
+      "reviewedContentHash": "58331f56c0fb7332b8001b73462047cf2b1f0b364e55ccdd7c4e85bf90a143d7",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/025.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-polite-verb-past-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-polite-nonpast. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Polite past and negative-past construction correct; both meals/work translations accurate. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-destination-he",
+      "reviewedContentHash": "a1444e0d78d5852e5b8047b5f1f167496aeebbecb80b8be32c7377d4ee72e80e",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/026.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-destination-he-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-polite-nonpast. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "へ direction and pronunciation え correct; hiragana reading retains grammatical orthography へ appropriately. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-recipient-ni",
+      "reviewedContentHash": "aed37db37c02623c1d618913fa2b4754ed8e9547ea7621d884e76198d3404160",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/028.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-recipient-ni-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-polite-nonpast. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Recipient marker explanation is limited to outbound transfers; both writing and sending examples accurate. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-time-ni",
+      "reviewedContentHash": "4d0f60a016de8b72b2068b06724dfde228e8d7cbb9bf384e2e62ff6097a15498",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/029.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-time-ni-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-polite-nonpast. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Clock-time に correct, 七時しちじ accurate and 始まりますはじまります appropriate intransitive verb. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-i-adjective-past",
+      "reviewedContentHash": "d4eb1fdeb2005c20a95b0d4bace95610cfdfc24a37a20f3786b63a85034be9bc",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/032.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-i-adjective-past-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-i-adjectives. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "I adjective past and いい exception correct; 暑かった and よかった readings/translations accurate. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-degree-adverbs",
+      "reviewedContentHash": "f2d54e91ad7325a1904281aed7eabd30386ec761754b8aeed8e1e979d8643fb8",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/034.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-degree-adverbs-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-i-adjectives, expand-na-adjective-predicate. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Degree examples correct; negative 辛くない retains the not-very scope of あまり. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-na-adjective-predicate",
+      "reviewedContentHash": "83fe4e2c2a8c2cd0e153a95c5b8b996b462e02ff73a4a8112a6601b97badb761",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/036.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Na predicate and negative form correct; 静かです excludes な directly before です. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-noun-coordination-to",
+      "reviewedContentHash": "49e85f35808a2747e4bb7c10a9882c0eedef814b85ba9de29ac4e17cc751b8b8",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/047.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-noun-coordination-to-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-polite-nonpast, grammar-existence. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Determined nominal conjunction with と correct; second example combines two existing objects. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-noun-coordination-ya",
+      "reviewedContentHash": "2d3e03b9b93e12aaab5aad52fbcdf6c128085d43ec02ae49629a78ac2a27948e",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/048.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-noun-coordination-ya-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): expand-polite-verb-past. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Open-ended や list correctly translated with notamment; 京都/奈良 readings accurate. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-predicate-coordination",
+      "reviewedContentHash": "b2e58d8ca38250e525d21b79ef4f80c6df85518c0daecc057d89bc1864059668",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/049.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-predicate-coordination-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-i-adjectives, expand-na-adjective-predicate. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "くて and で predicate connection correct; mixed i/na coordination and きれい as clean are natural. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-action-list-tari",
+      "reviewedContentHash": "c3629d07bf6d75546c2627a8f0378c15da365be89a92ca189b8f4bf06596ecf3",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/050.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-action-list-tari-past-formation",
+          "field": "prerequisites",
+          "detail": "Both examples require productive Vた formation (読む→読んだ, する→した). Verb groups and relative-clause prerequisites do not themselves teach that formation systematically. Add a reviewed plain-past formation prerequisite or explicit reviewed formation instructions; do not require advanced relative clauses merely to learn a beginner activity list.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Two illustrative activity lists are natural, kana accurate, and final する bears tense as explained. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-action-sequence-te",
+      "reviewedContentHash": "6c2bcaa3a74cabd95c467884319b8859f985d8b0adcb583f500f2ee55c5c6f18",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/051.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-action-sequence-te-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-te-form. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Te-form action connection and non-universal sequencing warning agree with TUFS; both examples natural. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-noun-request",
+      "reviewedContentHash": "2afdcf7e594f9710896576265503876dd40b85e89c1bd2e45ad8048393a93fb3",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/054.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Service-context requests are natural; menu long vowels and お願いします kana correct. Context sensitivity stated. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-verb-request",
+      "reviewedContentHash": "b3233847c8f06a0879bc5540b63b77b57c6b6d8a8b0e9f63cbefd1ae570ea38b",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/056.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-verb-request-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-te-form. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Te-form requests and social caution correct; 書いて and 待って correctly formed. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-polite-request-question",
+      "reviewedContentHash": "24f1cf45b775018a0b5ac08827067f07e012b70c8a5e820e2e0eda159e00f516",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/057.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-polite-request-question-provenance",
+          "field": "examples[].origin",
+          "detail": "Both sentences match the cited TUFS page examples verbatim: もう一度説明してくださいませんか。 and 窓を開けてくださいませんか。 Independent composition is possible, but the metadata gives no distinguishable original example. Replace with independently authored distinct examples or accurately record publisher example provenance and permitted reuse. This is a provenance issue, not a Japanese grammar error.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Polite negative-question requests are grammatical and translations accurate; provenance finding concerns source-identical sentences. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-noun-permission",
+      "reviewedContentHash": "7839349181e62585f843cb3bf9aa683e447f24b488c4cdddb2689ef87cbf415b",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/061.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Nominal acceptable alternatives and contextual dependency correct; 明日でもいいですか accurately asks acceptance. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-invitation-masenka",
+      "reviewedContentHash": "91854ef330fc63fa290e63e3e4f5b15109c75f7e4c208b21a24ffc652da4a5a4",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/062.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-invitation-masenka-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-polite-nonpast. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Negative-question invitations are natural, with joint lunch and future walk context. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-suggestion-mashou",
+      "reviewedContentHash": "bd611a2848e781f403282834a37c8707f75f8153623a7e5a847586bce989d91a",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/063.html"
+      ],
+      "findings": [
+        {
+          "id": "expand-suggestion-mashou-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-polite-nonpast. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Mashou proposal and contrast with masenka correct; both shared-action translations accurate. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-want-object",
+      "reviewedContentHash": "fe5b1b56504e20cd337d0c7056422d47e5396c55d95bc20771ea288e2ca3bb75",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/069.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Wanting a thing versus action and perspective caveat correct; dictionary desire and direct question natural. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-likes-noun",
+      "reviewedContentHash": "942a0ac50483b08834cded28d9e2eed8d5a730f1735e0e78a1db60d269a4eba8",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/070.html"
+      ],
+      "findings": [],
+      "reviewNotes": "好き as na adjective correct; aversion warning appropriate. Both cat and spicy-food questions natural. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-capability-koto",
+      "reviewedContentHash": "73e70bd54eaf2b59d069198a2a78e9d25621c51ed583c685a762b6d3da55f433",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/072.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Dictionary-form action nominal plus capability correct; photos example permits situational possibility, without asserting a blanket permission ban. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-probability-deshou",
+      "reviewedContentHash": "d3380a63d6f87c864d261cdeb1d0f37009f337251224f35086b99c58713322a2",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/075.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Prediction versus confirmation distinction correct; rain and congestion predictions grammatical and readings accurate. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-quotation-omou",
+      "reviewedContentHash": "212ce25ea0a9f5f1dd02755dc9786492f92b9d49f835bb0842a7a54333983ec7",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/077.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Thought quotation and affirmative nominal/na だ connection correct. Both predictions translated with personal judgment. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-uchi-ni",
+      "reviewedContentHash": "e267a1fe4442da1e619d866b02bea5fb59a204c967107259da565a86a746648f",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%86%E3%81%A1%E3%81%AB"
+      ],
+      "findings": [],
+      "reviewNotes": "State-window reading of うちに is correct, 明るい and 温かい examples natural; alternative development use is not overgeneralized. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-koto-ni-suru",
+      "reviewedContentHash": "384a29ce54c27e8cea2137ed51a28b06de48c1404d40bbc8c3d98437ff2ac974",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%93%E3%81%A8%E3%81%AB%E3%81%99%E3%82%8B"
+      ],
+      "findings": [],
+      "reviewNotes": "Deliberate decision versus arrangement correctly distinguished; affirmative walking and negative buying examples accurate. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-koto-ni-naru",
+      "reviewedContentHash": "b51c9eed81007ef3457caffa317c2faeca9f61d5087e0601c9628fca64e752e8",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%93%E3%81%A8%E3%81%AB%E3%81%AA%E3%82%8B"
+      ],
+      "findings": [],
+      "reviewNotes": "Arrangement/result perspective correctly avoids claiming total lack of speaker agency; both future decision examples natural. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-okage-de",
+      "reviewedContentHash": "7adf5264940ed45377844bd2eaf184da1a0f1c5d26a4674f51765884946c116e",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8A%E3%81%8B%E3%81%92%E3%81%A7"
+      ],
+      "findings": [
+        {
+          "id": "expand-okage-de-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-benefactive. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Beneficial cause and sarcasm scope correct; friend benefactive help translation faithful. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-sei-de",
+      "reviewedContentHash": "7cb648bf2f8b3bcf5e17db5fcb494a4cc4973f085f1f9179246d6f8a013d040c",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9B%E3%81%84%E3%81%A7"
+      ],
+      "findings": [],
+      "reviewNotes": "Adverse-cause attribution and speaker-stance qualification correct; match cancellation and concentration examples natural. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ni-kurabete",
+      "reviewedContentHash": "35c75f9e420b655eb2d69e1cd5396c5d87369f0a053b240c002f6f06c088e618",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E6%AF%94%E3%81%B9%E3%81%A6"
+      ],
+      "findings": [],
+      "reviewNotes": "Comparison reference orientation correct; 去年きょねん and 東京とうきょう checked. French comparison is acceptable. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-sae",
+      "reviewedContentHash": "716f741b8e3d0afff2ac12d5da2991e957122d163d5cc988b4cdc22fb8e9fa98",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%95%E3%81%88"
+      ],
+      "findings": [
+        {
+          "id": "expand-sae-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-potential. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Scalar even/minimum under negation correctly explained; potential eating and remembering-state examples natural. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-gachi",
+      "reviewedContentHash": "acf0e2cf0262a4192bb62d733cafcb149eb6cb50f9e018579a6b3af5b26e2486",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C%E3%81%A1"
+      ],
+      "findings": [
+        {
+          "id": "expand-gachi-prerequisites",
+          "field": "prerequisites",
+          "detail": "The frozen prerequisite closure does not cover constructions actively used in the exercises. Add these prerequisite records (or an equivalent verified dependency path): grammar-condition-to. Current generic dependencies are insufficient for teaching these sentences as closed-answer drills.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Recurrent generally adverse tendency with masu stem correct; conditional breakfast omission and retreat examples natural. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-gimi",
+      "reviewedContentHash": "b3764942dda79970197ead335c47ae3aab61e96227d91e25b390abb95c475403",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8E%E3%81%BF"
+      ],
+      "findings": [],
+      "reviewNotes": "Slight perceived adverse state versus recurring tendency correct; 疲れ気味つかれぎみ and 寝不足ねぶそく readings accurate. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ppoi",
+      "reviewedContentHash": "b32e1e7b4aeca4d44ef3f07b8ae68a38acea14031a185053b5f41da2f5ffec36",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A3%E3%81%BD%E3%81%84"
+      ],
+      "findings": [],
+      "reviewNotes": "Lexically constrained resemblance/tendency explanation avoids productive overgeneralization; clothing and forgetfulness examples natural. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ni-suginai",
+      "reviewedContentHash": "704e569784c908f5d31b8b77d94b44cbf2ca5d8a9046eeb3899e313cdb51a4ae",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E3%81%99%E3%81%8E%E3%81%AA%E3%81%84"
+      ],
+      "findings": [],
+      "reviewNotes": "Restrictive evaluation correct; nominal 一例 and past verb proposition correctly attach to にすぎません. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-mono-dakara",
+      "reviewedContentHash": "90b73ca8b59f79e397116a2fc948039daf13e2ebf179f6b08e53c82492fb736a",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82%E3%81%AE%E3%81%A0%E3%81%8B%E3%82%89"
+      ],
+      "findings": [],
+      "reviewNotes": "Justifying cause and na/noun な linkage correct; 初めてなものだから acceptable and road congestion translation accurate. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ue-ni",
+      "reviewedContentHash": "31afff5770da4a47a4ff390cf8e8071e4501be0b21bcbdb72c22f0030a8f9c46",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E4%B8%8A%E3%81%AB"
+      ],
+      "findings": [],
+      "reviewNotes": "Additive same-orientation facts and na adjective な linkage correct; two favorable characteristics in both examples. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ni-tsurete",
+      "reviewedContentHash": "7b9fa5529c76032bbcd93871dd16118a6a2c99f3ef7cbc3c6606e326ce9c7f8c",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E3%81%A4%E3%82%8C%E3%81%A6"
+      ],
+      "findings": [],
+      "reviewNotes": "Concurrent changing states correct; dictionary-form 近づく and 重ねる precede marker, results are not intentional commands. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ni-tomonatte",
+      "reviewedContentHash": "15a9d8403624c6f757e51c4415069eb0122ad021a3691eb01fb08869cfcf0f16",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E4%BC%B4%E3%81%A3%E3%81%A6-%E3%81%AB%E4%BC%B4%E3%81%84"
+      ],
+      "findings": [],
+      "reviewNotes": "Companion changes and causation caveat correct; population and policy-change examples grammatical and kana accurate. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ippou-de",
+      "reviewedContentHash": "8bc2233230f2e4bb9a1e87d5c36ac08701077e9d93dd7883304222cec042e127",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E4%B8%80%E6%96%B9%E3%81%A7"
+      ],
+      "findings": [],
+      "reviewNotes": "Two-sided comparison correctly distinguishes 一方だ; na adjective linking and progressive verb contrasts correct. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ippou-da",
+      "reviewedContentHash": "08e9fce7bd73cd5f2bab07dc72fc5fe692ab404931978a690ff432fe96516dd0",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E4%B8%80%E6%96%B9%E3%81%A0"
+      ],
+      "findings": [],
+      "reviewNotes": "Directional continuing change correctly constrained; rising prices and decreasing population examples natural. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-hanmen",
+      "reviewedContentHash": "2abad88e880f7b5144ae35af3414e20b1d68a27343eba7cb2cf4133c2d5d2fae",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E5%8F%8D%E9%9D%A2"
+      ],
+      "findings": [],
+      "reviewNotes": "Contrasting properties of same subject correctly illustrated; na adjective な connection visible in both examples. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ni-oujite",
+      "reviewedContentHash": "e41fb4546b42c344784d9b2d16753871b6ee8d9b72411a59d33882135d5e78dd",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E5%BF%9C%E3%81%98%E3%81%A6"
+      ],
+      "findings": [],
+      "reviewNotes": "Criterion-sensitive adaptation correct; budget and experience serve clear decision/distribution criteria. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-wo-chuushin-ni",
+      "reviewedContentHash": "1475c2740a57fd0bb0f2117e9b11003400f1589b4dca940512386fb4e9f1b2cf",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%92%E4%B8%AD%E5%BF%83%E3%81%AB"
+      ],
+      "findings": [],
+      "reviewNotes": "Central place/topic interpretation correct; location and discussion topic examples faithful. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ta-tokoro-de",
+      "reviewedContentHash": "347388267fe839bd716abd6196dee867c6a7e024ebe7d9141c24904f7d24323e",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%A8%E3%81%93%E3%82%8D%E3%81%A7"
+      ],
+      "findings": [],
+      "reviewNotes": "Concessive hypothetical たところで and unfavorable result correct; both results nonpast, explanation request not falsely actual past. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-tohaie",
+      "reviewedContentHash": "c2c510595bae6ff7917969a637fb844cf0f27c7e85f7092de9512069fa465b53",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A8%E3%81%AF%E3%81%84%E3%81%88"
+      ],
+      "findings": [],
+      "reviewNotes": "Acknowledged-fact limitation correct; nominal/na bare 便利とはいえ is natural and spring past marker accurate. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-deare",
+      "reviewedContentHash": "e194c7a974137f00362667a8459c1efa4f64d0f5e5bade23fa3d8cbdd605fa43",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A7%E3%81%82%E3%82%8C"
+      ],
+      "findings": [],
+      "reviewNotes": "Formal concessive/indefinite であれ appropriate; 誰であれ and beginner inclusion examples grammatical. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-nakushite",
+      "reviewedContentHash": "d5e5f2f0f238afe3436b96d6737c1e7ea1518de632d2e874178c47ccc1465b2e",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%97%E3%81%A6-%E3%81%AF"
+      ],
+      "findings": [],
+      "reviewNotes": "Formal indispensable condition with negative result correct; both examples express inability without essential factor. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-wo-kawakiri-ni",
+      "reviewedContentHash": "ad73bacfdab77d88f63362515ab5d52d68df62f53e49daaf82af37844c473904",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%92%E7%9A%AE%E5%88%87%E3%82%8A%E3%81%AB"
+      ],
+      "findings": [],
+      "reviewNotes": "Initial event launching a related series correctly constrained; tour and three works examples natural. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ni-sokushite",
+      "reviewedContentHash": "8ad76da32e517bb0a84493b759ca96d1fe71015cc989eceaa639916ecb9eed6f",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E5%8D%B3%E3%81%97%E3%81%A6"
+      ],
+      "findings": [],
+      "reviewNotes": "Conformity to reality/circumstances correct; 即してそくして reading checked, both collocations conventional. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ni-terashite",
+      "reviewedContentHash": "c2e57c4bc97770637820751c780595847ef80098d0e438f5c48876382b5a4d6b",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E7%85%A7%E3%82%89%E3%81%97%E3%81%A6%E3%83%BB%E3%81%AB%E7%85%A7%E3%82%89%E3%81%99%E3%81%A8"
+      ],
+      "findings": [],
+      "reviewNotes": "Judgment with comparator/source reference correct; 規則 and 過去経験 examples faithful. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-wo-hete",
+      "reviewedContentHash": "6915723854af6abb8b4f3e7640e2efc068a528f58b996b636f6b10abc6f53ea9",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%92%E7%B5%8C%E3%81%A6"
+      ],
+      "findings": [],
+      "reviewNotes": "Intermediate process or geographic passage correctly represented; 経てへて and 合意ごうい checked. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-majiki",
+      "reviewedContentHash": "89481a30dfee9e2e893e698dd50a6a03de67f0991c0949bb810e10eb52a31933",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%98%E3%81%8D"
+      ],
+      "findings": [],
+      "reviewNotes": "Limited role-unbecoming expression correctly avoids broad classical conjugation claims; both role judgments natural. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-zu-jimai",
+      "reviewedContentHash": "cfabd39e75d8d7f65269c69a081a515d26acfd6077ef485656f6765c429359dc",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9A%E3%81%98%E3%81%BE%E3%81%84"
+      ],
+      "findings": [],
+      "reviewNotes": "Unrealized intended action and する exception correct; 読まず and 会わず correctly formed with regret-compatible contexts. Review is limited to the card and two examples; no full-syllabus, human or native-speaker certification.",
+      "exampleCount": 2
+    }
+  ]
+}

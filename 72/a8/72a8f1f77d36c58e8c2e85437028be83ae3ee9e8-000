@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/foundation02_second",
+  "humanReview": false,
+  "reviewType": "independent-adversarial-model-review",
+  "complete": true,
+  "scope": "Only the 30 exact frozen packet records and their 60 examples; not native-speaker certification or a claim of exhaustive Japanese coverage.",
+  "method": "Each exact explanation, trap, Japanese example, kana, French translation, oral prompt, restrictions and source/provenance fields examined independently. Cached Bunpro __NEXT_DATA__ props.pageProps.reviewable and included.writeups inspected; authored studyQuestions checked for copied-example matches. Community/forum replies excluded. No first reviewer report read. Prerequisite closure examined across the three existing language record files.",
+  "hashVerification": {
+    "algorithm": "SHA256 of UTF-8 JSON with sorted keys and compact separators",
+    "matchingRecords": 30
+  },
+  "prerequisiteGraph": {
+    "closureRecordCount": 55,
+    "missingIds": [],
+    "cycles": [],
+    "learnerReadiness": "Graph coverage is reviewed, not a claim that any learner has mastered prerequisites."
+  },
+  "summary": {
+    "examinedRecords": 30,
+    "examinedExamples": 60,
+    "approvedRecords": 30,
+    "blockedRecords": 0,
+    "openFindings": 0,
+    "sourceRepairsPerformed": 0
+  },
+  "records": [
+    {
+      "id": "expand-copula-plain",
+      "reviewedContentHash": "aa5178b3d72f1f2daee948cd7455853e47cb1abffdc64f500d6504c44a18fa87",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A0"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored structure supports noun/na-adjective base + da and excludes i-adjectives. Both nominal predicates are natural; kyou/yasumi/machi/shizuka readings and French meanings match. Politeness is qualified accurately; adjective prerequisite supplies the second example.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-addition-mo",
+      "reviewedContentHash": "3e0af32ccaaf14d0a5f7559bcd294ba9390fd49315189c250ce7bdb990446654",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored writeup supports the shared-property additive reading. Watashi mo and Kyoto mo each have a valid implicit comparator; the trap explicitly requires that context. Both readings and French meanings match; suki construction is supplied by the dependency.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ichidan-negative",
+      "reviewedContentHash": "17b5351e53bb5789fb324008170cb065caf97a34092709877abc977d04a5503a",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%8Bverb-%E3%81%AA%E3%81%84"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored structure confirms removal of final ru for ichidan and nai/masen polarity. Taberu and miru belong to ichidan; Sono bangumi wa is a natural contrasted object. Both kana and translations match, and the kaeru warning prevents false grouping.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-godan-negative",
+      "reviewedContentHash": "26ffd702045b7c60335ecdb314bade3cb4927855a11851f76a4afe5f63630bca",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%86verb--%E3%81%AA%E3%81%84"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored structure and writeup confirm a-row changes, u to wa, and aru to nai. Kawanai and hatarakanai are correct; de wa marks contrasted workplace naturally. Both kana and French match. Existing verb-group and particle prerequisites cover these examples.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-irregular-suru",
+      "reviewedContentHash": "457b041afc94196e2a0761d855405653eca2012b000a1bd95e0163398cfb968e",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%99%E3%82%8B",
+        "https://www.tofugu.com/japanese-grammar/suru/"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored Bunpro page supports irregular suru and activity nouns; supplemental authored Tofugu conjugation table and teiru examples corroborate shinai/shita/shite. Undou shimasu and souji shinai are idiomatic; all readings and French match. Listed forms are introduced as a limited inventory, not a productive regular rule.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-irregular-kuru",
+      "reviewedContentHash": "d4fa7887263e3dc1cfebed8d53a1f1dc1243e1d7ffb6fcbd9f6562ab2ad0540d",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8F%E3%82%8B"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored writeup explicitly contrasts kita/kuru/konai, and includes kiteiru. The polite kimasu structure agrees with the record. Both subjects and temporal adverbs are natural; ashita/kimasu and sensei/konai readings match. Reference-point phrasing appropriately avoids treating come as unrestricted go.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-plain-negative-past",
+      "reviewedContentHash": "39d35fca4eb093f9041b5c49b2d19b06856e0dac4c8581ab4825481d175e41c9",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%8B-verb-neg-past"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored ichidan negative-past structure supports both actual ichidan examples. The general transformation of correctly formed nai to nakatta is sound and does not teach direct conversion of a dictionary ending. Mina katta and dena katta forms, full kana, and French past negatives match.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-accompaniment-to",
+      "reviewedContentHash": "b38a42cecc83f5c58a6591cd202f4dc0989a87b22ae3cec66d347e36e1a92832",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A8-with"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored writeup supports mutual participant to and contrasts destination ni. Tomodachi to Kyoto ni iku and imouto to issho ni ryouri suru are natural accompaniment examples. Full kana and French meanings match; group and case prerequisites support the examples.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-instrument-de",
+      "reviewedContentHash": "77978100e8531f13dd38b922c3d2405bdcf404ff36a80f916a2874b7166354b5",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A7-by"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored de-by writeup supports means/instrument; both train travel and language of writing instantiate this usage. Destination ni is correctly retained with school. Densha/gakkou/nihongo/tegami/kakimasu readings and French translations match; activity-location contrast is accurate.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-starting-kara",
+      "reviewedContentHash": "260e5d12c3b8f2f3ac2f8496723629340ac287de70eb2f4a281a76502743577d",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8B%E3%82%89"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored starting-point structure supports both time and place origins; distinction from causal kara is correct. Kuji and Osaka kara kimashita are read correctly. French Je viens d'Osaka is an idiomatic rendering of arrival/origin in this context; past and clock prerequisites supply the embedded forms.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-endpoint-made",
+      "reviewedContentHash": "5b546b3dad50ba3ea00c92a00b83a14c88f82d426117ae1e595042749efad8e3",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/noun-%E3%81%BE%E3%81%A7"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored noun-made writeup supports time limit and spatial endpoint. Goji and eki made arukimasu have correct readings and French meanings. The made versus made ni distinction correctly separates duration through a limit from completion deadline; clock prerequisite is present.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-before-mae-ni",
+      "reviewedContentHash": "499b90ba171aeb5f19765f03e757dfd1c1c8f7fdaddb651f86797c7bafc86c89",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%88%E3%81%AB"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored structure requires nonpast verb before mae ni and noun + no before mae ni. Neru and shokuji no illustrate exactly those patterns. Full kana and translations match, including hand washing; dictionary form in a globally past narrative is correctly stated.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-after-te-kara",
+      "reviewedContentHash": "e235ef84033ff0964f86a5ecf00080e0162fd17f21fd10ed5e34f33c8a340c0a",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A6%E3%81%8B%E3%82%89"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored writeup emphasizes temporal order after the first action and distinguishes causal kara. Shite and aratte are correct te forms; final shimasu/tabemashita carry the time. Both examples, readings and French match; te-form and polite-past prerequisites are available.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-purpose-ni-iku",
+      "reviewedContentHash": "89485ccd26ebff1c2276b3bbc2710f5a7d0d3fde847f18b382aaf701d325fc9f",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/verb-%E3%81%AB%E3%81%84%E3%81%8F"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored ni-iku structure requires the verb stem and also illustrates ni-kita. Ai ni iku and tabe ni ikimasen ka are correct purpose constructions; the destination of au is marked by ni correctly. Both kana and French match; the invitation prerequisite supplies the second ending.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-already-mou",
+      "reviewedContentHash": "b9d3a1420ac8d7b06c97be6c5dcf240196b6980ec8ea2b120793db709bdd444d",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82%E3%81%86"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored writeup and past-positive structure support completed already and contrast negative anymore. Both past polite examples express accomplished actions naturally. Kippu and hirugohan readings and French meanings match. Scope is deliberately limited to completed action; polite-past dependency is available.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-still-mada",
+      "reviewedContentHash": "9abe31c306752df438b4c5550be429cf9366f8203becf6066178fa697f3f42be",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%A0"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored mada writeup supports continuing state and explicitly distinguishes teinai. Futte imasu is ongoing rain; aite imasu is the resulting open state. Both readings and French meanings match. The separate progressive and result-state dependencies account for the different aspectual readings.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-not-yet-teinai",
+      "reviewedContentHash": "8da19d26c6e7027d611db5d4ec89a52c51f8d22b99fded89113e4a515eff0ebd",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%A0-%E3%81%A6%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored structure explicitly combines mada with teinai/teimasen for an action not yet done. Both homework and film examples naturally permit the expected-completion interpretation. Full kana and French negatives match. Aspect qualification avoids equating the form with a universal habitual negative.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-too-sugiru",
+      "reviewedContentHash": "eadd08d043547437cde489498ea149049aa737a5af240b3d6f4f5814d6b39438",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%99%E3%81%8E%E3%82%8B"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored writeup confirms verb masustem and adjective stems plus sugiru, including yosu giru exception. Tabesugimashita and takasugimasu correctly model verb and i-adjective excess. Kana and French match; the singular Japanese footwear noun permits French plural chaussures. Existing i-adjective and past prerequisites suffice for the actual examples.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-change-naru",
+      "reviewedContentHash": "636aef2d2a9d6494e3598fb911c6e774237467823df9b7c3cb27fc4bc17ce100",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E3%81%AA%E3%82%8B-%E3%81%8F%E3%81%AA%E3%82%8B"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored structure covers noun/na-adjective ni naru and i-adjective ku naru, with yoku naru exception. Haru ni narimashita and atatakaku narimashita are natural changes. Readings match; French arrival of spring and becoming warmer convey the contextual change. Actual examples require only noun and i-adjective branches.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-choice-ni-suru",
+      "reviewedContentHash": "b16548af70786ce3448a7c77ce0f24d1009607c2ccac298aea75d3bb1fdd43f3",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E3%81%99%E3%82%8B"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored ni-suru writeup supports direct choice of the noun before ni. Both food/drink choices are natural; ocha and soba readings and French translations match. Explanation restricts itself to selection, avoiding overgeneralization to all faire uses or koto ni suru. Polite-nonpast closure supplies shimasu.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-comparison-yori",
+      "reviewedContentHash": "1a1e29b73e4d7137e3690aec8e6604ae2c85fdec7c8ac63e177cee8519830c81",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%88%E3%82%8A-%E3%81%AE%E3%81%BB%E3%81%86%E3%81%8C"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored noun comparison structure supports A yori B no hou ga and states that A has the lower extent. Both speed and preference examples identify the comparator correctly. Basu/densha/hayai and natsu/haru/suki readings match the French; i-adjective and suki prerequisites cover both predicates.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-superlative-ichiban",
+      "reviewedContentHash": "650749fa30a23f4a6a80dc15d4f1b4a4babc78ea0ea3d89a82d14ab017d2c3e3",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%AA%E3%81%8B%E3%81%A7-%E3%81%8C%E3%81%84%E3%81%A1%E3%81%B0%E3%82%93"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored group-superlative structure supports no naka de + member ga ichiban + property. Mitsu/three things, dore, yasui and ichiban readings are correct; the French least expensive accurately renders most cheap. The seasonal preference is natural. Counter, interrogative and preference prerequisites are all linked.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-something-nanika",
+      "reviewedContentHash": "e200c79306ad3792336894df09cd321b569f692918f9ad409bb667fb1a267611",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%AB%E3%81%8B-%E3%81%AA%E3%81%AB%E3%82%82"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored nanika/nanimo structure supports indefinite something and negative nothing. Nanika tabemasen ka is a valid invitation; nanimo kaimasen negates buying any object. Full readings and French match. Record restricts nanimo interpretation to its negative examples, avoiding an absolute claim.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-someone-dareka",
+      "reviewedContentHash": "3b49ca5c358e9a70096278d3f52e6ecae7b7a1abea73f8d3eb65a7abff7b2f2f",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E8%AA%B0%E3%81%8B-%E3%81%A9%E3%81%93%E3%81%8B-%E8%AA%B0%E3%82%82-%E3%81%A9%E3%81%93%E3%82%82"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored dareka/daremo writeup supports indefinite person and no one with negation, and explicitly allows positive daremo outside this scope. Both location-existence examples are natural; genkan/heya/dareka/daremo kana and French match. Existence and location dependencies cover the constructions.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-offer-mashouka",
+      "reviewedContentHash": "4b7b5167a1953f84bdb3f70ed3f9141898a481ef153d458486a066d7bf189bc6",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%E3%81%8B",
+        "https://www.irodori.jpf.go.jp/assets/data/pre-intermediate/pdf/ZZ_L03.pdf"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored Bunpro page supports stem + mashouka as a suggestion; supplemental Japan Foundation Irodori L03 page 10 and moving-help dialogue explicitly use it for offering the speaker's assistance. Mochimashouka and shimemashouka naturally offer baggage carrying/window closing; kana and French are accurate. Suggestion and object-particle prerequisites are present.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-skill-jouzu",
+      "reviewedContentHash": "2ccc3bbf9db5daa325333b3bd40a0f97a89019269e8095c1887c9ba4073fb4c6",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%8C%E3%81%98%E3%82%87%E3%81%86%E3%81%9A"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored writeup requires dictionary verb + no ga jouzu and cautions about self-praise. Both examples describe others, with kaku and ryouri suru correctly nominalized. Ane/e/kaku/jouzu kana and French match. Nominalization and na-adjective prerequisites support the examples.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-skill-heta",
+      "reviewedContentHash": "afd44a597446984a89d5130320139ba81cd111c1d20fb94c381666a73f591cf5",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE%E3%81%8C%E3%81%B8%E3%81%9F"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored writeup supports dictionary verb + no ga heta and the reading heta. Both self-directed statements are natural; michi o oboeru describes remembering routes. Kana and French meanings match. Social caution is reasonable and does not falsely prohibit grammatical use; prerequisite closure includes nominalization.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-obligation-contraction",
+      "reviewedContentHash": "8b36bdd3264f7e4f8ba2f29038288053a1b145bbfebbb257864bb1c47d51a890",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A1%E3%82%83-%E3%81%AA%E3%81%8D%E3%82%83"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored writeup explicitly identifies contractions of nakute wa and nakereba, allowing omitted ikenai/naranai/dame. Kaeran akya and souji shinakucha are correctly formed conversational obligations. Full readings and French match. Full obligation, godan negative and suru dependencies are present; the scope does not classify arbitrary negative clauses as obligations.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-or-ka",
+      "reviewedContentHash": "7f48188dcdfd469913256f3e31f3918c1ea76f852f65e5a190343d1dd8f58634",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8B-or"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored noun options structure supports ka with alternatives, including variants after each option. Both tea/coffee request and Saturday/Sunday plan are natural disjunctions. Kana and French meanings match. Trap separates positional learner uses without denying the common underlying question-marker origin; request/time prerequisites support examples.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-why-doushite",
+      "reviewedContentHash": "fb06eb3339f2ee5d15d437c16e4fd835ac9bdf9c2e897ad354dbd302ac677870",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A9%E3%81%86%E3%81%97%E3%81%A6"
+      ],
+      "findings": [],
+      "reviewNotes": "Authored writeup explains doushite as a reason/process question and contrasts other why words. Both actual examples clearly ask reasons and are natural polite questions. Full kana and French match. Progressive and copula prerequisites supply both predicates; optional broader manner sense is accurate and not used as the taught target.",
+      "exampleCount": 2
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+// 14 October 2026, 12:05 CEST: isolated production browser, real authenticated APIs, no lesson or grade submitted.
+import { chromium } from '/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayProgress/node_modules/playwright/index.mjs'
+import { readFile, writeFile } from 'node:fs/promises'
+import assert from 'node:assert/strict'
+const root='/Users/zenray/.claude/tmp/tmp-zenray-japanese'
+const source=await readFile('/Users/zenray/.claude/Memory1/AGENTS.md','utf8')
+const secret=source.match(/Mot de passe maître du drive ZenRayProgress\s*=\s*`([^`]+)`/)?.[1]
+assert(secret)
+const browser=await chromium.launch({headless:true,executablePath:'/Users/zenray/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell'})
+const page=await browser.newPage({viewport:{width:1440,height:1100}})
+page.setDefaultTimeout(60000)
+await page.addInitScript(value=>{localStorage.setItem('zr:apiSecret',value);localStorage.setItem('zr:view','japanese');localStorage.removeItem('zr:tabs')},secret)
+const errors=[]
+page.on('pageerror',error=>errors.push(error.message))
+try {
+ await page.goto('https://zenray-progress.pages.dev/',{waitUntil:'domcontentloaded'})
+ await page.getByRole('heading',{name:'Ton parcours japonais'}).waitFor()
+ await page.getByRole('button',{name:'Interroger le corpus'}).waitFor()
+ assert.equal(await page.locator('.jps-grid .jps-card').count(),34)
+ await page.screenshot({path:root+'/verification/StudyProductionBrowser.png',fullPage:true})
+ const report={date:'14 October 2026',production:'https://zenray-progress.pages.dev/',actualAuthenticatedBrowser:true,level:'N4',cards:34,
+  noLessonOrGradeSubmitted:true,pageErrors:errors,passed:errors.length===0}
+ await writeFile(root+'/verification/StudyLiveBrowserReport.json',JSON.stringify(report,null,2)+'\n')
+ assert(report.passed)
+ console.log(JSON.stringify(report))
+} finally { await browser.close() }

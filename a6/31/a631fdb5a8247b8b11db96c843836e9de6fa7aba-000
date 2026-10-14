@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/foundation03_first",
+  "humanReview": false,
+  "complete": true,
+  "reviewType": "independent-adversarial-linguistic-review",
+  "records": [
+    {
+      "id": "expand-ichidan-te-past",
+      "reviewedContentHash": "b0ac64145765db9e723d2a9829227cb2c3cae6dcd6069ef1db3203dbbfbd32b4",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/verb-%E3%81%A6"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-person-dare",
+      "reviewedContentHash": "be3cd473011918428199bcb68df2e4c1321f62289b6a78452f242474f34e4371",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A0%E3%82%8C"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-why-naze",
+      "reviewedContentHash": "127aa04c9cb180fba49319e5db08245bb3342e494029d9fde3dbefc50b977f8b",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%9C"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-subject-no-attributive",
+      "reviewedContentHash": "70c71f7e8a516e39d4c4f71194e2706cecf34ee3af6f8e5fde6940b29f7dc2ae",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AE-subject"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    }
+  ]
+}

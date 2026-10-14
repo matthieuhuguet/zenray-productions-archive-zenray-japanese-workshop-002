@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/foundation04_first",
+  "humanReview": false,
+  "complete": true,
+  "reviewType": "independent-adversarial-linguistic-review",
+  "records": [
+    {
+      "id": "expand-quantity-takusan",
+      "reviewedContentHash": "c0214b5fc9e57f58309b9bdf226068fa1bed8584a1da88ecd238af132e5f3ce8",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%8F%E3%81%95%E3%82%93"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-obligation-nakute-naranai",
+      "reviewedContentHash": "d999ee114c698c5ef66d3b42f8717571bc8f6e32ec2d5cfc4348245c647f8b99",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A6%E3%81%AF%E3%81%AA%E3%82%89%E3%81%AA%E3%81%84",
+        "https://bunpro.jp/grammar_points/describing-verbs"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-obligation-nakute-ikenai",
+      "reviewedContentHash": "8b9fb22a51199a1daaf75c643bb21fa195b64594dcbeb71f8f0d1e92fb2ebd93",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84",
+        "https://bunpro.jp/grammar_points/describing-verbs"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-adjective-te-clause",
+      "reviewedContentHash": "f879549803390b4761776c5b1c40ac49f86be1c2ac66237377036cad99ca807f",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/adjective-%E3%81%A6-b",
+        "https://bunpro.jp/grammar_points/describing-verbs"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-adjective-verb-modifier",
+      "reviewedContentHash": "2f40cb840b1785a285f394d7d59e044a5ff377397be677e43ed8c89ae7d0c703",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/describing-verbs"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    }
+  ]
+}

@@ -1,0 +1,820 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/expansion_review_second",
+  "humanReview": false,
+  "complete": true,
+  "reviewType": "independent-adversarial-model-review",
+  "scope": "All 71 exact raw record hashes, 142 Japanese examples/readings/French translations, all declared prerequisites and publisher source evidence. First-review verdicts and reports were not read.",
+  "limitations": [
+    "This is a model review, not native-speaker or human certification.",
+    "Approvals apply to these exact cards and their explicitly scoped constructions, not exhaustive N5-to-beyond-N1 coverage or learner mastery.",
+    "Source evidence uses TUFS and Bunpro publisher explanations and examples; community/forum contributions are excluded.",
+    "Simple stock sentences may naturally coincide with existing or publisher phrases; no global originality or exclusive-authorship certification is claimed."
+  ],
+  "checks": {
+    "packetHashesVerified": 71,
+    "examplesChecked": 142,
+    "missingPrerequisiteIds": 0,
+    "dependencyCycles": 0,
+    "approved": 69,
+    "blocked": 2
+  },
+  "records": [
+    {
+      "id": "expand-nominal-question",
+      "reviewedContentHash": "d9b49a2facbf6afdc1d2154213f51060411885a6ff6e76aeda4425336a301afe",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/003.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Nominal yes/no questions and the two interrogative examples agree with TUFS; readings and French are correct.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-copula-past",
+      "reviewedContentHash": "421199510479fbbc9fdc2d36433b0ab2648e77f5cf05bcb8997bb71847b4c185",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/004.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Affirmative and negative polite nominal past are contrasted correctly; both examples use 休み.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-location-existence",
+      "reviewedContentHash": "69f79530999906d9e07adc7a14492c3ce0ce91267d9f39ff70c32f3ffb34d404",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/006.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Existence locations use に and the correct animate/inanimate predicates; activity-location contrast is appropriately scoped.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-spatial-nouns",
+      "reviewedContentHash": "3bc6c21e14154a305eff5dbd652ad64ec1f4e7e9b4a02c4d662e38816e7cfc2c",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/007.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Both spatial noun groups use の and existence に; 上 and 中 readings are correct.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-noun-no",
+      "reviewedContentHash": "f3fdb84366b431e3f69c178f968c881c5bdfc0227e11d53abea94eb1e117d69d",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/008.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Head-final noun determination and possession/topic examples are sound; 日本語の本 translation is possible in the given pedagogical context.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-i-adjective-noun",
+      "reviewedContentHash": "9044d7539920ed2df6b9033e83c968fcbce888022d659ab9355c25630a16410b",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/009.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Attributive i-adjective examples and polite-past prerequisites are coherent; 新しい/小さい readings are correct.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-na-adjective-noun",
+      "reviewedContentHash": "9dcf08fcfc8bbb0beceb1200cee77017b9e968df9ba06cec6e749e4902e16fe7",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/010.html"
+      ],
+      "findings": [],
+      "reviewNotes": "な modification and きれい class exception are correct; flower/plural interpretation is context-dependent but French singular is possible.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-demonstrative-things",
+      "reviewedContentHash": "039b7bb84d6ea39282d879ba1ad6bc82948ce4a06fb102ec78baa5ccabff38db",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/011.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Deictic things are restricted to visible situations; no incorrect universal story-reference rule is given.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-demonstrative-places",
+      "reviewedContentHash": "3ef4d9321746268df7105ce582667928bc58022960d3f017d5466c69f5f539fe",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/012.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Deictic places and に/で contrast are correct; wait and station examples translate correctly.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-demonstrative-noun",
+      "reviewedContentHash": "0e996c44e2f5960bf1050ca126bf3f08ab45f3717f24d54662a5849698a41a93",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/013.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Deictic determiners require nouns; omitted nominal head in 誰の is supported by the declared の prerequisite.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-interrogative-demonstratives",
+      "reviewedContentHash": "e21cf55553f4944eeeebcbf8961aa6053254a1d55f5e03e53b35aa775e394513",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/014.html"
+      ],
+      "findings": [],
+      "reviewNotes": "どこ and どの construction are correct; が remark is qualified and does not assert a universal requirement.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-clock-hours",
+      "reviewedContentHash": "c87139a9db88edcbfbb8101f69ad03aa21a12ca4a1e8b137ba61b06f11cde476",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/018.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Clock readings よじ/しちじ/くじ and the two examples agree with TUFS.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-clock-minutes",
+      "reviewedContentHash": "4decbd3ce9eb6e0cb45304e0909c16eb743cc97056f6f4555daa28a8128232d2",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/019.html"
+      ],
+      "findings": [],
+      "reviewNotes": "五分/十分/半 readings are correct and explicitly nonuniform; both clock examples are valid.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-relative-days",
+      "reviewedContentHash": "a6239f9d28b12245cac1ab87745f264b3eb6923b05c9d177fd166cd8185306e7",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/020.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Relative-day reference and usual omission of に are appropriately qualified; examples use consistent past/nonpast.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-recurring-time",
+      "reviewedContentHash": "eed8039a1ea3f48c1af3a39dbcdbfb7b3550a35b446619798d0f75603ea08fc1",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/021.html"
+      ],
+      "findings": [],
+      "reviewNotes": "毎日/毎週 express recurrence rather than full duration; readings and translations are correct.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-calendar-date",
+      "reviewedContentHash": "6a48a6f27c02c9cea81f663b2ab683c3b422ed183d3b46d3bc3645306874cde1",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/022.html"
+      ],
+      "findings": [],
+      "reviewNotes": "四月一日/六月二日 use correct date readings and distinguish ついたち from duration いちにち.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-polite-verb-question",
+      "reviewedContentHash": "65a077c39223a42bcdda28ba1429f762dd51042d611e6b96cb0a5636df4fed3d",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/024.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Nonpast polite action questions and distinction from invitations are correct; future reading of 来ます is contextually supported.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-polite-verb-past",
+      "reviewedContentHash": "d688bc4411b98e6a6057a1e701d5f1b39d4bc75344bd3f76f72bfea9e5c6dc58",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/025.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Polite-past affirmative/negative morphology and both examples are correct.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-destination-he",
+      "reviewedContentHash": "bce4d57e5a710d8270403d7a1d08d33be6e5f3958511b900d0229440d2da1c38",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/026.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Directional へ written in kana reading retains conventional orthography while explanation explicitly gives pronunciation え; movement examples are correct.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-recipient-ni",
+      "reviewedContentHash": "b9d01c819791232f0852de59f2ffac655ca29f38c6558aa1f0b0c7bca7705ae1",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/028.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Recipient に with informational transfer matches source; both letter/email examples use recipient rather than received object.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-time-ni",
+      "reviewedContentHash": "db91a7a63978d06260a0fbede851bb49092114798ca1803fb80f7bf67d8cc0d9",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/029.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Clock に and distinction from duration are correct; 七時/八時 and 起きる/始まる readings are correct.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-i-adjective-past",
+      "reviewedContentHash": "22c8529278c8d507ef4a5d474b391bb9fea1a411cd21838f68dd5a7785930a82",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/032.html"
+      ],
+      "findings": [],
+      "reviewNotes": "i-adjective past includes いい→よかった exception; both examples and past prerequisites are coherent.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-degree-adverbs",
+      "reviewedContentHash": "74a8f4971952378d13bb097762b61b465acf8dc1a250cc8abe971115045ab64e",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/034.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Degree and negative あまり are explicitly scoped; examples use correct adjective negation and な-adjective predicate.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-na-adjective-predicate",
+      "reviewedContentHash": "83fe4e2c2a8c2cd0e153a95c5b8b996b462e02ff73a4a8112a6601b97badb761",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/036.html"
+      ],
+      "findings": [],
+      "reviewNotes": "な-adjective predicate affirmative and negative are correct; no な is erroneously placed before です.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-noun-coordination-to",
+      "reviewedContentHash": "851fbe32d06d43da6149b6c2d02f152a6e6e689c265db5a353526d9bb573f53f",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/047.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Noun coordination と and noncoordination of independent verbs are correctly distinguished.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-noun-coordination-ya",
+      "reviewedContentHash": "34af4d8e21f6a25d3e3fa7ff1141d680d3eb3eb67f035f43abf5c4d50ca920ee",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/048.html"
+      ],
+      "findings": [],
+      "reviewNotes": "や leaves the list open and both French translations preserve that nonexhaustiveness.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-predicate-coordination",
+      "reviewedContentHash": "79f50761e5ea1c93657cdbfc8d85ac616f64f734edf94cc746a93fec80355082",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/049.html"
+      ],
+      "findings": [],
+      "reviewNotes": "くて and で link positive same-reference properties correctly; cause is treated as context-dependent.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-action-list-tari",
+      "reviewedContentHash": "07d6ade471eb6ef72ef96790081a09db2e74aca83db466d38634bc05b9c7ed0e",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/050.html"
+      ],
+      "findings": [],
+      "reviewNotes": "たり lists representative activities without asserting sequential order; both forms and final tense are correct and plain-past dependency is explicit.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-action-sequence-te",
+      "reviewedContentHash": "45af19aabfc93ed6fcf28fcedeba36debda7619375c18dd7355c82431fe80b32",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/051.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Te action linkage does not universally imply succession; the two narrative examples have correct inflection and time.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-noun-request",
+      "reviewedContentHash": "2afdcf7e594f9710896576265503876dd40b85e89c1bd2e45ad8048393a93fb3",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/054.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Noun requests and お願いします alternative are correctly scoped to service/exchange, without universal politeness claim.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-verb-request",
+      "reviewedContentHash": "f1d63c9092411d6bf8ad108730f511c08becfe824cdbff89d763ac29bf3d7e68",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/056.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Te requests and social limitations are appropriately qualified; both kana readings and translations are correct.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-polite-request-question",
+      "reviewedContentHash": "5357e740a5395fbd66018cc75191c5ba246ce4ec3bd01679828c5ef870e1b829",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/057.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Negative interrogative request is not prohibition; both examples correctly request an action.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-noun-permission",
+      "reviewedContentHash": "7839349181e62585f843cb3bf9aa683e447f24b488c4cdddb2689ef87cbf415b",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/061.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Nominal option acceptance is context-sensitive and distinguished from an indefinite suggestion; both translations are possible.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-invitation-masenka",
+      "reviewedContentHash": "ba74d6ebf8da4719dc3cc8325f66a5b42a09284b22f7bdc277029b1f27922d51",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/062.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Shared invitations in ませんか are correctly separated from literal negative questions.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-suggestion-mashou",
+      "reviewedContentHash": "bb9c1fd16ceaade0f6617d810f58b04c8673069b5e75a2e9b39ccbff77f1c9a4",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/063.html"
+      ],
+      "findings": [],
+      "reviewNotes": "ましょう expresses shared proposals in these examples; comparison with invitation force matches TUFS.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-want-object",
+      "reviewedContentHash": "fe5b1b56504e20cd337d0c7056422d47e5396c55d95bc20771ea288e2ca3bb75",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/069.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Object desire vs action desire and third-person restrictions are correctly qualified; direct question assumes an appropriate interlocutor.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-likes-noun",
+      "reviewedContentHash": "942a0ac50483b08834cded28d9e2eed8d5a730f1735e0e78a1db60d269a4eba8",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/070.html"
+      ],
+      "findings": [],
+      "reviewNotes": "好き is correctly treated as な-adjective rather than transitive conjugating verb; the aversion politeness note is appropriately qualified.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-capability-koto",
+      "reviewedContentHash": "73e70bd54eaf2b59d069198a2a78e9d25621c51ed583c685a762b6d3da55f433",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/072.html"
+      ],
+      "findings": [
+        {
+          "id": "capability-volitional-restriction",
+          "field": "explanationFr",
+          "detail": "The productive rule currently presents an unrestricted dictionary verb + ことができる. TUFS module 072 section 5 explicitly restricts this pattern to volitional verbs and rejects e.g. 雨が降ることができません. Add this restriction (actions the agent can intentionally carry out in this taught construction) and a counterexample or trap so learners cannot apply the rule to 降る/咲く/わかる. Current two examples themselves are correct.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Both current examples are grammatically correct and accurately read/translated, but productive-rule restriction is missing.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-probability-deshou",
+      "reviewedContentHash": "d3380a63d6f87c864d261cdeb1d0f37009f337251224f35086b99c58713322a2",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/075.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Predictions and confirmation use are separated; both examples and readings agree with TUFS.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-quotation-omou",
+      "reviewedContentHash": "212ce25ea0a9f5f1dd02755dc9786492f92b9d49f835bb0842a7a54333983ec7",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/077.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Quotation 思う has correct だ after な-adjective and dictionary verb before と; translations preserve subjective thought.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-plain-verb-past",
+      "reviewedContentHash": "930b7fbdc08345f3b00a14812c067e3d6c1ded4c39a6826cf7b363510952bf40",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/038.html"
+      ],
+      "findings": [],
+      "reviewNotes": "Plain past formation from te/de, 行く exception, する/来る and hypothetical uses are accurately described; examples are valid.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-uchi-ni",
+      "reviewedContentHash": "e267a1fe4442da1e619d866b02bea5fb59a204c967107259da565a86a746648f",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%86%E3%81%A1%E3%81%AB"
+      ],
+      "findings": [],
+      "reviewNotes": "うちに period-before-change usage and adjective/noun connections are correct; both examples preserve the still-current window.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-koto-ni-suru",
+      "reviewedContentHash": "384a29ce54c27e8cea2137ed51a28b06de48c1404d40bbc8c3d98437ff2ac974",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%93%E3%81%A8%E3%81%AB%E3%81%99%E3%82%8B"
+      ],
+      "findings": [],
+      "reviewNotes": "ことにする decision and contrast with result/arrangement are correct; negative decision example negates action rather than decision.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-koto-ni-naru",
+      "reviewedContentHash": "b51c9eed81007ef3457caffa317c2faeca9f61d5087e0601c9628fca64e752e8",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%93%E3%81%A8%E3%81%AB%E3%81%AA%E3%82%8B"
+      ],
+      "findings": [],
+      "reviewNotes": "ことになる is not falsely equated with total lack of personal participation; arrangement translations are correct.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-okage-de",
+      "reviewedContentHash": "0869e96ecd74da64a6fa8a1f6a1063e920b439b9f4e62f2ba92a041b937dc5f9",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8A%E3%81%8B%E3%81%92%E3%81%A7"
+      ],
+      "findings": [],
+      "reviewNotes": "おかげで positive gratitude and possible irony are distinguished; benefactive prerequisite supports 手伝ってくれた.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-sei-de",
+      "reviewedContentHash": "7cb648bf2f8b3bcf5e17db5fcb494a4cc4973f085f1f9179246d6f8a013d040c",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9B%E3%81%84%E3%81%A7"
+      ],
+      "findings": [],
+      "reviewNotes": "せいで is an attributed unfavorable cause rather than objective proof; examples and readings are correct.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ni-kurabete",
+      "reviewedContentHash": "35c75f9e420b655eb2d69e1cd5396c5d87369f0a053b240c002f6f06c088e618",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E6%AF%94%E3%81%B9%E3%81%A6"
+      ],
+      "findings": [],
+      "reviewNotes": "Comparison reference is the noun before に; both comparison examples are semantically coherent.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-sae",
+      "reviewedContentHash": "0286f1c457fdeaa030b07596f9202a0298a4d4ed2615ff54361920e6b8d5dbcf",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%95%E3%81%88"
+      ],
+      "findings": [],
+      "reviewNotes": "さえ emphasis and negative minimum are correctly scoped away from its conditional construction; potential form is a prerequisite.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-gachi",
+      "reviewedContentHash": "356ceefb78f3002a2b71485948f77a08b548debbd70901771c05d5c94b2144df",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8C%E3%81%A1"
+      ],
+      "findings": [],
+      "reviewNotes": "がち recurrent tendency is qualified as often undesirable, not universally; と prerequisite supports the first example.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-gimi",
+      "reviewedContentHash": "b3764942dda79970197ead335c47ae3aab61e96227d91e25b390abb95c475403",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8E%E3%81%BF"
+      ],
+      "findings": [],
+      "reviewNotes": "気味 slight perceived state is distinguished from recurrence; 疲れ気味/寝不足気味 have correct readings and translations.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ppoi",
+      "reviewedContentHash": "b32e1e7b4aeca4d44ef3f07b8ae68a38acea14031a185053b5f41da2f5ffec36",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A3%E3%81%BD%E3%81%84"
+      ],
+      "findings": [],
+      "reviewNotes": "っぽい is explicitly lexical rather than universally productive; Childish/forgetful examples and adjectival inflection are correct.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ni-suginai",
+      "reviewedContentHash": "704e569784c908f5d31b8b77d94b44cbf2ca5d8a9046eeb3899e313cdb51a4ae",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E3%81%99%E3%81%8E%E3%81%AA%E3%81%84"
+      ],
+      "findings": [],
+      "reviewNotes": "にすぎない limiting force and negation are correct; 一例 and 述べた examples have accurate readings and translations.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-mono-dakara",
+      "reviewedContentHash": "90b73ca8b59f79e397116a2fc948039daf13e2ebf179f6b08e53c82492fb736a",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%82%E3%81%AE%E3%81%A0%E3%81%8B%E3%82%89"
+      ],
+      "findings": [],
+      "reviewNotes": "ものだから subjective explanation and noun/な attachment are correct; 初めてなものだから is valid nominal attachment.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ue-ni",
+      "reviewedContentHash": "31afff5770da4a47a4ff390cf8e8071e4501be0b21bcbdb72c22f0030a8f9c46",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E4%B8%8A%E3%81%AB"
+      ],
+      "findings": [],
+      "reviewNotes": "上に additions have matching positive orientation, correct attributive な and both readings/translations.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ni-tsurete",
+      "reviewedContentHash": "7b9fa5529c76032bbcd93871dd16118a6a2c99f3ef7cbc3c6606e326ce9c7f8c",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E3%81%A4%E3%82%8C%E3%81%A6"
+      ],
+      "findings": [],
+      "reviewNotes": "につれて accompanying changes are coherent; examples do not introduce a contrary voluntary command.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ni-tomonatte",
+      "reviewedContentHash": "15a9d8403624c6f757e51c4415069eb0122ad021a3691eb01fb08869cfcf0f16",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E4%BC%B4%E3%81%A3%E3%81%A6-%E3%81%AB%E4%BC%B4%E3%81%84"
+      ],
+      "findings": [],
+      "reviewNotes": "に伴って permits both nominal change and dictionary verb; publisher source supports accompanying rather than necessarily direct causation.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ippou-de",
+      "reviewedContentHash": "8bc2233230f2e4bb9a1e87d5c36ac08701077e9d93dd7883304222cec042e127",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E4%B8%80%E6%96%B9%E3%81%A7"
+      ],
+      "findings": [],
+      "reviewNotes": "一方で contrasted aspects are correctly distinguished from 一方だ; both examples have correct な/ている connections.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ippou-da",
+      "reviewedContentHash": "08e9fce7bd73cd5f2bab07dc72fc5fe692ab404931978a690ff432fe96516dd0",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E4%B8%80%E6%96%B9%E3%81%A0"
+      ],
+      "findings": [],
+      "reviewNotes": "一方だ restricted to change verbs; 上がる/減る express such change and the French preserves continuation.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-hanmen",
+      "reviewedContentHash": "2abad88e880f7b5144ae35af3414e20b1d68a27343eba7cb2cf4133c2d5d2fae",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E5%8F%8D%E9%9D%A2"
+      ],
+      "findings": [],
+      "reviewNotes": "反面 contrasting sides of the same thing are correctly represented in both examples.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ni-oujite",
+      "reviewedContentHash": "e41fb4546b42c344784d9b2d16753871b6ee8d9b72411a59d33882135d5e78dd",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E5%BF%9C%E3%81%98%E3%81%A6"
+      ],
+      "findings": [],
+      "reviewNotes": "に応じて adaptive response to budget/experience is correct; no unsupported physical simultaneity rule.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-wo-chuushin-ni",
+      "reviewedContentHash": "1475c2740a57fd0bb0f2117e9b11003400f1589b4dca940512386fb4e9f1b2cf",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%92%E4%B8%AD%E5%BF%83%E3%81%AB"
+      ],
+      "findings": [],
+      "reviewNotes": "を中心に abstract/physical focus without exclusion is correct; both examples and readings translate coherently.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ta-tokoro-de",
+      "reviewedContentHash": "347388267fe839bd716abd6196dee867c6a7e024ebe7d9141c24904f7d24323e",
+      "verdict": "blocked",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%A8%E3%81%93%E3%82%8D%E3%81%A7"
+      ],
+      "findings": [
+        {
+          "id": "plain-past-morphology-prerequisite",
+          "field": "prerequisites",
+          "detail": "The taught rule is Vた + ところで and both exercises require forming 急いだ/説明した. The current dependency closure includes verb groups/relative clause/progressive/te, but no card explicitly teaching Vた formation. grammar-relative-clause merely uses 買った; it does not explain past formation. Add expand-plain-verb-past to prerequisites (or another genuinely taught Vた formation card). This preserves one new point per lesson rather than requiring an unintroduced morphology rule.",
+          "status": "open"
+        }
+      ],
+      "reviewNotes": "Concession with futility and hypothetical future た are correct in the examples, but the morphology prerequisite is absent.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-tohaie",
+      "reviewedContentHash": "c2c510595bae6ff7917969a637fb844cf0f27c7e85f7092de9512069fa465b53",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A8%E3%81%AF%E3%81%84%E3%81%88"
+      ],
+      "findings": [],
+      "reviewNotes": "とはいえ admits fact while limiting implication; bare な-adjective attachment 便利とはいえ is publisher-supported.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-deare",
+      "reviewedContentHash": "e194c7a974137f00362667a8459c1efa4f64d0f5e5bade23fa3d8cbdd605fa43",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%A7%E3%81%82%E3%82%8C"
+      ],
+      "findings": [],
+      "reviewNotes": "であれ formal concessive noun and wh-word uses are correct; both examples fit acknowledged status without affecting outcome.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-nakushite",
+      "reviewedContentHash": "d5e5f2f0f238afe3436b96d6737c1e7ea1518de632d2e874178c47ccc1465b2e",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%8F%E3%81%97%E3%81%A6-%E3%81%AF"
+      ],
+      "findings": [],
+      "reviewNotes": "なくしては indispensable condition with negative result is correct; cooperation and effort examples are semantically appropriate.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-wo-kawakiri-ni",
+      "reviewedContentHash": "ad73bacfdab77d88f63362515ab5d52d68df62f53e49daaf82af37844c473904",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%92%E7%9A%AE%E5%88%87%E3%82%8A%E3%81%AB"
+      ],
+      "findings": [],
+      "reviewNotes": "を皮切りに starting a series is expressed by both examples; it is not taught as any merely earlier event.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ni-sokushite",
+      "reviewedContentHash": "8ad76da32e517bb0a84493b759ca96d1fe71015cc989eceaa639916ecb9eed6f",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E5%8D%B3%E3%81%97%E3%81%A6"
+      ],
+      "findings": [],
+      "reviewNotes": "に即して conformity to actual circumstances is correctly illustrated; orthographic 則 contrast is not required by these two reality examples.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-ni-terashite",
+      "reviewedContentHash": "c2e57c4bc97770637820751c780595847ef80098d0e438f5c48876382b5a4d6b",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%AB%E7%85%A7%E3%82%89%E3%81%97%E3%81%A6%E3%83%BB%E3%81%AB%E7%85%A7%E3%82%89%E3%81%99%E3%81%A8"
+      ],
+      "findings": [],
+      "reviewNotes": "に照らして criterion-based judgment is correct; both readings and translations are sound.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-wo-hete",
+      "reviewedContentHash": "6915723854af6abb8b4f3e7640e2efc068a528f58b996b636f6b10abc6f53ea9",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%82%92%E7%B5%8C%E3%81%A6"
+      ],
+      "findings": [],
+      "reviewNotes": "を経て traversed process and route uses are correct; reading へて is correct and both outcomes are accurately translated.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-majiki",
+      "reviewedContentHash": "89481a30dfee9e2e893e698dd50a6a03de67f0991c0949bb810e10eb52a31933",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%BE%E3%81%98%E3%81%8D"
+      ],
+      "findings": [],
+      "reviewNotes": "まじき is limited to attested にあるまじき noun modification; unacceptable conduct and statement examples are correct.",
+      "exampleCount": 2
+    },
+    {
+      "id": "expand-zu-jimai",
+      "reviewedContentHash": "cfabd39e75d8d7f65269c69a081a515d26acfd6077ef485656f6765c429359dc",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9A%E3%81%98%E3%81%BE%E3%81%84"
+      ],
+      "findings": [],
+      "reviewNotes": "ずじまい unrealized intended action and する→せず exception are correct; examples express final nonrealization and accurate readings.",
+      "exampleCount": 2
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+# 14 October 2026, 20:32 CEST: freeze source-specific coverage candidates; absence of a candidate is not automatic absence of knowledge.
+import hashlib
+import json
+import re
+from pathlib import Path
+from urllib.parse import quote
+from urllib.request import urlopen
+
+ROOT = Path(__file__).resolve().parent.parent
+DATE = '14 October 2026'
+
+def digest(value):
+    return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+
+def prepare():
+    coverage = ROOT / 'research' / 'coverage'
+    candidates = json.loads((coverage / 'N5CandidateLinks.json').read_text())
+    source = json.loads(re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>',(coverage/'BunproIndex.html').read_text()).group(1))['props']['pageProps']['grammarPoints']
+    catalogue = json.loads(Path('/Users/zenray/.claude/Memory1/Japanese/Site/corpus/catalogue.json').read_text())
+    cards = {card['id']:card for card in catalogue['cards']}
+    selected = [point for point in source if point['level'] == 'JLPT5']
+    assert len(selected) == 132, 'Benchmark must not silently shrink'
+    assert set(candidates['links']).issubset({str(point['id']) for point in selected})
+    sources = coverage / 'foundation-sources'
+    rows = []
+    for point in selected:
+        url = 'https://bunpro.jp/grammar_points/' + quote(point['slug'])
+        cached = sources / (hashlib.sha256(url.encode()).hexdigest()[:16] + '.html')
+        if not cached.exists():
+            cached.write_bytes(urlopen(url, timeout=25).read())
+        raw = cached.read_text()
+        payload = json.loads(re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>',raw).group(1))['props']['pageProps']
+        assert not payload.get('error') and payload['reviewable']['slug'] == point['slug'], url
+        ids = candidates['links'].get(str(point['id']), [])
+        assert all(identifier in cards for identifier in ids), (point['id'],ids)
+        bound = {'id':'bunpro-'+str(point['id']),'level':'N5','label':point['title'],'sourceUrl':url,
+            'sourceSha256':hashlib.sha256(cached.read_bytes()).hexdigest(),
+            'candidateRecordIds':ids,'recordContentHashes':{identifier:cards[identifier]['lessonContentHash'] for identifier in ids},
+            'coverageCriterion':'The exact delivered local records, collectively, must explain the grammar meaning, productive construction and important usage restriction of this publisher point; a title match, vocabulary occurrence, unexplained example or shared source alone is insufficient.'}
+        rows.append({'requirement':bound,'requirementHash':digest(bound),'sourceCache':str(cached)})
+    result = {'schemaVersion':1,'checkedAt':DATE,'release':catalogue['release'],
+        'policy':'Candidate links need two independent source-specific semantic coverage reviews; they are not coverage approvals.',
+        'requirements':rows,'records':{identifier:cards[identifier] for row in rows for identifier in row['requirement']['candidateRecordIds']},
+        'stats':{'requirements':len(rows),'withCandidates':sum(bool(row['requirement']['candidateRecordIds']) for row in rows),'withoutCandidates':sum(not row['requirement']['candidateRecordIds'] for row in rows)}}
+    output = ROOT/'review/N5CoverageAuditPacket.json'
+    output.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+    print(json.dumps(result['stats']))
+
+if __name__ == '__main__': prepare()

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "14 October 2026",
+  "reviewerId": "/root/foundation05_first",
+  "humanReview": false,
+  "complete": true,
+  "reviewType": "independent-adversarial-linguistic-review",
+  "records": [
+    {
+      "id": "expand-discourse-asoko",
+      "reviewedContentHash": "c950b4c73d8fc90c52007ecfa8f32f9f72e9e258fab3aa72ae100f7ade723fa7",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%82%E3%81%9D%E3%81%93"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-predicate-alternatives-ka",
+      "reviewedContentHash": "fac2a26d33fc16f6943689ef357af4634f34b94dd9bf6b231827d354341094e7",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%8B-or",
+        "https://www.tofugu.com/japanese-grammar/particle-ka/"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    },
+    {
+      "id": "expand-tai-object-and-scope",
+      "reviewedContentHash": "5f2d8d660e800f737efb1821638c37d477bc0d59f292e2678634d9247368fe00",
+      "verdict": "approved",
+      "evidenceUrls": [
+        "https://bunpro.jp/grammar_points/%E3%81%9F%E3%81%84"
+      ],
+      "findings": [],
+      "examplesExamined": 2
+    }
+  ]
+}

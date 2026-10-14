@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+# 13 October 2026, 09:46 CEST: review ingestion must reject stale, conflicting and insufficient evidence.
+import importlib.util
+import unittest
+from pathlib import Path
+spec=importlib.util.spec_from_file_location('approvals',Path(__file__).with_name('PrepareApprovals.py'))
+module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+class ReviewGate(unittest.TestCase):
+    def setUp(self):
+        self.payload={'id':'synthetic','lessonContentVersion':'1','examples':[{'ja':'例','fr':'exemple'}]}
+        self.hash=module.raw_hash(self.payload)
+        self.row={'id':'synthetic','reviewedContentHash':self.hash,'verdict':'approved','evidenceUrls':['https://example.org/synthetic'],'findings':[]}
+    def votes(self, second=None):
+        reports=[{'reviewerId':'synthetic-a','records':[self.row]},{'reviewerId':'synthetic-b','records':[second or self.row]}]
+        return module.collect_votes(reports,{'synthetic':self.hash})['synthetic']
+    def test_two_current_reviews_pass(self):
+        approved=module.approval(self.payload,self.votes());self.assertEqual(approved['contentHash'],module.corpus.lesson_content_hash(self.payload))
+    # 14 October 2026, 13:45 CEST: reject the real malformed-report shape that hid a completed second review.
+    def test_malformed_report_is_not_silently_ignored(self):
+        with self.assertRaisesRegex(ValueError, 'records array'):
+            module.collect_votes([{'reviewerId':'synthetic-b','entries':[self.row]}], {'synthetic':self.hash})
+    def test_stale_review_cannot_approve(self):
+        votes=self.votes({**self.row,'reviewedContentHash':'stale'});self.assertIsNone(module.approval(self.payload,votes))
+    def test_opposing_review_blocks(self):
+        self.assertIsNone(module.approval(self.payload,self.votes({**self.row,'verdict':'blocked'})))
+    def test_open_finding_blocks_even_approved_label(self):
+        self.assertIsNone(module.approval(self.payload,self.votes({**self.row,'findings':[{'status':'open'}]})))
+    def test_same_reviewer_does_not_count_twice(self):
+        self.assertIsNone(module.approval(self.payload,{'synthetic-a':self.row}))
+    def test_absent_evidence_blocks(self):
+        self.assertIsNone(module.approval(self.payload,self.votes({**self.row,'evidenceUrls':[]})))
+if __name__=='__main__':unittest.main()

@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "date": "14 October 2026",
+  "policy": "Review exact complete record fields, original Japanese, kana, French translation, source alignment and learner exercise suitability. HTTP availability is not approval.",
+  "records": [
+    {
+      "record": {
+        "id": "expand-ichidan-te-past",
+        "title": "Verbes ichidan : former て puis le passé en た",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "Verbes ichidan",
+          "ichidan-te-past"
+        ],
+        "explanationFr": "Pour un verbe ichidan, retirer る et ajouter て : 閉める→閉めて, 起きる→起きて. Pour former le passé neutre, remplacer ce て par た : 閉めた, 起きた. La forme て peut relier une action à la suivante ; le temps global se marque alors normalement sur le prédicat final. Pour les godan, utiliser leur propre table de formation, sans simplement retirer る.",
+        "frenchLearnerTrap": "帰る est godan : 帰って puis 帰った ; il ne suit pas la transformation ichidan malgré sa finale る.",
+        "examples": [
+          {
+            "ja": "窓を閉めて、寝ました。",
+            "reading": "まどをしめて、ねました。",
+            "fr": "J'ai fermé la fenêtre, puis je me suis couché.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "今朝は六時に起きた。",
+            "reading": "けさはろくじにおきた。",
+            "fr": "Ce matin, je me suis levé à six heures.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-verb-groups",
+          "grammar-case-particles",
+          "expand-masu-stem-ichidan"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/verb-%E3%81%A6",
+            "title": "Bunpro grammar: verb-て",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "J'ai fermé la fenêtre, puis je me suis couché.",
+          "Ce matin, je me suis levé à six heures."
+        ]
+      },
+      "recordSha256": "b0ac64145765db9e723d2a9829227cb2c3cae6dcd6069ef1db3203dbbfbd32b4"
+    },
+    {
+      "record": {
+        "id": "expand-person-dare",
+        "title": "誰 : interroger sur une personne",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "誰",
+          "person-dare"
+        ],
+        "explanationFr": "誰（だれ） remplace une personne inconnue. La particule qui suit donne son rôle : 誰が pour le sujet, 誰を pour l'objet, 誰に pour le destinataire, 誰と pour le partenaire et 誰の pour la possession. On utilise normalement が, plutôt que le は de thème, pour demander qui est le sujet. どなた et どちらさま sont des façons plus polies de demander l'identité ; elles ne dispensent pas d'adapter la phrase et le ton.",
+        "frenchLearnerTrap": "誰の本 demande à qui appartient le livre ; 誰に本を渡す demande à qui on remet le livre.",
+        "examples": [
+          {
+            "ja": "誰にこの手紙を渡しますか。",
+            "reading": "だれにこのてがみをわたしますか。",
+            "fr": "À qui remettez-vous cette lettre ?",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "これは誰の自転車ですか。",
+            "reading": "これはだれのじてんしゃですか。",
+            "fr": "À qui appartient ce vélo ?",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-case-particles",
+          "expand-noun-no",
+          "expand-recipient-ni",
+          "expand-masu-stem-godan"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%A0%E3%82%8C",
+            "title": "Bunpro grammar: だれ",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "À qui remettez-vous cette lettre ?",
+          "À qui appartient ce vélo ?"
+        ]
+      },
+      "recordSha256": "be3cd473011918428199bcb68df2e4c1321f62289b6a78452f242474f34e4371"
+    },
+    {
+      "record": {
+        "id": "expand-why-naze",
+        "title": "なぜ : demander une raison dans un registre soutenu",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "なぜ",
+          "why-naze"
+        ],
+        "explanationFr": "なぜ introduit une question portant sur une raison ou une cause. Il apparaît souvent à l'écrit, dans un propos soutenu ou dans une demande d'explication logique. Dans un échange quotidien, il peut sembler plus formel que どうして ; なんで est plus familier. Le choix du mot et la politesse de la terminaison sont deux dimensions distinctes.",
+        "frenchLearnerTrap": "Ajouter ですか ne rend pas automatiquement une question sur la raison moins directe ; choisir le ton et le contexte.",
+        "examples": [
+          {
+            "ja": "なぜこの道は狭いのですか。",
+            "reading": "なぜこのみちはせまいのですか。",
+            "fr": "Pourquoi cette route est-elle étroite ?",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "なぜその方法を選んだのですか。",
+            "reading": "なぜそのほうほうをえらんだのですか。",
+            "fr": "Pourquoi avez-vous choisi cette méthode ?",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "adv-noda",
+          "expand-plain-verb-past",
+          "expand-ichidan-te-past",
+          "grammar-i-adjectives"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%AA%E3%81%9C",
+            "title": "Bunpro grammar: なぜ",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "Pourquoi cette route est-elle étroite ?",
+          "Pourquoi avez-vous choisi cette méthode ?"
+        ]
+      },
+      "recordSha256": "127aa04c9cb180fba49319e5db08245bb3342e494029d9fde3dbefc50b977f8b"
+    },
+    {
+      "record": {
+        "id": "expand-subject-no-attributive",
+        "title": "が et の : marquer le sujet dans certaines propositions relatives",
+        "domain": "grammar",
+        "level": "N5",
+        "levelBasis": "Local editorial estimate; not an official JLPT item allocation",
+        "aliases": [
+          "が et の",
+          "subject-no-attributive"
+        ],
+        "explanationFr": "Dans certaines propositions qui modifient un nom, le sujet interne peut être marqué par が ou の : 雨が降る日 et 雨の降る日. Il ne s'agit pas du thème principal de la phrase. Cette alternance est limitée à ces constructions attributives et ne permet pas de remplacer tous les が par の. Si la proposition contient un objet en を, conserver が comme sujet pour éviter notamment une lecture possessive ou une construction inadaptée.",
+        "frenchLearnerTrap": "Ne pas transférer cette alternance à une phrase indépendante : 雨が降る est une phrase ordinaire ; 雨の降る demande ici un nom à modifier.",
+        "examples": [
+          {
+            "ja": "雪の降る日に写真を撮りました。",
+            "reading": "ゆきのふるひにしゃしんをとりました。",
+            "fr": "J'ai pris des photos un jour où il neigeait.",
+            "origin": "Original example; independent adversarial review pending"
+          },
+          {
+            "ja": "庭の広い家に住みたいです。",
+            "reading": "にわのひろいいえにすみたいです。",
+            "fr": "Je voudrais habiter une maison dont le jardin est grand.",
+            "origin": "Original example; independent adversarial review pending"
+          }
+        ],
+        "prerequisites": [
+          "grammar-relative-clause",
+          "grammar-case-particles",
+          "grammar-i-adjectives",
+          "grammar-desire",
+          "expand-masu-stem-godan"
+        ],
+        "sources": [
+          {
+            "url": "https://bunpro.jp/grammar_points/%E3%81%AE-subject",
+            "title": "Bunpro grammar: の-subject",
+            "publisher": "Bunpro, original pedagogical publisher",
+            "checkedAt": "14 October 2026",
+            "license": "Copyright retained by publisher; no open licence verified",
+            "reuse": "Link and original concise explanation/examples only; no publisher lesson or audio reproduced"
+          }
+        ],
+        "status": "editorial-draft",
+        "reviewScope": "Source available; content alignment, kana and translations await independent reviews",
+        "createdAt": "14 October 2026",
+        "learnerState": "not-assessed",
+        "oralPromptsFr": [
+          "J'ai pris des photos un jour où il neigeait.",
+          "Je voudrais habiter une maison dont le jardin est grand."
+        ]
+      },
+      "recordSha256": "70c71f7e8a516e39d4c4f71194e2706cecf34ee3af6f8e5fde6940b29f7dc2ae"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "date": "14 October 2026",
+  "release": "9cb784b90533b073",
+  "approvedNewCards": 101,
+  "preparedNewLessons": 101,
+  "examples": 202,
+  "levels": {
+    "N5": 82,
+    "N4": 39,
+    "N3": 48,
+    "N2": 48,
+    "N1": 41
+  },
+  "learnerHistoryWritten": false,
+  "completeCurriculum": false
+}

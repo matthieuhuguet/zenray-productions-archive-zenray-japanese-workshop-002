@@ -1,0 +1,149 @@
+[
+  {
+    "id": "grammar-condition-ba",
+    "title": "ば : relation conditionnelle",
+    "domain": "grammar",
+    "level": "N4",
+    "levelBasis": "Editorial estimate, not an official JLPT item allocation",
+    "aliases": [
+      "ba",
+      "kereba"
+    ],
+    "explanationFr": "Godan: ligne en え + ば; ichidan: enlever る puis れば. する → すれば, 来る → くれば. Les adjectifs en い prennent ければ. L’emploi dépend aussi de la volonté et de la temporalité.",
+    "examples": [
+      {
+        "ja": "時間があれば、参加します。",
+        "reading": "じかんがあれば、さんかします。",
+        "fr": "Si j’ai le temps, je participerai.",
+        "origin": "Original example composed for this research; not a copied source example"
+      }
+    ],
+    "prerequisites": [
+      "grammar-verb-groups"
+    ],
+    "sources": [
+      {
+        "url": "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/083.html",
+        "title": "TUFS Japanese grammar: 条件",
+        "publisher": "Tokyo University of Foreign Studies",
+        "checkedAt": "12 October 2026",
+        "license": "No open license verified",
+        "reuse": "Copyright retained by publisher. Link and original paraphrase only; no full lesson, illustration or audio copied."
+      }
+    ],
+    "status": "reviewed",
+    "reviewScope": "Source checked and original editorial review; no native-speaker validation or learner mastery claimed",
+    "frenchLearnerTrap": "",
+    "contrastFr": "",
+    "oralPromptFr": "Explique ce que tu fais si tu as le temps.",
+    "createdAt": "12 October 2026",
+    "learnerState": "not-assessed",
+    "levelEstimated": true,
+    "origin": "/Users/zenray/.claude/tmp/tmp-zenray-japanese/research/language/LanguageRecords.json",
+    "corpus": "language",
+    "recordShard": 172,
+    "revisionDate": "12 October 2026",
+    "markdown": "## grammar-condition-ba : ば : relation conditionnelle (12 October 2026)\n\nDomaine : grammar ; niveau : N4 ; statut : reviewed. (12 October 2026)\n\nGodan: ligne en え + ば; ichidan: enlever る puis れば. する → すれば, 来る → くれば. Les adjectifs en い prennent ければ. L’emploi dépend aussi de la volonté et de la temporalité. (12 October 2026)\n\n| Japonais et lecture | Français |\n|---|---|\n| 時間があれば、参加します。 (じかんがあれば、さんかします。) | Si j’ai le temps, je participerai. (12 October 2026) |\n\nPrérequis : grammar-verb-groups. (12 October 2026)\n\n- [TUFS Japanese grammar: 条件](https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/083.html) ; Tokyo University of Foreign Studies ; No open license verified ; vérifié : 12 October 2026. (12 October 2026)\n",
+    "lessonContentVersion": "1",
+    "lessonContentHash": "1f8765ecb2bf6a1435866eaae4e4c85a2ef8de5f96e568c5e7d79b87b4f5b24e",
+    "lessonValidation": {
+      "status": "approved",
+      "contentVersion": "1",
+      "contentHash": "1f8765ecb2bf6a1435866eaae4e4c85a2ef8de5f96e568c5e7d79b87b4f5b24e",
+      "reviewerIds": [
+        "/root/language_review_a",
+        "/root/language_review_b"
+      ],
+      "evidenceUrls": [
+        "https://www.coelang.tufs.ac.jp/mt/ja/gmod/contents/explanation/083.html"
+      ],
+      "unresolvedFindings": [],
+      "reviewedAt": "13 October 2026",
+      "reviewType": "independent-adversarial-model-review",
+      "humanReview": false
+    }
+  },
+  {
+    "id": "adv-nakerebanaranai",
+    "title": "なければならない : une obligation",
+    "domain": "grammar",
+    "level": "N4",
+    "levelBasis": "Editorial difficulty estimate; not an official JLPT item assignment",
+    "taxonomy": "obligation",
+    "aliases": [
+      "nakerebanaranai",
+      "なければならない"
+    ],
+    "explanationFr": "Forme négative sans い + ければならない exprime une nécessité. なくてはいけない est une autre construction courante. À l’oral, certaines formes se contractent.",
+    "contrastFr": "La double négation produit ici une obligation; ne pas l’interpréter comme une interdiction.",
+    "examples": [
+      {
+        "ja": "明日、早く起きなければなりません。",
+        "reading": "あした、はやくおきなければなりません。",
+        "fr": "Je dois me lever tôt demain.",
+        "origin": "Original example, independent native review pending"
+      },
+      {
+        "ja": "予約を確認しなくてはいけません。",
+        "reading": "よやくをかくにんしなくてはいけません。",
+        "fr": "Il faut vérifier la réservation.",
+        "origin": "Original example, independent native review pending"
+      },
+      {
+        "ja": "もう帰らなきゃ。",
+        "reading": "もうかえらなきゃ。",
+        "fr": "Il faut que je rentre maintenant.",
+        "origin": "Original example, independent native review pending"
+      }
+    ],
+    "prerequisites": [
+      "grammar-relative-clause",
+      "grammar-verb-groups"
+    ],
+    "sources": [
+      {
+        "url": "https://imabi.org/must/",
+        "title": "Must",
+        "publisher": "Seth Coonrod, original IMABI curriculum author",
+        "checkedAt": "12 October 2026",
+        "availability": "fetched",
+        "verification": "Source fetched; pedagogical source alignment reviewed editorially; no native review claimed",
+        "license": "Copyright retained by author; no open license verified",
+        "reuse": "Original paraphrase and examples; source lessons, recordings and illustrations not reproduced"
+      }
+    ],
+    "status": "editorial-draft",
+    "reviewScope": "Editorial linguistic review only; native-speaker review and learner testing pending",
+    "createdAt": "12 October 2026",
+    "learnerState": "not-assessed",
+    "oralPromptsFr": [
+      "Je dois me lever tôt demain.",
+      "Il faut vérifier la réservation.",
+      "Il faut que je rentre maintenant."
+    ],
+    "levelEstimated": true,
+    "origin": "/Users/zenray/.claude/tmp/tmp-zenray-japanese/research/language/LanguageAdvancedRecords.json",
+    "corpus": "language",
+    "recordShard": 220,
+    "revisionDate": "12 October 2026",
+    "markdown": "## adv-nakerebanaranai : なければならない : une obligation (12 October 2026)\n\nDomaine : grammar ; niveau : N4 ; statut : editorial-draft. (12 October 2026)\n\nForme négative sans い + ければならない exprime une nécessité. なくてはいけない est une autre construction courante. À l’oral, certaines formes se contractent. (12 October 2026)\n\n| Japonais et lecture | Français |\n|---|---|\n| 明日、早く起きなければなりません。 (あした、はやくおきなければなりません。) | Je dois me lever tôt demain. (12 October 2026) |\n| 予約を確認しなくてはいけません。 (よやくをかくにんしなくてはいけません。) | Il faut vérifier la réservation. (12 October 2026) |\n| もう帰らなきゃ。 (もうかえらなきゃ。) | Il faut que je rentre maintenant. (12 October 2026) |\n\nPrérequis : grammar-relative-clause, grammar-verb-groups. (12 October 2026)\n\n- [Must](https://imabi.org/must/) ; Seth Coonrod, original IMABI curriculum author ; Copyright retained by author; no open license verified ; vérifié : 12 October 2026. (12 October 2026)\n",
+    "lessonContentVersion": "1",
+    "lessonContentHash": "b83974ff53ad660a2234ec10de7365977c93010865e75f124722003eedb12373",
+    "lessonValidation": {
+      "status": "approved",
+      "contentVersion": "1",
+      "contentHash": "b83974ff53ad660a2234ec10de7365977c93010865e75f124722003eedb12373",
+      "reviewerIds": [
+        "/root/language_review_a",
+        "/root/language_review_b"
+      ],
+      "evidenceUrls": [
+        "https://imabi.org/must/"
+      ],
+      "unresolvedFindings": [],
+      "reviewedAt": "13 October 2026",
+      "reviewType": "independent-adversarial-model-review",
+      "humanReview": false
+    }
+  }
+]

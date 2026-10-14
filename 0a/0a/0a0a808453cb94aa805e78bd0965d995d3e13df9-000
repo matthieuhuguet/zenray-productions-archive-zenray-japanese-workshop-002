@@ -1,0 +1,56 @@
+{
+  "date": "14 October 2026",
+  "scope": "Actual Learn Japanese component, real reviewed corpus, isolated state fixture. Production learner history never touched.",
+  "checks": [
+    {
+      "name": "Learn Japanese opens Parcours by default; historical gauges remain separate",
+      "passed": true
+    },
+    {
+      "name": "Retest, two-column lesson, closed answers, failed-write retry and exposure without mastery",
+      "passed": true
+    },
+    {
+      "name": "Saved lesson immediately appears in historical lessons and reads the pinned Japanese1 chronology",
+      "passed": true
+    },
+    {
+      "name": "Real oral prompt, answer comparison, spaced orange stage and persistence after reload",
+      "passed": true
+    },
+    {
+      "name": "Diagnostic tests an existing prerequisite without inventing mastery or forcing an N5 restart",
+      "passed": true
+    },
+    {
+      "name": "Responsive 1440 light",
+      "passed": true
+    },
+    {
+      "name": "Responsive 1440 dark",
+      "passed": true
+    },
+    {
+      "name": "Responsive 375 light",
+      "passed": true
+    },
+    {
+      "name": "Responsive 375 dark",
+      "passed": true
+    },
+    {
+      "name": "Honest coverage, 72 original lessons/PDF/audio links and durable missing notion",
+      "passed": true
+    },
+    {
+      "name": "Parcours to actual corpus search and stroke SVG",
+      "passed": true
+    },
+    {
+      "name": "Corrupted real translation cannot be taught or exported",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}
